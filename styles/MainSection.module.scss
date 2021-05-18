@@ -1,0 +1,12 @@
+.main_section{
+    position: relative;
+    min-width: 100vw;
+	min-height: 100vh;
+	background:  url("/main-section.png") center/cover;
+   .img_container{
+       position: absolute;
+       left: 122px;
+       top: 232px;
+
+   }
+}
