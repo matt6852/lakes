@@ -1,17 +1,20 @@
-
+import Image from "next/image";
 import style from "styles/Header.module.scss";
-import Navbar from "./Navbar"
-import Phone from "./PhoneComp"
-
+import Navbar from "./Navbar";
+import Phone from "./PhoneComp";
 
 function Header() {
   return (
-    <header className = {style.container}>
+    <header className={style.container}>
       {/* <Link href =""> */}
-        <a> logo </a>
-       
-        <Navbar/>
-       <Phone/>
+      <a>
+        {" "}
+        <Image src="/logo.png" width={70}
+        height ={94} />{" "}
+      </a>
+
+      <Navbar />
+      <Phone />
       {/* </Link> */}
     </header>
   );

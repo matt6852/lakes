@@ -10,6 +10,12 @@
     flex-direction: column;
     height: 600px;
     justify-content: space-around;
+    .title_container{
+        font-size: 62px;
+        span{
+             color: #4ea86a;
+        }
+    }
     .btn_container {
       display: flex;
       width: 50rem;
