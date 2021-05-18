@@ -3,7 +3,7 @@ import style from "styles/Card.module.scss"
 
 export default function Card({title,desc}) {
     return (
-      <article className= {style.services__single_service}>
+      <article className= {style.singl_card}>
         <div className={style.services__single_service_icon}>
           {" "}
           <i className={style.fas}>icon</i>

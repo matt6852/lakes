@@ -12,7 +12,7 @@ export default function UniqAries() {
         </h3>
       </div>
       <div className={style.center}>{uniqCards.map((card,index)=>{
-          return <Card {...card}/>
+          return <Card key = {index} {...card}/>
       })}</div>
     </section>
   );
