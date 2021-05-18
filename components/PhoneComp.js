@@ -3,9 +3,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 export default function PhoneComp() {
   return (
-    <span className={style.phone}>
+    <p className={style.phone}>
       {" "}
       <FaPhoneAlt className ={style.icon} /> +7 (123) 456-78-90
-    </span>
+    </p>
   );
 }

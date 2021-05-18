@@ -1,11 +1,13 @@
 import { createContext, useContext } from "react";
 import {links} from "data"
+import {uniqCards} from "data"
 
 const AppContext = createContext();
 
 export function AppWrapper({ children }) {
   let sharedState = {
-    links
+    links,
+    uniqCards
   };
 
   return (

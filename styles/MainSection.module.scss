@@ -13,9 +13,7 @@
     .title_container {
       width: 850px;
       font-size: 62px;
-      span {
-        color: #4ea86a;
-      }
+      
     }
     .btn_container {
       display: flex;
@@ -29,11 +27,13 @@
         box-shadow: 0px 18px 40px -5px rgba(25, 135, 59, 0.35);
         border-radius: 50px;
         cursor: pointer;
+        color:  #fff;
       }
       .btn_main_two {
         padding: 1.5rem;
         line-height: 1.5;
         width: 50%;
+        color: #333333;
       }
     }
   }
@@ -42,6 +42,10 @@
     margin-left: 8rem;
     margin-right: auto;
     display: flex;
+    span{
+      margin-right: auto;
+        color: #686868;
+    }
     .icon {
       opacity: 0.3;
       margin-right: 10px;

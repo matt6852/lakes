@@ -1,0 +1,17 @@
+.uniq {
+    padding: 0.5rem;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-top: 3rem;
+  .title {
+    margin: auto;
+
+    text-align: center;
+    font-size: 42px;
+  }
+  .center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
