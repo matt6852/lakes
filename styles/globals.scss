@@ -35,8 +35,12 @@ a {
 ul li {
   list-style: none;
 }
-span {
-  background: linear-gradient(90deg, #4ea86a 0%, #5cacc7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+
+.linercradient{
+  background: linear-gradient(
+90deg
+, #4ea86a 0%, #5cacc7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
