@@ -16,7 +16,7 @@ export default function MainSection() {
             </h1>
           </div>
           <div className={style.btn_container}>
-            <button>
+            <button className ="btn">
               {" "}
               <a href="">Записаться на просмотр &#8594;</a>{" "}
             </button>

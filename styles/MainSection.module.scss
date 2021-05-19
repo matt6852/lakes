@@ -25,19 +25,13 @@
   .btn_container {
     margin-top: 88px;
     display: flex;
-    
+
     align-items: center;
     button {
-      
-      width: 290px;
-      height: 65px;
-      background: linear-gradient(90deg, #4EA86A -38.01%, #5CACC7 135.09%);
-box-shadow: 0px 18px 40px -5px rgba(25, 135, 59, 0.35);
-border-radius: 50px;
-a{
-  color: #ffff;
-  font-weight: 700;
-}
+      a {
+        color: #ffff;
+        font-weight: 700;
+      }
     }
     p {
       width: 315px;
@@ -46,12 +40,12 @@ a{
       line-height: 25px;
     }
   }
-  .mous{
+  .mous {
     display: flex;
-    margin-top:125px ; 
+    margin-top: 125px;
     color: #686868;
-    p{
-      margin-left: 19px
-    };
+    p {
+      margin-left: 19px;
+    }
   }
 }
