@@ -3,52 +3,53 @@
   min-height: 100vh;
   background: url("/main-section.png") center/cover;
 
-  .center {
-    padding-top: 200px;
-    padding-left: 123px;
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    justify-content: space-around;
-    .title_container {
-  
-      font-size: 62px;
-      
-    }
-    .btn_container {
-      display: flex;
-      width: 50rem;
-      height: 30%;
-      justify-content: space-between;
-      align-items: center;
-      .btn_main_one {
-        padding: 1rem 2.5rem;
-        background: linear-gradient(90deg, #4ea86a -38.01%, #5cacc7 135.09%);
-        box-shadow: 0px 18px 40px -5px rgba(25, 135, 59, 0.35);
-        border-radius: 50px;
-        cursor: pointer;
-        color:  #fff;
-      }
-      .btn_main_two {
-        padding: 1.5rem;
-        line-height: 1.5;
-        width: 50%;
-        color: #333333;
-      }
-    }
-  }
-  .mous {
-    margin-top: 6rem;
-    margin-left: 8rem;
-    margin-right: auto;
-    display: flex;
-    span{
-      margin-right: auto;
-        color: #686868;
-    }
-    .icon {
-      opacity: 0.3;
-      margin-right: 10px;
-    }
-  }
+  // .center {
+  //   padding-top: 232px;
+  //   // margin-left: 123px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   height: 600px;
+  //   justify-content: space-around;
+  //   .title_container {
+  //     width: 650px;
+  //     height: 162px;
+  //     line-height: 130%;
+  //     font-size: 62px;
+  //   }
+  //   .btn_container {
+  //     display: flex;
+  //     width: 50rem;
+  //     height: 30%;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     .btn_main_one {
+  //       padding: 1rem 2.5rem;
+  //       background: linear-gradient(90deg, #4ea86a -38.01%, #5cacc7 135.09%);
+  //       box-shadow: 0px 18px 40px -5px rgba(25, 135, 59, 0.35);
+  //       border-radius: 50px;
+  //       cursor: pointer;
+  //       color: #fff;
+  //     }
+  //     .btn_main_two {
+  //       padding: 1.5rem;
+  //       line-height: 1.5;
+  //       width: 50%;
+  //       color: #333333;
+  //     }
+  //   }
+  // }
+  // .mous {
+  //   margin-top: 6rem;
+  //   margin-left: 8rem;
+  //   margin-right: auto;
+  //   display: flex;
+  //   span {
+  //     margin-right: auto;
+  //     color: #686868;
+  //   }
+  //   .icon {
+  //     opacity: 0.3;
+  //     margin-right: 10px;
+  //   }
+  // }
 }

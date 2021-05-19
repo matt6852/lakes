@@ -1,10 +1,17 @@
-.container{
-    position: absolute;
-    z-index: 10;
-    display: flex;
-    min-width: 100vw;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem 5rem;
+.container_center {
+    
+}
 
+.container {
+ 
+  
+  // z-index: 10;
+  margin-left: 122px;
+  margin-right: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .logo {
+    margin-right: 73px;
+  }
 }

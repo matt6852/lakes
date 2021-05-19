@@ -1,4 +1,22 @@
-*{
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-SemiBold.ttf"), url("/fonts/Gilroy-SemiBold.eot"), url("/fonts/Gilroy-SemiBold.woff");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Bold.ttf"), url("/fonts/Gilroy-Bold.eot"), url("/fonts/Gilroy-Bold.woff");
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Medium.ttf"), url("/fonts/Gilroy-Medium.eot"), url("/fonts/Gilroy-Medium.woff");
+  font-weight: normal;
+  font-display: swap;
+}
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -6,16 +24,19 @@
 html {
   scroll-behavior: smooth;
 }
-a{
+
+body {
+  font-family: "Gilroy";
+  font-weight: normal
+}
+a {
   text-decoration: none;
 }
-ul li{
+ul li {
   list-style: none;
 }
 span {
-        background: linear-gradient(
-90deg
-, #4ea86a 0%, #5cacc7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
-      }
+  background: linear-gradient(90deg, #4ea86a 0%, #5cacc7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
