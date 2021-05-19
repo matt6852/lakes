@@ -1,7 +1,8 @@
 .uniq {
    
-    margin-left: 122px;
-    margin-right: 120px;
+    margin-left: 22px;
+    margin-right: 20px;
+
   .title {
     margin: auto;
     margin-bottom: 4rem;
@@ -11,8 +12,10 @@
   }
   .center{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+   
     flex-wrap: wrap;
+    
    
 }
 }
