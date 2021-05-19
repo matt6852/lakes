@@ -5,7 +5,7 @@ import Wrapper from "../Wrapper";
 export default function MainSection() {
   return (
     <section className={style.main_section}>
-      <Wrapper>
+      {/* <Wrapper>
         <div className={style.center}>
           <div className={style.title_container}>
             <h1>
@@ -26,7 +26,7 @@ export default function MainSection() {
         <div className={style.mous}>
           <FaMouse className={style.icon} /> <span>Листайте ниже</span>
         </div>
-      </Wrapper>
+      </Wrapper> */}
     </section>
   );
 }
