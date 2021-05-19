@@ -1,13 +1,16 @@
-import { createContext, useContext } from "react";
-import {links} from "data"
-import {uniqCards} from "data"
+import { createContext, useContext, useState } from "react";
+import { links } from "data";
+import { uniqCards } from "data";
 
 const AppContext = createContext();
 
 export function AppWrapper({ children }) {
+  const [scroll, setScroll] = useState(false);
   let sharedState = {
     links,
-    uniqCards
+    uniqCards,
+    scroll,
+    setScroll,
   };
 
   return (
