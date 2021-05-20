@@ -59,7 +59,8 @@
   .flex_container {
     margin-top: 106px;
     display: flex;
-    //   justify-content: center;
+    flex-wrap: wrap;
+      justify-content: center;
     .flex_container_1 {
       display: flex;
       flex-direction: column;
