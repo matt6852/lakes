@@ -1,6 +1,5 @@
 import style from "styles/Projects.module.scss";
 import Wrapper from "../Wrapper";
-import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -13,7 +12,7 @@ export default function Projects() {
         </div>
         <div className={style.about_center}>
           <div className={style.about_btn_container}>
-            <Image
+            <img
               className={style.about_img}
               src="/logo_repino_club.png"
               width={310}
@@ -38,27 +37,27 @@ export default function Projects() {
         </div>
         <div className={style.flex_container}>
           <div className={style.flex_container_1}>
-            <Image src="/projects/flex_1_1.png" width={380} height={320} />
+            <img src="/projects/flex_1_1.png" width={380} height={320} />
             <div className={style.flex_img_md}>
-              <Image src="/projects/flex_1_2.png" width={380} height={250} />
+              <img src="/projects/flex_1_2.png" width={380} height={250} />
             </div>
 
-            <Image src="/projects/flex_1_3.png" width={380} height={250} />
+            <img src="/projects/flex_1_3.png" width={380} height={250} />
           </div>
           <div className={style.flex_container_2}>
             {" "}
-            <Image src="/projects/flex_2_1.png" width={380} height={250} />
+            <img src="/projects/flex_2_1.png" width={380} height={250} />
             <div className={style.flex_img_md}>
-              <Image src="/projects/flex_2_2.png" width={380} height={320} />
+              <img src="/projects/flex_2_2.png" width={380} height={320} />
             </div>
-            <Image src="/projects/flex_2_3.png" width={380} height={250} />
+            <img src="/projects/flex_2_3.png" width={380} height={250} />
           </div>
           <div className={style.flex_container_3}>
-            <Image src="/projects/flex_3_1.png" width={380} height={320} />
+            <img src="/projects/flex_3_1.png" width={380} height={320} />
             <div className={style.flex_img_md}>
-              <Image src="/projects/flex_3_2.png" width={380} height={250} />
+              <img src="/projects/flex_3_2.png" width={380} height={250} />
             </div>
-            <Image src="/projects/flex_3_3.png" width={380} height={250} />
+            <img src="/projects/flex_3_3.png" width={380} height={250} />
           </div>
         </div>
       </Wrapper>
