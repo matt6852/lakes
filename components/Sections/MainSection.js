@@ -1,5 +1,8 @@
 import style from "styles/MainSection.module.scss";
 import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa";
+
+// FaArrowRight;
 
 import Wrapper from "../Wrapper";
 
@@ -18,8 +21,8 @@ export default function MainSection() {
           <div className={style.btn_container}>
             <button className="btn">
               {" "}
-              <a href="">
-                Записаться на просмотр <span className ={style.arrow}>&#8594;</span>{" "}
+              <a>
+                Записаться на просмотр <span className ={style.arrow}><FaArrowRight className ={style.fr}/></span>{" "}
               </a>{" "}
             </button>
             <p>

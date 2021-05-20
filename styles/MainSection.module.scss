@@ -30,8 +30,16 @@
       a {
         color: #ffff;
         font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .arrow{
-          margin-left: 17px;
+          margin-top: 6px;
+          margin-left: 15px;
+          .fr{
+            width: 32px;
+            height: 20px;
+          }
         }
       }
     }
