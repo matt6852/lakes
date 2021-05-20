@@ -6,11 +6,11 @@ import Wrapper from "../Wrapper";
 export default function UniqAries() {
   const { uniqCards } = useAppContext();
   return (
-    <Wrapper>
-      <section id="uniq" className={style.uniq}>
+    <section id="uniq" className={style.uniq}>
+        <Wrapper>
         <div className={style.title}>
           <h3>
-            <span>Уникальность </span> территории
+            <span className="linercradient">Уникальность </span> территории
           </h3>
         </div>
         <div className={style.center}>
@@ -18,7 +18,7 @@ export default function UniqAries() {
             return <Card key={index} {...card} />;
           })}
         </div>
-      </section>
     </Wrapper>
+      </section>
   );
 }

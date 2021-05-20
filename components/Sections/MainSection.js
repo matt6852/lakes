@@ -26,7 +26,7 @@ export default function MainSection() {
             </p>
           </div>
           <div className={style.mous}>
-            <Image src="/mous.png" width={16} height={16} />
+            <Image src="/icons/mous.png" width={16} height={16} />
             <p>Листайте ниже</p>
           </div>
         </div>

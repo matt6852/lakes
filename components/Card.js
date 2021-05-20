@@ -1,17 +1,13 @@
+import style from "styles/Card.module.scss";
 
-import style from "styles/Card.module.scss"
-
-export default function Card({title,desc}) {
-    return (
-      <article className= {style.singl_card}>
-        <div className={style.services__single_service_icon}>
-          {" "}
-          <i className={style.fas}>icon</i>
-        </div>
-        <h3 className={style.services__single_service_title}>{title}</h3>
-        <p className={style.services__single_service_text}>
-          {desc}
-        </p>
-      </article>
-    );
+export default function Card({ title, desc, icon }) {
+  return (
+    <article className={style.singl_card}>
+      <div className={style.fas}>
+        <img className={style.img} src={`${icon}`} alt="" />
+      </div>
+      <h3 className={style.single_card_title}>{title}</h3>
+      <p className={style.single_card_text}>{desc}</p>
+    </article>
+  );
 }
