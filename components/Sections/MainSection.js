@@ -10,7 +10,7 @@ export default function MainSection() {
   return (
     <section className={style.main_section}>
       <Wrapper>
-        <div className={style.title_center}>
+        <div className={`${style.title_center} z_index_1`}>
           <div>
             <h1>
               {" "}
@@ -22,7 +22,10 @@ export default function MainSection() {
             <button className="btn">
               {" "}
               <a>
-                Записаться на просмотр <span className ={style.arrow}><FaArrowRight className ={style.fr}/></span>{" "}
+                Записаться на просмотр{" "}
+                <span className={style.arrow}>
+                  <FaArrowRight className={style.fr} />
+                </span>{" "}
               </a>{" "}
             </button>
             <p>
@@ -31,7 +34,12 @@ export default function MainSection() {
             </p>
           </div>
           <div className={style.mous}>
-            <Image className ={style.mous_1} src="/icons/mous.png" width={16} height={16} />
+            <Image
+              className={style.mous_1}
+              src="/icons/mous.png"
+              width={16}
+              height={16}
+            />
             <p>Листайте ниже</p>
           </div>
         </div>
