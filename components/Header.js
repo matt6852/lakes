@@ -24,7 +24,7 @@ function Header() {
   return (
     <Wrapper>
       <div
-        className={scroll ? `${style.fixed_bar}` : `${style.container_center}`}
+        className={scroll ? `${style.fixed_bar}` : `"`}
       >
         <header className={ scroll ? `${style.navscroll}`: `${style.container}`}>
           <Link href="/">

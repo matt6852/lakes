@@ -4,11 +4,12 @@ import Image from "next/image";
 
 export default function History() {
   return (
-    <section className ={style.history}>
+    <section className={style.history}>
       <Wrapper>
         <div className={style.title}>
           <h3>
-            <span className="linercradient">История </span> посёлка
+            <span className="linercradient">История </span>{" "}
+            <span className ="white"> посёлка</span>
           </h3>
         </div>
       </Wrapper>

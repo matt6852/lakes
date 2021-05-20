@@ -16,9 +16,11 @@ export default function MainSection() {
             </h1>
           </div>
           <div className={style.btn_container}>
-            <button className ="btn">
+            <button className="btn">
               {" "}
-              <a href="">Записаться на просмотр &#8594;</a>{" "}
+              <a href="">
+                Записаться на просмотр <span className ={style.arrow}>&#8594;</span>{" "}
+              </a>{" "}
             </button>
             <p>
               Участки под индивидуальную застройку в живописном районе
