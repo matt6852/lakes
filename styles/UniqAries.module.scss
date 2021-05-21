@@ -1,6 +1,31 @@
 .uniq {
+  position: relative;
   margin-top: 115px;
   margin-bottom: 81px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 361px;
+    height: 903px;
+    right: 10px;
+
+    bottom: 100px;
+    background: url("/leafs_r.png") center/cover;
+    background-size: contain;
+    // background: transparent;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 276px;
+    height: 830px;
+    left: -2px;
+
+    bottom: 100px;
+    background: url("/leafs_l.png") center/cover;
+    background-size: contain;
+    // background: transparent;
+  }
 
   .title {
     margin: auto;
@@ -9,7 +34,7 @@
     font-weight: bold;
     text-align: center;
     font-size: 52px;
-    h3{
+    h3 {
       z-index: 1;
     }
   }
