@@ -9,8 +9,8 @@ import Wrapper from "../Wrapper";
 export default function MainSection() {
   return (
     <section className={style.main_section}>
-      <Wrapper>
-        <div className={`${style.title_center} z_index_1`}>
+      <Wrapper className="z_index_1">
+        <div className={style.title_center}>
           <div>
             <h1>
               {" "}
