@@ -1,10 +1,29 @@
 .projects {
+  position: relative;
   margin-top: 115px;
   margin-bottom: 81px;
   position: relative;
   z-index: 1;
+   background: #F5F5F5;
+
+ 
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+   &:before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 977px;
+    left: 0px;
+    bottom: 1150px;
+    background: url("/clouds_arries.png") center/cover;
+    background-size: contain;
+    // background: transparent;
+  }
+
 
   .title {
+    position: relative;
     margin: auto;
     margin-bottom: 4rem;
     font-style: normal;

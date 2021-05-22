@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 115px;
   margin-bottom: 81px;
-  min-height: 100vh;
+  height: 1652px;
   background: linear-gradient(
       0deg,
       rgba(36, 36, 36, 0.7),
@@ -15,8 +15,19 @@
     width: 100vw;
     height: 800px;
     left: 0px;
-    top: -400px;
+    top: -370px;
     background: url("/forest_t.png") center/cover;
+    background-size: contain;
+    // background: transparent;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 800px;
+    left: 0px;
+    bottom:  -360px;
+    background: url("/forest_b.png") center/cover;
     background-size: contain;
     // background: transparent;
   }
