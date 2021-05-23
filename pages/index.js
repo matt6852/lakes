@@ -5,6 +5,7 @@ import UniqAries from "components/Sections/UniqAries";
 import Projects from "components/Sections/Projects";
 import History from "components/Sections/History";
 import Carousel from "components/Carousel";
+import HowToBuy from "components/Sections/HowToBuy";
 
 import { useAppContext } from "context/state";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Projects/>
       <History/>
       <Carousel/>
+      <HowToBuy/>
 
     </>
   );
