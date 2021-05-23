@@ -1,0 +1,144 @@
+.projects {
+  position: relative;
+  margin-top: 115px;
+  margin-bottom: 81px;
+  position: relative;
+  z-index: 1;
+  background: #F5F5F5;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.projects:before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 977px;
+  left: 0px;
+  bottom: 1150px;
+  background: url("/clouds_arries.png") center/cover;
+  background-size: contain;
+}
+
+.projects .title {
+  position: relative;
+  margin: auto;
+  margin-bottom: 4rem;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: 52px;
+}
+
+.projects .about_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 61px;
+}
+
+.projects .about_center .about_btn_container {
+  width: 310px;
+}
+
+.projects .about_center .about_btn_container .about_btn {
+  margin-top: 20px;
+  width: 303px;
+  height: 39px;
+  background: #ffffff;
+  border: 4px solid #ededed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.projects .about_center .about_btn_container .about_btn a {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  /* identical to box height, or 29px */
+  color: #03838c;
+}
+
+.projects .about_center .about_btn_container .about_btn a .about_btn_arrow {
+  position: absolute;
+  right: 20px;
+}
+
+.projects .about_center .about_text {
+  margin-left: 88px;
+}
+
+.projects .about_center .about_text p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #6b6b6b;
+}
+
+.projects .flex_container {
+  margin-top: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects .flex_container .flex_container_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .flex_container .flex_container_1 .flex_img_md {
+  margin: 11px 0;
+}
+
+.projects .flex_container .flex_container_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .flex_container .flex_container_2 .flex_img_md {
+  margin: 11px 0;
+}
+
+.projects .flex_container .flex_container_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .flex_container .flex_container_3 .flex_img_md {
+  margin: 11px 0;
+}
+/*# sourceMappingURL=Projects.module.css.map */

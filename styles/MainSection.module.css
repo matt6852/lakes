@@ -1,0 +1,89 @@
+.main_section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(110.31deg, #fbfbfb 25.32%, rgba(255, 255, 255, 0.8) 49.99%, rgba(255, 255, 255, 0) 74.3%, rgba(255, 255, 255, 0) 91.51%), url("/main-section.png") center/cover;
+}
+
+.main_section:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1095px;
+  left: 0px;
+  bottom: -430px;
+  background: url("/clouds.png") center/cover;
+  background-size: contain;
+}
+
+.title_center {
+  position: relative;
+  z-index: 1;
+  padding-top: 232px;
+}
+
+.title_center h1 {
+  width: 650px;
+  height: 162px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 130%;
+}
+
+.title_center .btn_container {
+  margin-top: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title_center .btn_container button a {
+  color: #ffff;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title_center .btn_container button a .arrow {
+  margin-top: 6px;
+  margin-left: 15px;
+}
+
+.title_center .btn_container button a .arrow .fr {
+  width: 32px;
+  height: 20px;
+}
+
+.title_center .btn_container p {
+  width: 315px;
+  margin-left: 51px;
+  color: #333333;
+  line-height: 25px;
+}
+
+.title_center .mous {
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 125px;
+  color: #686868;
+}
+
+.title_center .mous .mous_1 {
+  z-index: 100;
+}
+
+.title_center .mous p {
+  margin-left: 19px;
+  z-index: 100;
+}
+/*# sourceMappingURL=MainSection.module.css.map */

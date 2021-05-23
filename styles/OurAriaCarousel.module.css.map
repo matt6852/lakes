@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,OAAO,EAAE,IAAI;EAEb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;CAOtB;;AAZD,AAOQ,UAPE,CAMN,SAAS,CACL,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "OurAriaCarousel.module.scss"
+    ],
+    "names": [],
+    "file": "OurAriaCarousel.module.css"
+}
