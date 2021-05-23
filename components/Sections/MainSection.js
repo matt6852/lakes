@@ -21,7 +21,7 @@ export default function MainSection() {
           <div className={style.btn_container}>
             <button className="btn">
               {" "}
-              <a>
+              <a href ="#contacts">
                 Записаться на просмотр{" "}
                 <span className={style.arrow}>
                   <FaArrowRight className={style.fr} />

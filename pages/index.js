@@ -6,6 +6,7 @@ import Projects from "components/Sections/Projects";
 import History from "components/Sections/History";
 import Carousel from "components/Carousel";
 import HowToBuy from "components/Sections/HowToBuy";
+import Contacts from "components/Sections/Contacts";
 
 import { useAppContext } from "context/state";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <History/>
       <Carousel/>
       <HowToBuy/>
+      <Contacts/>
 
     </>
   );

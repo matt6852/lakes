@@ -3,7 +3,7 @@ export const links = [
   { title: "Характеристики", href: "#projects" },
   { title: "Генплан", href: "/" },
   { title: "Оплата", href: "/" },
-  { title: "Контакты", href: "/" },
+  { title: "Контакты", href: "#contacts" },
 ];
 
 export const uniqCards = [
