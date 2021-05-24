@@ -2,6 +2,7 @@ import Wrapper from "../Wrapper";
 import style from "styles/Contacts.module.scss";
 import HowToBuyCard from "components/HowToBuyCard";
 import YandexMap from "../YandexMap"
+import Form from "../Form"
 import { useAppContext } from "context/state";
 
 export default function Contacts() {
@@ -59,7 +60,9 @@ export default function Contacts() {
               </div>
 
               <div className={style.sub_container_child}>
-                <div className={style.form_container}>FORM</div>
+                <div className={style.form_container}>
+                  <Form/>
+                </div>
               </div>
             </div>
           </div>
