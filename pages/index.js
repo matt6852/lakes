@@ -18,11 +18,11 @@ export default function Home() {
       <MainSection />
       <UniqAries />
       <Projects />
-      <History />
+      {/* <History />
       <Carousel />
       <HowToBuy />
       <Contacts />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

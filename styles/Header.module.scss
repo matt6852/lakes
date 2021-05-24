@@ -33,3 +33,12 @@
     margin-right: 73px;
   }
 }
+
+@media (max-width: 1200px) {
+  .container{
+    display: none;
+  }
+  .navscroll{
+    display: none;
+  }
+}

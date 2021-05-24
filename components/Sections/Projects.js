@@ -12,12 +12,9 @@ export default function Projects() {
         </div>
         <div className={style.about_center}>
           <div className={style.about_btn_container}>
-            <img
-              className={style.about_img}
-              src="/logo_repino_club.png"
-              width={310}
-              height={56}
-            />
+            <div className ={style.img_cont}>
+              <img className={style.about_img} src="/logo_repino_club.png" />
+            </div>
             <button className={style.about_btn}>
               {" "}
               <a href="/">
@@ -37,27 +34,27 @@ export default function Projects() {
         </div>
         <div className={style.flex_container}>
           <div className={style.flex_container_1}>
-            <img src="/projects/flex_1_1.png" width={380} height={320} />
+            <img className={style.mobile_1_1} src="/projects/flex_1_1.png" />
             <div className={style.flex_img_md}>
-              <img src="/projects/flex_1_2.png" width={380} height={250} />
+              <img className={style.mobile_1_2} src="/projects/flex_1_2.png" />
             </div>
 
-            <img src="/projects/flex_1_3.png" width={380} height={250} />
+            <img className={style.mobile_1_3} src="/projects/flex_1_3.png" />
           </div>
           <div className={style.flex_container_2}>
             {" "}
-            <img src="/projects/flex_2_1.png" width={380} height={250} />
+            <img className={style.mobile_2_1} src="/projects/flex_2_1.png" />
             <div className={style.flex_img_md}>
-              <img src="/projects/flex_2_2.png" width={380} height={320} />
+              <img className={style.mobile_2_2} src="/projects/flex_2_2.png" />
             </div>
-            <img src="/projects/flex_2_3.png" width={380} height={250} />
+            <img className={style.mobile_2_3} src="/projects/flex_2_3.png" />
           </div>
           <div className={style.flex_container_3}>
-            <img src="/projects/flex_3_1.png" width={380} height={320} />
+            <img className={style.mobile_3_1} src="/projects/flex_3_1.png" />
             <div className={style.flex_img_md}>
-              <img src="/projects/flex_3_2.png" width={380} height={250} />
+              <img className={style.mobile_3_2} src="/projects/flex_3_2.png" />
             </div>
-            <img src="/projects/flex_3_3.png" width={380} height={250} />
+            <img className={style.mobile_3_3} src="/projects/flex_3_3.png" />
           </div>
         </div>
       </Wrapper>

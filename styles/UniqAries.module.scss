@@ -26,7 +26,7 @@
     background-size: contain;
     // background: transparent;
   }
- 
+
   .title {
     margin: auto;
     margin-bottom: 4rem;
@@ -43,5 +43,85 @@
     justify-content: space-between;
 
     flex-wrap: wrap;
+  }
+}
+
+// tablet
+
+@media (max-width: 1200px) {
+  .uniq {
+    position: relative;
+    margin-top: 115px;
+    margin-bottom: 81px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 361px;
+      height: 903px;
+      right: 10px;
+
+      bottom: 500px;
+      background: url("/leafs_r.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+
+    .title {
+      margin: auto;
+      margin-bottom: 4rem;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      font-size: 52px;
+      h3 {
+        z-index: 1;
+      }
+    }
+    .center {
+      display: flex;
+      justify-content: space-evenly;
+
+      flex-wrap: wrap;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: 767px) {
+  .uniq {
+    position: relative;
+    margin-top: 115px;
+    margin-bottom: 81px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 131px;
+      height: 900px;
+      right: 0px;
+
+      top: -15px;
+      background: url("/leafs_r.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+
+    .title {
+      margin: auto;
+      margin-bottom: 4rem;
+      font-style: normal;
+      font-weight: bold;
+      text-align: left;
+      font-size: 35px;
+      padding-left: 16px;
+      h3 {
+        z-index: 1;
+      }
+    }
+    .center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
