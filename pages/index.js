@@ -20,10 +20,10 @@ export default function Home() {
       <UniqAries />
       <Projects />
       <History />
-      {/* <Carousel />
+      <Carousel />
       <HowToBuy />
       <Contacts />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
