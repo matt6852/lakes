@@ -15,15 +15,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <MainSection/>
-      <UniqAries/>
-      <Projects/>
-      <History/>
-      <Carousel/>
-      <HowToBuy/>
-      <Contacts/>
-      <Footer/>
-
+      <MainSection />
+      <UniqAries />
+      <Projects />
+      <History />
+      <Carousel />
+      <HowToBuy />
+      <Contacts />
+      <Footer />
     </>
   );
 }

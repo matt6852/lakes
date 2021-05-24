@@ -1,6 +1,7 @@
 import style from "styles/MainSection.module.scss";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import SuperBtn from "../SuperButton";
 
 // FaArrowRight;
 
@@ -43,6 +44,7 @@ export default function MainSection() {
             <p>Листайте ниже</p>
           </div>
         </div>
+        <SuperBtn/>
       </Wrapper>
     </section>
   );
