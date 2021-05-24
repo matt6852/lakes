@@ -12,7 +12,7 @@ export default function Projects() {
         </div>
         <div className={style.about_center}>
           <div className={style.about_btn_container}>
-            <div className ={style.img_cont}>
+            <div className={style.img_cont}>
               <img className={style.about_img} src="/logo_repino_club.png" />
             </div>
             <button className={style.about_btn}>
@@ -33,6 +33,7 @@ export default function Projects() {
           </div>
         </div>
         <div className={style.flex_container}>
+          {/* dwskTop */}
           <div className={style.flex_container_1}>
             <img className={style.mobile_1_1} src="/projects/flex_1_1.png" />
             <div className={style.flex_img_md}>
@@ -55,6 +56,36 @@ export default function Projects() {
               <img className={style.mobile_3_2} src="/projects/flex_3_2.png" />
             </div>
             <img className={style.mobile_3_3} src="/projects/flex_3_3.png" />
+          </div>
+          {/* mobile */}
+        </div>
+        <div className={style.container_mob}>
+          <div className={style.container_mob_flex}>
+            <div className={style.flex_mob_1}>
+              <div className={style.container_img}>
+                <img className={style.mobile} src="/mob_pic/mob_pic_1_1.png" />
+              </div>
+              <div className={style.container_img}>
+                <img className={style.mobile} src="/mob_pic/mob_pic_1_2.png" />
+              </div>
+              <div className={style.container_img}>
+                <img className={style.mobile} src="/mob_pic/mob_pic_1_3.png" />
+              </div>
+            </div>
+            <div className={style.flex_mob_2}>
+              <div className={style.container_img}>
+                <img className={style.mobile} src="/mob_pic/mob_pic_2_1.png" />
+              </div>
+              <div className={style.container_img}>
+                <img className={style.mobile} src="/mob_pic/mob_pic_2_2.png" />
+              </div>
+              <div className={style.container_img}>
+                <img className={style.mobile} src="/mob_pic/mob_pic_2_3.png" />
+              </div>
+            </div>
+          </div>
+          <div className={style.container_c}>
+            <img className={style.mobile} src="/mob_pic/mob_pic_c.png" />
           </div>
         </div>
       </Wrapper>

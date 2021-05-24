@@ -24,12 +24,12 @@ export default function History() {
             </div>
             <div className={style.flex_item}>
               <div className={style.img_container}>
-                <img src="/history_1.png" alt="" />
+                <img className={style.his_img_1} src="/history_1.png" alt="" />
               </div>
             </div>
             <div className={style.flex_item}>
-              <div className={style.img_container}>
-                <img src="/history_2.png" alt=""   />
+              <div className={style.img_container_last}>
+                <img className={style.his_img_2} src="/history_2.png" alt="" />
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function History() {
             </div>
             <div className={style.flex_item_s}>
               <div className={style.img_container}>
-                <img src="/history_3.png" alt=""  />
+                <img className={style.his_img_1} src="/history_3.png" alt="" />
               </div>
             </div>
             <div className={style.flex_item}>

@@ -5,6 +5,7 @@ import UniqAries from "components/Sections/UniqAries";
 import Projects from "components/Sections/Projects";
 import History from "components/Sections/History";
 import Carousel from "components/Carousel";
+
 import HowToBuy from "components/Sections/HowToBuy";
 import Contacts from "components/Sections/Contacts";
 import Footer from "components/Sections/Footer";
@@ -18,8 +19,8 @@ export default function Home() {
       <MainSection />
       <UniqAries />
       <Projects />
-      {/* <History />
-      <Carousel />
+      <History />
+      {/* <Carousel />
       <HowToBuy />
       <Contacts />
       <Footer /> */}
