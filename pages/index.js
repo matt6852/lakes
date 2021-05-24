@@ -7,6 +7,7 @@ import History from "components/Sections/History";
 import Carousel from "components/Carousel";
 import HowToBuy from "components/Sections/HowToBuy";
 import Contacts from "components/Sections/Contacts";
+import Footer from "components/Sections/Footer";
 
 import { useAppContext } from "context/state";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <Carousel/>
       <HowToBuy/>
       <Contacts/>
+      <Footer/>
 
     </>
   );

@@ -1,0 +1,25 @@
+.footer {
+  // margin-top: 230px;
+  height: 182px;
+  background: #2f2f2f;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .link {
+      color: #fff;
+    }
+  }
+  .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    .icon {
+      margin-right: 10px;
+      color: #348f50;
+    }
+  }
+}
