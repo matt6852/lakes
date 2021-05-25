@@ -19,7 +19,7 @@ export default function YandexMap() {
         <Map
           defaultState={mapData}
           width={"100"}
-          height={ "398px"}
+          height={ "450px"}
           // className = {styles.center}
         >
           {coordinates.map((coordinate, index) => (

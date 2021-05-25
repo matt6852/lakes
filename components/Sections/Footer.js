@@ -5,9 +5,12 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 import Wrapper from "../Wrapper";
 
+import FooterM from "./FooterMob"
+
 export default function Footer() {
   const { links } = useAppContext();
   return (
+    <>
     <footer className={style.footer}>
       <Wrapper>
         <div className={style.container}>
@@ -25,5 +28,7 @@ export default function Footer() {
         </div>
       </Wrapper>
     </footer>
+    <FooterM className ={style.mb}/>
+    </>
   );
 }

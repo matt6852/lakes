@@ -2,6 +2,7 @@ export const links = [
   { title: "Расположение", href: "#uniq" },
   { title: "Характеристики", href: "#projects" },
   { title: "Генплан", href: "/" },
+  { title: "Фотогалерея", href: "/" },
   { title: "Оплата", href: "/" },
   { title: "Контакты", href: "#contacts" },
 ];
