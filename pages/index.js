@@ -23,7 +23,7 @@ export default function Home() {
       <Carousel />
       <HowToBuy />
       <Contacts />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
