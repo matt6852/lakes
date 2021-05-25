@@ -1,10 +1,10 @@
 .howtobuy {
-    position: relative;
+  position: relative;
   padding-top: 115px;
   margin-bottom: 81px;
   background: #f5f5f5;
-  height: 1300px;
-    &:after {
+  height: 1350px;
+  &:after {
     content: "";
     position: absolute;
     width: 361px;
@@ -29,8 +29,8 @@
     // background: transparent;
   }
   .title {
-      position: relative;
-      z-index: 1;
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     margin-bottom: 93px;
@@ -50,5 +50,124 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+  }
+}
+
+// tablet
+@media (max-width: 1200px) {
+  .howtobuy {
+    position: relative;
+    padding-top: 115px;
+    margin-bottom: 0px;
+    background: #f5f5f5;
+    min-height: 700px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 361px;
+      height: 903px;
+      right: 10px;
+
+      bottom: 100px;
+      background: url("/leafs_r_buy.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 276px;
+      height: 830px;
+      left: -2px;
+
+      bottom: 100px;
+      background: url("/leafs_l_buy.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+    .title {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 93px;
+      h3 {
+        margin-bottom: 55px;
+        font-size: 52px;
+      }
+      p {
+        width: 506px;
+        line-height: 28px;
+        font-size: 18px;
+      }
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: 800px){
+   .howtobuy {
+    position: relative;
+    padding-top: 115px;
+    margin-bottom: 0px;
+    background: #f5f5f5;
+    height: 2150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 361px;
+      height: 903px;
+      right: 10px;
+
+      bottom: 100px;
+      background: url("/leafs_r_buy.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 830px;
+      left: -2px;
+
+      bottom: 100px;
+      background: url("/leafs_l_buy.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+    .title {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 93px;
+      h3 {
+        margin-bottom: 55px;
+        font-size: 32px;
+      }
+      p {
+        width: 100%;
+        line-height: 28px;
+        font-size: 18px;
+      }
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
 }

@@ -20,6 +20,10 @@ export default function Form() {
           className={style.textarea}
           placeholder="Ваше сообщение"
         ></textarea>
+        <div className ={style.chekBox}>
+          <input type="checkbox" id="agree" />
+          <label htmlFor="agree">Я согласен с политикой конфиденциальности</label>
+        </div>
         <button className={style.form_btn} type="submit">
           Отправить сообщение
         </button>

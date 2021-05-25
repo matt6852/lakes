@@ -1,5 +1,12 @@
 import { createContext, useContext, useState } from "react";
-import { links, textC, uniqCards, howToBuyCards, textM } from "data";
+import {
+  links,
+  textC,
+  uniqCards,
+  howToBuyCards,
+  textM,
+  carouselimgMob,
+} from "data";
 
 const AppContext = createContext();
 
@@ -12,7 +19,7 @@ export function AppWrapper({ children }) {
     uniqCards,
     scroll,
     setScroll,
-
+carouselimgMob,
     textC,
     howToBuyCards,
     scrollBtn,

@@ -24,12 +24,17 @@ export default function Contacts() {
               </p>
               <p>(нет контактов)</p>
             </div>
+            <div className={style.sub_container_child_text_mob}>
+              <h4>Посёлок</h4>
+              <p>Влюбитесь в место, где появится дом вашей мечты</p>
+              <p>(нет контактов)</p>
+            </div>
             <div className={style.sub_container_child_icons}>
               <div>
                 <span className={style.icon}>
                   <img src="/phone_c.png" alt="icon" />{" "}
                 </span>
-                <p className ={style.phone}> +1 (123) 456-78-90</p>
+                <p className={style.phone}> +1 (123) 456-78-90</p>
               </div>
               <div>
                 <span className={style.icon}>
@@ -46,14 +51,14 @@ export default function Contacts() {
             </div>
             <div className={style.sub_container_child}>
               <div className={style.map}>
-                  <YandexMap/>
+                <YandexMap />
               </div>
             </div>
           </div>
           {/* SECOND */}
           <div>
             <div className={style.sub_container}>
-              <div className={style.sub_container_child_text}>
+              <div className={style.sub_container_child_text_desk}>
                 <h4>Посёлок</h4>
                 <p>Влюбитесь в место, где появится дом вашей мечты</p>
                 <p>(нет контактов)</p>
@@ -61,7 +66,7 @@ export default function Contacts() {
 
               <div className={style.sub_container_child}>
                 <div className={style.form_container}>
-                  <Form/>
+                  <Form />
                 </div>
               </div>
             </div>

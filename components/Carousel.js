@@ -142,7 +142,7 @@ const responsive = {
 };
 
 export default function CarouselSlider() {
-  const { textC, textM, index, setIndex } = useAppContext();
+  const { textC, textM, index, setIndex, carouselimgMob } = useAppContext();
   return (
     <section className={style.galery}>
       <Wrapper>
@@ -159,6 +159,7 @@ export default function CarouselSlider() {
           }
           arrows={false}
           responsive={responsive}
+          swipeable={false}
           ssr={true} // means to render carousel on server-side.
         >
           <AirGal />
@@ -173,38 +174,18 @@ export default function CarouselSlider() {
           }
           arrows={false}
           responsive={responsive}
+          swipeable={false}
           ssr={true} // means to render carousel on server-side.
         >
-          <div className={style.mob_gal}>
-            <div>
-              <img src="/video_bg_m.png" alt="" />
-            </div>
-          </div>
-          <div className={style.mob_gal}>
-            <div>
-              <img src="/mob_g_1.png" alt="" />
-            </div>
-          </div>
-          <div className={style.mob_gal}>
-            <div>
-              <img src="/mob_g_2.png" alt="" />
-            </div>
-          </div>
-          <div className={style.mob_gal}>
-            <div>
-              <img src="/mob_g_3.png" alt="" />
-            </div>
-          </div>
-          <div className={style.mob_gal}>
-            <div>
-              <img src="/mob_g_4.png" alt="" />
-            </div>
-          </div>
-          <div className={style.mob_gal}>
-            <div>
-              <img src="/mob_g_5.png" alt="" />
-            </div>
-          </div>
+          {carouselimgMob.map((item, index) => {
+            return (
+              <div key={index} className={style.mob_gal}>
+                <div>
+                  <img src={item.img} alt="" />
+                </div>
+              </div>
+            );
+          })}
         </Carousel>
       </Wrapper>
     </section>
