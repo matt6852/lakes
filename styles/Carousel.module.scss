@@ -50,6 +50,15 @@
   border-radius: 18px;
   min-height: 612px;
 }
+    .mb {
+    z-index: 1;
+    position: relative;
+    background: #f4f4f4;
+    border: 3px solid #ededed;
+    min-width: 350px;
+    display: none
+    
+  }
 .carousel_button_group {
   position: relative;
   width: 450px;
@@ -101,10 +110,10 @@
     z-index: 1;
     margin-bottom: 52px;
     &::before {
-      z-index: 1;
+      z-index: 0;
       content: "";
       position: absolute;
-      width: 593px;
+      width: 0px;
       height: 601px;
       left: 210px;
 
@@ -146,7 +155,19 @@
     position: relative;
     background: #f4f4f4;
     border: 3px solid #ededed;
-    min-height: 612px;
+    min-width: 350px;
+    // min-height: 400px;
+    // display: block;
+    
+  }
+    .mb {
+    z-index: 1;
+    position: relative;
+    background: #f4f4f4;
+    border: 3px solid #ededed;
+    min-width: 350px;
+    display: none
+    
   }
   .carousel_button_group {
     position: relative;
@@ -156,8 +177,8 @@
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    bottom: 10px;
-    right: 32px;
+    bottom: -1%;
+    right: 0;
     P {
       background: #ffffff;
       border: 3px solid #f4f4f4;
@@ -191,4 +212,139 @@
       border-radius: 50px;
     }
   }
+}
+//  mobile
+@media (max-width: 766px){
+
+  .galery {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 52px;
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 601px;
+      left: 210px;
+      opacity: 0;
+
+      bottom: -60px;
+      background: url("/leafs_c.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1095px;
+      left: 0px;
+      bottom: -370px;
+      background: url("/clouds.png") center/cover;
+      background-size: contain;
+      
+      // background: transparent;
+    }
+
+    .title {
+      position: relative;
+      z-index: 1;
+      margin: auto;
+      margin-bottom: 84px;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      font-size: 32px;
+      h3 {
+        z-index: 1;
+      }
+    }
+  }
+
+  .bg {
+    z-index: 1;
+    position: relative;
+    background: #f4f4f4;
+    border: 3px solid #ededed;
+    min-width: 350px;
+    display: none;
+    
+  }
+  .mb {
+    z-index: 1;
+    position: relative;
+    background: #f4f4f4;
+    border: 3px solid #ededed;
+    min-width: 350px;
+    height: 500px;
+    display: flex;
+    margin: 0 5px;
+    border-radius: 15px;
+    
+    
+  }
+  .carousel_button_group {
+    position: relative;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -1%;
+    right: 0;
+    P {
+      background: #ffffff;
+      border: 3px solid #f4f4f4;
+      box-sizing: border-box;
+      border-radius: 15px;
+      padding: 10px 20px;
+      color: #6b6b6b;
+    }
+    button {
+      padding: 10px 5px;
+      background: transparent;
+
+      border: none;
+    }
+    .btn_prev {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       width: 155px;
+      height: 60px;
+      background: linear-gradient(90deg, #64bf80 0%, #56b4d3 100%);
+      border-radius: 50px;
+    }
+    .btn_next {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 155px;
+      height: 60px;
+      background: linear-gradient(90deg, #64bf80 0%, #56b4d3 100%);
+      border-radius: 50px;
+    }
+  }
+  .mob_gal{
+    text-align: center;
+
+    div{
+      padding-bottom: 140px;
+      padding-top: 10px;
+       P {
+         display: inline-block;
+      background: #ffffff;
+      border: 3px solid #f4f4f4;
+      box-sizing: border-box;
+      border-radius: 15px;
+      padding: 10px 20px;
+      color: #6b6b6b;
+    }
+    }
+    
+  }
+
 }

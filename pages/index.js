@@ -21,9 +21,9 @@ export default function Home() {
       <Projects />
       <History />
       <Carousel />
-      <HowToBuy />
+      {/* <HowToBuy />
       <Contacts />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
