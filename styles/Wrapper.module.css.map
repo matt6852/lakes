@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACJ,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,IAAI;CAEf",
-    "sources": [
-        "Wrapper.module.scss"
-    ],
-    "names": [],
-    "file": "Wrapper.module.css"
-}
