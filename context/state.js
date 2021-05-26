@@ -12,7 +12,7 @@ const AppContext = createContext();
 export function AppWrapper({ children }) {
   const [scroll, setScroll] = useState(false);
   const [scrollM, setScrollM] = useState(false);
-  const [showBar, setShowBar] = useState(false);
+  const [showBar, setShowBar] = useState(true);
   const [index, setIndex] = useState(0);
   const [scrollBtn, setScrollBtn] = useState(false);
   const sharedState = {
