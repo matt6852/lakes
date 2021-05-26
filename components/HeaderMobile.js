@@ -40,7 +40,7 @@ export default function HeaderMobile() {
         <div className={style.logo_container}>
           <img src="/logo_mobile.png" alt="logo" />
         </div>
-        <div onClick={() => setShowBar(!showBar)} className={style.btn_mobile}>
+        <div onClick={() => setShowBar(!showBar)} className={showBar? `${style.btn_mobile}` : `${style.btn_mobile_active}`}>
           <span className={style.line_1}></span>
           <span className={style.line_2}></span>
           <span className={style.line_3}></span>
