@@ -4,7 +4,6 @@ import {
   textC,
   uniqCards,
   howToBuyCards,
-  textM,
   carouselimgMob,
 } from "data";
 
@@ -12,6 +11,8 @@ const AppContext = createContext();
 
 export function AppWrapper({ children }) {
   const [scroll, setScroll] = useState(false);
+  const [scrollM, setScrollM] = useState(false);
+  const [showBar, setShowBar] = useState(false);
   const [index, setIndex] = useState(0);
   const [scrollBtn, setScrollBtn] = useState(false);
   const sharedState = {
@@ -26,7 +27,11 @@ carouselimgMob,
     setScrollBtn,
     setIndex,
     index,
-    textM,
+    showBar,
+    setShowBar,
+    scrollM,
+    setScrollM
+   
   };
 
   return (

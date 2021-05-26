@@ -3,18 +3,18 @@ import style from "styles/Header.module.scss";
 import Navbar from "./Navbar";
 import Phone from "./PhoneComp";
 import Link from "next/link";
-import Wrapper from "./Wrapper";
 import { useAppContext } from "context/state";
-
+import Wrapper from "./Wrapper";
 import React, { useEffect } from "react";
+
 function Header() {
   const { scroll, setScroll } = useAppContext();
   useEffect(() => {
     const event = window.addEventListener("scroll", () => {
       if (window.scrollY >= 800) {
         setScroll(true);
-      }else{
-        setScroll(false)
+      } else {
+        setScroll(false);
       }
     });
     return () => {
@@ -23,10 +23,10 @@ function Header() {
   }, []);
   return (
     <Wrapper>
-      <div
-        className={scroll ? `${style.fixed_bar}` : `"`}
-      >
-        <header className={ scroll ? `${style.navscroll}`: `${style.container}`}>
+      <div className={scroll ? `${style.fixed_bar}` : `"`}>
+        <header
+          className={scroll ? `${style.navscroll}` : `${style.container}`}
+        >
           <Link href="/">
             <a className={style.logo}>
               {" "}

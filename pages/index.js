@@ -1,5 +1,6 @@
 import Navbar from "components/Navbar";
 import Header from "components/Header";
+import HeaderMob from "components/HeaderMobile";
 import MainSection from "components/Sections/MainSection";
 import UniqAries from "components/Sections/UniqAries";
 import Projects from "components/Sections/Projects";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <>
       <Header />
+      <HeaderMob/>
       <MainSection />
       <UniqAries />
       <Projects />

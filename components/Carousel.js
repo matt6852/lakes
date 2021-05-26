@@ -70,14 +70,14 @@ const ButtonGroupMob = ({
   next,
   previous,
   setTextCarousel,
-  textM,
   index,
   setIndex,
+  carouselimgMob,
   ...rest
 }) => {
   const checkNumb = (numb) => {
-    if (numb > textM.length - 1) {
-      return textM.length - 1;
+    if (numb > carouselimgMob.length - 1) {
+      return carouselimgMob.length - 1;
     }
     if (numb < 0) {
       return 0;
@@ -89,7 +89,7 @@ const ButtonGroupMob = ({
   } = rest;
   return (
     <div className={style.carousel_button_group}>
-      <p>{textM[index]}</p>{" "}
+      <p>{carouselimgMob[index].title}</p>{" "}
       <div>
         <button
           className={currentSlide === 0 ? "disable" : ""}
@@ -144,7 +144,7 @@ const responsive = {
 export default function CarouselSlider() {
   const { textC, textM, index, setIndex, carouselimgMob } = useAppContext();
   return (
-    <section className={style.galery}>
+    <section className={style.galery} id="galary">
       <Wrapper>
         <div className={style.title}>
           <h3>
@@ -170,7 +170,11 @@ export default function CarouselSlider() {
         <Carousel
           className={style.mb}
           customButtonGroup={
-            <ButtonGroupMob textM={textM} index={index} setIndex={setIndex} />
+            <ButtonGroupMob
+              carouselimgMob={carouselimgMob}
+              index={index}
+              setIndex={setIndex}
+            />
           }
           arrows={false}
           responsive={responsive}
