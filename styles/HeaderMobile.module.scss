@@ -238,6 +238,23 @@
         }
 
       }
+        button {
+      a {
+        color: #ffff;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .arrow {
+          margin-top: 2px;
+          margin-left: 15px;
+          .fr {
+            width: 32px;
+            height: 20px;
+          }
+        }
+      }
+    }
 
     }
     .show_bar {

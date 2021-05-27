@@ -44,7 +44,7 @@ export default function FooterMob() {
               <a className={style.link}>Политика конфиденциальности</a>
             </Link>
             <p className={style.link_sp}>
-              &copy; {new Date().getFullYear()} «Ярвино»{" "}
+              &copy; {new Date().getFullYear()}, «Ярвино»{" "}
             </p>
           </div>
         </div>

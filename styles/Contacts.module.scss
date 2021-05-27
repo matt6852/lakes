@@ -22,6 +22,7 @@
     font-weight: bold;
     font-size: 52px;
     margin-bottom: 74px;
+    padding-left: 20px;
   }
   .main_container {
     position: relative;
@@ -48,6 +49,7 @@
         p {
           font-size: 18px;
           left: 28px;
+          color: #6C6C6C;
         }
           
         }
@@ -68,6 +70,7 @@
         p {
           font-size: 18px;
           left: 28px;
+           color: #6C6C6C;
         }
       }
       .sub_container_child_icons {
@@ -180,6 +183,7 @@
           p {
             font-size: 18px;
             left: 28px;
+             color: #6C6C6C;
           }
         }
         .sub_container_child_icons {
@@ -267,6 +271,9 @@
         }
          .sub_container_child_text_mob{
           display: block;
+          p{
+              color: #6C6C6C;
+          }
         }
         .sub_container_child {
           .map {
@@ -281,8 +288,10 @@
             color: #333333;
           }
           p {
-            font-size: 18px;
+            font-size: 16px;
             left: 28px;
+              color: #6C6C6C;
+              
           }
         }
         .sub_container_child_icons {
@@ -314,8 +323,7 @@
     }
     .form_container {
       background-color: #ededed;
-      padding: 10px;
-      // margin-top: 60px;
+      padding: 10px 25px;
       border: 3px solid #ededed;
       border-radius: 15px;
       height: 680px;
