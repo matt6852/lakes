@@ -10,11 +10,20 @@ import {
 const AppContext = createContext();
 
 export function AppWrapper({ children }) {
+  const DEFAULT_DATA = {
+    name: "Serg",
+    phone: "123",
+    email: "@dada",
+    message: "aadasdsasda",
+    checkbox: ""
+  };
+
   const [scroll, setScroll] = useState(false);
   const [scrollM, setScrollM] = useState(false);
   const [showBar, setShowBar] = useState(true);
   const [index, setIndex] = useState(0);
   const [scrollBtn, setScrollBtn] = useState(false);
+  const [formData, setFormData] = useState(DEFAULT_DATA);
   const sharedState = {
     links,
     uniqCards,
@@ -30,7 +39,9 @@ carouselimgMob,
     showBar,
     setShowBar,
     scrollM,
-    setScrollM
+    setScrollM,
+    formData,
+    setFormData
    
   };
 
