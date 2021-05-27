@@ -11,10 +11,10 @@ const AppContext = createContext();
 
 export function AppWrapper({ children }) {
   const DEFAULT_DATA = {
-    name: "Serg",
-    phone: "123",
-    email: "@dada",
-    message: "aadasdsasda",
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
     checkbox: ""
   };
 
@@ -41,7 +41,8 @@ carouselimgMob,
     scrollM,
     setScrollM,
     formData,
-    setFormData
+    setFormData,
+    DEFAULT_DATA
    
   };
 

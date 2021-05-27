@@ -2,9 +2,11 @@ import style from "styles/Form.module.scss";
 import axios from "axios"
 import emailjs from "emailjs-com";
 
+
+
 import { useAppContext } from "context/state";
 export default function Form() {
-   const { formData, setFormData } = useAppContext();
+   const { formData, setFormData, DEFAULT_DATA } = useAppContext();
 
 const handleChanged =(e)=>{
   const {name,value} =e.target
@@ -14,12 +16,13 @@ const handleChanged =(e)=>{
 const handleSubmit = async (e)=>{
   e.preventDefault();
   // await axios.post("/api/contacts",formData)
+  console.log(e);
   emailjs
-    .sendForm(
-      "service_gej9vot",
-      "template_3wk5pkg",
-      e.target,
-      "user_nDJzQY1xmY9wOoUJQzobR"
+    .send(
+      process.env.SERVICE_ID ,
+       process.env.TEMPLETE_ID,
+      formData,
+      process.env.API_KEY
     )
     .then(
       (result) => {
@@ -29,7 +32,7 @@ const handleSubmit = async (e)=>{
         console.log(error.text);
       }
     );
-  
+  setFormData(DEFAULT_DATA)
 }
 
   return (
