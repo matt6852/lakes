@@ -1,5 +1,4 @@
 import style from "styles/Form.module.scss";
-import axios from "axios"
 import emailjs from "emailjs-com";
 
 
@@ -15,8 +14,6 @@ const handleChanged =(e)=>{
 }
 const handleSubmit = async (e)=>{
   e.preventDefault();
-  // await axios.post("/api/contacts",formData)
-  console.log(e);
   emailjs
     .send(
       process.env.SERVICE_ID ,
