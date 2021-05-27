@@ -160,6 +160,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        .flex_item{
+          padding: 10px;
+        }
         .img_container_last{
           width: 350px;
           position: absolute;
@@ -180,6 +183,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        .flex_item{
+         
+        }
         .flex_item_s {
           .img_container {
             text-align: center;

@@ -142,7 +142,7 @@ const responsive = {
 };
 
 export default function CarouselSlider() {
-  const { textC, textM, index, setIndex, carouselimgMob } = useAppContext();
+  const { textC,  index, setIndex, carouselimgMob } = useAppContext();
   return (
     <section className={style.galery} id="galary">
       <Wrapper>

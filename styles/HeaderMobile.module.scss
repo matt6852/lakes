@@ -96,99 +96,149 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      padding:  10px;
-
+      padding: 10px 20px;
+      .logo_container {
+        padding-left: 30px;
+      }
+    
       .btn_mobile {
-        width: 80px;
+        // text-align: center;
+        padding: 5px;
+        width: 90px;
         height: 50px;
-        background: #ffffff;
+        background: #f8f8f8;
         border-radius: 15px;
         border: 2px solid #60b286;
         transition: all 0.2s ease-in-out;
+        .btn_center {
+          width: 400px;
+        }
         .line_1 {
-            display: block;
-          width: 35px;
-          height: 5px;
-          margin: 10px;
+          display: block;
+          width: 40px;
+          height: 2px;
+          margin: 5px;
           margin-left: 18px;
           background-color: #60b286;
-           transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
         }
         .line_2 {
-             display: block;
+          display: block;
           width: 25px;
-          height: 3px;
+          height: 2px;
           margin: 10px;
           margin-left: 18px;
           background-color: #60b286;
-           transition: all 0.2s ease-in-out;
+          transition: all 0.1s ease-in-out;
         }
         .line_3 {
-             display: block;
+          display: block;
           width: 30px;
-          height: 5px;
+          height: 2px;
           margin: 10px;
           margin-left: 18px;
           background-color: #60b286;
-           transition: all 0.2s ease-in-out;
+          transition: all 0.1s ease-in-out;
         }
       }
       .btn_mobile_active {
-        width: 70px;
+        width: 90px;
         height: 50px;
-        background: #ffffff;
+
         border-radius: 15px;
-        border: 2px solid #60b286;
+
         transition: all 0.2s ease-in-out;
+        padding-left: 25px;
         .line_1 {
-            display: block;
-          width: 35px;
+          display: block;
+          width: 40px;
           height: 5px;
           margin: 10px;
-          margin-left: 20px;
-          background-color: #60b286;
+          background-color: #c4c4c4;
           transform: rotate(45deg) translateY(15px) translateX(2px);
-          transition: all .3s ease-in-out;
+          transition: all 0.2s ease-in-out;
         }
         .line_2 {
-             display: block;
+          display: block;
           width: 25px;
           height: 3px;
           margin: 10px;
           margin-left: 18px;
           opacity: 0;
           background-color: #60b286;
-           transition: all .3s ease-in-out;
+          transition: all 0.2s ease-in-out;
         }
         .line_3 {
-             display: block;
-          width: 35px;
+          display: block;
+          width: 40px;
           height: 5px;
           margin: 10px;
-          margin-left: 20px;
-          background-color: #60b286;
+          background-color: #c4c4c4;
           transform: rotate(-45deg) translateY(-17px) translateX(6px);
-           transition: all .3s ease-in-out;
+          transition: all 0.2s ease-in-out;
         }
       }
     }
 
     .container_links {
+      padding-top: 47px;
       position: absolute;
-      height: 100vh;
+      height: calc(100vh - 76px);
       width: 100%;
-      background: linear-gradient(90deg, #4ea86a -38.01%, #5cacc7 135.09%);
+      background: #f8f8f8;
       transform: translateX(-100%);
       transition: all 0.2s ease-out;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      .link {
-        margin: 20px;
-        color: #fff;
-        font-size: 32px;
+      align-items: flex-start;
+      .btn_sign {
+        margin-top: 43px;
+        // margin-left: 41px; 
+        align-self: center;
+        a {
+          color: #ffffff;
+        }
       }
+      .phone {
+        margin-top: 14px;
+        text-align: center;
+        align-self: center;
+        background-color: #eeeeee;
+        height: 60px;
+        padding-top: 20px;
+        color: #333333;
+        font-size: 24px;
+        width: 290px;
+        border-radius: 50px;
+        .icon {
+          padding-top: 5px;
+          margin-right: 10px;
+          color: #348f50;
+        }
+      }
+      .link {
+        padding-left: 41px;
+        margin: 12px;
+        color: #333333;
+        font-size: 22px;
+        transition: all .2s ease-in-out;
+        &:hover{
+          color:#4C959A ;
+        }
+        &:focus{
+          color:#4C959A ;
+        }
+      }
+        .policy{
+        margin-top: 31px;
+        padding-left: 45px;
+        color: #979797;
+        p{
+          margin-bottom: 18px;
+        }
+
+      }
+
     }
     .show_bar {
       transform: translateX(0);
@@ -196,6 +246,6 @@
     }
   }
   .fixed_scroll {
-    background-color: #ffff;
+    background-color: #f8f8f8;
   }
 }

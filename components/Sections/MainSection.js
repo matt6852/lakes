@@ -44,7 +44,7 @@ export default function MainSection() {
             <p>Листайте ниже</p>
           </div>
         </div>
-        <SuperBtn/>
+        {/* <SuperBtn/> */}
       </Wrapper>
     </section>
   );
