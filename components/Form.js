@@ -16,7 +16,7 @@ export default function Form() {
     });
   };
   const handleSubmit = async (e) => {
-    // setFormSub(true);
+    setFormSub(true);
     e.preventDefault();
     const upDateForm = {
       ...formData,
@@ -35,10 +35,7 @@ export default function Form() {
       .then(
         (result) => {
           console.log(result.text);
-          const {text} =result
-          if(text){
-            setFormSub(true)
-          }
+         
         },
         (error) => {
           console.log(error.text);
