@@ -2,18 +2,21 @@ import style from "styles/Form.module.scss";
 import emailjs from "emailjs-com";
 
 import { useAppContext } from "context/state";
+import { useEffect } from "react";
 export default function Form() {
-  const { formData, setFormData, DEFAULT_DATA } = useAppContext();
+  const { formData, setFormData, DEFAULT_DATA, formSub, setFormSub } =
+    useAppContext();
+  // EmailJSResponseStatus {status: 200, text: "OK"}
 
   const handleChanged = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
-     
     });
   };
   const handleSubmit = async (e) => {
+    // setFormSub(true);
     e.preventDefault();
     const upDateForm = {
       ...formData,
@@ -32,6 +35,10 @@ export default function Form() {
       .then(
         (result) => {
           console.log(result.text);
+          const {text} =result
+          if(text){
+            setFormSub(true)
+          }
         },
         (error) => {
           console.log(error.text);
@@ -40,8 +47,24 @@ export default function Form() {
     setFormData(DEFAULT_DATA);
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setFormSub(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, [formSub]);
+
   return (
     <>
+      <div
+        className={
+          formSub
+            ? `${style.formSubmit}  ${style.formSubmit_active}`
+            : `${style.formSubmit}`
+        }
+      >
+        <h3>Спасибо мы в ближайшее время свяжемся с вами</h3>
+      </div>
       <div className={style.form_title}>
         <h4>
           {" "}
@@ -83,13 +106,14 @@ export default function Form() {
           name="message"
           className={style.textarea}
           placeholder="Ваше сообщение"
+          required
         ></textarea>
         <div className={style.chekBox}>
           <input
             className={style.custom_checkbox}
             onChange={() => {
               handleChanged;
-              setFormData({...formData,checkValue: !formData.checkValue})
+              setFormData({ ...formData, checkValue: !formData.checkValue });
             }}
             checked={formData.checkValue}
             value={formData.checkbox}
