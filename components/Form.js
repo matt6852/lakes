@@ -35,13 +35,14 @@ export default function Form() {
       .then(
         (result) => {
           console.log(result.text);
+           setFormData(DEFAULT_DATA);
          
         },
         (error) => {
           console.log(error.text);
         }
       );
-    setFormData(DEFAULT_DATA);
+   
   };
 
   useEffect(() => {
@@ -60,7 +61,7 @@ export default function Form() {
             : `${style.formSubmit}`
         }
       >
-        <h3>Спасибо мы в ближайшее время свяжемся с вами</h3>
+        <h3>Спасибо {formData.name} мы в ближайшее время свяжемся с вами</h3>
       </div>
       <div className={style.form_title}>
         <h4>
