@@ -10,13 +10,19 @@ export default function Form() {
 const handleChanged =(e)=>{
   const {name,value} =e.target
    ;
-  setFormData({ ...formData, [name]: value, checkbox: e.target.checked });
+  setFormData({
+    ...formData,
+    [name]: value,
+    checkbox: e.target.checked
+      ? "Я согласен с политикой конфиденциальности"
+      : "Я НЕ согласен с политикой конфиденциальности",
+  });
 }
 const handleSubmit = async (e)=>{
   e.preventDefault();
   emailjs
     .send(
-      process.env.SERVICE_ID ,
+      process.env.SERVICE_ID,
        process.env.TEMPLETE_ID,
       formData,
       process.env.API_KEY
