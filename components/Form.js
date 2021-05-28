@@ -35,19 +35,17 @@ export default function Form() {
       .then(
         (result) => {
           console.log(result.text);
-           setFormData(DEFAULT_DATA);
-         
         },
         (error) => {
           console.log(error.text);
         }
       );
-   
   };
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setFormSub(false);
+      setFormData(DEFAULT_DATA);
     }, 2000);
     return () => clearTimeout(timer);
   }, [formSub]);
