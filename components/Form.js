@@ -1,42 +1,44 @@
 import style from "styles/Form.module.scss";
 import emailjs from "emailjs-com";
 
-
-
 import { useAppContext } from "context/state";
 export default function Form() {
-   const { formData, setFormData, DEFAULT_DATA } = useAppContext();
+  const { formData, setFormData, DEFAULT_DATA } = useAppContext();
 
-const handleChanged =(e)=>{
-  const {name,value} =e.target
-   ;
-  setFormData({
-    ...formData,
-    [name]: value,
-    checkbox: e.target.checked
-      ? "Я согласен с политикой конфиденциальности"
-      : "Я НЕ согласен с политикой конфиденциальности",
-  });
-}
-const handleSubmit = async (e)=>{
-  e.preventDefault();
-  emailjs
-    .send(
-      process.env.SERVICE_ID,
-       process.env.TEMPLETE_ID,
-      formData,
-      process.env.API_KEY
-    )
-    .then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-  setFormData(DEFAULT_DATA)
-}
+  const handleChanged = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+     
+    });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const upDateForm = {
+      ...formData,
+      checkbox: formData.checkValue
+        ? "Я согласен с политикой конфиденциальности"
+        : "Я НЕ согласен с политикой конфиденциальности",
+    };
+
+    emailjs
+      .send(
+        process.env.SERVICE_ID,
+        process.env.TEMPLETE_ID,
+        upDateForm,
+        process.env.API_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    setFormData(DEFAULT_DATA);
+  };
 
   return (
     <>
@@ -50,7 +52,7 @@ const handleSubmit = async (e)=>{
           время
         </p>
       </div>
-      <form onSubmit ={handleSubmit} className={style.form}>
+      <form onSubmit={handleSubmit} className={style.form}>
         <input
           value={formData.name}
           onChange={handleChanged}
@@ -83,15 +85,22 @@ const handleSubmit = async (e)=>{
           placeholder="Ваше сообщение"
         ></textarea>
         <div className={style.chekBox}>
-          <input className={style.custom_checkbox} onChange ={handleChanged} value={formData.checkbox} type="checkbox" id="agree" />
+          <input
+            className={style.custom_checkbox}
+            onChange={() => {
+              handleChanged;
+              setFormData({...formData,checkValue: !formData.checkValue})
+            }}
+            checked={formData.checkValue}
+            value={formData.checkbox}
+            type="checkbox"
+            id="agree"
+          />
           <label htmlFor="agree">
             Я согласен с политикой конфиденциальности
           </label>
         </div>
-        <button
-          className={style.form_btn}
-          type="submit"
-        >
+        <button className={style.form_btn} type="submit">
           Отправить сообщение
         </button>
       </form>

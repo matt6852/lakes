@@ -15,7 +15,9 @@ export function AppWrapper({ children }) {
     phone: "",
     email: "",
     message: "",
-    checkbox: ""
+    checkbox: "",
+    checkbox: "",
+    checkValue: false,
   };
 
   const [scroll, setScroll] = useState(false);
