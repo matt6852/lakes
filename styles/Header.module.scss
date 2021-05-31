@@ -1,5 +1,9 @@
-.container {
+
+.center{
   width: 1200px;
+  margin: auto;
+}
+.container {
   padding-top: 31px;
   position: absolute;
   z-index: 10;
@@ -17,8 +21,7 @@
 }
 
 .navscroll {
-  width: 1200px;
-
+  width: 100vw;
   background: white;
   padding: 10px 16px;
   border-radius: 20px;

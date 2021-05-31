@@ -36,13 +36,14 @@
     margin: auto;
     margin-bottom: 50px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
     font-size: 52px;
   }
   .flex_center {
     display: flex;
     justify-content: space-between;
+   
 
     .flex_item {
       margin: 30px 40px;
@@ -54,10 +55,13 @@
         color: #ffffff;
       }
       p {
+        span {
+          font-weight: bolder;
+        }
         margin-top: 24px;
         font-family: Gilroy;
         font-style: normal;
-        font-weight: bold;
+        font-weight: 500;
         font-size: 18px;
         line-height: 160%;
         color: #dadada;
@@ -137,11 +141,11 @@
         margin: auto;
         text-align: center;
         h3 {
-          margin:15px 0;
+          margin: 15px 0;
           font-style: normal;
           font-weight: bold;
           font-size: 28px;
-          // line-height: 160%;
+          line-height: 160%;
           color: #ffffff;
         }
         p {
@@ -149,7 +153,7 @@
           margin-bottom: 10px;
           font-family: Gilroy;
           font-style: normal;
-          font-weight: bold;
+          font-weight: normal;
           font-size: 18px;
           line-height: 160%;
           color: #dadada;
@@ -160,15 +164,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        .flex_item{
+        .flex_item {
           padding: 10px;
         }
-        .img_container_last{
+        .img_container_last {
           width: 350px;
           position: absolute;
           top: 102%;
           left: 50%;
-          transform: translateX(-50%)
+          transform: translateX(-50%);
         }
         .his_img_1 {
           width: 355px;
@@ -183,8 +187,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        .flex_item{
-         
+        .flex_item {
         }
         .flex_item_s {
           .img_container {

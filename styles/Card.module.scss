@@ -8,9 +8,11 @@
   border: 4px solid #f4f4f4;
   box-sizing: border-box;
   border-radius: 15px;
+  padding: 24px;
+  padding-top: 35px;
   .fas {
-    margin-top: 41px;
-    margin-left: 45px;
+    // margin-top: 41px;
+    // margin-left: 45px;
     margin-bottom: 38px;
     width: 70px;
     height: 70px;
@@ -20,70 +22,65 @@
     justify-content: center;
     align-items: center;
 
-    .img{
-        width: 40px;
-        height: 33px;
+    .img {
+      width: 40px;
+      height: 33px;
     }
   }
   .single_card_title {
-    margin-left: 45px;
-    margin-bottom: 34px;
+    margin-bottom: 17px;
+    font-size: 23px;
     font-weight: 700;
     color: #333333;
   }
   .single_card_text {
     line-height: 160%;
-    margin-left: 45px;
-    font-size: 18;
+    font-size: 18px;
     color: #6c6c6c;
     margin-right: 20px;
-    // padding-right: 20px;
   }
 }
 
 // tablet
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .singl_card {
-  z-index: 2;
-  background-color: #f4f4f4;
-  width: 350px;
-  height: 340px;
-  margin-bottom: 15px;
-  background: #fcfcfc;
-  border: 4px solid #f4f4f4;
-  box-sizing: border-box;
-  border-radius: 15px;
-  .fas {
-    margin-top: 41px;
-    margin-left: 45px;
-    margin-bottom: 38px;
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(90deg, #4ea86a -38.01%, #5cacc7 135.09%);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 2;
+    background-color: #f4f4f4;
+    height: 290px;
+    margin-bottom: 15px;
+    background: #fcfcfc;
+    border: 4px solid #f4f4f4;
+    box-sizing: border-box;
+    border-radius: 15px;
+    .fas {
+     
+      margin-bottom: 28px;
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(90deg, #4ea86a -38.01%, #5cacc7 135.09%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    .img{
+      .img {
         width: 40px;
         height: 33px;
+      }
+    }
+    .single_card_title {
+     
+      margin-bottom: 17px;
+      font-weight: 700;
+      color: #333333;
+    }
+    .single_card_text {
+      line-height: 160%;
+      font-size: 16px;
+      color: #6c6c6c;
+     
+      line-height: 25px;
     }
   }
-  .single_card_title {
-    margin-left: 45px;
-    margin-bottom: 34px;
-    font-weight: 700;
-    color: #333333;
-  }
-  .single_card_text {
-    line-height: 160%;
-    margin-left: 45px;
-    font-size: 18;
-    color: #6c6c6c;
-    margin-right: 20px;
-    // padding-right: 20px;
-  }
-}
 }

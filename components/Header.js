@@ -22,8 +22,8 @@ function Header() {
     };
   }, []);
   return (
-    <Wrapper>
-      <div className={scroll ? `${style.fixed_bar}` : `"`}>
+   
+      <div className={scroll ? `${style.fixed_bar}` : `${style.center}`}>
         <header
           className={scroll ? `${style.navscroll}` : `${style.container}`}
         >
@@ -37,7 +37,7 @@ function Header() {
           <Phone />
         </header>
       </div>
-    </Wrapper>
+    
   );
 }
 

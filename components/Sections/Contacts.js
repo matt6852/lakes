@@ -61,7 +61,7 @@ export default function Contacts() {
               <div className={style.sub_container_child_text_desk}>
                 <h4>Посёлок</h4>
                 <p>Влюбитесь в место, где появится дом вашей мечты</p>
-                <p>(нет контактов)</p>
+                <p className ={style.text_pading_top}>(нет контактов)</p>
               </div>
 
               <div className={style.sub_container_child}>

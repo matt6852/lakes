@@ -19,8 +19,7 @@ export default function YandexMap() {
         <Map
           defaultState={mapData}
           width={"100"}
-          height={ "450px"}
-          // className = {styles.center}
+          height={ "445px"}
         >
           {coordinates.map((coordinate, index) => (
             <Placemark key={index} geometry={coordinate} />
