@@ -4,9 +4,7 @@
 }
 
 @media (max-width: 1200px) {
-  .header_mob_main {
-  display: none;
-}
+ 
   .header_mob_main {
     display: block;
     position: fixed;
@@ -65,9 +63,7 @@
       .btn_mobile_active {
         width: 90px;
         height: 50px;
-
         border-radius: 15px;
-
         transition: all 0.2s ease-in-out;
         padding-left: 25px;
         .line_1 {
