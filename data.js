@@ -1,7 +1,7 @@
 export const links = [
   { title: "Расположение", href: "#uniq" },
   { title: "Характеристики", href: "#projects" },
-  { title: "Генплан", href: "/" },
+  { title: "Генплан", href: "#genplan" },
   { title: "Фотогалерея", href: "#galary" },
   { title: "Оплата", href: "/" },
   { title: "Контакты", href: "#contacts" },

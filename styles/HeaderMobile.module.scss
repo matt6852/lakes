@@ -5,6 +5,9 @@
 
 @media (max-width: 1200px) {
   .header_mob_main {
+  display: none;
+}
+  .header_mob_main {
     display: block;
     position: fixed;
     z-index: 3;

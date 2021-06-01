@@ -21,7 +21,7 @@ export default function GenPlan() {
     }
   }, []);
   return (
-    <section className={style.gen_plan}>
+    <section id="genplan" className={style.gen_plan}>
       <div className={style.title}>
         <h3>
           <span className="linercradient">Генеральный </span> план
@@ -39,7 +39,7 @@ export default function GenPlan() {
           modal
         </button>
       </div>
-      <Modal/>
+      <Modal />
     </section>
   );
 }
