@@ -1,7 +1,6 @@
 import style from "styles/GenPlan.module.scss";
-
 import { useAppContext } from "context/state";
-import FormModal from "../FormModal";
+import Modal from "../Modal";
 import { useEffect } from "react";
 
 
@@ -9,14 +8,12 @@ export default function GenPlan() {
   const { showModal, setShowModal } = useAppContext();
    useEffect(() => {
      const chekEl = (e)=>{
-       const element = e.target.classList.contains("FormModal_form_container__3RmQu")
-    // if(element.classlist.c\)
-    console.log(element);
-      console.log("clik");
+       const element = e.target.classList.contains(
+         "Modal_modal_backdrop__2ovNf"
+       );
       if(element){
         setShowModal(false)
       }
-
      }
     window.addEventListener("click",chekEl)
     return ()=> {
@@ -42,12 +39,7 @@ export default function GenPlan() {
           modal
         </button>
       </div>
-      <div className={showModal ? `overlay` : `${style.hidde}`}>
-    
-          <FormModal />
-          </div>
-        
-    
+      <Modal/>
     </section>
   );
 }
