@@ -1,9 +1,8 @@
 import Wrapper from "../Wrapper";
 import style from "styles/Contacts.module.scss";
-import HowToBuyCard from "components/HowToBuyCard";
 import YandexMap from "../YandexMap"
 import Form from "../Form"
-import { useAppContext } from "context/state";
+
 
 export default function Contacts() {
   return (

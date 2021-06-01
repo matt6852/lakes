@@ -8,10 +8,11 @@ import History from "components/Sections/History";
 import Carousel from "components/Carousel";
 
 import HowToBuy from "components/Sections/HowToBuy";
+import GenPlan from "components/Sections/GenPlan";
 import Contacts from "components/Sections/Contacts";
 import Footer from "components/Sections/Footer";
 
-import { useAppContext } from "context/state";
+
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <MainSection />
       <UniqAries />
       <Projects />
+      <GenPlan/>
       <History />
       <Carousel />
       <HowToBuy />

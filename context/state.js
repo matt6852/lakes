@@ -24,6 +24,7 @@ export function AppWrapper({ children }) {
   const [formSub, setFormSub] = useState(false);
   const [scrollM, setScrollM] = useState(false);
   const [showBar, setShowBar] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const [index, setIndex] = useState(0);
   const [scrollBtn, setScrollBtn] = useState(false);
   const [formData, setFormData] = useState(DEFAULT_DATA);
@@ -47,7 +48,9 @@ carouselimgMob,
     setScrollM,
     formData,
     setFormData,
-    DEFAULT_DATA
+    DEFAULT_DATA,
+    setShowModal,
+    showModal,
    
   };
 

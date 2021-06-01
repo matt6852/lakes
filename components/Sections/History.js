@@ -1,6 +1,6 @@
 import style from "styles/History.module.scss";
 import Wrapper from "../Wrapper";
-import Image from "next/image";
+
 
 export default function History() {
   return (
@@ -40,8 +40,7 @@ export default function History() {
             <div className={style.flex_item}>
               <h3 className="white">1873 год</h3>
               <p>
-                <span>Дата основания</span>
-                маяка Стирсудден на Сейвястовском мысе. С его появлением на
+                <span>Дата основания</span> маяка Стирсудден на Сейвястовском мысе. С его появлением на
                 Финском заливе воцарились <span>безопасность и покой.</span> В
                 ясные дни корабли обходят мыс, а в плохую погоду укрываются за
                 ним от шторма.
