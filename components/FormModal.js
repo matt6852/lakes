@@ -6,8 +6,15 @@ import { useEffect } from "react";
 import emailjs from "emailjs-com";
 
 export default function FormModal() {
-      const { formData, setFormData, DEFAULT_DATA, formSub, setFormSub } =
-        useAppContext();
+      const {
+        formData,
+        setFormData,
+        DEFAULT_DATA,
+        formSub,
+        setFormSub,
+        showModal,
+        setShowModal,
+      } = useAppContext();
         
   const handleChanged = (e) => {
     const { name, value } = e.target;
@@ -36,6 +43,7 @@ export default function FormModal() {
       .then(
         (result) => {
           console.log(result.text);
+         
         },
         (error) => {
           console.log(error.text);
@@ -47,18 +55,20 @@ export default function FormModal() {
     const timer = setTimeout(() => {
       setFormSub(false);
       setFormData(DEFAULT_DATA);
+       setShowModal(false)
     }, 2000);
     return () => clearTimeout(timer);
   }, [formSub]);
+ 
 
   return (
-    <div className={style.form_container}>
       <Wrapper>
+    <div  className={style.form_container}>
         <div className={style.fixed}>
           <div className={style.form_title}>
             <h4>
               {" "}
-              <span className="linercradient"> Свяжитесь</span> с нами
+              <span className="linercradient"> Записаться на просмотр</span>
             </h4>
             <p>
               Оставьте ваши контакты и наш менеджер свяжется с вами в ближайшее
@@ -110,20 +120,12 @@ export default function FormModal() {
               </label>
             </div>
             <button className={style.form_btn} type="submit">
-              Отправить сообщение
+              Записаться
             </button>
           </form>
         </div>
-      </Wrapper>
-      {/* <div
-          className={
-            formSub
-              ? `${style.formSubmit}  ${style.formSubmit_active}`
-              : `${style.formSubmit}`
-          }
-        >
-          <h3>Спасибо {formData.name} мы в ближайшее время свяжемся с вами</h3>
-        </div> */}
     </div>
+      </Wrapper>
+    
   );
 }
