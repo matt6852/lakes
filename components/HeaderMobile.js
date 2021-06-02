@@ -56,8 +56,8 @@ export default function HeaderMobile() {
       <div
         className={
           showBar
-            ? `${style.container_links}  ${style.hide}  `
-            : `${style.container_links} ${style.show_bar} `
+            ? ` ${style.hide} `
+            : ` ${style.show_bar} `
         }
       >
         {renderLinks}

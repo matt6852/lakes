@@ -8,19 +8,6 @@
     position: fixed;
     z-index: 3;
     width: 100%;
-    .hide{
-    display: none;
-      padding: 41px;
-      position: absolute;
-      min-height: calc(100vh - 67px);
-      width: 100%;
-      background: #f8f8f8;
-      transform: translateX(-100%);
-      transition: transform .2s ease-out  ;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-  }
 
     background-color: transparent;
     .flex_container {
@@ -108,94 +95,103 @@
       }
     }
 
-    .container_links {
-    
-
-      .btn_sign {
-        margin-top: 43px;
-        // margin-left: 41px;
-        align-self: center;
-        a {
-          color: #ffffff;
-        }
+    .btn_sign {
+      margin-top: 43px;
+      // margin-left: 41px;
+      align-self: center;
+      a {
+        color: #ffffff;
       }
-      .phone {
-        margin-top: 14px;
-        text-align: center;
-        align-self: center;
-        background-color: #eeeeee;
-        height: 60px;
-        padding-top: 20px;
-        color: #333333;
-        font-size: 24px;
-        width: 100%;
-        border-radius: 50px;
-        .icon {
-          padding-top: 5px;
-          margin-right: 10px;
-          color: #348f50;
-        }
+    }
+    .phone {
+      margin-top: 14px;
+      text-align: center;
+      align-self: center;
+      background-color: #eeeeee;
+      height: 60px;
+      padding-top: 20px;
+      color: #333333;
+      font-size: 24px;
+      width: 100%;
+      border-radius: 50px;
+      .icon {
+        padding-top: 5px;
+        margin-right: 10px;
+        color: #348f50;
       }
-      .link {
-        color: #333333;
-        margin-bottom: 21px;
-        font-size: 22px;
-        transition: all 0.2s ease-in-out;
-        line-height: 26px;
-        &:hover {
-          color: #4c959a;
-        }
-        &:focus {
-          color: #4c959a;
-        }
+    }
+    .link {
+      color: #333333;
+      margin-bottom: 21px;
+      font-size: 22px;
+      transition: all 0.2s ease-in-out;
+      line-height: 26px;
+      &:hover {
+        color: #4c959a;
       }
-      .policy {
-        margin-top: 31px;
-        color: #979797;
-        p {
-          margin-bottom: 18px;
-        }
+      &:focus {
+        color: #4c959a;
       }
-      button {
-        width: 100%;
-        a {
-          color: #ffff;
-          font-weight: 700;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          .arrow {
-            margin-top: 2px;
-            margin-left: 15px;
-            .fr {
-              width: 32px;
-              height: 20px;
-            }
+    }
+    .policy {
+      margin-top: 31px;
+      color: #979797;
+      p {
+        margin-bottom: 18px;
+      }
+    }
+    button {
+      width: 100%;
+      a {
+        color: #ffff;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .arrow {
+          margin-top: 2px;
+          margin-left: 15px;
+          .fr {
+            width: 32px;
+            height: 20px;
           }
         }
       }
     }
-    .show_bar {
-        padding: 41px;
+
+    .hide {
+      display: none;
+      padding: 41px;
       position: absolute;
       min-height: calc(100vh - 67px);
       width: 100%;
       background: #f8f8f8;
-      // transform: translateX(-100%);
-      transition: transform .2s ease-out  ;
+      transform: translateX(-100%);
+      transition: transform 0.2s ease-out;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .show_bar {
+      padding: 41px;
+      position: absolute;
+      min-height: calc(100vh - 67px);
+      width: 100%;
+      background: #f8f8f8;
+      transition: transform 0.2s ease-out;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       transform: translateX(0);
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
     }
-    .toggle{
+    .toggle {
       display: none;
     }
-    .toggle_1{
+    .toggle_1 {
       display: flex;
     }
-   
   }
   .fixed_scroll {
     background-color: #f8f8f8;
@@ -204,5 +200,4 @@
       border: 1px solid#60B286;
     }
   }
-  
 }
