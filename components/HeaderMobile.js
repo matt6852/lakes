@@ -60,11 +60,7 @@ export default function HeaderMobile() {
             : `${style.container_links} ${style.show_bar} `
         }
       >
-        <style jsx>{`
-          .HeaderMobile_container_links__3sQQA {
-            transition: transform 2.05s ease-out;
-          }
-        `}</style>
+  
         {renderLinks}
         <button
           onClick={() => setShowBar(!showBar)}
