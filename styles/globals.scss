@@ -77,5 +77,13 @@ ul li {
   display: none;
 }
 .col{
-  flex:1
+  flex:1;
+
+  & + & {
+    margin-left: 10px;
+  }
+
+  & > div {
+    display: flex;
+  }
 }

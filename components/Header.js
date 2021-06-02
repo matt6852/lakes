@@ -24,18 +24,20 @@ function Header() {
   return (
    
       <div className={scroll ? `${style.fixed_bar}` : `${style.center}`}>
-        <header
-          className={scroll ? `${style.navscroll}` : `${style.container}`}
-        >
-          <Link href="/">
-            <a className={style.logo}>
-              {" "}
-              <Image src="/logo.png" width={70} height={94} />{" "}
-            </a>
-          </Link>
-          <Navbar />
-          <Phone />
-        </header>
+        <Wrapper>
+          <header
+            className={scroll ? `${style.navscroll}` : `${style.container}`}
+          >
+            <Link href="/">
+              <a className={style.logo}>
+                {" "}
+                <Image src="/logo.png" width={70} height={94} />{" "}
+              </a>
+            </Link>
+            <Navbar />
+            <Phone />
+          </header>
+        </Wrapper>
       </div>
     
   );
