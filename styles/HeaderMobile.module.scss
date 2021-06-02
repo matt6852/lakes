@@ -28,7 +28,6 @@
         height: 50px;
         background: #ffffff;
         border-radius: 15px;
-        // border: 2px solid #60b286;
         transition: all 0.2s ease-in-out;
         .btn_center {
           width: 400px;
@@ -105,7 +104,7 @@
       width: 100%;
       background: #f8f8f8;
       transform: translateX(-100%);
-      transition: transform 0.2s ease-out;
+      transition: transform 2.2s ease-out;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -177,7 +176,7 @@
     }
     .show_bar {
       transform: translateX(0);
-      transition: all 0.2s ease-out;
+      transition: all 2.2s ease-out;
     }
   }
   .fixed_scroll {
