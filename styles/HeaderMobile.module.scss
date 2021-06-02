@@ -167,8 +167,7 @@
       width: 100%;
       background: #f8f8f8;
       transform: translateX(-100%);
-      transition: transform 0.2s ease-out;
-      display: flex;
+      transition: transform 0.2s ease-out ;
       flex-direction: column;
       align-items: flex-start;
     }

@@ -54,11 +54,7 @@ export default function HeaderMobile() {
         </div>
       </div>
       <div
-        className={
-          showBar
-            ? ` ${style.hide} `
-            : ` ${style.show_bar} `
-        }
+        className={showBar ? `${style.hide} ` : `${style.show_bar} `}
       >
         {renderLinks}
         <button
