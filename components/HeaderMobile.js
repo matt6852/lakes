@@ -45,7 +45,7 @@ export default function HeaderMobile() {
         <div
           onClick={() => setShowBar(!showBar)}
           className={
-            showBar ? ` ${style.btn_mobile_active} ` : `${style.btn_mobile}`
+            showBar ? `${style.btn_mobile}`  : ` ${style.btn_mobile_active} `
           }
         >
           <span className={style.line_1}></span>
@@ -56,8 +56,8 @@ export default function HeaderMobile() {
       <div
         className={
           showBar
-            ? `${style.container_links} ${style.show_bar} `
-            : `${style.container_links}`
+            ? `${style.container_links} `
+            : `${style.container_links} ${style.show_bar} `
         }
       >
         {renderLinks}

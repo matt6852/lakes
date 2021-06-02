@@ -23,7 +23,7 @@ export function AppWrapper({ children }) {
   const [scroll, setScroll] = useState(false);
   const [formSub, setFormSub] = useState(false);
   const [scrollM, setScrollM] = useState(false);
-  const [showBar, setShowBar] = useState(false);
+  const [showBar, setShowBar] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [index, setIndex] = useState(0);
   const [sizeWindow, setSizeWinow] = useState(0);
