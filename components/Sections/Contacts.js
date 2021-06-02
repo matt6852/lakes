@@ -10,7 +10,7 @@ export default function Contacts() {
       <Wrapper>
         <div className={style.title}>
           <h3>
-            <span className="linercradient"> Наши контакты </span>
+            <span className="linercradient_1"> Наши контакты </span>
           </h3>
         </div>
         <div className={style.main_container}>
@@ -29,6 +29,7 @@ export default function Contacts() {
               <p>(нет контактов)</p>
             </div>
             <div className={style.sub_container_child_icons}>
+              
               <div>
                 <span className={style.icon}>
                   <img src="/phone_c.png" alt="icon" />{" "}

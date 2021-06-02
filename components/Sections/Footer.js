@@ -1,7 +1,7 @@
 import style from "styles/Footer.module.scss";
 import { useAppContext } from "context/state";
 import Link from "next/link";
-import { FaPhoneAlt } from "react-icons/fa";
+
 
 import Wrapper from "../Wrapper";
 
@@ -23,7 +23,7 @@ export default function Footer() {
             );
           })}{" "}
           <p className  ={ style.phone}>
-            <FaPhoneAlt className={style.icon} /> +7 (123) 456-78-90
+             <img src="/mob_icon.png" className={style.icon} /> +7 (123) 456-78-90
           </p>
         </div>
       </Wrapper>

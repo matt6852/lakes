@@ -1,4 +1,4 @@
-import { FaPhoneAlt } from "react-icons/fa";
+
 import style from "styles/FooterM.module.scss";
 import Wrapper from "../Wrapper";
 import Link from "next/link";

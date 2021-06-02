@@ -98,7 +98,7 @@
         rgba(36, 36, 36, 0.7),
         rgba(36, 36, 36, 0.7)
       ),
-      url("/history_bg.png") center/cover;
+      url("/history_m_bg.png") center/cover;
     &:after {
       content: "";
       position: absolute;
@@ -114,7 +114,7 @@
       content: "";
       position: absolute;
       width: 100vw;
-      height: 350px;
+      height: 300px;
       left: 0px;
       bottom: -150px;
       background: url("/forest_b.png") center/cover;
@@ -124,11 +124,12 @@
 
     .title {
       margin: auto;
-      margin-bottom: 50px;
+      margin-bottom: 44px;
       font-style: normal;
       font-weight: bold;
       text-align: center;
-      font-size: 32px;
+      font-size: 35px;
+      line-height: 45px;
     }
     .flex_center {
       display: flex;
@@ -140,11 +141,18 @@
       .flex_item {
         margin: auto;
         text-align: center;
+        &:nth-of-type(1){
+          margin-bottom: 24px;
+        }
+        &:nth-of-type(3){
+          margin-top: 55px;
+        }
         h3 {
-          margin: 15px 0;
+          margin:  0;
+          margin-bottom: 15px;
           font-style: normal;
           font-weight: bold;
-          font-size: 28px;
+          font-size: 35px;
           line-height: 160%;
           color: #ffffff;
         }
@@ -153,9 +161,9 @@
           margin-bottom: 10px;
           font-family: Gilroy;
           font-style: normal;
-          font-weight: normal;
-          font-size: 18px;
-          line-height: 160%;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 25px;
           color: #dadada;
         }
       }

@@ -62,7 +62,7 @@
     padding-top: 115px;
     margin-bottom: 0px;
     background: #f5f5f5;
-    min-height: 2000px;
+    min-height: 1780px;
     &:after {
       content: "";
       position: absolute;
@@ -123,7 +123,7 @@
     padding-top: 115px;
     margin-bottom: 0px;
     background: #f5f5f5;
-    height: 2150px;
+    height: 100%;
     padding-left: 10px;
     padding-right: 10px;
     &:after {
@@ -134,7 +134,7 @@
       right: 10px;
 
       bottom: 100px;
-      background: url("/leafs_r_buy.png") center/cover;
+      background: none;
       background-size: contain;
       // background: transparent;
     }
@@ -146,7 +146,7 @@
       left: -2px;
 
       bottom: 100px;
-      background: url("/leafs_l_buy.png") center/cover;
+      background: none;
       background-size: contain;
       // background: transparent;
     }
@@ -155,16 +155,19 @@
       z-index: 1;
       display: flex;
       flex-direction: column;
-      margin-bottom: 93px;
+      margin-bottom: 51px;
       h3 {
-        font-size: 32px;
-        line-height: 67.6px;
+        font-size: 35px;
+        line-height: 45px;
+        font-weight: 700;
       }
       p {
         width: 100%;
         line-height: 28px;
-        font-size: 18px;
+        font-size: 16px;
         color: #6B6B6B;
+        line-height: 25px;
+        font-weight: 400;
       }
     }
 

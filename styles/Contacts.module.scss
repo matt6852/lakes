@@ -258,7 +258,8 @@
       z-index: 1;
       font-weight: bold;
       font-size: 32px;
-      margin-bottom: 74px;
+      padding-top: 46px;
+      margin-bottom: 40px;
     }
     .main_container {
       position: relative;
@@ -277,7 +278,7 @@
         width: 100%;
         padding: 22px;
           .sub_container_child_text{
-         margin-bottom: 34px;
+         margin-bottom: 24px;
        }
         .sub_container_child_text_desk {
           display: none;
@@ -286,6 +287,7 @@
           display: block;
           p {
             color: #6c6c6c;
+             line-height: 25px;
           }
         }
         .sub_container_child {
@@ -304,17 +306,19 @@
             font-size: 16px;
             left: 28px;
             color: #6c6c6c;
+            line-height: 25px;
           }
         }
         .sub_container_child_icons {
           div {
             display: flex;
             align-items: center;
-            padding: 16px 0;
+            padding: 10px 0;
           }
           .phone {
-            font-size: 22px;
-            color: #000000;
+            font-size: 32px;
+            color: #333333;
+            font-weight: 700;
           }
           .icon {
             display: inline-block;

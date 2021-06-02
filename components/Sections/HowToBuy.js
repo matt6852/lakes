@@ -11,7 +11,7 @@ export default function HowToBuy() {
         <div className={style.title}>
           <h3>
             Как
-            <span className="linercradient"> купить участок? </span>
+            <span className="linercradient_1"> купить участок? </span>
           </h3>
           <p className={style.title_text}>
             Станьте собственником участка в Выборгском районе Ленобласти за 4

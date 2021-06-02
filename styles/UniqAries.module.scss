@@ -65,6 +65,18 @@
       background-size: contain;
       // background: transparent;
     }
+     &::before {
+    content: "";
+    position: absolute;
+    width: 276px;
+    height: 830px;
+    left: -2px;
+
+    bottom: 100px;
+    background: none;
+    background-size: contain;
+    // background: transparent;
+  }
 
     .title {
       margin: auto;
@@ -98,7 +110,6 @@
       width: 131px;
       height: 900px;
       right: 0px;
-
       top: -15px;
       background: url("/leafs_r.png") center/cover;
       background-size: contain;

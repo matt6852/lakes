@@ -46,6 +46,11 @@ ul li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.linercradient_1 {
+  background: linear-gradient(90deg, #91D9A7 100%, #55BDDF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .fixed_bar {
   display: fixed;

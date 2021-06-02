@@ -26,10 +26,13 @@ export function AppWrapper({ children }) {
   const [showBar, setShowBar] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [index, setIndex] = useState(0);
+  const [sizeWindow, setSizeWinow] = useState(0);
   const [scrollBtn, setScrollBtn] = useState(false);
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const sharedState = {
     formSub,
+    setSizeWinow,
+  sizeWindow,
     setFormSub,
     links,
     uniqCards,
