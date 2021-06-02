@@ -1,10 +1,8 @@
-
 .header_mob_main {
   display: none;
 }
 
 @media (max-width: 1200px) {
- 
   .header_mob_main {
     display: block;
     position: fixed;
@@ -21,7 +19,7 @@
       .logo_container {
         padding-left: 41px;
       }
-    
+
       .btn_mobile {
         padding: 5px;
         width: 90px;
@@ -103,14 +101,15 @@
       min-height: calc(100vh - 67px);
       width: 100%;
       background: #f8f8f8;
-      transform: translateX(-100%);
-      transition: transform 2.2s ease-out;
+      // transform: translateX(-100%);
+      // transition: transform 2.2s ease-out  ;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
       .btn_sign {
         margin-top: 43px;
-        // margin-left: 41px; 
+        // margin-left: 41px;
         align-self: center;
         a {
           color: #ffffff;
@@ -137,55 +136,64 @@
         color: #333333;
         margin-bottom: 21px;
         font-size: 22px;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         line-height: 26px;
-        &:hover{
-          color:#4C959A ;
+        &:hover {
+          color: #4c959a;
         }
-        &:focus{
-          color:#4C959A ;
+        &:focus {
+          color: #4c959a;
         }
       }
-        .policy{
+      .policy {
         margin-top: 31px;
         color: #979797;
-        p{
+        p {
           margin-bottom: 18px;
         }
-
       }
-        button {
-          width: 100%;
-      a {
-        color: #ffff;
-        font-weight: 700;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .arrow {
-          margin-top: 2px;
-          margin-left: 15px;
-          .fr {
-            width: 32px;
-            height: 20px;
+      button {
+        width: 100%;
+        a {
+          color: #ffff;
+          font-weight: 700;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .arrow {
+            margin-top: 2px;
+            margin-left: 15px;
+            .fr {
+              width: 32px;
+              height: 20px;
+            }
           }
         }
       }
     }
-
-    }
     .show_bar {
+      // display: flex;
       transform: translateX(0);
       transition: all 2.2s ease-out;
     }
+    .hide_bar {
+      // display: flex;
+      transform: translateX(-100%);
+      transition: all 2.2s ease-out;
+    }
+    .toggle{
+      display: none;
+    }
+    .toggle_1{
+      display: flex;
+    }
+   
   }
   .fixed_scroll {
     background-color: #f8f8f8;
-     
-       .btn_mobile {
-        border: 1px solid#60B286;
-      }
-   
-    
+
+    .btn_mobile {
+      border: 1px solid#60B286;
+    }
   }
 }
