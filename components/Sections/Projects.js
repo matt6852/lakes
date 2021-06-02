@@ -61,7 +61,7 @@ export default function Projects() {
         </div>
         <div className={style.container_mob}>
           <div className={style.container_mob_flex}>
-            <div className={style.flex_mob_1}>
+            <div className="col">
               <div className={style.container_img}>
                 <img className={style.mobile} src="/mob_pic/mob_pic_1_1.png" />
               </div>
@@ -72,7 +72,7 @@ export default function Projects() {
                 <img className={style.mobile} src="/mob_pic/mob_pic_1_3.png" />
               </div>
             </div>
-            <div className={style.flex_mob_2}>
+            <div className="col">
               <div className={style.container_img}>
                 <img className={style.mobile} src="/mob_pic/mob_pic_2_1.png" />
               </div>

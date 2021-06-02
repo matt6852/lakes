@@ -6,8 +6,16 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 
 export default function HeaderMobile() {
-  const year = new Date().getFullYear()
-  const { links, showBar, setShowBar, scrollM, setScrollM } = useAppContext();
+  const year = new Date().getFullYear();
+  const {
+    links,
+    showBar,
+    setShowBar,
+    scrollM,
+    setScrollM,
+    loading,
+    setLoading,
+  } = useAppContext();
   const renderLinks = links.map((link, index) => {
     const { title, href } = link;
     return (
@@ -30,6 +38,20 @@ export default function HeaderMobile() {
       window.removeEventListener("scroll", event);
     };
   }, []);
+  // useEffect(() => {
+  //   // console.log(loading);
+  //   const handleLoading = () => {
+  //     setLoading(true);
+  //     console.log("loading");
+  //     document.querySelector("hide").classList.remove()
+  //   };
+  //   window.addEventListener("load", handleLoading);
+
+  //   return () => {
+  //     window.removeEventListener("load", handleLoading);
+  //   };
+  // }, []);
+  console.log(loading);
   return (
     <header
       className={
@@ -45,7 +67,7 @@ export default function HeaderMobile() {
         <div
           onClick={() => setShowBar(!showBar)}
           className={
-            showBar ? `${style.btn_mobile}` : ` ${style.btn_mobile_active} `
+            showBar  ? `${style.btn_mobile} ` : ` ${style.btn_mobile_active} `
           }
         >
           <span className={style.line_1}></span>
@@ -53,9 +75,7 @@ export default function HeaderMobile() {
           <span className={style.line_3}></span>
         </div>
       </div>
-      <div
-        className={showBar ? `${style.hide} ` : `${style.show_bar} `}
-      >
+      <div className={showBar ? `${style.hide} hide ` : `${style.show_bar} `}>
         {renderLinks}
         <button
           onClick={() => setShowBar(!showBar)}

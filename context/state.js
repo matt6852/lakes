@@ -1,11 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import {
-  links,
-  textC,
-  uniqCards,
-  howToBuyCards,
-  carouselimgMob,
-} from "data";
+import { links, textC, uniqCards, howToBuyCards, carouselimgMob } from "data";
 
 const AppContext = createContext();
 
@@ -21,6 +15,7 @@ export function AppWrapper({ children }) {
   };
 
   const [scroll, setScroll] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [formSub, setFormSub] = useState(false);
   const [scrollM, setScrollM] = useState(false);
   const [showBar, setShowBar] = useState(true);
@@ -31,14 +26,16 @@ export function AppWrapper({ children }) {
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const sharedState = {
     formSub,
+    loading,
+    setLoading,
     setSizeWinow,
-  sizeWindow,
+    sizeWindow,
     setFormSub,
     links,
     uniqCards,
     scroll,
     setScroll,
-carouselimgMob,
+    carouselimgMob,
     textC,
     howToBuyCards,
     scrollBtn,
@@ -54,7 +51,6 @@ carouselimgMob,
     DEFAULT_DATA,
     setShowModal,
     showModal,
-   
   };
 
   return (

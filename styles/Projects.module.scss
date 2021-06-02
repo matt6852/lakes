@@ -325,10 +325,12 @@
       display: block;
       .container_mob_flex {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         padding: 10px;
+
+        
         img{
-          width: 172px;
+          width: 100%;
         }
       }
       .container_c {
