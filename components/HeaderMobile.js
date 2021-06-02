@@ -56,11 +56,10 @@ export default function HeaderMobile() {
       <div
         className={
           showBar
-            ? `${style.container_links}  `
+            ? `${style.container_links}  ${style.hide}  `
             : `${style.container_links} ${style.show_bar} `
         }
       >
-  
         {renderLinks}
         <button
           onClick={() => setShowBar(!showBar)}
