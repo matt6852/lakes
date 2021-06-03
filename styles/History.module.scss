@@ -3,12 +3,12 @@
   padding-top: 115px;
   margin-bottom: 81px;
   height: 1652px;
-  background: linear-gradient(
-      0deg,
-      rgba(36, 36, 36, 0.7),
-      rgba(36, 36, 36, 0.7)
-    ),
-    url("/history_bg.png") center/cover;
+  // background: linear-gradient(
+  //     0deg,
+  //     rgba(36, 36, 36, 0.7),
+  //     #242424b3
+  //   )
+  background: url("/history_bg.png") center/cover;
   &:after {
     content: "";
     position: absolute;
@@ -17,7 +17,7 @@
     left: 0px;
     top: -370px;
     background: url("/forest_t.png") center/cover;
-    background-size: contain;
+    // background-size: contain;
     // background: transparent;
   }
   &::before {
@@ -28,7 +28,7 @@
     left: 0px;
     bottom: -360px;
     background: url("/forest_b.png") center/cover;
-    background-size: contain;
+    // background-size: contain;
     // background: transparent;
   }
 
