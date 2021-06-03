@@ -125,7 +125,7 @@ export const mainSectionContainer = [
   {
     imgBg: "/mainBg_3.png",
     textColorTop: "Радость",
-    textColorBottom: "Супер",
+    textColorBottom: "Жизнь",
     textTop: "пригорода",
     textBottom: "города",
     btnText: "Поситить сейчас",
