@@ -107,7 +107,7 @@
     }
   }
   .form_container {
-    background-color: #ededed;
+    background-color: #F4F4F4;
     padding-left: 59px;
     padding-right: 59px;
     padding-top: 50px;
@@ -224,7 +224,7 @@
       }
     }
     .form_container {
-      background-color: #ededed;
+    background-color: #F4F4F4;
       padding: 42px 40px;
       //  margin-top: 40px;
       border: 3px solid #ededed;
@@ -239,7 +239,7 @@
     position: relative;
     z-index: 1;
     // padding-top: 50px;
-    margin-bottom: 81px;
+    margin-bottom: 39px;
     min-height: 100vh;
     &:after {
       content: "";
@@ -316,9 +316,10 @@
             padding: 10px 0;
           }
           .phone {
-            font-size: 32px;
+            font-size: 31px;
             color: #333333;
             font-weight: 700;
+            line-height: 41px;
           }
           .icon {
             display: inline-block;
@@ -338,7 +339,7 @@
       }
     }
     .form_container {
-      background-color: #ededed;
+     background-color: #F4F4F4;
       padding: 30px 25px;
       border: 3px solid #ededed;
       border-radius: 15px;

@@ -358,3 +358,33 @@
   }
 
 }
+
+
+.airPhoto {
+  .video_container {
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    // max-width: 800px;
+    // height: 400px;
+    padding: 39px 47px;
+
+    .btns{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1000;
+      cursor: pointer;
+      .show{
+        display: block;
+      }
+    }
+    
+    .video {
+      height: 452px;
+      width: 100%;
+    }
+  }
+}

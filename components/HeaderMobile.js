@@ -3,7 +3,6 @@ import { useAppContext } from "context/state";
 import style from "styles/HeaderMobile.module.scss";
 import React, { useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
 
 export default function HeaderMobile() {
   const year = new Date().getFullYear();
@@ -38,19 +37,24 @@ export default function HeaderMobile() {
       window.removeEventListener("scroll", event);
     };
   }, []);
-  // useEffect(() => {
-  //   // console.log(loading);
-  //   const handleLoading = () => {
-  //     setLoading(true);
-  //     console.log("loading");
-  //     document.querySelector("hide").classList.remove()
-  //   };
-  //   window.addEventListener("load", handleLoading);
+  useEffect(() => {
+    // console.log(loading);
+    const handleLoading = () => {
+      if (loading) {
+        document.querySelector(".hide").classList.add("red")
+      }
+      else{
+        document.querySelector(".hide").classList.add("blue");
+      }
+      setLoading(!loading)
+      
+    };
+    window.addEventListener("load", handleLoading);
 
-  //   return () => {
-  //     window.removeEventListener("load", handleLoading);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("load", handleLoading);
+    };
+  }, []);
   console.log(loading);
   return (
     <header
@@ -67,7 +71,7 @@ export default function HeaderMobile() {
         <div
           onClick={() => setShowBar(!showBar)}
           className={
-            showBar  ? `${style.btn_mobile} ` : ` ${style.btn_mobile_active} `
+            showBar ? `${style.btn_mobile} ` : ` ${style.btn_mobile_active} `
           }
         >
           <span className={style.line_1}></span>
@@ -91,7 +95,7 @@ export default function HeaderMobile() {
         </button>
         <div></div>
         <p className={style.phone}>
-          <FaPhoneAlt className={style.icon} /> +7 (123) 456-78-90{" "}
+          <img src="/mob_icon.png" className={style.icon} /> +7 (123) 456-78-90{" "}
         </p>
         <div className={style.policy}>
           <p>Политика конфиденциальности</p>

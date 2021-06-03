@@ -32,7 +32,6 @@ body {
   position: relative;
   font-family: "Gilroy";
   font-weight: normal;
-  
 }
 a {
   text-decoration: none;
@@ -47,7 +46,7 @@ ul li {
   -webkit-text-fill-color: transparent;
 }
 .linercradient_1 {
-  background: linear-gradient(90deg, #91D9A7 100%, #55BDDF 100%);
+  background: linear-gradient(90deg, #91d9a7 100%, #55bddf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -58,10 +57,10 @@ ul li {
 
 .btn {
   width: 290px;
-  height: 65px;
+  height: 60px;
   background: linear-gradient(90deg, #4ea86a -38.01%, #5cacc7 135.09%);
   border: none;
-  box-shadow: 0px 18px 40px -5px rgba(25, 135, 59, 0.35);
+  // box-shadow: 0px 18px 40px -5px rgba(25, 135, 59, 0.35);
   border-radius: 50px;
   cursor: pointer;
 }
@@ -73,9 +72,10 @@ ul li {
   z-index: 1;
 }
 
-.hide{
+.hide {
   display: none;
 }
-.col{
-  flex:1
+.col {
+  flex: 1;
 }
+

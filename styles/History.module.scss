@@ -43,7 +43,6 @@
   .flex_center {
     display: flex;
     justify-content: space-between;
-   
 
     .flex_item {
       margin: 30px 40px;
@@ -92,13 +91,8 @@
     position: relative;
     padding-top: 115px;
     margin-bottom: 81px;
-    height: 1852px;
-    background: linear-gradient(
-        0deg,
-        rgba(36, 36, 36, 0.7),
-        rgba(36, 36, 36, 0.7)
-      ),
-      url("/history_m_bg.png") center/cover;
+    height: 1730px;
+    background: url("/history_m_bg.png") center/cover;
     &:after {
       content: "";
       position: absolute;
@@ -141,27 +135,29 @@
       .flex_item {
         margin: auto;
         text-align: center;
-        &:nth-of-type(1){
+        &:nth-of-type(1) {
           margin-bottom: 24px;
         }
-        &:nth-of-type(3){
+        &:nth-of-type(3) {
           margin-top: 55px;
         }
         h3 {
-          margin:  0;
+          margin: 0;
           margin-bottom: 15px;
           font-style: normal;
-          font-weight: bold;
-          font-size: 35px;
-          line-height: 160%;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 44.8px;
           color: #ffffff;
         }
         p {
+          span {
+            font-weight: bolder;
+          }
           margin-top: 24px;
-          margin-bottom: 10px;
           font-family: Gilroy;
           font-style: normal;
-          font-weight: 700;
+          font-weight: 400;
           font-size: 16px;
           line-height: 25px;
           color: #dadada;
@@ -172,22 +168,23 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        max-height: 490px;
         .flex_item {
           padding: 10px;
         }
         .img_container_last {
-          width: 350px;
+          width: 100%;
           position: absolute;
           top: 102%;
           left: 50%;
           transform: translateX(-50%);
         }
         .his_img_1 {
-          width: 355px;
+          width: 100%;
           height: 200px;
         }
         .his_img_2 {
-          width: 355px;
+          width: 100%;
           height: 175px;
         }
       }
@@ -201,7 +198,7 @@
           .img_container {
             text-align: center;
             .his_img_1 {
-              width: 355px;
+              width: 100%;
               height: 200px;
             }
           }

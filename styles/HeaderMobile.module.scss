@@ -15,6 +15,7 @@
       display: flex;
       justify-content: space-between;
       padding: 15px 0;
+      padding-right: 10px;
       height: 80px;
       .logo_container {
         padding-left: 41px;
@@ -101,22 +102,29 @@
       align-self: center;
       a {
         color: #ffffff;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
       }
     }
     .phone {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-top: 14px;
       text-align: center;
       align-self: center;
       background-color: #eeeeee;
       height: 60px;
-      padding-top: 20px;
       color: #333333;
       font-size: 24px;
       width: 100%;
       border-radius: 50px;
+      line-height: 29px;
       .icon {
-        padding-top: 5px;
-        margin-right: 10px;
+        // padding-top: 10px;
+        // margin-right: 10px;
+        padding-right: 22px;
         color: #348f50;
       }
     }
@@ -158,8 +166,8 @@
         }
       }
     }
-    .hidde_all{
-       display: none;
+    .hidde_all {
+      display: none;
     }
 
     .hide {

@@ -181,7 +181,7 @@ export default function CarouselSlider() {
           swipeable={false}
           ssr={true} // means to render carousel on server-side.
         >
-          {carouselimgMob.map((item, index) => {
+          {/* {carouselimgMob.map((item, index) => {
             return (
               <div key={index} className={style.mob_gal}>
                 <div>
@@ -189,7 +189,52 @@ export default function CarouselSlider() {
                 </div>
               </div>
             );
-          })}
+          })} */}
+          <div className={style.airPhoto}>
+            <div className={style.video_container}>
+              <video
+               
+                className={style.video}
+                src="/video.mp4"
+                poster="/video_bg.png"
+              ></video>
+              <div  className={style.btns}>
+                <div>
+                  {" "}
+                  <img
+                    className={`${style.show}`}
+                    src="/playVideo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={style.mob_gal}>
+            <div>
+              <img src="/mob_g_1.png" alt="" />
+            </div>
+          </div>
+          <div className={style.mob_gal}>
+            <div>
+              <img src="/mob_g_2.png" alt="" />
+            </div>
+          </div>
+          <div className={style.mob_gal}>
+            <div>
+              <img src="/mob_g_3.png" alt="" />
+            </div>
+          </div>
+          <div className={style.mob_gal}>
+            <div>
+              <img src="/mob_g_4.png" alt="" />
+            </div>
+          </div>
+          <div className={style.mob_gal}>
+            <div>
+              <img src="/mob_g_5.png" alt="" />
+            </div>
+          </div>
         </Carousel>
       </Wrapper>
     </section>

@@ -1,19 +1,27 @@
 .airPhoto {
   .video_container {
-    width: 100%;
-    max-width: 1105px;
-    padding: 39px 47px;
-    margin: auto;
     position: relative;
-    .video_controls{
-      display: flex;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    // max-width: 800px;
+    // height: 400px;
+    padding: 39px 47px;
+
+    .btns{
       position: absolute;
-      bottom: 0;
-      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1000;
+      cursor: pointer;
+      .show{
+        display: block;
+      }
     }
+    
     .video {
-      position: relative;
-    border-radius: 15px;
+      height: 452px;
       width: 100%;
     }
   }
