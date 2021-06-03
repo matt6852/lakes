@@ -80,26 +80,44 @@ export default function HeaderMobile() {
         </div>
       </div>
       <div className={showBar ? `${style.hide} hide ` : `${style.show_bar} `}>
-        {renderLinks}
-        <button
-          onClick={() => setShowBar(!showBar)}
-          className={`btn ${style.btn_sign}`}
-        >
-          {" "}
-          <a href="#contacts">
-            Записаться на просмотр{" "}
-            <span className={style.arrow}>
-              <FaArrowRight className={style.fr} />
-            </span>{" "}
-          </a>{" "}
-        </button>
-        <div></div>
-        <p className={style.phone}>
-          <img src="/mob_icon.png" className={style.icon} /> +7 (123) 456-78-90{" "}
-        </p>
-        <div className={style.policy}>
-          <p>Политика конфиденциальности</p>
-          <p> &copy; {year} «Ярвино»</p>
+        <div className={style.flex_container}>
+          <div className={style.logo_container}>
+            <img src="/logo_mobile.png" alt="logo" />
+          </div>
+          <div
+            onClick={() => setShowBar(!showBar)}
+            className={
+              showBar ? `${style.btn_mobile} ` : ` ${style.btn_mobile_active} `
+            }
+          >
+            <span className={style.line_1}></span>
+            <span className={style.line_2}></span>
+            <span className={style.line_3}></span>
+          </div>
+        </div>
+        <div className={style.mobile_container}>
+          {renderLinks}
+          <button
+            onClick={() => setShowBar(!showBar)}
+            className={`btn ${style.btn_sign}`}
+          >
+            {" "}
+            <a href="#contacts">
+              Записаться на просмотр{" "}
+              <span className={style.arrow}>
+                <FaArrowRight className={style.fr} />
+              </span>{" "}
+            </a>{" "}
+          </button>
+          <div></div>
+          <p className={style.phone}>
+            <img src="/mob_icon.png" className={style.icon} /> +7 (123)
+            456-78-90{" "}
+          </p>
+          <div className={style.policy}>
+            <p>Политика конфиденциальности</p>
+            <p> &copy; {year} «Ярвино»</p>
+          </div>
         </div>
       </div>
     </header>
