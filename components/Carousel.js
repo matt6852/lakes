@@ -142,21 +142,25 @@ const responsive = {
 };
 
 export default function CarouselSlider() {
-  const { textC,  index, setIndex, carouselimgMob } = useAppContext();
-   const handleVideo = () => {
-     const video = document.querySelector(".Carousel_airPhoto__rDRo- .Carousel_video_container__1sxIr .Carousel_video__37I1_");
-     const btn = document.querySelector(".Carousel_airPhoto__rDRo- .Carousel_video_container__1sxIr .Carousel_btns__y0DEm .Carousel_show__cs4_p");
-     if (video.paused) {
-       video.play();
-       btn.style.display = "none";
-       video.controls = "controls";
-       video.style.height ="352px"
-     } else {
-       video.pause();
-       btn.style.display = "block";
-       video.controls = "";
-     }
-   };
+  const { textC, index, setIndex, carouselimgMob } = useAppContext();
+  const handleVideo = () => {
+    const video = document.querySelector(
+      ".Carousel_airPhoto__rDRo- .Carousel_video_container__1sxIr .Carousel_video__37I1_"
+    );
+    const btn = document.querySelector(
+      ".Carousel_airPhoto__rDRo- .Carousel_video_container__1sxIr .Carousel_btns__y0DEm .Carousel_show__cs4_p"
+    );
+    if (video.paused) {
+      video.play();
+      btn.style.display = "none";
+      video.controls = "controls";
+      video.style.height = "352px";
+    } else {
+      video.pause();
+      btn.style.display = "block";
+      video.controls = "";
+    }
+  };
   return (
     <section className={style.galery} id="galary">
       <Wrapper>
@@ -195,15 +199,6 @@ export default function CarouselSlider() {
           swipeable={false}
           ssr={true} // means to render carousel on server-side.
         >
-          {/* {carouselimgMob.map((item, index) => {
-            return (
-              <div key={index} className={style.mob_gal}>
-                <div>
-                  <img src={item.img} alt="" />
-                </div>
-              </div>
-            );
-          })} */}
           <div className={style.airPhoto}>
             <div className={style.video_container}>
               <video

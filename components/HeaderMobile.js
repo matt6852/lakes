@@ -12,8 +12,8 @@ export default function HeaderMobile() {
     setShowBar,
     scrollM,
     setScrollM,
-    loading,
-    setLoading,
+    // loading,
+    // setLoading,
   } = useAppContext();
   const renderLinks = links.map((link, index) => {
     const { title, href } = link;
@@ -37,25 +37,25 @@ export default function HeaderMobile() {
       window.removeEventListener("scroll", event);
     };
   }, []);
-  useEffect(() => {
-    // console.log(loading);
-    const handleLoading = () => {
-      if (loading) {
-        document.querySelector(".hide").classList.add("red")
-      }
-      else{
-        document.querySelector(".hide").classList.add("blue");
-      }
-      setLoading(!loading)
+  // useEffect(() => {
+  //   // console.log(loading);
+  //   const handleLoading = () => {
+  //     if (loading) {
+  //       document.querySelector(".hide").classList.add("red")
+  //     }
+  //     else{
+  //       document.querySelector(".hide").classList.add("blue");
+  //     }
+  //     setLoading(!loading)
       
-    };
-    window.addEventListener("load", handleLoading);
+  //   };
+  //   window.addEventListener("load", handleLoading);
 
-    return () => {
-      window.removeEventListener("load", handleLoading);
-    };
-  }, []);
-  console.log(loading);
+  //   return () => {
+  //     window.removeEventListener("load", handleLoading);
+  //   };
+  // }, []);
+  // console.log(loading);
   return (
     <header
       className={

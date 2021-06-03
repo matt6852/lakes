@@ -87,3 +87,14 @@ ul li {
   }
 }
 
+
+
+
+.active {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  .not_active {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }

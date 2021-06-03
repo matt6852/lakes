@@ -97,3 +97,41 @@ export const carouselimgMob = [
     title: "Фотографии нашей территории ",
   },
 ];
+export const mainSectionContainer = [
+  {
+    imgBg: "/main-section.png",
+    textColorTop: "Свобода",
+    textColorBottom: "комфорт",
+    textTop: "пригорода",
+    textBottom: "города",
+    btnText: "Записаться на просмотр",
+    paragraph:
+      "Участки под индивидуальную застройку в живописном районе Ленобласти",
+    imgMous: "/icons/mous.png",
+    maousText: "Листайте ниже",
+  },
+  {
+    imgBg: "/mainBg_2.png",
+    textColorTop: "Жизнь",
+    textColorBottom: "счастье",
+    textTop: "пригорода",
+    textBottom: "города",
+    btnText: "Не пропустить просмотр",
+    paragraph:
+      "Участки под индивидуальную застройку в живописном районе Москвы",
+    imgMous: "/icons/mous.png",
+    maousText: "Листайте сейчас",
+  },
+  {
+    imgBg: "/mainBg_3.png",
+    textColorTop: "Радость",
+    textColorBottom: "Супер",
+    textTop: "пригорода",
+    textBottom: "города",
+    btnText: "Поситить сейчас",
+    paragraph:
+      "Участки под индивидуальную застройку в живописном районе Сибири",
+    imgMous: "/icons/mous.png",
+    maousText: "Листайте быстрее",
+  },
+];
