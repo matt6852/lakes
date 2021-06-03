@@ -50,15 +50,14 @@
   border-radius: 18px;
   height: 100%;
 }
-    .mb {
-    z-index: 1;
-    position: relative;
-    background: #f4f4f4;
-    border: 3px solid #ededed;
-    min-width: 350px;
-    display: none
-    
-  }
+.mb {
+  z-index: 1;
+  position: relative;
+  background: #f4f4f4;
+  border: 3px solid #ededed;
+  min-width: 350px;
+  display: none;
+}
 .carousel_button_group {
   position: relative;
   width: 450px;
@@ -69,7 +68,6 @@
   bottom: 10px;
   right: 32px;
   P {
-
     background: #ffffff;
     border: 3px solid #f4f4f4;
     box-sizing: border-box;
@@ -159,20 +157,18 @@
     min-width: 350px;
     // min-height: 400px;
     // display: block;
-    
   }
-    .mb {
+  .mb {
     z-index: 1;
     position: relative;
     background: #f4f4f4;
     border: 3px solid #ededed;
     min-width: 350px;
-    display: none
-    
+    display: none;
   }
   .carousel_button_group {
     position: relative;
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,7 +177,6 @@
     bottom: -1%;
     right: 0;
     P {
-   
       background: #ffffff;
       border: 3px solid #f4f4f4;
       box-sizing: border-box;
@@ -199,7 +194,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-       width: 155px;
+      width: 155px;
       height: 60px;
       background: linear-gradient(90deg, #64bf80 0%, #56b4d3 100%);
       border-radius: 50px;
@@ -216,8 +211,7 @@
   }
 }
 //  mobile
-@media (max-width: 766px){
-
+@media (max-width: 766px) {
   .galery {
     position: relative;
     z-index: 1;
@@ -247,7 +241,7 @@
       bottom: -200px;
       background: url("/clouds.png") center/cover;
       // background-size: contain;
-      
+
       // background: transparent;
     }
 
@@ -273,7 +267,6 @@
     border: 3px solid #ededed;
     min-width: 350px;
     display: none;
-    
   }
   .mb {
     z-index: 1;
@@ -284,12 +277,10 @@
     display: flex;
     margin: 0 5px;
     border-radius: 15px;
-    
-    
   }
   .carousel_button_group {
     position: relative;
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -319,7 +310,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-       width: 155px;
+      width: 155px;
       height: 60px;
       background: linear-gradient(90deg, #64bf80 0%, #56b4d3 100%);
       border-radius: 15px;
@@ -334,57 +325,52 @@
       border-radius: 15px;
     }
   }
-  .mob_gal{
+  .mob_gal {
     text-align: center;
 
-    div{
+    div {
       padding-bottom: 140px;
       padding-top: 10px;
-       P {
-         display: inline-block;
-      background: #ffffff;
-      border: 3px solid #f4f4f4;
-      box-sizing: border-box;
-      border-radius: 15px;
-      padding: 10px 20px;
-      color: #6b6b6b;
+      P {
+        display: inline-block;
+        background: #ffffff;
+        border: 3px solid #f4f4f4;
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 10px 20px;
+        color: #6b6b6b;
+      }
+      img {
+        width: 100%;
+        padding: 15px 15px 0;
+      }
     }
-    img{
-      width: 100%;
-      padding: 15px 15px 0;
-    }
-    }
-    
   }
-
 }
-
 
 .airPhoto {
   .video_container {
     position: relative;
     margin: auto;
-    display: flex;
     width: 100%;
-    // max-width: 800px;
-    // height: 400px;
-    padding: 39px 47px;
+    height: 100%;
+    padding: 15px 15px 0;
 
-    .btns{
+    .btns {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       z-index: 1000;
       cursor: pointer;
-      .show{
+      .show {
         display: block;
       }
     }
-    
+
     .video {
-      height: 452px;
       width: 100%;
+      height: 100%;
     }
   }
 }
