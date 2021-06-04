@@ -1,6 +1,6 @@
 import style from "styles/MainSection.module.scss";
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
+// import { FaArrowRight } from "react-icons/fa";
 // import SuperBtn from "../SuperButton";
 import { useAppContext } from "context/state";
 import React, { useEffect } from "react";
@@ -33,13 +33,12 @@ export default function MainSection() {
         setIndexMain(0);
       }
 
-    }, [indexMain]);
-    useEffect(() => {
       const interval = setInterval(() => {
         setIndexMain(indexMain + 1);
       }, 7000);
       return () => clearInterval(interval);
     }, [indexMain]);
+
     return (
       <section key={slidIndex} className={`${position} ${style.main_section} `}>
         <Wrapper className="z_index_1">
@@ -58,7 +57,7 @@ export default function MainSection() {
                 <a href="#contacts">
                   {btnText}{" "}
                   <span className={style.arrow}>
-                    <FaArrowRight className={style.fr} />
+                    <img src ="/arrow_btn.png" className={style.fr} />
                   </span>{" "}
                 </a>{" "}
               </button>
