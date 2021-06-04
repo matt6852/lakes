@@ -1,7 +1,9 @@
-.uniq {
+ .uniq {
   position: relative;
-  margin-top: 115px;
-  margin-bottom: 81px;
+  margin-top: 275px;
+  margin-bottom: 181px;
+  min-height: 100vh;
+  min-width: 100vw;
   &:after {
     content: "";
     position: absolute;

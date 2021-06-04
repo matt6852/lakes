@@ -57,7 +57,7 @@ export default function MainSection() {
                 <a href="#contacts">
                   {btnText}{" "}
                   <span className={style.arrow}>
-                    <img src ="/arrow_btn.png" className={style.fr} />
+                    <img src="/arrow_btn.png" className={style.fr} />
                   </span>{" "}
                 </a>{" "}
               </button>
@@ -76,8 +76,6 @@ export default function MainSection() {
         </Wrapper>
         <style jsx>{`
           .MainSection_main_section__2oUNM {
-            position: absolute;
-            min-height: 100vh;
             background: linear-gradient(
                 110.31deg,
                 #fbfbfb 25.32%,
@@ -87,6 +85,7 @@ export default function MainSection() {
               ),
               url(${imgBg}) center/cover;
             transition: opacity 1s ease-in-out;
+            transform: translate(${indexMain * -100}%, 0);
           }
         `}</style>
       </section>
