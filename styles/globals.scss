@@ -75,8 +75,8 @@ ul li {
 .hide {
   display: none;
 }
-.col{
-  flex:1;
+.col {
+  flex: 1;
 
   & + & {
     margin-left: 10px;
@@ -87,14 +87,20 @@ ul li {
   }
 }
 
-
-
-
 .active {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-  }
-  .not_active {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+.not_active {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.main_section_0 {
+  transform: translateX(0);
+}
+.main_section_1 {
+  transform: translate(-100%, 0);
+}
+.main_section_2 {
+  transform: translate(-200%, 0);
+}
