@@ -40,7 +40,7 @@ export default function MainSection() {
     }, [indexMain]);
 
     return (
-      <section key={slidIndex} className={`${position} ${style.main_section} `}>
+      <section key={slidIndex} className={`${position} ${style.main_section} ${'main_section_' + slidIndex}`}>
         <Wrapper className="z_index_1">
           <div className={style.title_center}>
             <div>
@@ -75,7 +75,7 @@ export default function MainSection() {
           </div>
         </Wrapper>
         <style jsx>{`
-          .MainSection_main_section__2oUNM {
+          .main_section_${slidIndex} {
             background: linear-gradient(
                 110.31deg,
                 #fbfbfb 25.32%,
@@ -85,7 +85,7 @@ export default function MainSection() {
               ),
               url(${imgBg}) center/cover;
             transition: opacity 1s ease-in-out;
-            transform: translate(${indexMain * -100}%, 0);
+            transform: translateX(-${slidIndex * 100}%);
           }
         `}</style>
       </section>
