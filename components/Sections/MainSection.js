@@ -57,7 +57,7 @@ export default function MainSection() {
                 <a href="#contacts">
                   {btnText}{" "}
                   <span className={style.arrow}>
-                    <img src="/arrow_btn.png" className={style.fr} />
+                    <img src="/arrow_m.svg" className={style.fr} />
                   </span>{" "}
                 </a>{" "}
               </button>
