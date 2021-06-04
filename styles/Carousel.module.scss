@@ -8,9 +8,8 @@
     position: absolute;
     width: 593px;
     height: 601px;
-    left: 210px;
-
-    bottom: -60px;
+    left: 220px;
+    bottom: -40px;
     background: url("/leafs_c.png") center/cover;
     background-size: contain;
     // background: transparent;
@@ -44,11 +43,11 @@
 }
 
 .bg {
-  z-index: 1;
+  z-index: 2;
   position: relative;
-  background: url("/galery_bg.png") center/cover no-repeat;
-  border-radius: 18px;
-  height: 100%;
+  // border-radius: 18px;
+  // height: 100%;
+  
 }
 .mb {
   z-index: 1;
@@ -59,20 +58,25 @@
   display: none;
 }
 .carousel_button_group {
+  background: #F4F4F4;
   position: relative;
-  width: 450px;
+  width: 550px;
+  height: 84px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: absolute;
   bottom: 10px;
-  right: 32px;
+  right: 50px;
+  border-radius: 15px;
+  border: 3px solid #EDEDED;
   P {
     background: #ffffff;
     border: 3px solid #f4f4f4;
     box-sizing: border-box;
     border-radius: 15px;
     padding: 15px 30px;
+    width: 310px;
     color: #6b6b6b;
   }
   button {

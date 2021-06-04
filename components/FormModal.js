@@ -61,8 +61,22 @@ export default function FormModal() {
  
 
   return (
-      <Wrapper>
-    <div  className={style.form_container}>
+    <Wrapper>
+      <div className={style.form_container}>
+        <div className={style.place}>
+          <div className={style.place_item}>
+            <h4>Участок</h4>
+            <p>№ 107</p>
+          </div>
+          <div className={style.place_item}>
+            <h4>Площадь: </h4>
+            <p>12,60 сот.</p>
+          </div>
+          <div className={style.place_item}>
+            <h4>Стоимость:</h4>
+            <p>2 млн руб</p>
+          </div>
+        </div>
         <div className={style.fixed}>
           <div className={style.form_title}>
             <h4>
@@ -70,8 +84,8 @@ export default function FormModal() {
               <span className="linercradient"> Записаться на просмотр</span>
             </h4>
             <p>
-              Оставьте ваши контакты и наш менеджер свяжется с вами в ближайшее
-              время
+              Оставьте ваши контакты и мы свяжемся с вами для уточнения деталей
+              по вашей записи
             </p>
           </div>
           <form onSubmit={handleSubmit} className={style.form}>
@@ -123,8 +137,7 @@ export default function FormModal() {
             </button>
           </form>
         </div>
-    </div>
-      </Wrapper>
-    
+      </div>
+    </Wrapper>
   );
 }
