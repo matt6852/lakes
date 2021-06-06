@@ -487,8 +487,10 @@
     align-items: center;
     background: url("/formMod_m_bg.svg") center/cover no-repeat;
     // border: 3px solid blue;
+    
     height: 100vh;
     border-radius: 15px;
+    border-radius: 0;
 
     .place {
       // padding-bottom: 50px;
@@ -505,12 +507,12 @@
       padding-bottom: 14px;
       .btn_close {
         position: absolute;
-        right: 10px;
-        top: 10px;
+        right: 15px;
+        top: 15px;
         border: none;
         background: transparent;
         color: #333333;
-        font-size: 15px;
+        font-size: 25px;
         font-weight: bold;
       }
       &_item {
@@ -545,7 +547,7 @@
       z-index: 1;
       // height: 350px;
       padding: 0 30px;
-      border-radius: 15px;
+      border-radius: 0px;
       &:after {
         z-index: 0;
         content: "";
