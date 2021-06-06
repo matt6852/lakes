@@ -283,16 +283,20 @@
     border-radius: 15px;
   }
   .carousel_button_group {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    bottom: -1%;
-    right: 0;
-    padding-bottom: 15px;
+     background: #F4F4F4;
+  position: relative;
+  width: 350px;
+  height: 84px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 25px;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 0;
+  border: none;
     P {
       font-size: 14px;
       text-align: center;
