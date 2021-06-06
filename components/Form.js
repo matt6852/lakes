@@ -2,9 +2,8 @@ import style from "styles/Form.module.scss";
 import emailjs from "emailjs-com";
 
 import { useAppContext } from "context/state";
-import { useEffect } from "react";
 export default function Form() {
-  const { formData, setFormData, DEFAULT_DATA, formSub, setFormSub } =
+  const { formData, setFormData, DEFAULT_DATA,} =
     useAppContext();
   // EmailJSResponseStatus {status: 200, text: "OK"}
 
@@ -16,7 +15,6 @@ export default function Form() {
     });
   };
   const handleSubmit = async (e) => {
-    setFormSub(true);
     e.preventDefault();
     const upDateForm = {
       ...formData,
@@ -35,6 +33,7 @@ export default function Form() {
       .then(
         (result) => {
           console.log(result.text);
+          setFormData(DEFAULT_DATA);
         },
         (error) => {
           console.log(error.text);
@@ -42,17 +41,10 @@ export default function Form() {
       );
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setFormSub(false);
-      setFormData(DEFAULT_DATA);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, [formSub]);
 
   return (
     <>
-      <div
+      {/* <div
         className={
           formSub
             ? `${style.formSubmit}  ${style.formSubmit_active}`
@@ -60,7 +52,7 @@ export default function Form() {
         }
       >
         <h3>Спасибо {formData.name} мы в ближайшее время свяжемся с вами</h3>
-      </div>
+      </div> */}
       <div className={style.form_title}>
         <h4>
           {" "}

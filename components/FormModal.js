@@ -1,20 +1,13 @@
 import style from "styles/FormModal.module.scss";
 import Wrapper from "./Wrapper";
 import { useAppContext } from "context/state";
-import { useEffect } from "react";
+
 
 import emailjs from "emailjs-com";
 
 export default function FormModal() {
-      const {
-        formData,
-        setFormData,
-        DEFAULT_DATA,
-        formSub,
-        setFormSub,
-        setShowModal,
-      } = useAppContext();
-        
+  const { formData, setFormData, DEFAULT_DATA, setShowModal } = useAppContext();
+
   const handleChanged = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -23,7 +16,6 @@ export default function FormModal() {
     });
   };
   const handleSubmit = async (e) => {
-    setFormSub(true);
     e.preventDefault();
     const upDateForm = {
       ...formData,
@@ -42,7 +34,8 @@ export default function FormModal() {
       .then(
         (result) => {
           console.log(result.text);
-         
+          setFormData(DEFAULT_DATA);
+          setShowModal(false);
         },
         (error) => {
           console.log(error.text);
@@ -50,32 +43,28 @@ export default function FormModal() {
       );
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setFormSub(false);
-      setFormData(DEFAULT_DATA);
-       setShowModal(false)
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, [formSub]);
- 
-
   return (
     <Wrapper>
       <div className={style.form_container}>
         <div className={style.place}>
           <div className={style.place_item}>
-            <h4>Участок</h4>
+            <h5>Участок:</h5>
             <p>№ 107</p>
           </div>
           <div className={style.place_item}>
-            <h4>Площадь: </h4>
+            <h5>Площадь: </h5>
             <p>12,60 сот.</p>
           </div>
           <div className={style.place_item}>
-            <h4>Стоимость:</h4>
+            <h5>Стоимость:</h5>
             <p>2 млн руб</p>
           </div>
+          <button
+            onClick={() => setShowModal(false)}
+            className={style.btn_close}
+          >
+            &#10005;
+          </button>
         </div>
         <div className={style.fixed}>
           <div className={style.form_title}>
@@ -102,7 +91,7 @@ export default function FormModal() {
               value={formData.phone}
               name="phone"
               type="tel"
-              placeholder="Телефон"
+              placeholder="Ваш номер"
               required
             />
             <input
@@ -110,7 +99,7 @@ export default function FormModal() {
               value={formData.email}
               name="email"
               type="email"
-              placeholder="E-mail"
+              placeholder="Ваш e-mail"
               required
             />
             <div className={style.chekBox}>

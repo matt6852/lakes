@@ -87,7 +87,7 @@
         // color: #5cacc7;
         width: 15px;
         height: 15px;
-        background:url("/check.png")center/cover no-repeat;
+        background:url("/check.svg")center/cover no-repeat;
       }
     }
 
@@ -261,7 +261,7 @@
         // color: #5cacc7;
         width: 15px;
         height: 15px;
-        background:url("/check.png")center/cover no-repeat;
+        background:url("/check.svg")center/cover no-repeat;
         }
       }
 
@@ -275,25 +275,4 @@
   }
 }
 
-.formSubmit {
-  position: fixed;
-  display: none;
-  justify-content: center;
-  padding: 15px;
-  top: 50%;
-  left: 50%;
-  align-items: center;
-  width: 70%;
-  height: 30%;
-  background: linear-gradient(90deg, #4ea86a -38.01%, #5cacc7 135.09%);
-  border-radius: 15px;
-  transform: translateX(-50%) translateY(-60%);
-  // transform: translateY(-50%);
-  h3 {
-    color: #ffff;
-  }
-}
-.formSubmit_active {
-  display: flex;
-}
-//
+// 
