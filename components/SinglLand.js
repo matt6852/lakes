@@ -1,5 +1,5 @@
 import style from "styles/SinglLand.module.scss";
-
+import { useAppContext } from "context/state";
 export default function SinglLand({
   id,
   sizeMetr,
@@ -8,6 +8,9 @@ export default function SinglLand({
   occupied,
   img,
 }) {
+    const { showModal, setShowModal, setSinglLand,data } =
+    useAppContext();
+   
   return (
     <>
       <div className={style.singlLand_container}>
@@ -20,7 +23,16 @@ export default function SinglLand({
         <p className={style.item}>{price} руб.</p>
         <p className={style.item}>{occupied ? "Занят" : "Свободен"}</p>
         <div>
-          <button>Записаться на просмотр</button>
+          <button
+            onClick={() => {
+              setShowModal(!showModal);
+
+            const filtered = data.filter((item)=> item.id ===id)
+            setSinglLand(filtered)
+            }}
+          >
+            Записаться на просмотр
+          </button>
         </div>
       </div>
     </>

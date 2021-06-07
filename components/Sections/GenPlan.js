@@ -16,18 +16,6 @@ export default function GenPlan() {
     end,
     setEnd,
   } = useAppContext();
-  // function to change data or sort it
-  const sortArray = (type) => {
-    const types = {
-      all: "all",
-      max: "max",
-      min: "min",
-    };
-    const sortProperty = types[type];
-    const sorted = data.sort((a, b) => b.price - a.price);
-    console.log(sorted);
-    setData(sorted);
-  };
 
   // console.log(lands.slice(0,10));
   useEffect(() => {
@@ -44,7 +32,50 @@ export default function GenPlan() {
       window.removeEventListener("click", chekEl);
     };
   }, []);
-  useEffect(() => {}, [start,data]);
+
+  // function handle sort by price
+
+  const sortByPrice = (type) => {
+    const types = {
+      all: "all",
+      max: "max",
+      min: "min",
+    };
+    if (types.max === type) {
+      const sorted = [...data].sort((a, b) => b.price - a.price);
+      setData(sorted);
+      console.log(sorted);
+    } else if (types.min === type) {
+      const sorted = [...data].sort((a, b) => a.price - b.price);
+      setData(sorted);
+      console.log(sorted);
+    } else {
+      const sorted = [...data].sort((a, b) => a.id - b.id);
+      setData(sorted);
+    }
+  };
+  // function handle sort by size
+
+  const sortBySize = (type) => {
+    const types = {
+      origin: "origin",
+      big: "big",
+      small: "small",
+    };
+    if (types.big === type) {
+      const sorted = [...data].sort((a, b) => b.sizeMetr - a.sizeMetr);
+      setData(sorted);
+      console.log(sorted);
+    } else if (types.small === type) {
+      const sorted = [...data].sort((a, b) => a.sizeMetr - b.sizeMetr);
+      setData(sorted);
+      console.log(sorted);
+    } else {
+      const sorted = [...data].sort((a, b) => a.id - b.id);
+      setData(sorted);
+    }
+  };
+
   return (
     <section id="genplan" className={style.gen_plan}>
       <div className={style.title}>
@@ -72,7 +103,7 @@ export default function GenPlan() {
           <div className={style.filter_btns}>
             <div className={style.btn_container}>
               <label htmlFor="price">Стоимость участка:</label>
-              <select onChange ={(e)=>sortArray(e.target.value)} name="" id="price">
+              <select onChange={(e) => sortByPrice(e.target.value)} id="price">
                 <option value="all">Все {data.length}</option>
                 <option value="max">max</option>
                 <option value="min">min</option>
@@ -80,10 +111,10 @@ export default function GenPlan() {
             </div>
             <div className={style.btn_container}>
               <label htmlFor="size">Площадь:</label>
-              <select name="" id="size">
-                <option value="1">Все {data.length}</option>
-                <option value="2">2</option>
-                <option value="2">3</option>
+              <select onChange= {(e) => sortBySize(e.target.value)} id="size">
+                <option value="origin">Все {data.length}</option>
+                <option value="big">big</option>
+                <option value="small">small</option>
               </select>
             </div>
             <div className={style.btn_container}>
@@ -109,17 +140,8 @@ export default function GenPlan() {
               .map((item, index) => {
                 return <SinglLand key={item.id} {...item} />;
               })
-              .slice(start, end)}
-            <button
-              onClick={() => {
-                setStart(end);
-                setEnd(end + 5);
-                if (end >= data.length) {
-                  setEnd(data.length);
-                  setStart(data.length - 5);
-                }
-              }}
-            >
+              .slice(0, end)}
+            <button onClick={() => setEnd(end + 4)}>
               Смотреть больше участков
             </button>
           </div>

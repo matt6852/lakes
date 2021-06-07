@@ -24,6 +24,7 @@ export function AppWrapper({ children }) {
 
   const [scroll, setScroll] = useState(false);
   const [data, setData] = useState(lands);
+  const [singlLand, setSinglLand] = useState({});
   // const [loading, setLoading] = useState(true);
   const [formSub, setFormSub] = useState(false);
   const [scrollM, setScrollM] = useState(false);
@@ -33,17 +34,23 @@ export function AppWrapper({ children }) {
   const [indexMain, setIndexMain] = useState(0);
   const [sizeWindow, setSizeWinow] = useState(0);
   const [start, setStart] = useState(0);
-  const [end, setEnd] = useState(5);
+  const [end, setEnd] = useState(4);
   const [scrollBtn, setScrollBtn] = useState(false);
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const sharedState = {
     formSub,
     // loading,
     // setLoading,
-    start,setStart,end,setEnd,
+    start,
+    setStart,
+    end,
+    setEnd,
+    singlLand,
+    setSinglLand,
     data,
     setData,
-    indexMain, setIndexMain,
+    indexMain,
+    setIndexMain,
     mainSectionContainer,
     setSizeWinow,
     sizeWindow,
@@ -68,7 +75,6 @@ export function AppWrapper({ children }) {
     DEFAULT_DATA,
     setShowModal,
     showModal,
-  
   };
 
   return (
