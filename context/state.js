@@ -6,6 +6,7 @@ import {
   howToBuyCards,
   carouselimgMob,
   mainSectionContainer,
+  lands,
 } from "data";
 
 const AppContext = createContext();
@@ -22,6 +23,7 @@ export function AppWrapper({ children }) {
   };
 
   const [scroll, setScroll] = useState(false);
+  const [data, setData] = useState(lands);
   // const [loading, setLoading] = useState(true);
   const [formSub, setFormSub] = useState(false);
   const [scrollM, setScrollM] = useState(false);
@@ -30,12 +32,17 @@ export function AppWrapper({ children }) {
   const [index, setIndex] = useState(0);
   const [indexMain, setIndexMain] = useState(0);
   const [sizeWindow, setSizeWinow] = useState(0);
+  const [start, setStart] = useState(0);
+  const [end, setEnd] = useState(5);
   const [scrollBtn, setScrollBtn] = useState(false);
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const sharedState = {
     formSub,
     // loading,
     // setLoading,
+    start,setStart,end,setEnd,
+    data,
+    setData,
     indexMain, setIndexMain,
     mainSectionContainer,
     setSizeWinow,
@@ -61,6 +68,7 @@ export function AppWrapper({ children }) {
     DEFAULT_DATA,
     setShowModal,
     showModal,
+  
   };
 
   return (

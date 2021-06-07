@@ -115,9 +115,9 @@ export default function FormModal() {
                 checked={formData.checkValue}
                 value={formData.checkbox}
                 type="checkbox"
-                id="agree"
+                id="agre"
               />
-              <label htmlFor="agree">
+              <label htmlFor="agre">
                 Я согласен с политикой конфиденциальности
               </label>
             </div>

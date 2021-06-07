@@ -24,6 +24,22 @@
       color: #6c6c6c;
     }
   }
+  .filter_container{
+
+    .filter_btns{
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+    .title_categories{
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+
+
+    }
+  }
 
 }
 
