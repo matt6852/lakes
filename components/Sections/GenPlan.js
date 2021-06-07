@@ -102,7 +102,9 @@ export default function GenPlan() {
         <div className={style.filter_container}>
           <div className={style.filter_btns}>
             <div className={style.btn_container}>
-              <label htmlFor="price">Стоимость участка:</label>
+              <label htmlFor="price" className={style.title}>
+                Стоимость участка:
+              </label>
               <select onChange={(e) => sortByPrice(e.target.value)} id="price">
                 <option value="all">Все {data.length}</option>
                 <option value="max">max</option>
@@ -110,15 +112,19 @@ export default function GenPlan() {
               </select>
             </div>
             <div className={style.btn_container}>
-              <label htmlFor="size">Площадь:</label>
-              <select onChange= {(e) => sortBySize(e.target.value)} id="size">
+              <label className={style.title} htmlFor="size">
+                Площадь:
+              </label>
+              <select onChange={(e) => sortBySize(e.target.value)} id="size">
                 <option value="origin">Все {data.length}</option>
                 <option value="big">big</option>
                 <option value="small">small</option>
               </select>
             </div>
             <div className={style.btn_container}>
-              <label htmlFor="structure">Инфраструктура:</label>
+              <label className={style.title} htmlFor="structure">
+                Инфраструктура:
+              </label>
               <select name="" id="structure">
                 <option value="1">Все {data.length}</option>
                 <option value="2">2</option>
@@ -141,9 +147,11 @@ export default function GenPlan() {
                 return <SinglLand key={item.id} {...item} />;
               })
               .slice(0, end)}
-            <button onClick={() => setEnd(end + 4)}>
-              Смотреть больше участков
-            </button>
+            <div className={style.btn_center}>
+              <button className={style.btn} onClick={() => setEnd(end + 4)}>
+                Смотреть больше участков
+              </button>
+            </div>
           </div>
         </div>
       </Wrapper>

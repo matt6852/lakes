@@ -21,9 +21,9 @@ export default function SinglLand({
         </div>
         <p className={style.item}>{sizeSot} сот.</p>
         <p className={style.item}>{price} руб.</p>
-        <p className={style.item}>{occupied ? "Занят" : "Свободен"}</p>
+        <p className={`${style.item} ${style.color_green}`}>{occupied ? "Занят" : "Свободен"}</p>
         <div>
-          <button
+          <button className ={style.btn}
             onClick={() => {
               setShowModal(!showModal);
 
