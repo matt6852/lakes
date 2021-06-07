@@ -32,6 +32,9 @@ export default function GenPlan() {
       window.removeEventListener("click", chekEl);
     };
   }, []);
+  useEffect(()=>{
+
+  },[data])
 
   // function handle sort by price
 
