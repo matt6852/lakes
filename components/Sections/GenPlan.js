@@ -37,7 +37,6 @@ export default function GenPlan() {
     if (types.max === type) {
       const sorted = [...data].sort((a, b) => b.price - a.price);
       setData(sorted);
-      console.log(process.env.RESESERVED.split(","));
       // console.log(sorted);
     } else if (types.min === type) {
       const sorted = [...data].sort((a, b) => a.price - b.price);
@@ -129,13 +128,16 @@ export default function GenPlan() {
           </div>
           <div className={style.render_lands}>
             {data
-              .map((item, index) => {
+              .map((item) => {
                 item.occupied = process.env.RESESERVED.split(",").some(
                   (id) => id === item.id
                 );
-                item.price = Math.trunc( item.sizeSot * Number(process.env.PRICE));
+                item.price = Math.trunc(
+                  item.sizeSot * Number(process.env.PRICE)
+                );
                 item.soldout = process.env.SOLDOUT.split(",").some(
-                  (id) => id === item.id)
+                  (id) => id === item.id
+                );
                 return <SinglLand key={item.id} {...item} />;
               })
               .slice(0, end)}

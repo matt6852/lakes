@@ -2,7 +2,6 @@ import style from "styles/SinglLand.module.scss";
 import { useAppContext } from "context/state";
 export default function SinglLand({
   id,
-  sizeMetr,
   sizeSot,
   price,
   occupied,
@@ -22,12 +21,21 @@ export default function SinglLand({
         </div>
         <p className={`${style.item} ${style.item_size}`}>{sizeSot} сот.</p>
         <p className={`${style.item} ${style.item_price}`}>{price} руб.</p>
-        <p className={`${style.item} ${style.color_green}`}>
-          {soldout ? "проданно": occupied ? "занят":"свободно"}
+        <p
+          className={
+            soldout
+              ? `${style.color_sold}`
+              : occupied
+              ? `${style.color_occupied}`
+              : `${style.item} ${style.color_green}`
+          }
+        >
+          {soldout ? "Проданно" : occupied ? "Забронирован" : "Свободен"}
         </p>
         <div>
           <div className={`${style.item} ${style.item_btn}`}>
             <button
+              disabled={soldout || occupied}
               className={style.btn}
               onClick={() => {
                 setShowModal(!showModal);
