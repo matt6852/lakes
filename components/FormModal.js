@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 
 export default function FormModal() {
   const { formData, setFormData, DEFAULT_DATA, setShowModal, singlLand,  } = useAppContext();
-  console.log();
+  // console.log(singlLand[0]);
 
   const handleChanged = (e) => {
     const { name, value } = e.target;
@@ -23,6 +23,7 @@ export default function FormModal() {
       checkbox: formData.checkValue
         ? "Я согласен с политикой конфиденциальности"
         : "Я НЕ согласен с политикой конфиденциальности",
+        ...singlLand[0]
     };
 
     emailjs

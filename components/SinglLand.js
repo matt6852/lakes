@@ -6,6 +6,7 @@ export default function SinglLand({
   sizeSot,
   price,
   occupied,
+  soldout,
   img,
 }) {
   const { showModal, setShowModal, setSinglLand, data } = useAppContext();
@@ -22,7 +23,7 @@ export default function SinglLand({
         <p className={`${style.item} ${style.item_size}`}>{sizeSot} сот.</p>
         <p className={`${style.item} ${style.item_price}`}>{price} руб.</p>
         <p className={`${style.item} ${style.color_green}`}>
-          {occupied ? "Занят" : "Свободен"}
+          {soldout ? "проданно": occupied ? "занят":"свободно"}
         </p>
         <div>
           <div className={`${style.item} ${style.item_btn}`}>

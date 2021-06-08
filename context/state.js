@@ -33,16 +33,16 @@ export function AppWrapper({ children }) {
   const [index, setIndex] = useState(0);
   const [indexMain, setIndexMain] = useState(0);
   const [sizeWindow, setSizeWinow] = useState(0);
-  const [start, setStart] = useState(0);
+  // const [start, setStart] = useState(0);
   const [end, setEnd] = useState(4);
   const [scrollBtn, setScrollBtn] = useState(false);
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const sharedState = {
     formSub,
     // loading,
-    // setLoading,
-    start,
-    setStart,
+    // // setLoading,
+    // start,
+    // setStart,
     end,
     setEnd,
     singlLand,

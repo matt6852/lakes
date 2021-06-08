@@ -6,16 +6,8 @@ import Wrapper from "../Wrapper";
 import SinglLand from "../SinglLand";
 
 export default function GenPlan() {
-  const {
-    showModal,
-    setShowModal,
-    data,
-    setData,
-    start,
-    setStart,
-    end,
-    setEnd,
-  } = useAppContext();
+  const { showModal, setShowModal, data, setData, end, setEnd } =
+    useAppContext();
 
   // console.log(lands.slice(0,10));
   useEffect(() => {
@@ -32,9 +24,7 @@ export default function GenPlan() {
       window.removeEventListener("click", chekEl);
     };
   }, []);
-  useEffect(()=>{
-
-  },[data])
+  useEffect(() => {}, [data]);
 
   // function handle sort by price
 
@@ -47,11 +37,12 @@ export default function GenPlan() {
     if (types.max === type) {
       const sorted = [...data].sort((a, b) => b.price - a.price);
       setData(sorted);
-      console.log(sorted);
+      console.log(process.env.RESESERVED.split(","));
+      // console.log(sorted);
     } else if (types.min === type) {
       const sorted = [...data].sort((a, b) => a.price - b.price);
       setData(sorted);
-      console.log(sorted);
+      // console.log(sorted);
     } else {
       const sorted = [...data].sort((a, b) => a.id - b.id);
       setData(sorted);
@@ -68,11 +59,11 @@ export default function GenPlan() {
     if (types.big === type) {
       const sorted = [...data].sort((a, b) => b.sizeMetr - a.sizeMetr);
       setData(sorted);
-      console.log(sorted);
+      // console.log(sorted);
     } else if (types.small === type) {
       const sorted = [...data].sort((a, b) => a.sizeMetr - b.sizeMetr);
       setData(sorted);
-      console.log(sorted);
+      // console.log(sorted);
     } else {
       const sorted = [...data].sort((a, b) => a.id - b.id);
       setData(sorted);
@@ -139,6 +130,12 @@ export default function GenPlan() {
           <div className={style.render_lands}>
             {data
               .map((item, index) => {
+                item.occupied = process.env.RESESERVED.split(",").some(
+                  (id) => id === item.id
+                );
+                item.price = Math.trunc( item.sizeSot * Number(process.env.PRICE));
+                item.soldout = process.env.SOLDOUT.split(",").some(
+                  (id) => id === item.id)
                 return <SinglLand key={item.id} {...item} />;
               })
               .slice(0, end)}
