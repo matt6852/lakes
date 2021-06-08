@@ -27,7 +27,7 @@
   .filter_container {
     // padding:30px;
     background: #fcfcfc;
-    border: 4px solid #f4f4f4;
+    // border: 4px solid #f4f4f4;
     box-sizing: border-box;
     border-radius: 15px;
     .filter_btns {
@@ -38,6 +38,8 @@
       height: 105px;
       width: 100%;
       padding: 0 30px;
+      border-left:none ;
+      border-right:none ;
     }
     .title {
       color: #21957c;
@@ -73,6 +75,8 @@
       align-items: center;
       border: 3px solid #f4f4f4;
       border-top: none;
+      border-left: none;
+      border-right: none;
       .item_1{
         margin-left: 10px;
       }

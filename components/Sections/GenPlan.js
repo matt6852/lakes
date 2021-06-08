@@ -126,7 +126,7 @@ export default function GenPlan() {
             <p className={style.item_5}>Статус:</p>
             <p className={style.item_6}>Запись на просмотр:</p>
           </div>
-          <div className={style.render_lands}>
+          <div className={`${style.render_lands} render_lands`}>
             {data
               .map((item) => {
                 item.occupied = process.env.RESESERVED.split(",").some(
@@ -143,7 +143,19 @@ export default function GenPlan() {
               .slice(0, end)}
           </div>
           <div className={style.btn_center}>
-            <button className={style.btn} onClick={() => setEnd(end + 4)}>
+            <button
+              className={style.btn}
+              onClick={() => {
+                const element = document.querySelector(".render_lands");
+                const scrollToBottomValue = element.scrollHeight;
+                element.scrollTo({
+                  top: scrollToBottomValue,
+                  behavior: "smooth",
+                });
+                console.log(element);
+                setEnd(end + 4);
+              }}
+            >
               Смотреть больше участков
             </button>
           </div>

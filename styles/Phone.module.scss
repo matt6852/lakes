@@ -9,13 +9,29 @@
   border-radius: 50px;
   text-align: center;
   margin-left: 62px;
+
+
+
+  div{
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(90deg, #348F50 0%, #56B4D3 100%), #FFFFFF;
+    border-radius: 15px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .icon{
+        // color: #348F50 ;
+        background-size: contain;
+        // background-color: black;
+    }
+  }
   // font-size: 24px;
   // font-weight: 500;
   // line-height: 29px;
-  .icon{
-      margin-right: 10px;
-      color: #348F50 
-  }
 }
 
 @media (max-width: 1200px) {
