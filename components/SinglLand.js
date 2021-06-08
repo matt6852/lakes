@@ -8,34 +8,38 @@ export default function SinglLand({
   occupied,
   img,
 }) {
-    const { showModal, setShowModal, setSinglLand,data } =
-    useAppContext();
-   
+  const { showModal, setShowModal, setSinglLand, data } = useAppContext();
+
   return (
     <>
       <div className={style.singlLand_container}>
-        <p className={style.item}>{id}</p>
-        <div className={style.item}>
-          <p>img</p>
-          <img src={img} alt="" />
+        <p className={`${style.item} ${style.item_id}`}>{id}</p>
+        <div className={`${style.item} ${style.item_img_c}`}>
+          <div className={style.img_container}>
+            <img src={img} alt="" />
+          </div>
         </div>
-        <p className={style.item}>{sizeSot} сот.</p>
-        <p className={style.item}>{price} руб.</p>
-        <p className={`${style.item} ${style.color_green}`}>{occupied ? "Занят" : "Свободен"}</p>
+        <p className={`${style.item} ${style.item_size}`}>{sizeSot} сот.</p>
+        <p className={`${style.item} ${style.item_price}`}>{price} руб.</p>
+        <p className={`${style.item} ${style.color_green}`}>
+          {occupied ? "Занят" : "Свободен"}
+        </p>
         <div>
-          <button className ={style.btn}
-            onClick={() => {
-              setShowModal(!showModal);
+          <div className={`${style.item} ${style.item_btn}`}>
+            <button
+              className={style.btn}
+              onClick={() => {
+                setShowModal(!showModal);
 
-            const filtered = data.filter((item)=> item.id ===id)
-            setSinglLand(filtered)
-            }}
-          >
-            Записаться на просмотр
-          </button>
+                const filtered = data.filter((item) => item.id === id);
+                setSinglLand(filtered);
+              }}
+            >
+              Записаться на просмотр
+            </button>
+          </div>
         </div>
       </div>
     </>
   );
- 
 }

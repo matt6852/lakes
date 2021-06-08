@@ -336,6 +336,7 @@
       color: #333333;
       font-size: 15px;
       font-weight: bold;
+      cursor: pointer;
     }
     &_item {
       width: 250px;
@@ -462,6 +463,7 @@
             width: 15px;
             height: 15px;
             background: url("/check.svg") center/cover no-repeat;
+            background-size: contain;
           }
         }
 

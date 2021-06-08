@@ -89,14 +89,6 @@ export default function GenPlan() {
           Выберите один из <span>{data.length}</span> участков и реализуйте все
           ваши мечты об идеальном отдыхе на природе
         </p>
-        <button
-          onClick={() => {
-            setShowModal(!showModal);
-          }}
-          style={{ background: "red", marginTop: "40px" }}
-        >
-          modal
-        </button>
       </div>
       <Modal />
 
@@ -137,12 +129,12 @@ export default function GenPlan() {
           </div>
 
           <div className={style.title_categories}>
-            <p>№ участка:</p>
-            <p>Геометрия:</p>
-            <p>Площадь:</p>
-            <p>Цена при 100% оплате:</p>
-            <p>Статус:</p>
-            <p>Запись на просмотр:</p>
+            <p className={style.item_1}>№ участка:</p>
+            <p className={style.item_2}>Геометрия:</p>
+            <p className={style.item_3}>Площадь:</p>
+            <p className={style.item_4}>Цена при 100% оплате:</p>
+            <p className={style.item_5}>Статус:</p>
+            <p className={style.item_6}>Запись на просмотр:</p>
           </div>
           <div className={style.render_lands}>
             {data
@@ -150,11 +142,11 @@ export default function GenPlan() {
                 return <SinglLand key={item.id} {...item} />;
               })
               .slice(0, end)}
-            <div className={style.btn_center}>
-              <button className={style.btn} onClick={() => setEnd(end + 4)}>
-                Смотреть больше участков
-              </button>
-            </div>
+          </div>
+          <div className={style.btn_center}>
+            <button className={style.btn} onClick={() => setEnd(end + 4)}>
+              Смотреть больше участков
+            </button>
           </div>
         </div>
       </Wrapper>

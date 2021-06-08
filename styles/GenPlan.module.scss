@@ -67,12 +67,30 @@
     .title_categories {
       // margin-top: 50px;
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       padding: 0 30px;
       height: 90px;
       align-items: center;
       border: 3px solid #f4f4f4;
       border-top: none;
+      .item_1{
+        margin-left: 10px;
+      }
+      .item_2{
+        margin-left: 50px;
+      }
+      .item_3{
+        margin-left: 120px;
+      }
+      .item_4{
+        margin-left: 120px;
+      }
+      .item_5{
+        margin-left: 54px;
+      }
+      .item_6{
+        margin-left: 95px;
+      }
       p {
         font-family: Gilroy;
         font-style: normal;
@@ -84,8 +102,10 @@
       }
     }
     .render_lands {
-      max-height: 500px;
+      position: relative;
+      max-height: 400px;
       overflow: auto;
+      z-index: 1;
     }
     .btn_center{
       padding: 30px;

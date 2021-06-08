@@ -140,7 +140,7 @@ export const lands = [
     sizeSot: 12.57,
     price: 2136900,
     occupied: false,
-    img: "",
+    img: "/genPlan/1.svg",
   },
   {
     id: "2",
@@ -148,7 +148,7 @@ export const lands = [
     sizeSot: 8.72,
     price: 1482400,
     occupied: false,
-    img: "",
+    img: "/genPlan/2.svg",
   },
   {
     id: "3",
@@ -156,7 +156,7 @@ export const lands = [
     sizeSot: 9.95,
     price: 1691500,
     occupied: false,
-    img: "",
+    img: "/genPlan/3.svg",
   },
   {
     id: "4",
@@ -164,7 +164,7 @@ export const lands = [
     sizeSot: 16.45,
     price: 2796500,
     occupied: false,
-    img: "",
+    img: "/genPlan/4.svg",
   },
   {
     id: "5",
@@ -172,7 +172,7 @@ export const lands = [
     sizeSot: 9.95,
     price: 1691500,
     occupied: false,
-    img: "",
+    img: "/genPlan/5.svg",
   },
   {
     id: "6",
@@ -180,7 +180,7 @@ export const lands = [
     sizeSot: 20.0,
     price: 3400000,
     occupied: false,
-    img: "",
+    img: "/genPlan/6.svg",
   },
   {
     id: "7",
@@ -188,7 +188,7 @@ export const lands = [
     sizeSot: 9.87,
     price: 1677900,
     occupied: false,
-    img: "",
+    img: "/genPlan/7.svg",
   },
   {
     id: "8",
@@ -196,7 +196,7 @@ export const lands = [
     sizeSot: 13.28,
     price: 2257600,
     occupied: false,
-    img: "",
+    img: "/genPlan/8.svg",
   },
   {
     id: "9",
@@ -204,7 +204,7 @@ export const lands = [
     sizeSot: 10.79,
     price: 1834300,
     occupied: false,
-    img: "",
+    img: "/genPlan/9.svg",
   },
   {
     id: "10",
@@ -212,7 +212,7 @@ export const lands = [
     sizeSot: 9.89,
     price: 1681300,
     occupied: false,
-    img: "",
+    img: "/genPlan/10.svg",
   },
   {
     id: "11",
@@ -220,7 +220,7 @@ export const lands = [
     sizeSot: 20.04,
     price: 3406800,
     occupied: false,
-    img: "",
+    img: "/genPlan/11.svg",
   },
   {
     id: "12",
@@ -228,7 +228,7 @@ export const lands = [
     sizeSot: 20.0,
     price: 3400000,
     occupied: false,
-    img: "",
+    img: "/genPlan/12.svg",
   },
   {
     id: "13",
@@ -236,7 +236,7 @@ export const lands = [
     sizeSot: 10.0,
     price: 1700000,
     occupied: false,
-    img: "",
+    img: "/genPlan/13.svg",
   },
   {
     id: "14",
@@ -244,7 +244,7 @@ export const lands = [
     sizeSot: 10.0,
     price: 1700000,
     occupied: false,
-    img: "",
+    img: "/genPlan/14.svg",
   },
   {
     id: "15",
@@ -252,7 +252,7 @@ export const lands = [
     sizeSot: 10.25,
     price: 1742500,
     occupied: false,
-    img: "",
+    img: "/genPlan/15.svg",
   },
   {
     id: "16",
@@ -260,7 +260,7 @@ export const lands = [
     sizeSot: 10.38,
     price: 1764600,
     occupied: false,
-    img: "",
+    img: "/genPlan/16.svg",
   },
   {
     id: "17",
@@ -268,7 +268,7 @@ export const lands = [
     sizeSot: 18.19,
     price: 3092300,
     occupied: false,
-    img: "",
+    img: "/genPlan/17.svg",
   },
   {
     id: "18",
@@ -276,7 +276,7 @@ export const lands = [
     sizeSot: 12.05,
     price: 2048500,
     occupied: false,
-    img: "",
+    img: "/genPlan/18.svg",
   },
   {
     id: "19",
@@ -284,7 +284,7 @@ export const lands = [
     sizeSot: 11.64,
     price: 1978800,
     occupied: false,
-    img: "",
+    img: "/genPlan/19.svg",
   },
   {
     id: "20",
@@ -292,7 +292,7 @@ export const lands = [
     sizeSot: 11.15,
     price: 1895500,
     occupied: false,
-    img: "",
+    img: "/genPlan/20.svg",
   },
   {
     id: "21",
@@ -300,7 +300,7 @@ export const lands = [
     sizeSot: 10.42,
     price: 1771400,
     occupied: false,
-    img: "",
+    img: "/genPlan/21.svg",
   },
   {
     id: "22",
@@ -308,7 +308,7 @@ export const lands = [
     sizeSot: 17.74,
     price: 3015800,
     occupied: false,
-    img: "",
+    img: "/genPlan/22.svg",
   },
   {
     id: "23",
@@ -316,7 +316,7 @@ export const lands = [
     sizeSot: 10.25,
     price: 1742500,
     occupied: false,
-    img: "",
+    img: "/genPlan/23.svg",
   },
   {
     id: "24",
@@ -324,7 +324,7 @@ export const lands = [
     sizeSot: 10.51,
     price: 1786700,
     occupied: false,
-    img: "",
+    img: "/genPlan/24.svg",
   },
   {
     id: "25",
@@ -332,7 +332,7 @@ export const lands = [
     sizeSot: 12.2,
     price: 2074000,
     occupied: false,
-    img: "",
+    img: "/genPlan/25.svg",
   },
   {
     id: "26",
@@ -340,7 +340,7 @@ export const lands = [
     sizeSot: 12.06,
     price: 2050200,
     occupied: false,
-    img: "",
+    img: "/genPlan/26.svg",
   },
   {
     id: "27",
@@ -348,7 +348,7 @@ export const lands = [
     sizeSot: 19.55,
     price: 3323500,
     occupied: false,
-    img: "",
+    img: "/genPlan/27.svg",
   },
   {
     id: "28",
@@ -356,7 +356,7 @@ export const lands = [
     sizeSot: 1729,
     price: 2939300,
     occupied: false,
-    img: "",
+    img: "/genPlan/28.svg",
   },
   {
     id: "29",
@@ -364,7 +364,7 @@ export const lands = [
     sizeSot: 12.43,
     price: 2113100,
     occupied: false,
-    img: "",
+    img: "/genPlan/29.svg",
   },
   {
     id: "30",
@@ -372,7 +372,7 @@ export const lands = [
     sizeSot: 12.69,
     price: 2157300,
     occupied: false,
-    img: "",
+    img: "/genPlan/30.svg",
   },
   {
     id: "31",
@@ -380,7 +380,7 @@ export const lands = [
     sizeSot: 1019,
     price: 1732300,
     occupied: false,
-    img: "",
+    img: "/genPlan/31.svg",
   },
   {
     id: "32",
@@ -388,7 +388,7 @@ export const lands = [
     sizeSot: 10.3,
     price: 1751000,
     occupied: false,
-    img: "",
+    img: "/genPlan/32.svg",
   },
   {
     id: "33",
@@ -396,7 +396,7 @@ export const lands = [
     sizeSot: 16.14,
     price: 2743800,
     occupied: false,
-    img: "",
+    img: "/genPlan/33.svg",
   },
   {
     id: "34",
@@ -404,7 +404,7 @@ export const lands = [
     sizeSot: 16.99,
     price: 2888300,
     occupied: false,
-    img: "",
+    img: "/genPlan/34.svg",
   },
   {
     id: "35",
@@ -412,7 +412,7 @@ export const lands = [
     sizeSot: 10.55,
     price: 1793500,
     occupied: false,
-    img: "",
+    img: "/genPlan/35.svg",
   },
   {
     id: "36",
@@ -420,7 +420,7 @@ export const lands = [
     sizeSot: 10.61,
     price: 1803700,
     occupied: false,
-    img: "",
+    img: "/genPlan/36.svg",
   },
   {
     id: "37",
@@ -428,7 +428,7 @@ export const lands = [
     sizeSot: 12.89,
     price: 2191300,
     occupied: false,
-    img: "",
+    img: "/genPlan/37.svg",
   },
   {
     id: "38",
@@ -436,7 +436,7 @@ export const lands = [
     sizeSot: 12.45,
     price: 2116500,
     occupied: false,
-    img: "",
+    img: "/genPlan/38.svg",
   },
   {
     id: "39",
@@ -444,7 +444,7 @@ export const lands = [
     sizeSot: 19.65,
     price: 3340500,
     occupied: false,
-    img: "",
+    img: "/genPlan/39.svg",
   },
   {
     id: "40",
@@ -452,7 +452,7 @@ export const lands = [
     sizeSot: 20.06,
     price: 3410200,
     occupied: false,
-    img: "",
+    img: "/genPlan/40.svg",
   },
   {
     id: "41",
@@ -460,7 +460,7 @@ export const lands = [
     sizeSot: 12.94,
     price: 2199800,
     occupied: false,
-    img: "",
+    img: "/genPlan/41.svg",
   },
   {
     id: "42",
@@ -468,7 +468,7 @@ export const lands = [
     sizeSot: 13.48,
     price: 2291600,
     occupied: false,
-    img: "",
+    img: "/genPlan/42.svg",
   },
   {
     id: "43",
@@ -476,7 +476,7 @@ export const lands = [
     sizeSot: 11.05,
     price: 1878500,
     occupied: false,
-    img: "",
+    img: "/genPlan/43.svg",
   },
   {
     id: "44",
@@ -484,7 +484,7 @@ export const lands = [
     sizeSot: 10.93,
     price: 1858100,
     occupied: false,
-    img: "",
+    img: "/genPlan/44.svg",
   },
   {
     id: "45",
@@ -492,7 +492,7 @@ export const lands = [
     sizeSot: 18.87,
     price: 3207900,
     occupied: false,
-    img: "",
+    img: "/genPlan/45.svg",
   },
   {
     id: "46",
@@ -500,7 +500,7 @@ export const lands = [
     sizeSot: 11.44,
     price: 1944800,
     occupied: false,
-    img: "",
+    img: "/genPlan/46.svg",
   },
   {
     id: "47",
@@ -508,7 +508,7 @@ export const lands = [
     sizeSot: 11.61,
     price: 1973700,
     occupied: false,
-    img: "",
+    img: "/genPlan/47.svg",
   },
   {
     id: "48",
@@ -516,7 +516,7 @@ export const lands = [
     sizeSot: 14.07,
     price: 2391900,
     occupied: false,
-    img: "",
+    img: "/genPlan/48.svg",
   },
   {
     id: "49",
@@ -524,7 +524,7 @@ export const lands = [
     sizeSot: 13.43,
     price: 2283100,
     occupied: false,
-    img: "",
+    img: "/genPlan/49.svg",
   },
   {
     id: "50",
@@ -532,7 +532,7 @@ export const lands = [
     sizeSot: 19.76,
     price: 3359200,
     occupied: false,
-    img: "",
+    img: "/genPlan/50.svg",
   },
   {
     id: "51",
@@ -540,7 +540,7 @@ export const lands = [
     sizeSot: 13.93,
     price: 2368100,
     occupied: false,
-    img: "",
+    img: "/genPlan/51.svg",
   },
   {
     id: "52",
@@ -548,7 +548,7 @@ export const lands = [
     sizeSot: 14.66,
     price: 2492200,
     occupied: false,
-    img: "",
+    img: "/genPlan/52.svg",
   },
   {
     id: "53",
@@ -556,7 +556,7 @@ export const lands = [
     sizeSot: 12.0,
     price: 2040000,
     occupied: false,
-    img: "",
+    img: "/genPlan/53.svg",
   },
   {
     id: "54",
@@ -564,7 +564,7 @@ export const lands = [
     sizeSot: 22.15,
     price: 3765500,
     occupied: false,
-    img: "",
+    img: "/genPlan/54.svg",
   },
   {
     id: "55",
@@ -572,7 +572,7 @@ export const lands = [
     sizeSot: 21.26,
     price: 3614200,
     occupied: false,
-    img: "",
+    img: "/genPlan/55.svg",
   },
   {
     id: "56",
@@ -580,7 +580,7 @@ export const lands = [
     sizeSot: 8.95,
     price: 1521500,
     occupied: false,
-    img: "",
+    img: "/genPlan/56.svg",
   },
   {
     id: "57",
@@ -588,7 +588,7 @@ export const lands = [
     sizeSot: 9.18,
     price: 1560600,
     occupied: false,
-    img: "",
+    img: "/genPlan/57.svg",
   },
   {
     id: "58",
@@ -596,7 +596,7 @@ export const lands = [
     sizeSot: 15.25,
     price: 2592500,
     occupied: false,
-    img: "",
+    img: "/genPlan/58.svg",
   },
   {
     id: "59",
@@ -604,7 +604,7 @@ export const lands = [
     sizeSot: 14.42,
     price: 2451400,
     occupied: false,
-    img: "",
+    img: "/genPlan/59.svg",
   },
   {
     id: "60",
@@ -612,7 +612,7 @@ export const lands = [
     sizeSot: 19.95,
     price: 3391500,
     occupied: false,
-    img: "",
+    img: "/genPlan/60.svg",
   },
   {
     id: "61",
@@ -620,7 +620,7 @@ export const lands = [
     sizeSot: 20.27,
     price: 3445900,
     occupied: false,
-    img: "",
+    img: "/genPlan/61.svg",
   },
   {
     id: "62",
@@ -628,7 +628,7 @@ export const lands = [
     sizeSot: 16.05,
     price: 2728500,
     occupied: false,
-    img: "",
+    img: "/genPlan/62.svg",
   },
   {
     id: "63",
@@ -636,7 +636,7 @@ export const lands = [
     sizeSot: 17.06,
     price: 2900200,
     occupied: false,
-    img: "",
+    img: "/genPlan/63.svg",
   },
   {
     id: "64",
@@ -644,7 +644,7 @@ export const lands = [
     sizeSot: 9.67,
     price: 1643900,
     occupied: false,
-    img: "",
+    img: "/genPlan/64.svg",
   },
   {
     id: "65",
@@ -652,7 +652,7 @@ export const lands = [
     sizeSot: 9.39,
     price: 1596300,
     occupied: false,
-    img: "",
+    img: "/genPlan/65.svg",
   },
   {
     id: "66",
@@ -660,7 +660,7 @@ export const lands = [
     sizeSot: 17.59,
     price: 2990300,
     occupied: false,
-    img: "",
+    img: "/genPlan/66.svg",
   },
   {
     id: "67",
@@ -668,7 +668,7 @@ export const lands = [
     sizeSot: 10.01,
     price: 1701700,
     occupied: false,
-    img: "",
+    img: "/genPlan/67.svg",
   },
   {
     id: "68",
@@ -676,7 +676,7 @@ export const lands = [
     sizeSot: 13.03,
     price: 2215100,
     occupied: false,
-    img: "",
+    img: "/genPlan/68.svg",
   },
   {
     id: "69",
@@ -684,7 +684,7 @@ export const lands = [
     sizeSot: 9.06,
     price: 1540200,
     occupied: false,
-    img: "",
+    img: "/genPlan/69.svg",
   },
   {
     id: "70",
@@ -692,7 +692,7 @@ export const lands = [
     sizeSot: 10.94,
     price: 1859800,
     occupied: false,
-    img: "",
+    img: "/genPlan/70.svg",
   },
   {
     id: "71",
@@ -700,7 +700,7 @@ export const lands = [
     sizeSot: 11.51,
     price: 1956700,
     occupied: false,
-    img: "",
+    img: "/genPlan/71.svg",
   },
   {
     id: "72",
@@ -708,7 +708,7 @@ export const lands = [
     sizeSot: 12.05,
     price: 2048500,
     occupied: false,
-    img: "",
+    img: "/genPlan/72.svg",
   },
   {
     id: "73",
@@ -716,7 +716,7 @@ export const lands = [
     sizeSot: 21.24,
     price: 3610800,
     occupied: false,
-    img: "",
+    img: "/genPlan/73.svg",
   },
   {
     id: "74",
@@ -724,7 +724,7 @@ export const lands = [
     sizeSot: 32.64,
     price: 5548800,
     occupied: false,
-    img: "",
+    img: "/genPlan/74.svg",
   },
   {
     id: "75",
@@ -732,7 +732,7 @@ export const lands = [
     sizeSot: 18.49,
     price: 3143300,
     occupied: false,
-    img: "",
+    img: "/genPlan/75.svg",
   },
   {
     id: "76",
@@ -740,7 +740,7 @@ export const lands = [
     sizeSot: 20.00,
     price: 3400000,
     occupied: false,
-    img: "",
+    img: "/genPlan/76.svg",
   },
   {
     id: "77",
@@ -748,7 +748,7 @@ export const lands = [
     sizeSot: 11.00,
     price: 1870000,
     occupied: false,
-    img: "",
+    img: "/genPlan/77.svg",
   },
   {
     id: "78",
@@ -756,7 +756,7 @@ export const lands = [
     sizeSot: 14.30,
     price: 2431000,
     occupied: false,
-    img: "",
+    img: "/genPlan/78.svg",
   },
   {
     id: "79",
@@ -764,7 +764,7 @@ export const lands = [
     sizeSot: 18.21,
     price: 3095700,
     occupied: false,
-    img: "",
+    img: "/genPlan/79.svg",
   },
   {
     id: "80",
@@ -772,7 +772,7 @@ export const lands = [
     sizeSot: 18.52,
     price: 3148400,
     occupied: false,
-    img: "",
+    img: "/genPlan/80.svg",
   },
   {
     id: "81",
@@ -780,7 +780,7 @@ export const lands = [
     sizeSot: 24.17,
     price: 4108900,
     occupied: false,
-    img: "",
+    img: "/genPlan/81.svg",
   },
   {
     id: "82",
@@ -788,7 +788,7 @@ export const lands = [
     sizeSot: 19.45,
     price: 3306500,
     occupied: false,
-    img: "",
+    img: "/genPlan/82.svg",
   },
   {
     id: "83",
@@ -796,7 +796,7 @@ export const lands = [
     sizeSot: 20.28,
     price: 3447600,
     occupied: false,
-    img: "",
+    img: "/genPlan/83.svg",
   },
   {
     id: "84",
@@ -804,7 +804,7 @@ export const lands = [
     sizeSot: 18.17,
     price: 3088900,
     occupied: false,
-    img: "",
+    img: "/genPlan/84.svg",
   },
   {
     id: "85",
@@ -812,7 +812,7 @@ export const lands = [
     sizeSot: 17.27,
     price: 2935900,
     occupied: false,
-    img: "",
+    img: "/genPlan/85.svg",
   },
   {
     id: "86",
@@ -820,7 +820,7 @@ export const lands = [
     sizeSot: 19.86,
     price: 3376200,
     occupied: false,
-    img: "",
+    img: "/genPlan/86.svg",
   },
   {
     id: "87",
@@ -828,7 +828,7 @@ export const lands = [
     sizeSot: 20.55,
     price: 3493500,
     occupied: false,
-    img: "",
+    img: "/genPlan/87.svg",
   },
   {
     id: "88",
@@ -836,7 +836,7 @@ export const lands = [
     sizeSot: 23.81,
     price: 4047700,
     occupied: false,
-    img: "",
+    img: "/genPlan/88.svg",
   },
   {
     id: "89",
@@ -844,7 +844,7 @@ export const lands = [
     sizeSot: 19.60,
     price: 3332000,
     occupied: false,
-    img: "",
+    img: "/genPlan/89.svg",
   },
   {
     id: "90",
@@ -852,7 +852,7 @@ export const lands = [
     sizeSot: 21.50,
     price: 3655000,
     occupied: false,
-    img: "",
+    img: "/genPlan/90.svg",
   },
   {
     id: "91",
@@ -860,7 +860,7 @@ export const lands = [
     sizeSot: 26.98,
     price: 4586600,
     occupied: false,
-    img: "",
+    img: "/genPlan/91.svg",
   },
   {
     id: "92",
@@ -868,7 +868,7 @@ export const lands = [
     sizeSot: 17.49,
     price: 2973300,
     occupied: false,
-    img: "",
+    img: "/genPlan/92.svg",
   },
   {
     id: "93",
@@ -876,7 +876,7 @@ export const lands = [
     sizeSot: 16.42,
     price: 2791400,
     occupied: false,
-    img: "",
+    img: "/genPlan/93.svg",
   },
   {
     id: "94",
@@ -884,7 +884,7 @@ export const lands = [
     sizeSot: 15.31,
     price: 2602700,
     occupied: false,
-    img: "",
+    img: "/genPlan/94.svg",
   },
   {
     id: "95",
@@ -892,7 +892,7 @@ export const lands = [
     sizeSot: 18.45,
     price: 3136500,
     occupied: false,
-    img: "",
+    img: "/genPlan/95.svg",
   },
   {
     id: "96",
@@ -900,7 +900,7 @@ export const lands = [
     sizeSot: 23.86,
     price: 4056200,
     occupied: false,
-    img: "",
+    img: "/genPlan/96.svg",
   },
   {
     id: "97",
@@ -908,7 +908,7 @@ export const lands = [
     sizeSot: 18.11,
     price: 3078700,
     occupied: false,
-    img: "",
+    img: "/genPlan/97.svg",
   },
   {
     id: "98",
@@ -916,7 +916,7 @@ export const lands = [
     sizeSot: 21.47,
     price: 3649900,
     occupied: false,
-    img: "",
+    img: "/genPlan/98.svg",
   },
   {
     id: "99",
@@ -924,7 +924,7 @@ export const lands = [
     sizeSot: 24.20,
     price: 4114000,
     occupied: false,
-    img: "",
+    img: "/genPlan/99.svg",
   },
   {
     id: "100",
@@ -932,7 +932,7 @@ export const lands = [
     sizeSot: 20.45,
     price: 3476500,
     occupied: false,
-    img: "",
+    img: "/genPlan/100.svg",
   },
   {
     id: "101",
@@ -940,7 +940,7 @@ export const lands = [
     sizeSot: 24.32,
     price: 4134400,
     occupied: false,
-    img: "",
+    img: "/genPlan/101.svg",
   },
   {
     id: "102",
@@ -948,7 +948,7 @@ export const lands = [
     sizeSot: 20.55,
     price: 3493500,
     occupied: false,
-    img: "",
+    img: "/genPlan/102.svg",
   },
   {
     id: "103",
@@ -956,7 +956,7 @@ export const lands = [
     sizeSot: 24.32,
     price: 4134400,
     occupied: false,
-    img: "",
+    img: "/genPlan/103.svg",
   },
   {
     id: "104",
@@ -964,7 +964,7 @@ export const lands = [
     sizeSot: 29.29,
     price: 4979300,
     occupied: false,
-    img: "",
+    img: "/genPlan/104.svg",
   },
   {
     id: "105",
@@ -972,7 +972,7 @@ export const lands = [
     sizeSot: 22.33,
     price: 3796100,
     occupied: false,
-    img: "",
+    img: "/genPlan/105.svg",
   },
   {
     id: "106",
@@ -980,7 +980,7 @@ export const lands = [
     sizeSot: 25.41,
     price: 4319700,
     occupied: false,
-    img: "",
+    img: "/genPlan/106.svg",
   },
   {
     id: "107",
@@ -988,6 +988,6 @@ export const lands = [
     sizeSot: 25.41,
     price: 4319700,
     occupied: false,
-    img: "",
+    img: "/genPlan/107.svg",
   },
 ];
