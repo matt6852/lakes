@@ -7,8 +7,7 @@ import SvgPlan from "../SvgPlan";
 import SinglLand from "../SinglLand";
 
 export default function GenPlan() {
-  const {  setShowModal, data, setData, end, setEnd } =
-    useAppContext();
+  const { setShowModal, data, setData, end, setEnd } = useAppContext();
   // console.log(lands.slice(0,10));
   useEffect(() => {
     const chekEl = (e) => {
@@ -84,10 +83,12 @@ export default function GenPlan() {
         </p>
       </div>
       <Modal />
-      <div className={style.genPlan_svg_container}>
-        <SvgPlan className={style.outer_svg} />
-        <div className = {style.numbers}>
-          <p>1</p>
+      <div className ={style.main_main_wraper}>
+        <div className={style.genPlan_svg_container}>
+          <SvgPlan className={style.outer_svg} />
+          <div className={style.numbers}>
+            <p>1</p>
+          </div>
         </div>
       </div>
       {/* filter area */}
