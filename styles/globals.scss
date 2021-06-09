@@ -104,9 +104,16 @@ ul li {
 }
 
 .st0 {
-  width: 2562px;
-  height: 1545px;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   fill: #ffffff;
   cursor: pointer;
+}
+.st0:hover{
+  //  fill: red;
+  //  background-color: red;
+  //  color: red;
+  opacity: .5;
+
 }
