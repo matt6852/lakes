@@ -1,115 +1,13 @@
-import style from "styles/GenPlan.module.scss";
-import { useAppContext } from "context/state";
-import Modal from "../Modal";
-import { useEffect } from "react";
-import Wrapper from "../Wrapper";
-import SinglLand from "../SinglLand";
+<?xml version="1.0" encoding="utf-8"?>
 
-export default function GenPlan() {
-  const { showModal, setShowModal, data, setData, end, setEnd } =
-    useAppContext();
-  // console.log(lands.slice(0,10));
-  useEffect(() => {
-    const chekEl = (e) => {
-      const element = e.target.classList.contains(
-        "Modal_modal_backdrop__2ovNf"
-      );
-      if (element) {
-        setShowModal(false);
-      }
-    };
-    window.addEventListener("click", chekEl);
-    return () => {
-      window.removeEventListener("click", chekEl);
-    };
-  }, []);
-  useEffect(() => {
-    //  const svgEl = document.querySelector(".1")
-    //  console.log(svgEl);
-  }, [data]);
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2562 1545" style="enable-background:new 0 0 2562 1545;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0;fill:#FFFFFF;}
+</style>
+<rect class="st0" width="2562" height="1545"/>
 
-  // function handle sort by price
-
-  const sortByPrice = (type) => {
-    const types = {
-      all: "all",
-      max: "max",
-      min: "min",
-    };
-    if (types.max === type) {
-      const sorted = [...data].sort((a, b) => b.price - a.price);
-      setData(sorted);
-      // console.log(sorted);
-    } else if (types.min === type) {
-      const sorted = [...data].sort((a, b) => a.price - b.price);
-      setData(sorted);
-      // console.log(sorted);
-    } else {
-      const sorted = [...data].sort((a, b) => a.id - b.id);
-      setData(sorted);
-    }
-  };
-  // function handle sort by size
-
-  const sortBySize = (type) => {
-    const types = {
-      origin: "origin",
-      big: "big",
-      small: "small",
-    };
-    if (types.big === type) {
-      const sorted = [...data].sort((a, b) => b.sizeMetr - a.sizeMetr);
-      setData(sorted);
-      // console.log(sorted);
-    } else if (types.small === type) {
-      const sorted = [...data].sort((a, b) => a.sizeMetr - b.sizeMetr);
-      setData(sorted);
-      // console.log(sorted);
-    } else {
-      const sorted = [...data].sort((a, b) => a.id - b.id);
-      setData(sorted);
-    }
-  };
-
-  return (
-    <section id="genplan" className={style.gen_plan}>
-      <div className={style.title}>
-        <h3>
-          <span className="linercradient">Генеральный </span> план
-        </h3>
-        <p>
-          Выберите один из <span>{data.length}</span> участков и реализуйте все
-          ваши мечты об идеальном отдыхе на природе
-        </p>
-      </div>
-      <Modal />
-
-      {/* filter area */}
-      <Wrapper>
-        <div className={style.genPlan_img_conainer}>
-          <svg>
-            {/* <?xml version="1.0" encoding="utf-8"?> */}
-
-            <svg
-              version="1.1"
-              id="Слой_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              x="0"
-              y="0"
-              viewBox="0 0 2562 1545"
-              // style="enableBackground:new 0 0 2562 1545;"
-              style={{ enableBackground: "new 0 0 2562px 1545px" }}
-              xmlSpace="preserve"
-            >
-              <rect className="st0" width="2562" height="1545" />
-
-              <image
-                // style="overflow:visible;enable-background:new    ;"
-                style={{ enableBackground: "new", overflow: "visible" }}
-                width="2560"
-                height="1545"
-                xlinkHref="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+<image style="overflow:visible;enable-background:new    ;" width="2560" height="1545" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
 EAMCAwYAAJfBAAE/OgAB6ff/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
 Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
 JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIBgkKAAMBIgACEQEDEQH/
@@ -2309,229 +2207,63 @@ Cju0I8NCGiHh30d3fDTBvR7w9k94d3ejdo8d3cS36Idx0S9FjZcOS9oV3zWtXnkvd8leFeOauVx7
 gQFwJO+wvdINadjeCcrYvSfcLtoskNnh2Dv+lh3G1sABoR3jQhoY3DQuOhc9E498Nw74buwdIHen
 snvDu70bho8d3cHedEO7RAj3d6vKvVw5K4L2/Na1eUCKg1CAxV1NZtlvUfTfXwKl6r/3BOL0+sXi
 wjlutG82SJwIG8p3qgNalv0LjoR3HQzoQ3nQju0Qb9MG7sHdpA709k94d3ejdo47g6IdEGiR3KPH
-sHegjYd1g3WjjYN9gR36Fx0I7tDOhDQju0QaYOwdA//Z"
-                transform="matrix(1 0 0 1 1 0)"
-              ></image>
-              <path onClick ={()=>{
-                console.log("click");
-                setShowModal(!showModal)
-              }}
-                id="first"
-                className="st0"
-                d="M1696.439,583.752l17.3,142.089l-218.55,28.416c-15.73,2.045-30.13-9.08-32.11-24.816l-11.31-89.491
-	c6.79-1.294,11.49-7.647,10.65-14.593l-1.43-11.9L1696.439,583.752z"
-              />
-              <path
-                className="st0"
-                d="M1697.739,583.639l278.89-36.184l14.24,114.278c1.95,15.638-9.1,29.913-24.73,31.949l-250.27,32.593
-	L1697.739,583.639z"
-              />
-              <path
-                className="st0"
-                d="M1222.139,645.348l187.83-24.328l14.58,114.651c1.99,15.675-9.09,30.003-24.76,32.024l-159.24,20.527
-	L1222.139,645.348z"
-              />
-              <path
-                className="st0"
-                d="M364.661,1066.803c-0.437-0.002-1.04-0.004-1.797-0.009c-1.708-0.011-4.198-0.033-7.326-0.077
+sHegjYd1g3WjjYN9gR36Fx0I7tDOhDQju0QaYOwdA//Z" transform="matrix(1 0 0 1 1 0)">
+</image>
+<path  id ="first" class="st0" d="M1696.439,583.752l17.3,142.089l-218.55,28.416c-15.73,2.045-30.13-9.08-32.11-24.816l-11.31-89.491
+	c6.79-1.294,11.49-7.647,10.65-14.593l-1.43-11.9L1696.439,583.752z"/>
+<path class="st0" d="M1697.739,583.639l278.89-36.184l14.24,114.278c1.95,15.638-9.1,29.913-24.73,31.949l-250.27,32.593
+	L1697.739,583.639z"/>
+<path class="st0" d="M1222.139,645.348l187.83-24.328l14.58,114.651c1.99,15.675-9.09,30.003-24.76,32.024l-159.24,20.527
+	L1222.139,645.348z"/>
+<path class="st0" d="M364.661,1066.803c-0.437-0.002-1.04-0.004-1.797-0.009c-1.708-0.011-4.198-0.033-7.326-0.077
 	c-6.257-0.088-15.068-0.264-25.282-0.616c-20.431-0.705-46.458-2.113-68.882-4.927c-10.787-1.354-19.167-4.399-26.59-9.174
 	c-7.435-4.781-13.943-11.318-20.963-19.708c-8.776-10.49-12.657-17.71-16.541-30.823c-3.929-13.264-4.265-21.514-2.858-35.316
 	c1.904-18.672,4.87-30.274,16.369-44.97c6.331-8.091,12.019-11.915,19.465-16.92c1.977-1.328,4.077-2.74,6.346-4.337
 	c9.868-6.945,19.061-9.673,28.147-12.369c0.646-0.191,1.292-0.383,1.938-0.576c9.722-2.906,19.337-6.113,29.293-14.824
 	c8.587-7.514,18.635-17.779,26.526-26.154c3.948-4.19,7.36-7.91,9.785-10.584c1.181-1.302,2.128-2.355,2.789-3.094L364.661,1066.803
-	z"
-              />
-              <path
-                className="st0"
-                d="M345.508,894.666l-7.48-62.808l61.692-59.748l164.21-55.934l20.186,156.781l-187.625,24.186l-0.63-3.876
-	c-0.733-4.509-5.054-7.515-9.536-6.633L345.508,894.666z"
-              />
-              <path
-                className="st0"
-                d="M565.287,715.501l157.939-53.973l24.406,190.525l-162.056,20.716L565.287,715.501z"
-              />
-              <path
-                className="st0"
-                d="M724.646,661.044l157.94-53.973l28.552,223.152l-162.514,21.181L724.646,661.044z"
-              />
-              <path
-                className="st0"
-                d="M884.005,606.591l158.001-53l32.643,255.729l-162.054,20.716L884.005,606.591z"
-              />
-              <path
-                className="st0"
-                d="M1043.453,553.012l158.856-51.699l36.32,286.636l-162.518,21.182L1043.453,553.012z"
-              />
-              <path
-                className="st0"
-                d="M1222.129,643.754l-18.39-142.85l166.12-38.8l19.19-0.025l20.68,157.492L1222.129,643.754z"
-              />
-              <path
-                className="st0"
-                d="M1408.119,594.927l-16.97-133.292l159.96-4.393l0,0l128.05-3.16l16.25,128.216l-234.99,30.164l-1.07-7.291
-	c-1.33-9.106-9.7-15.474-18.83-14.325L1408.119,594.927z"
-              />
-              <path
-                className="st0"
-                d="M1681.019,453.877l194.08-1.449l0.21-0.002l0.18-0.113l82.29-52.162l18.67,145.845l-278.65,36.107
-	L1681.019,453.877z"
-              />
-              <path
-                className="st0"
-                d="M2267.189,508.223l-252.59,33.09l-20.77-164.232c0-0.003,0.01-0.005,0.01-0.008c0.22-0.174,0.54-0.43,0.96-0.76
+	z"/>
+<path class="st0" d="M345.508,894.666l-7.48-62.808l61.692-59.748l164.21-55.934l20.186,156.781l-187.625,24.186l-0.63-3.876
+	c-0.733-4.509-5.054-7.515-9.536-6.633L345.508,894.666z"/>
+<path class="st0" d="M565.287,715.501l157.939-53.973l24.406,190.525l-162.056,20.716L565.287,715.501z"/>
+<path class="st0" d="M724.646,661.044l157.94-53.973l28.552,223.152l-162.514,21.181L724.646,661.044z"/>
+<path class="st0" d="M884.005,606.591l158.001-53l32.643,255.729l-162.054,20.716L884.005,606.591z"/>
+<path class="st0" d="M1043.453,553.012l158.856-51.699l36.32,286.636l-162.518,21.182L1043.453,553.012z"/>
+<path class="st0" d="M1222.129,643.754l-18.39-142.85l166.12-38.8l19.19-0.025l20.68,157.492L1222.129,643.754z"/>
+<path class="st0" d="M1408.119,594.927l-16.97-133.292l159.96-4.393l0,0l128.05-3.16l16.25,128.216l-234.99,30.164l-1.07-7.291
+	c-1.33-9.106-9.7-15.474-18.83-14.325L1408.119,594.927z"/>
+<path class="st0" d="M1681.019,453.877l194.08-1.449l0.21-0.002l0.18-0.113l82.29-52.162l18.67,145.845l-278.65,36.107
+	L1681.019,453.877z"/>
+<path class="st0" d="M2267.189,508.223l-252.59,33.09l-20.77-164.232c0-0.003,0.01-0.005,0.01-0.008c0.22-0.174,0.54-0.43,0.96-0.76
 	c0.84-0.659,2.06-1.612,3.59-2.783c3.06-2.343,7.37-5.561,12.37-9.06c10-7.007,22.68-15.107,33.51-19.585
 	c10.79-4.465,18.01-7.145,26.19-8.975c8.19-1.832,17.36-2.819,32.06-3.864c14.21-1.011,33.7,2.04,47.55,5.684
 	c13.52,3.556,25.41,7.736,38.35,14.911c6.25,3.461,10.16,5.84,13.74,8.634c3.59,2.795,6.85,6.021,11.76,11.202
 	c2.04,2.15,3.9,4.028,5.64,5.783c5.78,5.855,10.23,10.349,15.67,19.067c0.67,1.063,1.32,2.098,1.96,3.113
 	c5.28,8.369,9.69,15.354,12.22,25.212c4.19,16.336,8.67,37.166,12.1,53.921c1.72,8.376,3.18,15.73,4.2,20.99
-	c0.51,2.63,0.92,4.736,1.2,6.185C2267.019,507.361,2267.119,507.856,2267.189,508.223z"
-              />
-              <path
-                className="st0"
-                d="M2298.759,669.32l-263.43,34.175l-20.51-160.997l252.65-32.831L2298.759,669.32z"
-              />
-              <path
-                className="st0"
-                d="M2065.669,843.68l247.92-32.119c0,0.029,0,0.059,0,0.09c0.01,0.595,0.03,1.473,0.05,2.605
+	c0.51,2.63,0.92,4.736,1.2,6.185C2267.019,507.361,2267.119,507.856,2267.189,508.223z"/>
+<path class="st0" d="M2298.759,669.32l-263.43,34.175l-20.51-160.997l252.65-32.831L2298.759,669.32z"/>
+<path class="st0" d="M2065.669,843.68l247.92-32.119c0,0.029,0,0.059,0,0.09c0.01,0.595,0.03,1.473,0.05,2.605
 	c0.05,2.266,0.11,5.552,0.15,9.631c0.09,8.158,0.14,19.489-0.04,32.179c-0.35,25.392-1.59,56.177-5.15,77.874
 	c-1.4,8.544-3.05,14.586-5.72,20.138c-2.67,5.557-6.38,10.662-11.95,17.315c-0.65,0.776-1.29,1.54-1.91,2.293
 	c-9.06,10.861-16.11,19.307-28.57,26.618c-12.66,7.429-24.47,13.483-38.95,13.844c-38.43,0.959-85.02-2.523-122.02-6.249
 	c-18.49-1.863-34.58-3.785-46.05-5.242c-5.73-0.728-10.31-1.34-13.45-1.77c-1.57-0.215-2.79-0.384-3.61-0.5
-	c-0.27-0.039-0.5-0.071-0.69-0.098l-15.79-126.001l32.17-4.256c9.19-1.217,15.69-9.62,14.55-18.826L2065.669,843.68z"
-              />
-              <path
-                className="st0"
-                d="M2049.389,813.932l-13.88-108.978l154.04-19.909l0,0l108.1-13.804l17.32,85.599l-0.94,52.772l-248.55,32.609
-	l-2.53-17.96c-0.52-3.683-3.91-6.256-7.6-5.756C2052.439,818.899,2049.759,816.846,2049.389,813.932z"
-              />
-              <path
-                className="st0"
-                d="M352.087,941.861l218.311-28.565c8.99-1.177,17.142,5.394,17.901,14.43l11.397,135.73l-115.852,10.671
-	l-115.686-6.155L352.087,941.861z"
-              />
-              <path
-                className="st0"
-                d="M1995.979,997.742l-0.06-0.004l-0.07,0.008l-241.85,28.443l-17.88-140.021l278.85-36.305l19.21,150.286
-	L1995.979,997.742z"
-              />
-              <path
-                className="st0"
-                d="M1499.539,793.011l219.43-28.556l15.71,120.246l-235.9,31.094l-2-16.732c-0.54-4.567-4.79-7.758-9.33-7.015
-	l-3.92,0.643l-8.7-67.618C1472.809,809.398,1483.869,795.051,1499.539,793.011z"
-              />
-              <path
-                className="st0"
-                d="M1225.799,828.552l178.9-23.129c15.76-2.037,30.17,9.141,32.11,24.912l11.27,91.644l-206.99,26.93
-	L1225.799,828.552z"
-              />
-              <path
-                className="st0"
-                d="M874.803,1036.386l-20.296-159.718l194.95-25.347l21.372,168.189L874.803,1036.386z"
-              />
-              <path
-                className="st0"
-                d="M663.113,901.498l189.996-24.687l20.23,159.711l-210.568,20.951l-11.767-140.975
-	C650.383,909.065,655.717,902.459,663.113,901.498z"
-              />
-              <path
-                className="st0"
-                d="M1072.313,1018.66l-21.36-167.389l173.246-22.493l30.2,237.236L1072.313,1018.66z"
-              />
-              <path
-                className="st0"
-                d="M1448.259,923.437l19.74,154.721l-9.55,2.691l-79.25,11.336l-123.09-25.309l-14.83-116.51L1448.259,923.437z"
-              />
-              <path
-                className="st0"
-                d="M1566.449,1046.946l-96.56,30.315l-16.71-129.399l32.34-4.35c9.2-1.237,15.68-9.661,14.51-18.868l-0.97-7.671
-	l235.35-30.347l17.73,138.818l-185.56,21.473l-0.07,0.008L1566.449,1046.946z"
-              />
-              <path
-                className="st0"
-                d="M1720.649,764.353l250.46-32.089c15.7-2.012,30.05,9.093,32.05,24.796l11.63,91.345l-278.85,36.305
-	L1720.649,764.353z"
-              />
-            </svg>
-          </svg>
-        </div>
-        <div className={style.filter_container}>
-          <div className={style.filter_btns}>
-            <div className={style.btn_container}>
-              <label htmlFor="price" className={style.title}>
-                Стоимость участка:
-              </label>
-              <select onChange={(e) => sortByPrice(e.target.value)} id="price">
-                <option value="all">Все {data.length}</option>
-                <option value="max">max</option>
-                <option value="min">min</option>
-              </select>
-            </div>
-            <div className={style.btn_container}>
-              <label className={style.title} htmlFor="size">
-                Площадь:
-              </label>
-              <select onChange={(e) => sortBySize(e.target.value)} id="size">
-                <option value="origin">Все {data.length}</option>
-                <option value="big">big</option>
-                <option value="small">small</option>
-              </select>
-            </div>
-            <div className={style.btn_container}>
-              <label className={style.title} htmlFor="structure">
-                Инфраструктура:
-              </label>
-              <select name="" id="structure">
-                <option value="1">Все {data.length}</option>
-                <option value="2">2</option>
-                <option value="2">3</option>
-              </select>
-            </div>
-          </div>
-
-          <div className={style.title_categories}>
-            <p className={style.item_1}>№ участка:</p>
-            <p className={style.item_2}>Геометрия:</p>
-            <p className={style.item_3}>Площадь:</p>
-            <p className={style.item_4}>Цена при 100% оплате:</p>
-            <p className={style.item_5}>Статус:</p>
-            <p className={style.item_6}>Запись на просмотр:</p>
-          </div>
-          <div className={`${style.render_lands} render_lands`}>
-            {data
-              .map((item) => {
-                item.occupied = process.env.RESESERVED.split(",").some(
-                  (id) => id === item.id
-                );
-                item.price = Math.trunc(
-                  item.sizeSot * Number(process.env.PRICE)
-                );
-                item.soldout = process.env.SOLDOUT.split(",").some(
-                  (id) => id === item.id
-                );
-                return <SinglLand key={item.id} {...item} />;
-              })
-              .slice(0, end)}
-          </div>
-          <div className={style.btn_center}>
-            <button
-              className={style.btn}
-              onClick={() => {
-                const element = document.querySelector(".render_lands");
-                const scrollToBottomValue = element.scrollHeight;
-                element.scrollTo({
-                  top: scrollToBottomValue,
-                  behavior: "smooth",
-                });
-                console.log(element);
-                setEnd(end + 4);
-              }}
-            >
-              Смотреть больше участков
-            </button>
-          </div>
-        </div>
-      </Wrapper>
-      {/* end of filter area */}
-    </section>
-  );
-}
+	c-0.27-0.039-0.5-0.071-0.69-0.098l-15.79-126.001l32.17-4.256c9.19-1.217,15.69-9.62,14.55-18.826L2065.669,843.68z"/>
+<path class="st0" d="M2049.389,813.932l-13.88-108.978l154.04-19.909l0,0l108.1-13.804l17.32,85.599l-0.94,52.772l-248.55,32.609
+	l-2.53-17.96c-0.52-3.683-3.91-6.256-7.6-5.756C2052.439,818.899,2049.759,816.846,2049.389,813.932z"/>
+<path class="st0" d="M352.087,941.861l218.311-28.565c8.99-1.177,17.142,5.394,17.901,14.43l11.397,135.73l-115.852,10.671
+	l-115.686-6.155L352.087,941.861z"/>
+<path class="st0" d="M1995.979,997.742l-0.06-0.004l-0.07,0.008l-241.85,28.443l-17.88-140.021l278.85-36.305l19.21,150.286
+	L1995.979,997.742z"/>
+<path class="st0" d="M1499.539,793.011l219.43-28.556l15.71,120.246l-235.9,31.094l-2-16.732c-0.54-4.567-4.79-7.758-9.33-7.015
+	l-3.92,0.643l-8.7-67.618C1472.809,809.398,1483.869,795.051,1499.539,793.011z"/>
+<path class="st0" d="M1225.799,828.552l178.9-23.129c15.76-2.037,30.17,9.141,32.11,24.912l11.27,91.644l-206.99,26.93
+	L1225.799,828.552z"/>
+<path class="st0" d="M874.803,1036.386l-20.296-159.718l194.95-25.347l21.372,168.189L874.803,1036.386z"/>
+<path class="st0" d="M663.113,901.498l189.996-24.687l20.23,159.711l-210.568,20.951l-11.767-140.975
+	C650.383,909.065,655.717,902.459,663.113,901.498z"/>
+<path class="st0" d="M1072.313,1018.66l-21.36-167.389l173.246-22.493l30.2,237.236L1072.313,1018.66z"/>
+<path class="st0" d="M1448.259,923.437l19.74,154.721l-9.55,2.691l-79.25,11.336l-123.09-25.309l-14.83-116.51L1448.259,923.437z"/>
+<path class="st0" d="M1566.449,1046.946l-96.56,30.315l-16.71-129.399l32.34-4.35c9.2-1.237,15.68-9.661,14.51-18.868l-0.97-7.671
+	l235.35-30.347l17.73,138.818l-185.56,21.473l-0.07,0.008L1566.449,1046.946z"/>
+<path class="st0" d="M1720.649,764.353l250.46-32.089c15.7-2.012,30.05,9.093,32.05,24.796l11.63,91.345l-278.85,36.305
+	L1720.649,764.353z"/>
+</svg>

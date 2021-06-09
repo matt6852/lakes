@@ -96,9 +96,17 @@ ul li {
   transition: opacity 1s ease-in-out;
 }
 
-  .render_lands {
-      position: relative;
-      max-height: 400px;
-      overflow: auto;
-      z-index: 100;
-    }
+.render_lands {
+  position: relative;
+  max-height: 400px;
+  overflow: auto;
+  z-index: 100;
+}
+
+.st0 {
+  width: 2562px;
+  height: 1545px;
+  opacity: 0;
+  fill: #ffffff;
+  cursor: pointer;
+}
