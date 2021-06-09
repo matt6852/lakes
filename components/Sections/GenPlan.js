@@ -87,7 +87,7 @@ export default function GenPlan() {
         <div className={style.genPlan_svg_container}>
           <SvgPlan className={style.outer_svg} />
           <div className={style.numbers}>
-            <p>1</p>
+          
           </div>
         </div>
       </div>
