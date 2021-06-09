@@ -2372,6 +2372,7 @@ sHegjYd1g3WjjYN9gR36Fx0I7tDOhDQju0QaYOwdA//Z"
 	L1720.649,764.353z"
           />
         </svg>
+        
       </svg>
     </>
   );

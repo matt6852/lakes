@@ -1,6 +1,17 @@
 .genPlan_svg_container{
-  padding-bottom: 40px;
+  position: relative;
+  padding-top: 60.3%;
  
+  .numbers{
+    position: absolute;
+    top: 51%;
+    left: 220px;
+    
+
+    p{
+      font-size: 32px;
+    }
+  }
 }
 
 
