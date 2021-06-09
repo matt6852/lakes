@@ -112,7 +112,7 @@ export default function GenPlan() {
                 <option value="small">small</option>
               </select>
             </div>
-            <div className={style.btn_container}>
+            {/* <div className={style.btn_container}>
               <label className={style.title} htmlFor="structure">
                 Инфраструктура:
               </label>
@@ -121,7 +121,7 @@ export default function GenPlan() {
                 <option value="2">2</option>
                 <option value="2">3</option>
               </select>
-            </div>
+            </div> */}
           </div>
 
           <div className={style.title_categories}>

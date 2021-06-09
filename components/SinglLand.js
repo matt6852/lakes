@@ -36,7 +36,7 @@ export default function SinglLand({
           <div className={`${style.item} ${style.item_btn}`}>
             <button
               disabled={soldout || occupied}
-              className={style.btn}
+              className={soldout ? `${style.btn_sold}` : `${style.btn}`}
               onClick={() => {
                 setShowModal(!showModal);
 
@@ -44,7 +44,7 @@ export default function SinglLand({
                 setSinglLand(filtered);
               }}
             >
-              Записаться на просмотр
+              {soldout ? "Забронировано" : "Записаться на просмотр"}
             </button>
           </div>
         </div>

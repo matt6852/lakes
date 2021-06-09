@@ -67,6 +67,30 @@
 
     color: #ffffff;
   }
+
+   .btn_sold {
+    width: 224px;
+    height: 50px;
+    background: #989898;
+    border-radius: 50px;
+    border: none;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 20px;
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    /* identical to box height */
+    cursor: pointer;
+
+    text-align: center;
+
+    color: #ffffff;
+  }
   .color_green {
     font-family: Gilroy;
     font-style: normal;
