@@ -7,15 +7,14 @@
 .genPlan_svg_container{
   position: relative;
   padding-top: 60.3%;
+.btn_container_genPlan{
+  z-index: 1;
+position: absolute;
+  bottom: 10%;
+  left: 0;
+}
  
-  .numbers{
-    position: absolute;
-    top: 51%;
-    left: 220px;
-    background-image:url("/genPlanNamber.svg");
-    
 
-  }
 }
 
 

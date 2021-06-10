@@ -117,3 +117,76 @@ ul li {
   opacity: .5;
 
 }
+
+
+.main_main_wraper{
+  width: 1440px;
+  margin: auto;
+}
+
+  .numbers{
+    position: absolute;
+    // top: 51%;
+    // left: 220px;
+    background-image:url("/genPlanNumbers.svg");
+    top: 27%;
+    left: 10%;
+    width: 75%;
+    height: 39%;
+    background-size: contain;
+    color: black;
+    z-index: 0;
+
+  }
+  .numbers_2{
+     position: absolute;
+    background-image:url("/genPlanNumbers.svg");
+    top: 36.5%;
+    left: 20%;
+    width: 73%;
+    height: 30%;
+    background-size: contain;
+    background: no-repeat;
+    // color: black;
+    z-index: 0;
+  }
+
+  .outer_svg{
+   position: absolute;
+   height: 100%;
+   top: 0;
+   width: 100%;
+   left: 0;
+   display: block;
+   
+//    background;
+ }
+.hidePlan{
+  display: none;
+  opacity: 0;
+}
+
+.showPlan{
+   position: absolute;
+   height: 100%;
+   top: 0;
+   width: 100%;
+   left: 0;
+   display: block;
+}
+.showPlan1{
+   position: absolute;
+   height: 100%;
+   top: 0;
+   width: 100%;
+   left: 0;
+   display: block;
+}
+.showPlan2{
+   position: absolute;
+   height: 100%;
+   top: 0;
+   width: 100%;
+   left: 0;
+   display: block;
+}

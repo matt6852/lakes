@@ -40,6 +40,7 @@ export default function MainSection() {
     }, [indexMain]);
 
     return (
+     
       <section key={slidIndex} className={`${position} ${style.main_section} ${'main_section_' + slidIndex}`}>
         <Wrapper className="z_index_1">
           <div className={style.title_center}>
@@ -91,5 +92,9 @@ export default function MainSection() {
       </section>
     );
   });
-  return <section className={style.center_main}>{renderSection}</section>;
+  return (
+    <div className=".main_main_wraper">
+      <section className={style.center_main}>{renderSection}</section>;
+    </div>
+  );
 }

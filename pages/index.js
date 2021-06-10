@@ -12,21 +12,21 @@ import GenPlan from "components/Sections/GenPlan";
 import Contacts from "components/Sections/Contacts";
 import Footer from "components/Sections/Footer";
 
-
-
 export default function Home() {
   return (
     <>
       <Header />
-      <HeaderMob/>
-      <MainSection />
-      <UniqAries />
-      <Projects />
-      <GenPlan/>
-      <History />
-      <Carousel />
-      <HowToBuy />
-      <Contacts />
+      <HeaderMob />
+    
+        <MainSection />
+        <UniqAries />
+        <Projects />
+        <GenPlan />
+        <History />
+        <Carousel />
+        <HowToBuy />
+        <Contacts />
+     
       <Footer />
     </>
   );

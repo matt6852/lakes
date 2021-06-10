@@ -3,6 +3,8 @@ import Wrapper from "../Wrapper";
 
 export default function Projects() {
   return (
+     <div className=".main_main_wraper">
+
     <section className={style.projects} id="projects">
       <Wrapper>
         <div className={style.title}>
@@ -90,5 +92,6 @@ export default function Projects() {
         </div>
       </Wrapper>
     </section>
+     </div>
   );
 }

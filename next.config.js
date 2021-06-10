@@ -6,5 +6,8 @@ module.exports = {
     RESESERVED: process.env.RESESERVED,
     PRICE: process.env.PRICE,
     SOLDOUT: process.env.SOLDOUT,
+    // development: {
+    //   compact: true,
+    // },
   },
 };

@@ -6,6 +6,8 @@ import { useAppContext } from "context/state";
 export default function HowToBuy() {
      const { howToBuyCards } = useAppContext();
   return (
+     <div className=".main_main_wraper">
+
     <section className={style.howtobuy}>
       <Wrapper>
         <div className={style.title}>
@@ -25,5 +27,6 @@ export default function HowToBuy() {
         </div>
       </Wrapper>
     </section>
+     </div>
   );
 }

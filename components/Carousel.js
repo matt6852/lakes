@@ -162,6 +162,8 @@ export default function CarouselSlider() {
     }
   };
   return (
+     <div className=".main_main_wraper">
+
     <section className={style.galery} id="galary">
       <Wrapper>
         <div className={style.title}>
@@ -247,5 +249,6 @@ export default function CarouselSlider() {
         </Carousel>
       </Wrapper>
     </section>
+     </div>
   );
 }
