@@ -4,22 +4,17 @@ import { useEffect } from "react";
 
 import { useAppContext } from "context/state";
 export default function MainPlanSvg() {
-  const {
-    hidePlan,
-    setHidePlan,
-    hidePlan1,
-    setHidePlan1,
-    hidePlan2,
-    setHidePlan2,
-  } = useAppContext();
+  const { activPlan, setActivePlan } = useAppContext();
 
-  return (
-    <>
-    
-      <SvgPlanDown className= {hidePlan ? "showPlan" : "hide"} />
-      {/* <SvgPlanUP  className ="hide"/> */}
+  useEffect(()=>{
+
+  },[activPlan])
+  if (activPlan === 0) {
+ return(
+
+ <>
       <svg
-        className={hidePlan ? "hidePlan" :"showPlan" }
+        className= "showPlan"
         version="1.1"
         id="Слой_1"
         xmlns="http://www.w3.org/2000/svg"
@@ -31499,7 +31494,7 @@ aJfqin8S9f0A0kVLb5h2FV0F0Q6lHcoaetH+ZD3EoEaafcT/AHV/kKZutgD/2Q=="
         ></image>
         <path
           onClick={() => {
-            console.log("clik");
+            setActivePlan(1)
           }}
           className="st0"
           d="M1925.951,230.088l17.22,0.756c11.393,1.347,22.844-2.017,31.702-9.317l5.75-4.739l58.88-38.938
@@ -31515,7 +31510,7 @@ aJfqin8S9f0A0kVLb5h2FV0F0Q6lHcoaetH+ZD3EoEaafcT/AHV/kKZutgD/2Q=="
         />
         <path
           onClick={() => {
-            console.log("clik");
+            setActivePlan(2)
           }}
           className="st0"
           d="M1106.176,662.845l0.131,0.002l0.132-0.006l290.652-12.569l189.666,17.447c4.3,0.395,8.63,0.422,12.93,0.079
@@ -31532,5 +31527,22 @@ aJfqin8S9f0A0kVLb5h2FV0F0Q6lHcoaetH+ZD3EoEaafcT/AHV/kKZutgD/2Q=="
         />
       </svg>
     </>
-  );
+
+ );
+   
+  }
+  if (activPlan === 1) {
+    return (
+      <>
+        <SvgPlanUP className="showPlan" />
+      </>
+    );
+  }
+  if (activPlan === 2) {
+    return (
+      <>
+        <SvgPlanDown className="showPlan"/>
+      </>
+    );
+  }
 }

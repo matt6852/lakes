@@ -8,16 +8,8 @@ import MainPlanSvg from "../MainPlanSvg";
 import SinglLand from "../SinglLand";
 
 export default function GenPlan() {
-  const {
-    setShowModal,
-    data,
-    setData,
-    end,
-    setEnd,
-    setHidePlan,
-    setHidePlan1,
-    setHidePlan2,
-  } = useAppContext();
+  const { setShowModal, data, setData, end, setEnd, activPlan, setActivePlan } =
+    useAppContext();
   // console.log(lands.slice(0,10));
   useEffect(() => {
     const chekEl = (e) => {
@@ -97,32 +89,26 @@ export default function GenPlan() {
         <div className={style.genPlan_svg_container}>
           <MainPlanSvg />
           {/* <SvgPlanUP /> */}
-          
 
           <div className={style.btn_container_genPlan}>
             <button
               onClick={() => {
-                setHidePlan(false);
-                // setHidePlan1(false);
-                            }}
+                setActivePlan(0);
+              }}
             >
               Генплан
             </button>
             <button
               onClick={() => {
-                setHidePlan(true);
-                // setHidePlan1(true);
-                // setHidePlan2(false);
+                setActivePlan(1);
               }}
             >
               План1
             </button>
             <button
-              // onClick={() => {
-              //   setHidePlan(true);
-              //   setHidePlan1(false);
-              //   setHidePlan2(true);
-              // }}
+            onClick={() => {
+            setActivePlan(2)
+            }}
             >
               План2
             </button>

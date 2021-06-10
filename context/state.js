@@ -25,9 +25,7 @@ export function AppWrapper({ children }) {
   const [scroll, setScroll] = useState(false);
   const [data, setData] = useState(lands);
   const [singlLand, setSinglLand] = useState({});
-  const [hidePlan, setHidePlan] = useState(false);
-  const [hidePlan1, setHidePlan1] = useState(false);
-  const [hidePlan2, setHidePlan2] = useState(false);
+  const [activPlan, setActivePlan] = useState(0);
   const [formSub, setFormSub] = useState(false);
   const [scrollM, setScrollM] = useState(false);
   const [showBar, setShowBar] = useState(true);
@@ -41,9 +39,8 @@ export function AppWrapper({ children }) {
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const sharedState = {
     formSub,
-  hidePlan, setHidePlan,
-  hidePlan1, setHidePlan1,
-  hidePlan2, setHidePlan2,
+    activPlan,
+    setActivePlan,
     end,
     setEnd,
     singlLand,
