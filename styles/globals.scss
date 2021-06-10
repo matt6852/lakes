@@ -109,11 +109,13 @@ ul li {
   opacity: 0;
   fill: #ffffff;
   cursor: pointer;
+  // padding: 40px;
 }
 .st0:hover{
   //  fill: red;
   //  background-color: red;
   //  color: red;
+  
   opacity: .5;
 
 }
@@ -124,32 +126,33 @@ ul li {
   margin: auto;
 }
 
-  .numbers{
+   .numbers_1{
     position: absolute;
-    // top: 51%;
-    // left: 220px;
-    background-image:url("/genPlanNumbers.svg");
-    top: 27%;
+    top: 26%;
     left: 10%;
-    width: 75%;
-    height: 39%;
+    width: 77%;
+    height: 40%;
+    background: url('/genPlanNumbers.svg');
     background-size: contain;
-    color: black;
-    z-index: 0;
-
+    pointer-events: none;
+    
+    
+    // z-index: 1;
   }
-  .numbers_2{
-     position: absolute;
-    background-image:url("/genPlanNumbers.svg");
-    top: 36.5%;
+   .numbers_2{
+    position: absolute;
+    top: 26%;
     left: 20%;
     width: 73%;
-    height: 30%;
+    height: 55%;
+    background: url('/genPlanNumbers2.svg');
     background-size: contain;
-    background: no-repeat;
-    // color: black;
-    z-index: 0;
+    pointer-events: none;
+    
+    
+    // z-index: 1;
   }
+
 
   .outer_svg{
    position: absolute;

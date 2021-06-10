@@ -15,10 +15,11 @@ export default function MainPlanSvg() {
 
   return (
     <>
-      {/* <SvgPlanDown /> */}
-      <SvgPlanUP />
+    
+      <SvgPlanDown className= {hidePlan ? "showPlan" : "hide"} />
+      {/* <SvgPlanUP  className ="hide"/> */}
       <svg
-        className={"hide"}
+        className={hidePlan ? "hidePlan" :"showPlan" }
         version="1.1"
         id="Слой_1"
         xmlns="http://www.w3.org/2000/svg"

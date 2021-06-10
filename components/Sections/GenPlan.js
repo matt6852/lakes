@@ -96,22 +96,24 @@ export default function GenPlan() {
       <div className={style.main_main_wraper}>
         <div className={style.genPlan_svg_container}>
           <MainPlanSvg />
+          {/* <SvgPlanUP /> */}
+          
 
           <div className={style.btn_container_genPlan}>
             <button
               onClick={() => {
                 setHidePlan(false);
-                setHidePlan1(false);
+                // setHidePlan1(false);
                             }}
             >
               Генплан
             </button>
             <button
-              // onClick={() => {
-              //   setHidePlan(true);
-              //   setHidePlan1(true);
-              //   setHidePlan2(false);
-              // }}
+              onClick={() => {
+                setHidePlan(true);
+                // setHidePlan1(true);
+                // setHidePlan2(false);
+              }}
             >
               План1
             </button>
