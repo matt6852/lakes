@@ -3254,6 +3254,8 @@ n/o6aQBFxqFSPDqouWe8L3DcuLEkZaBQIQw4iMRmH/8Au/h//iw//9k="
       </div>
       <div className="numbers_2"></div>
       <div className="bmx"></div>
+      <div className="playGraund"></div>
+      <div className="shops"></div>
     </>
   );
 }

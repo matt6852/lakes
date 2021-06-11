@@ -1,35 +1,116 @@
-.main_main_wraper{
+.main_main_wraper {
   width: 1440px;
   margin: auto;
 }
 
-
-.genPlan_svg_container{
+.genPlan_svg_container {
   position: relative;
   padding-top: 60.3%;
-  .numbers{
+  .numbers {
     position: absolute;
     top: 26%;
     left: 10%;
     width: 77%;
     height: 40%;
-    background: url('/genPlanNumbers.svg');
+    background: url("/genPlanNumbers.svg");
     background-size: contain;
     pointer-events: none;
-    
-    
+
     // z-index: 1;
   }
-.btn_container_genPlan{
-  z-index: 1;
-position: absolute;
-  bottom: 10%;
-  left: 0;
-}
- 
+  .btn_container_genPlan {
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .active_btns {
+      .btn {
+        padding: 10px 20px;
 
-}
+        background: #ffffff;
+        box-shadow: 0px 3.51678px 3.51678px rgba(0, 0, 0, 0.2);
+        border-radius: 43.9597px;
+        line-height: 26px;
+        border: none;
+        color: #333333;
+        cursor: pointer;
+        margin: 0 15px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 21.1007px;
+        line-height: 26px;
+      }
+      .btn_active {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 21.1007px;
+        line-height: 26px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin: 0 15px;
 
+        background: linear-gradient(90deg, #348f50 0%, #56b4d3 100%);
+        box-shadow: 0px 3.51678px 3.51678px rgba(0, 0, 0, 0.2);
+        border-radius: 43.9597px;
+        line-height: 26px;
+        color: #ffffff;
+      }
+    }
+    .status_btns {
+      display: flex;
+      div {
+        padding: 10px 20px;
+        margin: 0 15px;
+        background: #ffffff;
+        box-shadow: 0px 3.51678px 3.51678px rgba(0, 0, 0, 0.2);
+        border-radius: 43.9597px;
+        line-height: 26px;
+        border: none;
+        border: none;
+        font-weight: bold;
+        font-size: 21.1007px;
+        line-height: 26px;
+        color: #333333;
+        display: flex;
+        align-items: center;
+
+        span {
+          display: inline-block;
+          width: 21.98px;
+          height: 21.98px;
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+        .span_free {
+          background: linear-gradient(90deg, #8edda7 0%, #63c029 100%), #ffffff;
+        }
+        .span_booked {
+          background: linear-gradient(
+              90deg,
+              rgba(217, 130, 51, 0.7) 0%,
+              rgba(171, 189, 61, 0.7) 100%
+            ),
+            #ffffff;
+        }
+        .span_sold {
+          background: linear-gradient(
+              90deg,
+              rgba(211, 190, 171, 0.7) 0%,
+              rgba(119, 120, 112, 0.7) 100%
+            ),
+            #ffffff;
+        }
+      }
+    }
+  }
+}
 
 .gen_plan {
   position: relative;
@@ -71,8 +152,8 @@ position: absolute;
       height: 105px;
       width: 100%;
       padding: 0 30px;
-      border-left:none ;
-      border-right:none ;
+      border-left: none;
+      border-right: none;
     }
     .title {
       color: #21957c;
@@ -110,22 +191,22 @@ position: absolute;
       border-top: none;
       border-left: none;
       border-right: none;
-      .item_1{
+      .item_1 {
         margin-left: 10px;
       }
-      .item_2{
+      .item_2 {
         margin-left: 50px;
       }
-      .item_3{
+      .item_3 {
         margin-left: 110px;
       }
-      .item_4{
+      .item_4 {
         margin-left: 120px;
       }
-      .item_5{
+      .item_5 {
         margin-left: 54px;
       }
-      .item_6{
+      .item_6 {
         margin-left: 95px;
       }
       p {
@@ -144,12 +225,10 @@ position: absolute;
       overflow: auto;
       z-index: 1;
     }
-    .btn_center{
+    .btn_center {
       padding: 30px;
-
     }
     .btn {
-      
       // padding: 0 20px;
       position: relative;
       background: linear-gradient(90deg, #4ea86a 0%, #5cacc7 100%);

@@ -91,27 +91,52 @@ export default function GenPlan() {
           {/* <SvgPlanUP /> */}
 
           <div className={style.btn_container_genPlan}>
-            <button
-              onClick={() => {
-                setActivePlan(0);
-              }}
-            >
-              Генплан
-            </button>
-            <button
-              onClick={() => {
-                setActivePlan(1);
-              }}
-            >
-              План1
-            </button>
-            <button
-            onClick={() => {
-            setActivePlan(2)
-            }}
-            >
-              План2
-            </button>
+            <div className={style.active_btns}>
+              <button
+                className={
+                  activPlan === 0 ? `${style.btn_active}` : `${style.btn}`
+                }
+                onClick={() => {
+                  setActivePlan(0);
+                }}
+              >
+                Генплан
+              </button>
+              <button
+                className={
+                  activPlan === 1 ? `${style.btn_active}` : `${style.btn}`
+                }
+                onClick={() => {
+                  setActivePlan(1);
+                }}
+              >
+                Зона с участками 1
+              </button>
+              <button
+                className={
+                  activPlan === 2 ? `${style.btn_active}` : `${style.btn}`
+                }
+                onClick={() => {
+                  setActivePlan(2);
+                }}
+              >
+                Зона с участками 2
+              </button>
+            </div>
+            <div className={style.status_btns}>
+              <div>
+                {" "}
+                <span className={style.span_free}></span> - Свободен
+              </div>
+              <div>
+                {" "}
+                <span className={style.span_booked}></span>- Забронирован
+              </div>
+              <div>
+                {" "}
+                <span className={style.span_sold}></span>- Продано
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -139,7 +164,6 @@ export default function GenPlan() {
                 <option value="small">small</option>
               </select>
             </div>
-           
           </div>
 
           <div className={style.title_categories}>
