@@ -88,8 +88,6 @@ export default function GenPlan() {
       <div className={style.main_main_wraper}>
         <div className={style.genPlan_svg_container}>
           <MainPlanSvg />
-          {/* <SvgPlanUP /> */}
-
           <div className={style.btn_container_genPlan}>
             <div className={style.active_btns}>
               <button

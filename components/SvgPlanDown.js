@@ -1,8 +1,9 @@
 export default function SvgPlanDown({ checkStatus, checkcStatusToShowModal }) {
   return (
     <>
-      <div className="outer_svg">
+
         <svg
+          className="outer_svg"
           version="1.1"
           id="Слой_1"
           xmlns="http://www.w3.org/2000/svg"
@@ -3251,7 +3252,6 @@ n/o6aQBFxqFSPDqouWe8L3DcuLEkZaBQIQw4iMRmH/8Au/h//iw//9k="
             d="M1378.939,708.829l15.19-191.223l93.68,4.651l-15.86,198.531L1378.939,708.829z"
           />
         </svg>
-      </div>
       <div className="numbers_2"></div>
       <div className="bmx"></div>
       <div className="playGraund"></div>

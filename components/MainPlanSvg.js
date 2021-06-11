@@ -36,24 +36,23 @@ export default function MainPlanSvg() {
 
   },[activPlan])
   if (activPlan === 0) {
- return(
-
- <>
-      <svg
-        className= "showPlan"
-        version="1.1"
-        id="Слой_1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        x="0px"
-        y="0px"
-        viewBox="0 0 2562 1545"
-        xmlSpace="preserve"
-      >
-        <image
-          width="2562"
-          height="1545"
-          xlinkHref="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+ return (
+   <>
+     <svg
+       className="outer_svg"
+       version="1.1"
+       id="Слой_1"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlnsXlink="http://www.w3.org/1999/xlink"
+       x="0px"
+       y="0px"
+       viewBox="0 0 2562 1545"
+       xmlSpace="preserve"
+     >
+       <image
+         width="2562"
+         height="1545"
+         xlinkHref="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
 AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
 AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAYJCgIDAREA
 AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
@@ -31516,14 +31515,14 @@ X8aqW0fT9EJbv5Do+/4f1ojuMkqRPZiCmxR6jqt7MYVMeowqhBQN7v1HHpSKewnYUyXsvmKfuj/d
 b+RpLd+qF1X/AG6QVoaFlegrJ7mL3HDrQtwW4j9Px/xrSO5RHVAOTrSewLr/AF1RLUANfpR/X4oa
 6+jIxQt0UtvmSH7v4Cn1F1+8T+EfX/Gn1Dqw/g/P+dH2v67C6v5/qNb7o/D+VS/i+X6krr6jU6fg
 aJfqin8S9f0A0kVLb5h2FV0F0Q6lHcoaetH+ZD3EoEaafcT/AHV/kKZutgD/2Q=="
-          transform="matrix(1 0 0 1 -0.0165 0.4835)"
-        ></image>
-        <path
-          onClick={() => {
-            setActivePlan(1)
-          }}
-          className="st0"
-          d="M1925.951,230.088l17.22,0.756c11.393,1.347,22.844-2.017,31.702-9.317l5.75-4.739l58.88-38.938
+         transform="matrix(1 0 0 1 -0.0165 0.4835)"
+       ></image>
+       <path
+         onClick={() => {
+           setActivePlan(1);
+         }}
+         className="st0"
+         d="M1925.951,230.088l17.22,0.756c11.393,1.347,22.844-2.017,31.702-9.317l5.75-4.739l58.88-38.938
 	c9.45-6.248,20.19-10.264,31.43-11.741l18.41-2.423c38.48-5.062,74.42,20.215,82.66,58.14l11.75,54.081l0.02,0.117l22.08,117.167
 	c0.99,5.243,1.42,10.578,1.27,15.911l-2.25,80.141c-0.67,23.919-15.98,44.962-38.53,52.956c-7.68,2.721-15.84,3.792-23.96,3.143
 	l-107.17-8.563c-5.36-0.429-10.76-0.336-16.11,0.277l-113.16,12.973l-113.481,13.018c-5.478,0.628-10.879,1.799-16.125,3.495
@@ -31533,13 +31532,13 @@ aJfqin8S9f0A0kVLb5h2FV0F0Q6lHcoaetH+ZD3EoEaafcT/AHV/kKZutgD/2Q=="
 	c1.806-0.768,3.418-1.55,4.752-2.348c1.259-0.753,2.604-1.714,3.552-2.95c12.063-15.717,30.966-33.912,43.099-45.039
 	c6.962-6.385,15.286-11.115,24.339-14.187l442.565-150.193l89.429-20.222c4.773-1.079,9.641-1.686,14.533-1.813l199.828-5.159
 	l0.125-0.001L1925.951,230.088z"
-        />
-        <path
-          onClick={() => {
-            setActivePlan(2)
-          }}
-          className="st0"
-          d="M1106.176,662.845l0.131,0.002l0.132-0.006l290.652-12.569l189.666,17.447c4.3,0.395,8.63,0.422,12.93,0.079
+       />
+       <path
+         onClick={() => {
+           setActivePlan(2);
+         }}
+         className="st0"
+         d="M1106.176,662.845l0.131,0.002l0.132-0.006l290.652-12.569l189.666,17.447c4.3,0.395,8.63,0.422,12.93,0.079
 	l220.24-17.531l244.65,5.863l0.09,0.003l148.31,6.707l0.28,0.013l0.28-0.024l137.23-11.869c5.14-0.445,10.31-0.279,15.41,0.493
 	c38.63,5.848,63.52,44.059,53.27,81.756l-12.8,47.064c-3.28,12.09-3.51,24.808-0.67,37.01l8.83,37.872
 	c7.39,31.664-12.23,63.608-43.78,71.779c-3.78,0.98-7.7,1.567-11.6,1.733c-22.47,0.952-42.79,13.625-53.53,33.383l-58.28,107.194
@@ -31550,10 +31549,9 @@ aJfqin8S9f0A0kVLb5h2FV0F0Q6lHcoaetH+ZD3EoEaafcT/AHV/kKZutgD/2Q=="
 	c-17.47-3.905-29.892-19.41-29.892-37.312c0-21.772-15.017-40.668-36.227-45.583l-231.218-53.584l-0.287-0.067l-0.293-0.026
 	l-190.266-17.257c-4.639-0.421-9.307-0.412-13.944,0.027l-130.838,12.369c-14.897,1.408-29.837-2.208-42.441-10.272L470.986,886.907
 	l478.442-220.252c9.166-4.22,19.167-6.316,29.256-6.132L1106.176,662.845z"
-        />
-      </svg>
-    </>
-
+       />
+     </svg>
+   </>
  );
    
   }
