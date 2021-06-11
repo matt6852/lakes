@@ -139,16 +139,7 @@ export default function GenPlan() {
                 <option value="small">small</option>
               </select>
             </div>
-            {/* <div className={style.btn_container}>
-              <label className={style.title} htmlFor="structure">
-                Инфраструктура:
-              </label>
-              <select name="" id="structure">
-                <option value="1">Все {data.length}</option>
-                <option value="2">2</option>
-                <option value="2">3</option>
-              </select>
-            </div> */}
+           
           </div>
 
           <div className={style.title_categories}>

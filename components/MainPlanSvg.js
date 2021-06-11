@@ -4,7 +4,33 @@ import { useEffect } from "react";
 
 import { useAppContext } from "context/state";
 export default function MainPlanSvg() {
-  const { activPlan, setActivePlan } = useAppContext();
+  const { activPlan, setActivePlan, data, setSinglLand, showModal, setShowModal,  } = useAppContext();
+  
+   const checkStatus = (id) => {
+     if (process.env.SOLDOUT.split(",").some((el) => el === id)) {
+       return "soldout";
+     }
+     if (process.env.RESESERVED.split(",").some((el) => el === id)) {
+       return "reservd";
+     } else {
+       return "st0";
+     }
+   };
+
+   const checkcStatusToShowModal = (e) => {
+     const id = e.target.dataset.id;
+
+     const filtered = data.filter((item) => item.id === id);
+     setSinglLand(filtered);
+     const chekid = filtered[0].id;
+     if (
+       process.env.SOLDOUT.split(",").some((el) => el === chekid) ||
+       process.env.RESESERVED.split(",").some((el) => el === chekid)
+     ) {
+       return;
+     }
+     setShowModal(!showModal);
+   };
 
   useEffect(()=>{
 
@@ -31534,14 +31560,18 @@ aJfqin8S9f0A0kVLb5h2FV0F0Q6lHcoaetH+ZD3EoEaafcT/AHV/kKZutgD/2Q=="
   if (activPlan === 1) {
     return (
       <>
-        <SvgPlanUP className="showPlan" />
+        <SvgPlanUP checkcStatusToShowModal ={checkcStatusToShowModal} checkStatus = {checkStatus} className="showPlan" />
       </>
     );
   }
   if (activPlan === 2) {
     return (
       <>
-        <SvgPlanDown className="showPlan"/>
+        <SvgPlanDown
+          checkcStatusToShowModal={checkcStatusToShowModal}
+          checkStatus={checkStatus}
+          className="showPlan"
+        />
       </>
     );
   }
