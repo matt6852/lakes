@@ -6,6 +6,10 @@ export default function SvgPlanFirstUP({
   checkStatus,
   checkcStatusToShowModal,
 }) {
+  const showTarget = (e)=>{
+     
+     console.log(e.target.dataset.id);
+  }
 
   return (
     <>
@@ -13,6 +17,7 @@ export default function SvgPlanFirstUP({
         {/* <?xml version="1.0" encoding="utf-8"?> */}
 
         <svg
+          onClick={(e) => checkcStatusToShowModal(e)}
           version="1.1"
           id="Слой_1"
           xmlns="http://www.w3.org/2000/svg"
@@ -2236,7 +2241,6 @@ sHegjYd1g3WjjYN9gR36Fx0I7tDOhDQju0QaYOwdA//Z"
           ></image>
           <path
             data-id="100"
-            onClick={(e) => checkcStatusToShowModal(e)}
             id="first"
             className={checkStatus("100")}
             d="M1696.439,583.752l17.3,142.089l-218.55,28.416c-15.73,2.045-30.13-9.08-32.11-24.816l-11.31-89.491
@@ -2244,21 +2248,18 @@ sHegjYd1g3WjjYN9gR36Fx0I7tDOhDQju0QaYOwdA//Z"
           />
           <path
             data-id="103"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("103")}
             d="M1697.739,583.639l278.89-36.184l14.24,114.278c1.95,15.638-9.1,29.913-24.73,31.949l-250.27,32.593
 	L1697.739,583.639z"
           />
           <path
             data-id="95"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("95")}
             d="M1222.139,645.348l187.83-24.328l14.58,114.651c1.99,15.675-9.09,30.003-24.76,32.024l-159.24,20.527
 	L1222.139,645.348z"
           />
           <path
             data-id="84"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("84")}
             d="M364.661,1066.803c-0.437-0.002-1.04-0.004-1.797-0.009c-1.708-0.011-4.198-0.033-7.326-0.077
 	c-6.257-0.088-15.068-0.264-25.282-0.616c-20.431-0.705-46.458-2.113-68.882-4.927c-10.787-1.354-19.167-4.399-26.59-9.174
@@ -2270,58 +2271,49 @@ sHegjYd1g3WjjYN9gR36Fx0I7tDOhDQju0QaYOwdA//Z"
           />
           <path
             data-id="85"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("85")}
             d="M345.508,894.666l-7.48-62.808l61.692-59.748l164.21-55.934l20.186,156.781l-187.625,24.186l-0.63-3.876
 	c-0.733-4.509-5.054-7.515-9.536-6.633L345.508,894.666z"
           />
           <path
             data-id="87"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("87")}
             d="M565.287,715.501l157.939-53.973l24.406,190.525l-162.056,20.716L565.287,715.501z"
           />
           <path
             data-id="89"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("89")}
             d="M724.646,661.044l157.94-53.973l28.552,223.152l-162.514,21.181L724.646,661.044z"
           />
           <path
             data-id="91"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("91")}
             d="M884.005,606.591l158.001-53l32.643,255.729l-162.054,20.716L884.005,606.591z"
           />
           <path
             data-id="93"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("93")}
             d="M1043.453,553.012l158.856-51.699l36.32,286.636l-162.518,21.182L1043.453,553.012z"
           />
           <path
             data-id="94"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("94")}
             d="M1222.129,643.754l-18.39-142.85l166.12-38.8l19.19-0.025l20.68,157.492L1222.129,643.754z"
           />
           <path
             data-id="101"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("101")}
             d="M1408.119,594.927l-16.97-133.292l159.96-4.393l0,0l128.05-3.16l16.25,128.216l-234.99,30.164l-1.07-7.291
 	c-1.33-9.106-9.7-15.474-18.83-14.325L1408.119,594.927z"
           />
           <path
             data-id="102"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("102")}
             d="M1681.019,453.877l194.08-1.449l0.21-0.002l0.18-0.113l82.29-52.162l18.67,145.845l-278.65,36.107
 	L1681.019,453.877z"
           />
           <path
             data-id="109"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("102")}
             d="M2267.189,508.223l-252.59,33.09l-20.77-164.232c0-0.003,0.01-0.005,0.01-0.008c0.22-0.174,0.54-0.43,0.96-0.76
 	c0.84-0.659,2.06-1.612,3.59-2.783c3.06-2.343,7.37-5.561,12.37-9.06c10-7.007,22.68-15.107,33.51-19.585
@@ -2333,13 +2325,11 @@ sHegjYd1g3WjjYN9gR36Fx0I7tDOhDQju0QaYOwdA//Z"
           />
           <path
             data-id="108"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("108")}
             d="M2298.759,669.32l-263.43,34.175l-20.51-160.997l252.65-32.831L2298.759,669.32z"
           />
           <path
             data-id="106"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("106")}
             d="M2065.669,843.68l247.92-32.119c0,0.029,0,0.059,0,0.09c0.01,0.595,0.03,1.473,0.05,2.605
 	c0.05,2.266,0.11,5.552,0.15,9.631c0.09,8.158,0.14,19.489-0.04,32.179c-0.35,25.392-1.59,56.177-5.15,77.874
@@ -2350,48 +2340,41 @@ sHegjYd1g3WjjYN9gR36Fx0I7tDOhDQju0QaYOwdA//Z"
           />
           <path
             data-id="107"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("107")}
             d="M2049.389,813.932l-13.88-108.978l154.04-19.909l0,0l108.1-13.804l17.32,85.599l-0.94,52.772l-248.55,32.609
 	l-2.53-17.96c-0.52-3.683-3.91-6.256-7.6-5.756C2052.439,818.899,2049.759,816.846,2049.389,813.932z"
           />
           <path
             data-id="86"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("86")}
             d="M352.087,941.861l218.311-28.565c8.99-1.177,17.142,5.394,17.901,14.43l11.397,135.73l-115.852,10.671
 	l-115.686-6.155L352.087,941.861z"
           />
           <path
             data-id="105"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("105")}
             d="M1995.979,997.742l-0.06-0.004l-0.07,0.008l-241.85,28.443l-17.88-140.021l278.85-36.305l19.21,150.286
 	L1995.979,997.742z"
           />
           <path
             data-id="99"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("99")}
             d="M1499.539,793.011l219.43-28.556l15.71,120.246l-235.9,31.094l-2-16.732c-0.54-4.567-4.79-7.758-9.33-7.015
 	l-3.92,0.643l-8.7-67.618C1472.809,809.398,1483.869,795.051,1499.539,793.011z"
           />
           <path
             data-id="96"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("96")}
             d="M1225.799,828.552l178.9-23.129c15.76-2.037,30.17,9.141,32.11,24.912l11.27,91.644l-206.99,26.93
 	L1225.799,828.552z"
           />
           <path
             data-id="90"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("90")}
             d="M874.803,1036.386l-20.296-159.718l194.95-25.347l21.372,168.189L874.803,1036.386z"
           />
           <path
             data-id="88"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("88")}
             className="st0"
             d="M663.113,901.498l189.996-24.687l20.23,159.711l-210.568,20.951l-11.767-140.975
@@ -2399,26 +2382,22 @@ sHegjYd1g3WjjYN9gR36Fx0I7tDOhDQju0QaYOwdA//Z"
           />
           <path
             data-id="92"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("92")}
             d="M1072.313,1018.66l-21.36-167.389l173.246-22.493l30.2,237.236L1072.313,1018.66z"
           />
           <path
             data-id="97"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("97")}
             d="M1448.259,923.437l19.74,154.721l-9.55,2.691l-79.25,11.336l-123.09-25.309l-14.83-116.51L1448.259,923.437z"
           />
           <path
             data-id="98"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("98")}
             d="M1566.449,1046.946l-96.56,30.315l-16.71-129.399l32.34-4.35c9.2-1.237,15.68-9.661,14.51-18.868l-0.97-7.671
 	l235.35-30.347l17.73,138.818l-185.56,21.473l-0.07,0.008L1566.449,1046.946z"
           />
           <path
             data-id="104"
-            onClick={(e) => checkcStatusToShowModal(e)}
             className={checkStatus("104")}
             d="M1720.649,764.353l250.46-32.089c15.7-2.012,30.05,9.093,32.05,24.796l11.63,91.345l-278.85,36.305
 	L1720.649,764.353z"

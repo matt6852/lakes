@@ -1,23 +1,23 @@
 export default function SvgPlanDown({ checkStatus, checkcStatusToShowModal }) {
   return (
     <>
-
-        <svg
-          className="outer_svg"
-          version="1.1"
-          id="Слой_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 2562 1545"
-          xmlSpace="preserve"
-        >
-          <rect className="st0" width="2562" height="1545" />
-          <image
-            width="2560"
-            height="1545"
-            xlinkHref="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+      <svg
+        onClick={(e) => checkcStatusToShowModal(e)}
+        className="outer_svg"
+        version="1.1"
+        id="Слой_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 2562 1545"
+        xmlSpace="preserve"
+      >
+        <rect className="st0" width="2562" height="1545" />
+        <image
+          width="2560"
+          height="1545"
+          xlinkHref="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
 EAMCAwYAAKffAAFleAACUN3/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
 Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
 JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIBgkKAAMBIgACEQEDEQH/
@@ -2680,578 +2680,495 @@ kITmwZHQcIfaJPllp/0V8wr8QtRlHnjeLdyIyEpwuI2J8jGxUTDbkfMtGZBAZIxuH/Rg7cM/iHmi
 SHj8Qs6D5Sc5y1ViranKjEVAqdn/AEZvHklos3Lmi8fiFR0GFpVVTI6N4TpkcT4qDV/0avHkleLN
 yJMeKHxRrkexsnLuWpNdka0IRjntNwQiLBQf9G/EY8MvijQo/hETF1hXDOJidIykqiaMa57kwrI2
 n/o6aQBFxqFSPDqouWe8L3DcuLEkZaBQIQw4iMRmH/8Au/h//iw//9k="
-            transform="matrix(1 0 0 1 1 0)"
-          ></image>
-          <path
-            data-id="29"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("29")}
-            d="M1276.979,599.634l7.08-85.188l103.06,4.128l-7.77,89.626L1276.979,599.634z"
-          />
-          <path
-            data-id="18"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("18")}
-            d="M1069.769,505.362l95.41,3.931l-7.06,80.454l-108.357-8.938l1.805-58.506
+          transform="matrix(1 0 0 1 1 0)"
+        ></image>
+        <path
+          data-id="29"
+          className={checkStatus("29")}
+          d="M1276.979,599.634l7.08-85.188l103.06,4.128l-7.77,89.626L1276.979,599.634z"
+        />
+        <path
+          data-id="18"
+          className={checkStatus("18")}
+          d="M1069.769,505.362l95.41,3.931l-7.06,80.454l-108.357-8.938l1.805-58.506
 	C1051.867,512.574,1060.049,504.961,1069.769,505.362z"
-          />
-          <path
-            data-id="26"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("26")}
-            d="M1165.349,590.401l6.6-80.7l105.09,4.52l-7.02,84.674L1165.349,590.401z"
-          />
-          <path
-            data-id="19"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("19")}
-            d="M1151.169,678.142l-88.19-11.735c-8.885-1.183-15.44-8.893-15.177-17.855l1.773-60.49l107.954,8.814
+        />
+        <path
+          data-id="26"
+          className={checkStatus("26")}
+          d="M1165.349,590.401l6.6-80.7l105.09,4.52l-7.02,84.674L1165.349,590.401z"
+        />
+        <path
+          data-id="19"
+          className={checkStatus("19")}
+          d="M1151.169,678.142l-88.19-11.735c-8.885-1.183-15.44-8.893-15.177-17.855l1.773-60.49l107.954,8.814
 	L1151.169,678.142z"
-          />
-          <path
-            data-id="25"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("25")}
-            d="M1158.009,678.846l6.76-81.319l104.67,8.494l-7,86.729L1158.009,678.846z"
-          />
-          <path
-            data-id="38"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("38")}
-            d="M1487.579,617.125l7.79-93.619l94,3.807l-7.81,97.558L1487.579,617.125z"
-          />
-          <path
-            data-id="37"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("37")}
-            d="M1580.979,631.995l-8.35,101.387l-93.65-12.36l8.08-96.891L1580.979,631.995z"
-          />
-          <path
-            data-id="23"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("23")}
-            d="M1145.679,888.857l10.04-76.463l93.01,17.085l-14.57,79.563L1145.679,888.857z"
-          />
-          <path
-            data-id="74"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("74")}
-            d="M2186.559,552.897l50.68,2.169c9.67,0.414,17.17,8.601,16.73,18.27l-4.56,100.681l-3.08,5.834l-69.77-5.68
+        />
+        <path
+          data-id="25"
+          className={checkStatus("25")}
+          d="M1158.009,678.846l6.76-81.319l104.67,8.494l-7,86.729L1158.009,678.846z"
+        />
+        <path
+          data-id="38"
+          className={checkStatus("38")}
+          d="M1487.579,617.125l7.79-93.619l94,3.807l-7.81,97.558L1487.579,617.125z"
+        />
+        <path
+          data-id="37"
+          className={checkStatus("37")}
+          d="M1580.979,631.995l-8.35,101.387l-93.65-12.36l8.08-96.891L1580.979,631.995z"
+        />
+        <path
+          data-id="23"
+          className={checkStatus("23")}
+          d="M1145.679,888.857l10.04-76.463l93.01,17.085l-14.57,79.563L1145.679,888.857z"
+        />
+        <path
+          data-id="74"
+          className={checkStatus("74")}
+          d="M2186.559,552.897l50.68,2.169c9.67,0.414,17.17,8.601,16.73,18.27l-4.56,100.681l-3.08,5.834l-69.77-5.68
 	L2186.559,552.897z"
-          />
-          <path
-            data-id="73"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("73")}
-            d="M2100.879,668.013l9.92-118.399l68.71,2.951l-10.08,121.028L2100.879,668.013z"
-          />
-          <path
-            data-id="72"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("72")}
-            d="M2242.709,686.727l-30,57.125l-117.26-9.657l4.91-59.179L2242.709,686.727z"
-          />
-          <path
-            data-id="71"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("71")}
-            d="M2209.559,750.605l-27.13,51.291c-3.41,6.45-10.47,10.105-17.71,9.17l-74.79-9.661l5.05-60.019
+        />
+        <path
+          data-id="73"
+          className={checkStatus("73")}
+          d="M2100.879,668.013l9.92-118.399l68.71,2.951l-10.08,121.028L2100.879,668.013z"
+        />
+        <path
+          data-id="72"
+          className={checkStatus("72")}
+          d="M2242.709,686.727l-30,57.125l-117.26-9.657l4.91-59.179L2242.709,686.727z"
+        />
+        <path
+          data-id="71"
+          className={checkStatus("71")}
+          d="M2209.559,750.605l-27.13,51.291c-3.41,6.45-10.47,10.105-17.71,9.17l-74.79-9.661l5.05-60.019
 	L2209.559,750.605z"
-          />
-          <path
-            data-id="30"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("30")}
-            d="M1269.269,693.448l7.12-86.688l102.37,8.565l-7.3,91.579L1269.269,693.448z"
-          />
-          <path
-            data-id="62"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("62")}
-            d="M1992.199,659.064l9.71-114.014l101.77,4.354l-9.92,118.024L1992.199,659.064z"
-          />
-          <path
-            data-id="63"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("63")}
-            d="M2093.159,674.555l-10.29,125.706l-101.07-13.139l9.81-120.931L2093.159,674.555z"
-          />
-          <path
-            data-id="59"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("59")}
-            d="M1891.559,650.602l8.94-109.894l94.14,3.967l-9.57,113.796L1891.559,650.602z"
-          />
-          <path
-            data-id="58"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("58")}
-            d="M1984.609,665.349l-10.14,121.114l-93.24-12.363l9.59-116.546L1984.609,665.349z"
-          />
-          <path
-            data-id="51"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("51")}
-            d="M1884.079,650.307l-93.8-7.795l8.73-105.911l94.03,4.291L1884.079,650.307z"
-          />
-          <path
-            data-id="52"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("52")}
-            d="M1883.839,657.135l-9.7,116.024l-93.25-12.364l8.97-111.407L1883.839,657.135z"
-          />
-          <path
-            data-id="49"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("49")}
-            d="M1689.499,633.78l8.47-101.737l94.12,3.875l-8.77,105.75L1689.499,633.78z"
-          />
-          <path
-            data-id="48"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("48")}
-            d="M1782.729,648.794l-8.94,111.062l-93.65-12.359l8.86-106.615L1782.729,648.794z"
-          />
-          <path
-            data-id="41"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("41")}
-            d="M1588.689,625.457l7.83-97.836l94.04,4.291l-8.01,101.224L1588.689,625.457z"
-          />
-          <path
-            data-id="42"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("42")}
-            d="M1579.509,734.276l8.47-101.759l94.11,7.815l-9.11,106.353L1579.509,734.276z"
-          />
-          <path
-            data-id="1"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("1")}
-            d="M481.52,473.801l128.458-59.348l-3.013,104.598l-126.573-7.229L481.52,473.801z"
-          />
-          <path
-            data-id="2"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("2")}
-            d="M511.54,626.755l3.338-105.764l53.98,3.097l-3.398,112.366l-47.68-2.862
+        />
+        <path
+          data-id="30"
+          className={checkStatus("30")}
+          d="M1269.269,693.448l7.12-86.688l102.37,8.565l-7.3,91.579L1269.269,693.448z"
+        />
+        <path
+          data-id="62"
+          className={checkStatus("62")}
+          d="M1992.199,659.064l9.71-114.014l101.77,4.354l-9.92,118.024L1992.199,659.064z"
+        />
+        <path
+          data-id="63"
+          className={checkStatus("63")}
+          d="M2093.159,674.555l-10.29,125.706l-101.07-13.139l9.81-120.931L2093.159,674.555z"
+        />
+        <path
+          data-id="59"
+          className={checkStatus("59")}
+          d="M1891.559,650.602l8.94-109.894l94.14,3.967l-9.57,113.796L1891.559,650.602z"
+        />
+        <path
+          data-id="58"
+          className={checkStatus("58")}
+          d="M1984.609,665.349l-10.14,121.114l-93.24-12.363l9.59-116.546L1984.609,665.349z"
+        />
+        <path
+          data-id="51"
+          className={checkStatus("51")}
+          d="M1884.079,650.307l-93.8-7.795l8.73-105.911l94.03,4.291L1884.079,650.307z"
+        />
+        <path
+          data-id="52"
+          className={checkStatus("52")}
+          d="M1883.839,657.135l-9.7,116.024l-93.25-12.364l8.97-111.407L1883.839,657.135z"
+        />
+        <path
+          data-id="49"
+          className={checkStatus("49")}
+          d="M1689.499,633.78l8.47-101.737l94.12,3.875l-8.77,105.75L1689.499,633.78z"
+        />
+        <path
+          data-id="48"
+          className={checkStatus("48")}
+          d="M1782.729,648.794l-8.94,111.062l-93.65-12.359l8.86-106.615L1782.729,648.794z"
+        />
+        <path
+          data-id="41"
+          className={checkStatus("41")}
+          d="M1588.689,625.457l7.83-97.836l94.04,4.291l-8.01,101.224L1588.689,625.457z"
+        />
+        <path
+          data-id="42"
+          className={checkStatus("42")}
+          d="M1579.509,734.276l8.47-101.759l94.11,7.815l-9.11,106.353L1579.509,734.276z"
+        />
+        <path
+          data-id="1"
+          className={checkStatus("1")}
+          d="M481.52,473.801l128.458-59.348l-3.013,104.598l-126.573-7.229L481.52,473.801z"
+        />
+        <path
+          data-id="2"
+          className={checkStatus("2")}
+          d="M511.54,626.755l3.338-105.764l53.98,3.097l-3.398,112.366l-47.68-2.862
 	C514.192,633.378,511.427,630.347,511.54,626.755z"
-          />
-          <path
-            data-id="13"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("13")}
-            d="M876.77,654.254l1.73-58.618l119.953,6.986l-1.231,40.48c-0.299,9.838-8.651,17.493-18.477,16.935
+        />
+        <path
+          data-id="13"
+          className={checkStatus("13")}
+          d="M876.77,654.254l1.73-58.618l119.953,6.986l-1.231,40.48c-0.299,9.838-8.651,17.493-18.477,16.935
 	L876.77,654.254z"
-          />
-          <path
-            data-id="14"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("14")}
-            d="M878.708,588.485l1.731-58.618l120.006,7.172l-1.777,58.433L878.708,588.485z"
-          />
-          <path
-            data-id="15"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("15")}
-            d="M880.754,522.69l1.822-60.244l119.836,6.918l-1.752,60.524L880.754,522.69z"
-          />
-          <path
-            data-id="16"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("16")}
-            d="M882.792,455.295l1.991-65.916l120.617-5.069l-2.758,77.904L882.792,455.295z"
-          />
-          <path
-            data-id="10"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("10")}
-            d="M807.244,650.159l3.448-112.185l62.26,3.621l-3.516,112.297L807.244,650.159z"
-          />
-          <path
-            data-id="7"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("7")}
-            d="M748.467,534.446l55.206,3.184l-3.565,112.09l-44.817-2.795c-9.417-0.588-16.672-8.537-16.399-17.969
+        />
+        <path
+          data-id="14"
+          className={checkStatus("14")}
+          d="M878.708,588.485l1.731-58.618l120.006,7.172l-1.777,58.433L878.708,588.485z"
+        />
+        <path
+          data-id="15"
+          className={checkStatus("15")}
+          d="M880.754,522.69l1.822-60.244l119.836,6.918l-1.752,60.524L880.754,522.69z"
+        />
+        <path
+          data-id="16"
+          className={checkStatus("16")}
+          d="M882.792,455.295l1.991-65.916l120.617-5.069l-2.758,77.904L882.792,455.295z"
+        />
+        <path
+          data-id="10"
+          className={checkStatus("10")}
+          d="M807.244,650.159l3.448-112.185l62.26,3.621l-3.516,112.297L807.244,650.159z"
+        />
+        <path
+          data-id="7"
+          className={checkStatus("7")}
+          d="M748.467,534.446l55.206,3.184l-3.565,112.09l-44.817-2.795c-9.417-0.588-16.672-8.537-16.399-17.969
 	l2.555-88.074C741.556,537.142,744.731,534.23,748.467,534.446z"
-          />
-          <path
-            data-id="9"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("9")}
-            d="M877.755,389.473l-3.67,114.521v0.014l-0.001,0.013l-0.736,30.372l-44.919-2.556l0.762-23.836l0.033-1.051
+        />
+        <path
+          data-id="9"
+          className={checkStatus("9")}
+          d="M877.755,389.473l-3.67,114.521v0.014l-0.001,0.013l-0.736,30.372l-44.919-2.556l0.762-23.836l0.033-1.051
 	l-0.541-0.903l-3.065-5.107l-0.226-0.378l-0.312-0.311l-2.043-2.043l-0.893-0.893l-1.255-0.134l-8.928-0.954l3.333-106.165
 	l31.63,1.026l0.152,0.005l0.152-0.008L877.755,389.473z"
-          />
-          <path
-            data-id="8"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("8")}
-            d="M808.077,389.982l-3.256,105.727l-13.501-0.555l-3.572-0.147l-0.147,3.573l-0.202,4.922l-70.786-4.102
+        />
+        <path
+          data-id="8"
+          className={checkStatus("8")}
+          d="M808.077,389.982l-3.256,105.727l-13.501-0.555l-3.572-0.147l-0.147,3.573l-0.202,4.922l-70.786-4.102
 	l3.321-111.625L808.077,389.982z"
-          />
-          <path
-            data-id="4"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("4")}
-            d="M617.358,411.605l54.416-24.949l41.05,0.741l-4.272,137.741l-94.44-5.669L617.358,411.605z"
-          />
-          <path
-            data-id="5"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("5")}
-            d="M642.42,640.904l3.305-112.349l62.682,3.617l-2.776,94.361c-0.29,9.852-8.656,17.519-18.495,16.952
+        />
+        <path
+          data-id="4"
+          className={checkStatus("4")}
+          d="M617.358,411.605l54.416-24.949l41.05,0.741l-4.272,137.741l-94.44-5.669L617.358,411.605z"
+        />
+        <path
+          data-id="5"
+          className={checkStatus("5")}
+          d="M642.42,640.904l3.305-112.349l62.682,3.617l-2.776,94.361c-0.29,9.852-8.656,17.519-18.495,16.952
 	L642.42,640.904z"
-          />
-          <path
-            data-id="3"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("3")}
-            d="M572.599,636.875l3.398-112.376l62.682,3.617l-3.398,112.376L572.599,636.875z"
-          />
-          <path
-            data-id="28"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("28")}
-            d="M1442.819,397.564l57.04-4.916l-4.21,97.754l-137.31-5.934l3.98-93.895l79.89,6.99l0.3,0.027L1442.819,397.564z
+        />
+        <path
+          data-id="3"
+          className={checkStatus("3")}
+          d="M572.599,636.875l3.398-112.376l62.682,3.617l-3.398,112.376L572.599,636.875z"
+        />
+        <path
+          data-id="28"
+          className={checkStatus("28")}
+          d="M1442.819,397.564l57.04-4.916l-4.21,97.754l-137.31-5.934l3.98-93.895l79.89,6.99l0.3,0.027L1442.819,397.564z
 	"
-          />
-          <path
-            data-id="27"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("27")}
-            d="M1206.179,376.993l93.96,8.192l0,0l55.37,4.786l-4.3,94.189l-149.29-6.429L1206.179,376.993z"
-          />
-          <path
-            data-id="17"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("17")}
-            d="M1053.635,454.167l2.26-71.502l143.144-5.829l-4.08,100.54l-124.56-5.177
+        />
+        <path
+          data-id="27"
+          className={checkStatus("27")}
+          d="M1206.179,376.993l93.96,8.192l0,0l55.37,4.786l-4.3,94.189l-149.29-6.429L1206.179,376.993z"
+        />
+        <path
+          data-id="17"
+          className={checkStatus("17")}
+          d="M1053.635,454.167l2.26-71.502l143.144-5.829l-4.08,100.54l-124.56-5.177
 	C1060.809,471.801,1053.332,463.756,1053.635,454.167z"
-          />
-          <path
-            data-id="82"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("82")}
-            d="M2106.109,1061.354l167.59,37.866l-7.91,13.182l-41.49,37.441l-0.01,0.014l-0.02,0.014l-26.56,24.517
+        />
+        <path
+          data-id="82"
+          className={checkStatus("82")}
+          d="M2106.109,1061.354l167.59,37.866l-7.91,13.182l-41.49,37.441l-0.01,0.014l-0.02,0.014l-26.56,24.517
 	l-0.38,0.352l-0.26,0.445l-13.84,23.219l-4.25-3.043l-0.02-0.012l-88.66-64.333L2106.109,1061.354z"
-          />
-          <path
-            data-id="83"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("83")}
-            d="M2175.259,1221.967l-0.22,0.758l0.11,0.782l12.09,82.093l-11.09,20.802l-19.13,7.739l-19.91-5.558l-93.44-90.44
+        />
+        <path
+          data-id="83"
+          className={checkStatus("83")}
+          d="M2175.259,1221.967l-0.22,0.758l0.11,0.782l12.09,82.093l-11.09,20.802l-19.13,7.739l-19.91-5.558l-93.44-90.44
 	l22.88-106.31l18.27,4.117l89.91,65.159l5.46,4.288L2175.259,1221.967z"
-          />
-          <path
-            data-id="80"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("80")}
-            d="M2229.319,929.107l-0.13,0.68l0.13,0.681l6.64,34.734l0.13,0.672l0.36,0.578l24.98,39.181l-132.07-29.53
+        />
+        <path
+          data-id="80"
+          className={checkStatus("80")}
+          d="M2229.319,929.107l-0.13,0.68l0.13,0.681l6.64,34.734l0.13,0.672l0.36,0.578l24.98,39.181l-132.07-29.53
 	l55.66-106.792c1.29-2.479,4-3.883,6.77-3.513l58.5,7.826l-14.37,23.128l-0.34,0.556l-0.13,0.641L2229.319,929.107z"
-          />
-          <path
-            data-id="81"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("81")}
-            d="M2125.969,982.698l142.5,33.401l13.91,36.935v20.796l-5.55,18.77l-169.4-38.045l14.68-64.234L2125.969,982.698z
+        />
+        <path
+          data-id="81"
+          className={checkStatus("81")}
+          d="M2125.969,982.698l142.5,33.401l13.91,36.935v20.796l-5.55,18.77l-169.4-38.045l14.68-64.234L2125.969,982.698z
 	"
-          />
-          <path
-            data-id="66"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("66")}
-            d="M1912.659,1195.692l21.38-94.043l125.54,28.606l-21.89,102.688L1912.659,1195.692z"
-          />
-          <path
-            data-id="55"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("55")}
-            d="M1839.169,1174.011l-0.31-0.094l-0.33-0.034l-68.68-7.338l-26.76-10.035l21.15-93.343l162.94,36.965
+        />
+        <path
+          data-id="66"
+          className={checkStatus("66")}
+          d="M1912.659,1195.692l21.38-94.043l125.54,28.606l-21.89,102.688L1912.659,1195.692z"
+        />
+        <path
+          data-id="55"
+          className={checkStatus("55")}
+          d="M1839.169,1174.011l-0.31-0.094l-0.33-0.034l-68.68-7.338l-26.76-10.035l21.15-93.343l162.94,36.965
 	l-21.55,93.667L1839.169,1174.011z"
-          />
-          <path
-            data-id="45"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("45")}
-            d="M1644.599,1117.911l-0.19-0.076l-0.2-0.053l-66.47-17.33l17.13-75.767l162.31,36.924l-20.79,92.088
+        />
+        <path
+          data-id="45"
+          className={checkStatus("45")}
+          d="M1644.599,1117.911l-0.19-0.076l-0.2-0.053l-66.47-17.33l17.13-75.767l162.31,36.924l-20.79,92.088
 	L1644.599,1117.911z"
-          />
-          <path
-            data-id="34"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("34")}
-            d="M1425.639,986.372l162.61,36.942l-17.53,75.273l-161.1-41.819L1425.639,986.372z"
-          />
-          <path
-            data-id="33"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("33")}
-            d="M1349.179,1041.041l-0.06-0.013l-0.05-0.012l-108.49-24.098l15.74-68.84l162.42,36.592l-15.81,70.04
+        />
+        <path
+          data-id="34"
+          className={checkStatus("34")}
+          d="M1425.639,986.372l162.61,36.942l-17.53,75.273l-161.1-41.819L1425.639,986.372z"
+        />
+        <path
+          data-id="33"
+          className={checkStatus("33")}
+          d="M1349.179,1041.041l-0.06-0.013l-0.05-0.012l-108.49-24.098l15.74-68.84l162.42,36.592l-15.81,70.04
 	L1349.179,1041.041z"
-          />
-          <path
-            data-id="22"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("22")}
-            d="M1107.659,914.274l141.68,32.224l-15.7,68.455l-78.72-19.67l-0.08-0.018l-0.07-0.016l-56.59-11.621l-21-12.885
+        />
+        <path
+          data-id="22"
+          className={checkStatus("22")}
+          d="M1107.659,914.274l141.68,32.224l-15.7,68.455l-78.72-19.67l-0.08-0.018l-0.07-0.016l-56.59-11.621l-21-12.885
 	l-7.99-17.872l-1.97-19.625l0.7-23.525c0.13-4.476,4.57-7.54,8.8-6.081l30.57,10.528l0.18,0.063L1107.659,914.274z"
-          />
-          <path
-            data-id="79"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("79")}
-            d="M2302.769,773.764l-0.05,0.085l-0.04,0.087l-26.13,52.105l-55.09-7.315c-4.56-0.606-7.14-5.561-5.02-9.646
+        />
+        <path
+          data-id="79"
+          className={checkStatus("79")}
+          d="M2302.769,773.764l-0.05,0.085l-0.04,0.087l-26.13,52.105l-55.09-7.315c-4.56-0.606-7.14-5.561-5.02-9.646
 	l57.54-110.637l63,28.668l-17.29,17.295l-0.34,0.339l-0.24,0.416L2302.769,773.764z"
-          />
-          <path
-            data-id="78"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("78")}
-            d="M2277.189,691.948l4.54-8.385l0.39-0.718l0.04-0.815l2.59-54.342l160.96-5.342l-0.89,37.444l-14.02,30.53
+        />
+        <path
+          data-id="78"
+          className={checkStatus("78")}
+          d="M2277.189,691.948l4.54-8.385l0.39-0.718l0.04-0.815l2.59-54.342l160.96-5.342l-0.89,37.444l-14.02,30.53
 	l-25.29,18.048l-34.56,8.012l-0.01,0.004l-0.01,0.003l-26.36,6.346l-5.78-2.721l-0.02-0.01l-0.02-0.009L2277.189,691.948z"
-          />
-          <path
-            data-id="77"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("77")}
-            d="M2442.039,614.795l-156.96,5.714l3.42-75.826l136.42-30.537l0.03-0.006l0.03-0.006l16.34-3.921l-5.58,20.751
+        />
+        <path
+          data-id="77"
+          className={checkStatus("77")}
+          d="M2442.039,614.795l-156.96,5.714l3.42-75.826l136.42-30.537l0.03-0.006l0.03-0.006l16.34-3.921l-5.58,20.751
 	l-0.06,0.203l-0.03,0.207l-4.06,27.643l-0.09,0.598l0.11,0.593L2442.039,614.795z"
-          />
-          <path
-            data-id="76"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("76")}
-            d="M2443.889,502.339l-157.58,35.819l-11.22-12.648l5.58-63.981v-0.002l6.91-78.794l89.38-8.179l37.6,8.192
+        />
+        <path
+          data-id="76"
+          className={checkStatus("76")}
+          d="M2443.889,502.339l-157.58,35.819l-11.22-12.648l5.58-63.981v-0.002l6.91-78.794l89.38-8.179l37.6,8.192
 	l22.37,19.191l14.6,24.343l2.94,31.802L2443.889,502.339z"
-          />
-          <path
-            data-id="75"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("75")}
-            d="M2197.509,391.411l0.27,0.013l0.26-0.025l82.3-7.98l-12.31,139.622l-117.42-4.971l5.49-128.699
+        />
+        <path
+          data-id="75"
+          className={checkStatus("75")}
+          d="M2197.509,391.411l0.27,0.013l0.26-0.025l82.3-7.98l-12.31,139.622l-117.42-4.971l5.49-128.699
 	L2197.509,391.411z"
-          />
-          <path
-            data-id="61"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("61")}
-            d="M2143.369,517.797l-117.48-4.916l5.12-128.621l117.94,4.791L2143.369,517.797z"
-          />
-          <path
-            data-id="60"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("60")}
-            d="M2023.859,384.017l-5.26,128.393l-116.61-4.926l5.42-126.645L2023.859,384.017z"
-          />
-          <path
-            data-id="50"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("50")}
-            d="M1777.669,502.193l5.22-124.69l117.25,3.072l-5.49,126.657L1777.669,502.193z"
-          />
-          <path
-            data-id="40"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("40")}
-            d="M1647.719,496.815l4.63-115.881l66.05-5.215l57.16,1.338l-5.04,124.835L1647.719,496.815z"
-          />
-          <path
-            data-id="39"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("39")}
-            d="M1503.099,491.311l4.13-97.999l138.4-11.445l-4.8,115.372L1503.099,491.311z"
-          />
-          <path
-            data-id="12"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("12")}
-            d="M994.676,728.712l-4.533,146.025l-95.25-21.227l4.541-147.362l78.765,4.555
+        />
+        <path
+          data-id="61"
+          className={checkStatus("61")}
+          d="M2143.369,517.797l-117.48-4.916l5.12-128.621l117.94,4.791L2143.369,517.797z"
+        />
+        <path
+          data-id="60"
+          className={checkStatus("60")}
+          d="M2023.859,384.017l-5.26,128.393l-116.61-4.926l5.42-126.645L2023.859,384.017z"
+        />
+        <path
+          data-id="50"
+          className={checkStatus("50")}
+          d="M1777.669,502.193l5.22-124.69l117.25,3.072l-5.49,126.657L1777.669,502.193z"
+        />
+        <path
+          data-id="40"
+          className={checkStatus("40")}
+          d="M1647.719,496.815l4.63-115.881l66.05-5.215l57.16,1.338l-5.04,124.835L1647.719,496.815z"
+        />
+        <path
+          data-id="39"
+          className={checkStatus("39")}
+          d="M1503.099,491.311l4.13-97.999l138.4-11.445l-4.8,115.372L1503.099,491.311z"
+        />
+        <path
+          data-id="12"
+          className={checkStatus("12")}
+          d="M994.676,728.712l-4.533,146.025l-95.25-21.227l4.541-147.362l78.765,4.555
 	C987.664,711.25,994.97,719.237,994.676,728.712z"
-          />
-          <path
-            data-id="6"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("6")}
-            d="M743.046,819.271l-0.21-0.046l-0.215-0.02l-93.138-8.84l3.573-118.566l122.948,7.441l-3.475,126.472
+        />
+        <path
+          data-id="6"
+          className={checkStatus("6")}
+          d="M743.046,819.271l-0.21-0.046l-0.215-0.02l-93.138-8.84l3.573-118.566l122.948,7.441l-3.475,126.472
 	L743.046,819.271z"
-          />
-          <path
-            data-id="11"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("11")}
-            d="M779.469,827.337l3.833-127.933l109.086,6.305l-4.598,146.202L779.469,827.337z"
-          />
-          <path
-            data-id="20"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("20")}
-            d="M1064.979,717.625l94.27,12.346l-9.47,74.295l-106.068-19.513l1.511-50.306
+        />
+        <path
+          data-id="11"
+          className={checkStatus("11")}
+          d="M779.469,827.337l3.833-127.933l109.086,6.305l-4.598,146.202L779.469,827.337z"
+        />
+        <path
+          data-id="20"
+          className={checkStatus("20")}
+          d="M1064.979,717.625l94.27,12.346l-9.47,74.295l-106.068-19.513l1.511-50.306
 	C1045.533,724.097,1054.715,716.281,1064.979,717.625z"
-          />
-          <path
-            data-id="68"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("68")}
-            d="M2004.699,1083.667l25.51-112.422l59.78,10.855l-22.02,97.899c-2.12,9.432-11.49,15.356-20.92,13.227
+        />
+        <path
+          data-id="68"
+          className={checkStatus("68")}
+          d="M2004.699,1083.667l25.51-112.422l59.78,10.855l-22.02,97.899c-2.12,9.432-11.49,15.356-20.92,13.227
 	L2004.699,1083.667z"
-          />
-          <path
-            data-id="67"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("67")}
-            d="M1941.149,1069.489l25.03-109.852l57.11,10.4l-25.56,112.067L1941.149,1069.489z"
-          />
-          <path
-            data-id="70"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("70")}
-            d="M2058.259,848.294l84.33,10.972c4.57,0.595,7.16,5.553,5.03,9.644l-55.19,106.326l-60.51-10.904
+        />
+        <path
+          data-id="67"
+          className={checkStatus("67")}
+          d="M1941.149,1069.489l25.03-109.852l57.11,10.4l-25.56,112.067L1941.149,1069.489z"
+        />
+        <path
+          data-id="70"
+          className={checkStatus("70")}
+          d="M2058.259,848.294l84.33,10.972c4.57,0.595,7.16,5.553,5.03,9.644l-55.19,106.326l-60.51-10.904
 	L2058.259,848.294z"
-          />
-          <path
-            data-id="69"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("69")}
-            d="M1967.599,952.786l25.74-113.109l57.78,7.588l-26.2,115.589L1967.599,952.786z"
-          />
-          <path
-            data-id="64"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("64")}
-            d="M1903.579,940.891l24.97-109.762l57.67,7.61l-25.66,112.773L1903.579,940.891z"
-          />
-          <path
-            data-id="65"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("65")}
-            d="M1877.949,1054.727l24.08-106.772l57.11,10.399l-24.96,109.541L1877.949,1054.727z"
-          />
-          <path
-            data-id="57"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("57")}
-            d="M1839.219,929.547l24.43-106.942l57.78,7.588l-24.89,109.422L1839.219,929.547z"
-          />
-          <path
-            data-id="56"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("56")}
-            d="M1814.399,1040.521l23.48-104.247l57.11,10.4l-24.02,106.461L1814.399,1040.521z"
-          />
-          <path
-            data-id="53"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("53")}
-            d="M1721.439,872.917l15.16-67.033l120.03,15.759l-16.6,72.812L1721.439,872.917z"
-          />
-          <path
-            data-id="54"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("54")}
-            d="M1689.849,1012.248l30.01-132.351l118.59,21.537l-31.02,137.515L1689.849,1012.248z"
-          />
-          <path
-            data-id="47"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("47")}
-            d="M1625.119,890.372l21.8-96.309l82.57,10.886l-22.48,100.291L1625.119,890.372z"
-          />
-          <path
-            data-id="46"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("46")}
-            d="M1602.019,992.326l21.52-94.972l81.89,14.869l-22.37,98.705L1602.019,992.326z"
-          />
-          <path
-            data-id="43"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("43")}
-            d="M1536.989,874.424l20.92-92.058l82.15,10.589l-22.03,95.951L1536.989,874.424z"
-          />
-          <path
-            data-id="44"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("44")}
-            d="M1514.759,972.541l20.74-91.161l80.95,14.506l-21.34,94.728L1514.759,972.541z"
-          />
-          <path
-            data-id="36"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("36")}
-            d="M1448.589,858.365l19.89-87.671l82.3,10.748l-20.98,91.953L1448.589,858.365z"
-          />
-          <path
-            data-id="35"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("35")}
-            d="M1427.239,952.641l19.77-87.305l81.69,14.913l-20.76,90.88L1427.239,952.641z"
-          />
-          <path
-            data-id="21"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("21")}
-            d="M1073.419,867.404l-0.18-0.063l-0.19-0.044l-17.691-4.098c-8.119-1.881-13.784-9.228-13.539-17.558
+        />
+        <path
+          data-id="69"
+          className={checkStatus("69")}
+          d="M1967.599,952.786l25.74-113.109l57.78,7.588l-26.2,115.589L1967.599,952.786z"
+        />
+        <path
+          data-id="64"
+          className={checkStatus("64")}
+          d="M1903.579,940.891l24.97-109.762l57.67,7.61l-25.66,112.773L1903.579,940.891z"
+        />
+        <path
+          data-id="65"
+          className={checkStatus("65")}
+          d="M1877.949,1054.727l24.08-106.772l57.11,10.399l-24.96,109.541L1877.949,1054.727z"
+        />
+        <path
+          data-id="57"
+          className={checkStatus("57")}
+          d="M1839.219,929.547l24.43-106.942l57.78,7.588l-24.89,109.422L1839.219,929.547z"
+        />
+        <path
+          data-id="56"
+          className={checkStatus("56")}
+          d="M1814.399,1040.521l23.48-104.247l57.11,10.4l-24.02,106.461L1814.399,1040.521z"
+        />
+        <path
+          data-id="53"
+          className={checkStatus("53")}
+          d="M1721.439,872.917l15.16-67.033l120.03,15.759l-16.6,72.812L1721.439,872.917z"
+        />
+        <path
+          data-id="54"
+          className={checkStatus("54")}
+          d="M1689.849,1012.248l30.01-132.351l118.59,21.537l-31.02,137.515L1689.849,1012.248z"
+        />
+        <path
+          data-id="47"
+          className={checkStatus("47")}
+          d="M1625.119,890.372l21.8-96.309l82.57,10.886l-22.48,100.291L1625.119,890.372z"
+        />
+        <path
+          data-id="46"
+          className={checkStatus("46")}
+          d="M1602.019,992.326l21.52-94.972l81.89,14.869l-22.37,98.705L1602.019,992.326z"
+        />
+        <path
+          data-id="43"
+          className={checkStatus("43")}
+          d="M1536.989,874.424l20.92-92.058l82.15,10.589l-22.03,95.951L1536.989,874.424z"
+        />
+        <path
+          data-id="44"
+          className={checkStatus("44")}
+          d="M1514.759,972.541l20.74-91.161l80.95,14.506l-21.34,94.728L1514.759,972.541z"
+        />
+        <path
+          data-id="36"
+          className={checkStatus("36")}
+          d="M1448.589,858.365l19.89-87.671l82.3,10.748l-20.98,91.953L1448.589,858.365z"
+        />
+        <path
+          data-id="35"
+          className={checkStatus("35")}
+          d="M1427.239,952.641l19.77-87.305l81.69,14.913l-20.76,90.88L1427.239,952.641z"
+        />
+        <path
+          data-id="21"
+          className={checkStatus("21")}
+          d="M1073.419,867.404l-0.18-0.063l-0.19-0.044l-17.691-4.098c-8.119-1.881-13.784-9.228-13.539-17.558
 	l1.577-53.649l105.333,18.898l-9.92,76.557l-21.84-4.864L1073.419,867.404z"
-          />
-          <path
-            data-id="31"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("31")}
-            d="M1257.109,823.518l14.61-78.726l87.98,11.749l-15.7,83.032L1257.109,823.518z"
-          />
-          <path
-            data-id="32"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("32")}
-            d="M1240.989,910.466l14.81-79.917l86.88,16.053l-15.6,83.552L1240.989,910.466z"
-          />
-          <path
-            data-id="24"
-            onClick={(e) => checkcStatusToShowModal(e)}
-            className={checkStatus("24")}
-            d="M1264.829,743.897l-14.79,78.551l-93.38-17.154l9.79-74.323L1264.829,743.897z"
-          />
-          <path
-            className="sbmx"
-            d="M513.852,798.186l3.376-114.103l128.208,7.464l-3.306,115.714L513.852,798.186z"
-          />
-          <path
-            className="st0"
-            d="M422.839,795.719l7.412-117.925l62.26,3.21l-6.068,116.643L422.839,795.719z"
-          />
-          <path
-            className="st0"
-            d="M329.852,813.803l7.494-152.482l88.585,5.345l-10.237,138.553L329.852,813.803z"
-          />
-          <path
-            className="st0"
-            d="M479.228,632.339l-93.568-5.972l7.485-112.28l80.797-36.786l-1.986,71.502l-0.102,3.675h3.676h6.316
+        />
+        <path
+          data-id="31"
+          className={checkStatus("31")}
+          d="M1257.109,823.518l14.61-78.726l87.98,11.749l-15.7,83.032L1257.109,823.518z"
+        />
+        <path
+          data-id="32"
+          className={checkStatus("32")}
+          d="M1240.989,910.466l14.81-79.917l86.88,16.053l-15.6,83.552L1240.989,910.466z"
+        />
+        <path
+          data-id="24"
+          className={checkStatus("24")}
+          d="M1264.829,743.897l-14.79,78.551l-93.38-17.154l9.79-74.323L1264.829,743.897z"
+        />
+        <path
+          className="sbmx"
+          d="M513.852,798.186l3.376-114.103l128.208,7.464l-3.306,115.714L513.852,798.186z"
+        />
+        <path
+          className="st0"
+          d="M422.839,795.719l7.412-117.925l62.26,3.21l-6.068,116.643L422.839,795.719z"
+        />
+        <path
+          className="st0"
+          d="M329.852,813.803l7.494-152.482l88.585,5.345l-10.237,138.553L329.852,813.803z"
+        />
+        <path
+          className="st0"
+          d="M479.228,632.339l-93.568-5.972l7.485-112.28l80.797-36.786l-1.986,71.502l-0.102,3.675h3.676h6.316
 	L479.228,632.339z"
-          />
-          <path
-            className="st0"
-            d="M67.663,662.388l28.921-14.755l233.629,13.27l-6.87,151.87c-0.092,0.02-0.186,0.04-0.283,0.06
+        />
+        <path
+          className="st0"
+          d="M67.663,662.388l28.921-14.755l233.629,13.27l-6.87,151.87c-0.092,0.02-0.186,0.04-0.283,0.06
 	c-1.776,0.374-4.235,0.82-6.969,1.117c-5.696,0.618-11.723,0.479-15.544-1.497c-41.27-21.347-100.645-59.675-149.814-92.752
 	c-24.56-16.522-46.531-31.705-62.362-42.758c-7.915-5.527-14.295-10.02-18.695-13.131C68.95,663.3,68.278,662.824,67.663,662.388z"
-          />
-          <path
-            className="st0"
-            d="M183.864,609.487c-3.414,1.483-6.507,2.823-9.238,4.004l110.201,6.927l0.171,0.01l0.17,0.027l17.66,2.826
+        />
+        <path
+          className="st0"
+          d="M183.864,609.487c-3.414,1.483-6.507,2.823-9.238,4.004l110.201,6.927l0.171,0.01l0.17,0.027l17.66,2.826
 	l75.016,2.727l6.879-95.241l0.006-0.077l0.009-0.075l0,0v-0.001v-0.001v-0.004l0.004-0.035c0.004-0.033,0.01-0.086,0.017-0.157
 	c0.014-0.142,0.035-0.357,0.059-0.632c0.047-0.551,0.105-1.339,0.146-2.271c0.084-1.891,0.093-4.266-0.162-6.427
 	c-0.27-2.298-0.766-3.646-1.173-4.17c-0.146,0.03-0.413,0.111-0.825,0.324c-41.57,21.501-97.072,47.05-142.138,67.205
 	C218.124,594.527,198.176,603.267,183.864,609.487z"
-          />
-          <path
-            className="st0"
-            d="M1329.239,931.573l34.43-174.919l97.94,11.992l-39.19,182.894L1329.239,931.573z"
-          />
-          <path
-            className="st0"
-            d="M1378.939,708.829l15.19-191.223l93.68,4.651l-15.86,198.531L1378.939,708.829z"
-          />
-        </svg>
+        />
+        <path
+          className="st0"
+          d="M1329.239,931.573l34.43-174.919l97.94,11.992l-39.19,182.894L1329.239,931.573z"
+        />
+        <path
+          className="st0"
+          d="M1378.939,708.829l15.19-191.223l93.68,4.651l-15.86,198.531L1378.939,708.829z"
+        />
+      </svg>
       <div className="numbers_2"></div>
       <div className="bmx"></div>
       <div className="playGraund"></div>
