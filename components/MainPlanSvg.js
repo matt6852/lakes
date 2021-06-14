@@ -11,6 +11,8 @@ export default function MainPlanSvg() {
     setSinglLand,
     showModal,
     setShowModal,
+    showHouses,
+    setShowHouses,
   } = useAppContext();
 
   const checkStatus = (id) => {
@@ -47,7 +49,7 @@ export default function MainPlanSvg() {
     return (
       <>
         <svg
-          className="outer_svg"
+          className="showPlan"
           version="1.1"
           id="Слой_1"
           xmlns="http://www.w3.org/2000/svg"
@@ -58,8 +60,8 @@ export default function MainPlanSvg() {
           xmlSpace="preserve"
         >
           <image
-            width="2562"
-            height="1545"
+            // width="2562"
+            // height="1545"
             xlinkHref="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
 AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
 AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAYJCgIDAREA
@@ -31570,6 +31572,13 @@ aJfqin8S9f0A0kVLb5h2FV0F0Q6lHcoaetH+ZD3EoEaafcT/AHV/kKZutgD/2Q=="
           checkStatus={checkStatus}
           className="showPlan"
         />
+        <div className="btn_show_and_hide">
+          <button onClick={() => setShowHouses(!showHouses)}>
+          <div>  <img src="/homIcon.svg" alt="" />
+          </div>
+            Отобразить/Спрятать дома на участках
+          </button>
+        </div>
       </>
     );
   }
@@ -31581,6 +31590,13 @@ aJfqin8S9f0A0kVLb5h2FV0F0Q6lHcoaetH+ZD3EoEaafcT/AHV/kKZutgD/2Q=="
           checkStatus={checkStatus}
           className="showPlan"
         />
+         <div className="btn_show_and_hide">
+          <button onClick={() => setShowHouses(!showHouses)}>
+          <div>  <img src="/homIcon.svg" alt="" />
+          </div>
+            Отобразить/Спрятать дома на участках
+          </button>
+        </div>
       </>
     );
   }

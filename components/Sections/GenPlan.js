@@ -85,7 +85,7 @@ export default function GenPlan() {
         </p>
       </div>
       <Modal />
-      <div className={style.main_main_wraper}>
+      {/* <div className={style.main_main_wraper}> */}
         <div className={style.genPlan_svg_container}>
           <MainPlanSvg />
           <div className={style.btn_container_genPlan}>
@@ -137,7 +137,7 @@ export default function GenPlan() {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
       {/* filter area */}
       <Wrapper>
         <div className={style.filter_container}>

@@ -1,7 +1,7 @@
 import style from "styles/MainSection.module.scss";
 import Image from "next/image";
 // import { FaArrowRight } from "react-icons/fa";
-// import SuperBtn from "../SuperButton";
+import SuperBtn from "../SuperButton";
 import { useAppContext } from "context/state";
 import React, { useEffect } from "react";
 
@@ -94,7 +94,9 @@ export default function MainSection() {
   });
   return (
     <div className=".main_main_wraper">
-      <section className={style.center_main}>{renderSection}</section>;
+      <section className={style.center_main}>{renderSection}
+      <SuperBtn/>
+        </section>;
     </div>
   );
 }

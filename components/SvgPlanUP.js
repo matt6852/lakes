@@ -1,15 +1,10 @@
-import style from "../styles/SvgGenPlan.module.scss";
-
 import { useAppContext } from "context/state";
 
 export default function SvgPlanFirstUP({
   checkStatus,
   checkcStatusToShowModal,
 }) {
-  const showTarget = (e)=>{
-     
-     console.log(e.target.dataset.id);
-  }
+  const { showHouses } = useAppContext();
 
   return (
     <>
@@ -2405,7 +2400,9 @@ sHegjYd1g3WjjYN9gR36Fx0I7tDOhDQju0QaYOwdA//Z"
         </svg>
       </svg>
 
-      <div className="numbers_1"></div>
+      <div className={showHouses ? `hidePlan` : `numbers_1`}></div>
+      <div className={showHouses ? `showHouses` : `hidePlan`}></div>
+
       {/* second */}
     </>
   );

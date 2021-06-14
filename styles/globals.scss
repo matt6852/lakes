@@ -148,6 +148,67 @@ ul li {
 
   // z-index: 1;
 }
+.showHouses {
+  position: absolute;
+  top: 24%;
+  left: 10%;
+  width: 79%;
+  height: 44%;
+  background: url("/houses_1.svg");
+  background-size: contain;
+  pointer-events: none;
+}
+.showHouses_2 {
+  position: absolute;
+  top: 24.5%;
+  left: 20%;
+  width: 75%;
+  height: 60%;
+  background: url("/houses_2.svg");
+  background-size: contain;
+  pointer-events: none;
+}
+
+.btn_show_and_hide{
+position: absolute;
+  top: 10%;
+  left: 34%;
+  width: 79%;
+  height: 5%;
+
+  button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #FFFFFF;
+box-shadow: 0px 3.51678px 3.51678px rgba(0, 0, 0, 0.2);
+border-radius: 43.9597px;
+width: 475px;
+height: 53px;
+  cursor: pointer;
+  font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+  border: none;
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    width: 34px;
+height: 34px;
+border-radius: 50%;
+img{
+  background-size: contain;
+}
+
+background: linear-gradient(90deg, #4EA86A -38.01%, #5CACC7 135.09%);
+  }
+
+  }
+}
 .sbmx {
   width: 100%;
   height: 100%;

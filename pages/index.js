@@ -24,6 +24,7 @@ export default function Home() {
         <GenPlan />
         <History />
         <Carousel />
+
         <HowToBuy />
         <Contacts />
      

@@ -4,6 +4,8 @@ import style from "styles/Carousel.module.scss";
 import { useAppContext } from "context/state";
 import AirGal from "../components/AirphotoCarousel";
 import OurCarousel from "../components/OurAriaCarousel";
+import AfterCarousel from "components/Sections/AfterCarousel";
+
 
 import Wrapper from "./Wrapper";
 
@@ -247,6 +249,7 @@ export default function CarouselSlider() {
             </div>
           </div>
         </Carousel>
+        <AfterCarousel/>
       </Wrapper>
     </section>
      </div>

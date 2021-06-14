@@ -28,17 +28,20 @@ export function AppWrapper({ children }) {
   const [activPlan, setActivePlan] = useState(0);
   const [formSub, setFormSub] = useState(false);
   const [scrollM, setScrollM] = useState(false);
+  const [mousOver, setMousOver] = useState("");
   const [showBar, setShowBar] = useState(true);
+  const [showHouses, setShowHouses] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [index, setIndex] = useState(0);
   const [indexMain, setIndexMain] = useState(0);
   const [sizeWindow, setSizeWinow] = useState(0);
-  // const [start, setStart] = useState(0);
   const [end, setEnd] = useState(4);
   const [scrollBtn, setScrollBtn] = useState(false);
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const sharedState = {
     formSub,
+    showHouses, setShowHouses,
+    mousOver, setMousOver,
     activPlan,
     setActivePlan,
     end,

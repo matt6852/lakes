@@ -1,4 +1,8 @@
+import { useAppContext } from "context/state";
+
 export default function SvgPlanDown({ checkStatus, checkcStatusToShowModal }) {
+  const { showHouses, mousOver, setMousOver } = useAppContext();
+
   return (
     <>
       <svg
@@ -3131,6 +3135,12 @@ n/o6aQBFxqFSPDqouWe8L3DcuLEkZaBQIQw4iMRmH/8Au/h//iw//9k="
         />
         <path
           className="sbmx"
+          data-id="bmx"
+          onMouseEnter={(e) => {
+            let name = e.target.dataset.id;
+            setMousOver(name);
+          }}
+          onMouseLeave={() => setMousOver("")}
           d="M513.852,798.186l3.376-114.103l128.208,7.464l-3.306,115.714L513.852,798.186z"
         />
         <path
@@ -3147,6 +3157,12 @@ n/o6aQBFxqFSPDqouWe8L3DcuLEkZaBQIQw4iMRmH/8Au/h//iw//9k="
 	L479.228,632.339z"
         />
         <path
+          data-id="shops"
+          onMouseEnter={(e) => {
+            let name = e.target.dataset.id;
+            setMousOver(name);
+          }}
+          onMouseLeave={() => setMousOver("")}
           className="st0"
           d="M67.663,662.388l28.921-14.755l233.629,13.27l-6.87,151.87c-0.092,0.02-0.186,0.04-0.283,0.06
 	c-1.776,0.374-4.235,0.82-6.969,1.117c-5.696,0.618-11.723,0.479-15.544-1.497c-41.27-21.347-100.645-59.675-149.814-92.752
@@ -3165,14 +3181,22 @@ n/o6aQBFxqFSPDqouWe8L3DcuLEkZaBQIQw4iMRmH/8Au/h//iw//9k="
           d="M1329.239,931.573l34.43-174.919l97.94,11.992l-39.19,182.894L1329.239,931.573z"
         />
         <path
+          data-id="playGraund"
+          onMouseEnter={(e) => {
+            let name = e.target.dataset.id;
+            setMousOver(name);
+          }}
+          onMouseLeave={() => setMousOver("")}
           className="st0"
           d="M1378.939,708.829l15.19-191.223l93.68,4.651l-15.86,198.531L1378.939,708.829z"
         />
       </svg>
-      <div className="numbers_2"></div>
-      <div className="bmx"></div>
-      <div className="playGraund"></div>
-      <div className="shops"></div>
+
+      <div className={mousOver || "hidePLan"}></div>
+      <div className={mousOver || "hidePLan"}></div>
+      <div className= {mousOver || "hidePlan"}></div>
+      <div className={showHouses ? `hidePlan` : `numbers_2`}></div>
+      <div className={showHouses ? `showHouses_2` : `hidePlan`}></div>
     </>
   );
 }
