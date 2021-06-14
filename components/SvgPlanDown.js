@@ -7,7 +7,7 @@ export default function SvgPlanDown({ checkStatus, checkcStatusToShowModal }) {
     <>
       <svg
         onClick={(e) => checkcStatusToShowModal(e)}
-        className="outer_svg"
+        className="showPlan"
         version="1.1"
         id="Слой_1"
         xmlns="http://www.w3.org/2000/svg"

@@ -8,7 +8,7 @@ export default function SvgPlanFirstUP({
 
   return (
     <>
-      <svg className="outer_svg">
+      <svg className="showPlan">
         {/* <?xml version="1.0" encoding="utf-8"?> */}
 
         <svg

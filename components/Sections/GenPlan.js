@@ -86,57 +86,107 @@ export default function GenPlan() {
       </div>
       <Modal />
       {/* <div className={style.main_main_wraper}> */}
-        <div className={style.genPlan_svg_container}>
-          <MainPlanSvg />
-          <div className={style.btn_container_genPlan}>
-            <div className={style.active_btns}>
-              <button
-                className={
-                  activPlan === 0 ? `${style.btn_active}` : `${style.btn}`
-                }
-                onClick={() => {
-                  setActivePlan(0);
-                }}
-              >
-                Генплан
-              </button>
-              <button
-                className={
-                  activPlan === 1 ? `${style.btn_active}` : `${style.btn}`
-                }
-                onClick={() => {
-                  setActivePlan(1);
-                }}
-              >
-                Зона с участками 1
-              </button>
-              <button
-                className={
-                  activPlan === 2 ? `${style.btn_active}` : `${style.btn}`
-                }
-                onClick={() => {
-                  setActivePlan(2);
-                }}
-              >
-                Зона с участками 2
-              </button>
+      <div className={style.genPlan_svg_container}>
+        <MainPlanSvg />
+        <div className={style.btn_container_genPlan}>
+          <div className={style.active_btns}>
+            <button
+              className={
+                activPlan === 0 ? `${style.btn_active}` : `${style.btn}`
+              }
+              onClick={() => {
+                setActivePlan(0);
+              }}
+            >
+              Генплан
+            </button>
+            <button
+              className={
+                activPlan === 1 ? `${style.btn_active}` : `${style.btn}`
+              }
+              onClick={() => {
+                setActivePlan(1);
+              }}
+            >
+              Зона с участками 1
+            </button>
+            <button
+              className={
+                activPlan === 2 ? `${style.btn_active}` : `${style.btn}`
+              }
+              onClick={() => {
+                setActivePlan(2);
+              }}
+            >
+              Зона с участками 2
+            </button>
+          </div>
+          <div className={style.status_btns}>
+            <div>
+              {" "}
+              <span className={style.span_free}></span> - Свободен
             </div>
-            <div className={style.status_btns}>
-              <div>
-                {" "}
-                <span className={style.span_free}></span> - Свободен
-              </div>
-              <div>
-                {" "}
-                <span className={style.span_booked}></span>- Забронирован
-              </div>
-              <div>
-                {" "}
-                <span className={style.span_sold}></span>- Продано
-              </div>
+            <div>
+              {" "}
+              <span className={style.span_booked}></span>- Забронирован
+            </div>
+            <div>
+              {" "}
+              <span className={style.span_sold}></span>- Продано
             </div>
           </div>
         </div>
+
+        {/* mobile container */}
+    
+          <div className={style.active_btns_mob}>
+            <button
+              className={
+                activPlan === 0 ? `${style.btn_active}` : `${style.btn}`
+              }
+              onClick={() => {
+                setActivePlan(0);
+              }}
+            >
+              Генплан
+            </button>
+            <button
+              className={
+                activPlan === 1 ? `${style.btn_active}` : `${style.btn}`
+              }
+              onClick={() => {
+                setActivePlan(1);
+              }}
+            >
+              Зона с участками 1
+            </button>
+            <button
+              className={
+                activPlan === 2 ? `${style.btn_active}` : `${style.btn}`
+              }
+              onClick={() => {
+                setActivePlan(2);
+              }}
+            >
+              Зона с участками 2
+            </button>
+          </div>
+          <div className={style.status_btns_mob}>
+            <div>
+              {" "}
+              <span className={style.span_free_mob}></span> - Свободен
+            </div>
+            <div>
+              {" "}
+              <span className={style.span_booked_mob}></span>- Забронирован
+            </div>
+            <div>
+              {" "}
+              <span className={style.span_sold_mob}></span>- Продано
+            </div>
+          </div>
+     
+      </div>
       {/* </div> */}
       {/* filter area */}
       <Wrapper>

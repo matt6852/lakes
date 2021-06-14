@@ -173,7 +173,7 @@ ul li {
 position: absolute;
   top: 10%;
   left: 34%;
-  width: 79%;
+  // width: 79%;
   height: 5%;
 
   button{
@@ -256,16 +256,16 @@ background: linear-gradient(90deg, #4EA86A -38.01%, #5CACC7 135.09%);
   pointer-events: none;
 }
 
-.outer_svg {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  width: 100%;
-  left: 0;
-  display: block;
+// .outer_svg {
+//   position: absolute;
+//   height: 100%;
+//   top: 0;
+//   width: 100%;
+//   left: 0;
+//   display: block;
 
-  //    background;
-}
+//   //    background;
+// }
 .hidePlan {
   display: none;
   opacity: 0;
@@ -294,4 +294,50 @@ background: linear-gradient(90deg, #4EA86A -38.01%, #5CACC7 135.09%);
   fill: rgba(211, 190, 171, 0.7);
   // background-color: red;
   cursor: pointer;
+}
+
+
+@media (max-width: 1205px) {
+  .btn_show_and_hide{
+position: absolute;
+  top: 80%;
+  left: 50%;
+  // width: 79%;
+  z-index: 0;
+  height: 5%;
+  transform: translateX(-50%) translateY(-100%);
+
+  button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+box-shadow: none;
+border-radius:none;
+width: 100%;
+height: 53px;
+  cursor: pointer;
+  font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 8px;
+line-height: 19px;
+text-align: center;
+  border: none;
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    width: 14px;
+height: 14px;
+border-radius: 50%;
+img{
+  background-size: contain;
+}
+
+background: linear-gradient(90deg, #4EA86A -38.01%, #5CACC7 135.09%);
+  }
+
+  }
+}
 }
