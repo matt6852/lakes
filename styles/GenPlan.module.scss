@@ -535,7 +535,7 @@
           padding: 5px 10px;
           line-height: 21px;
           padding: 5px 5px;
-          margin: 0 15px;
+          margin: 0 0;
           background: none;
           box-shadow: none;
           border-radius: none;
@@ -551,10 +551,10 @@
 
           span {
             display: inline-block;
-            width: 15.98px;
-            height: 15.98px;
+            width: 10.98px;
+            height: 10.98px;
             border-radius: 50%;
-            margin-right: 5px;
+            margin-right: 2px;
           }
           .span_free_mob {
             background: linear-gradient(90deg, #8edda7 0%, #63c029 100%),
