@@ -13,7 +13,7 @@
     bottom: 100px;
     background: url("/leafs_r.png") center/cover;
     background-size: contain;
-    z-index: 12;
+    z-index: 2;
     // background: transparent;
   }
   &::before {
@@ -26,7 +26,7 @@
     bottom: 100px;
     background: url("/leafs_l.png") center/cover;
     background-size: contain;
-    z-index: 12;
+    z-index: 2;
     // background: transparent;
   }
 
