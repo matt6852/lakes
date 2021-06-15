@@ -31,7 +31,7 @@ function Header() {
             <Link href="/">
               <a className={style.logo}>
                 {" "}
-                <Image src="/logo.png" width={70} height={94} />{" "}
+                <Image src="/logo.svg" width={70} height={94} />{" "}
               </a>
             </Link>
             <Navbar />

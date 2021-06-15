@@ -1,12 +1,14 @@
-.main_nav{
-    display: flex;
-    justify-content: space-around;
-    width:  100%;
-    margin: auto;
-    .link{
-        color: #333333;
-        font-size: 16px;
-        font-weight: 500;
-        font-style: normal;
-    }
+.main_nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+  .link {
+    color: #333333;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

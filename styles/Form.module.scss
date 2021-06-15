@@ -1,12 +1,18 @@
 .form_title {
   h4 {
+    font-family: Gilroy;
+    font-style: normal;
     font-weight: bold;
     font-size: 42px;
     padding-bottom: 16px;
+    color: #333333;
   }
   p {
+    font-family: Gilroy;
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
+    line-height: 160%;
     padding-bottom: 24px;
     color: #6c6c6c;
   }
@@ -41,6 +47,11 @@
     cursor: pointer;
     color: #fff;
     font-size: 18px;
+    font-family: Gilroy;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 130%;
   }
   textarea::placeholder {
     padding: 12px 25px;
@@ -87,7 +98,7 @@
         // color: #5cacc7;
         width: 15px;
         height: 15px;
-        background:url("/check.svg")center/cover no-repeat;
+        background: url("/check.svg") center/cover no-repeat;
       }
     }
 
@@ -252,16 +263,16 @@
           color: #99a1a7;
         }
         &:checked:after {
-         content: "";
-        font-size: 18px;
-        position: absolute;
-        top: 6px;
-        left: 7px;
-        right: 0;
-        // color: #5cacc7;
-        width: 15px;
-        height: 15px;
-        background:url("/check.svg")center/cover no-repeat;
+          content: "";
+          font-size: 18px;
+          position: absolute;
+          top: 6px;
+          left: 7px;
+          right: 0;
+          // color: #5cacc7;
+          width: 15px;
+          height: 15px;
+          background: url("/check.svg") center/cover no-repeat;
         }
       }
 
@@ -275,4 +286,4 @@
   }
 }
 
-// 
+//

@@ -7,13 +7,12 @@
   position: relative;
   padding-top: 60.3%;
 
-
-    .status_btns_mob{
-        display: none;
-      }
-    .active_btns_mob{
-            display: none;
-      }
+  .status_btns_mob {
+    display: none;
+  }
+  .active_btns_mob {
+    display: none;
+  }
   .numbers {
     position: absolute;
     top: 26%;
@@ -40,29 +39,31 @@
     align-items: center;
     .active_btns {
       .btn {
-        padding: 10px 10px;
+       padding: 10px 28px;
 
         background: #ffffff;
         box-shadow: 0px 3.51678px 3.51678px rgba(0, 0, 0, 0.2);
         border-radius: 43.9597px;
         line-height: 26px;
         border: none;
-        color: #333333;
-        cursor: pointer;
-        margin: 0 15px;
         font-family: Gilroy;
         font-style: normal;
         font-weight: bold;
-        font-size: 21.1007px;
-        line-height: 26px;
+        font-size: 14.8521px;
+        line-height: 18px;
+        margin: 0 15px;
+   
+
+        color: #333333;
       }
       .btn_active {
+         padding: 10px 28px;
         font-family: Gilroy;
+     
         font-style: normal;
         font-weight: bold;
-        font-size: 21.1007px;
-        line-height: 26px;
-        padding: 10px 10px;
+        font-size: 14.8521px;
+        line-height: 18px;
         border: none;
         cursor: pointer;
         margin: 0 15px;
@@ -70,14 +71,15 @@
         background: linear-gradient(90deg, #348f50 0%, #56b4d3 100%);
         box-shadow: 0px 3.51678px 3.51678px rgba(0, 0, 0, 0.2);
         border-radius: 43.9597px;
-        line-height: 26px;
+
         color: #ffffff;
       }
     }
     .status_btns {
       display: flex;
+    
       div {
-        padding: 10px 10px;
+        padding: 5px 5px;
         margin: 0 15px;
         background: #ffffff;
         box-shadow: 0px 3.51678px 3.51678px rgba(0, 0, 0, 0.2);
@@ -85,17 +87,20 @@
         line-height: 26px;
         border: none;
         border: none;
+        font-family: Gilroy;
+        font-style: normal;
         font-weight: bold;
-        font-size: 21.1007px;
-        line-height: 26px;
-        color: #333333;
+        font-size: 14.8521px;
+        line-height: 18px;
+        margin: 0 15px;
         display: flex;
         align-items: center;
+   
 
         span {
           display: inline-block;
-          width: 21.98px;
-          height: 21.98px;
+          width: 14.98px;
+          height: 14.98px;
           border-radius: 50%;
           margin-right: 5px;
         }
@@ -128,6 +133,7 @@
   padding-top: 115px;
   margin-bottom: 81px;
   z-index: 1;
+
   // height: 2600px;
   .title {
     position: relative;
@@ -140,6 +146,7 @@
       font-size: 52px;
       line-height: 67.6px;
       margin-bottom: 25px;
+      color: #333333;
     }
     p {
       width: 457px;
@@ -289,12 +296,12 @@
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      .status_btns_mob{
+      .status_btns_mob {
         display: none;
       }
-          .active_btns_mob{
-            display: none;
-          }
+      .active_btns_mob {
+        display: none;
+      }
       .active_btns {
         .btn {
           padding: 5px 5px;
@@ -538,114 +545,107 @@
       background-size: contain;
       pointer-events: none;
     }
-.status_btns_mob{
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  width: 100%;
-  bottom: 1%;
-  justify-content: space-around;
-   div {
-          padding: 5px 10px;
-          line-height: 21px;
-          padding: 5px 5px;
-          margin: 0 0;
-          background: none;
-          box-shadow: none;
-          border-radius: none;
-          
-          border: none;
-          border: none;
-          font-weight: bold;
-          font-size: 12.1007px;
-          line-height: 21px;
-          color: #333333;
-          display: flex;
-          align-items: center;
+    .status_btns_mob {
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      width: 100%;
+      bottom: 1%;
+      justify-content: space-around;
+      div {
+        padding: 5px 10px;
+        line-height: 21px;
+        padding: 5px 5px;
+        margin: 0 0;
+        background: none;
+        box-shadow: none;
+        border-radius: none;
 
-          span {
-            display: inline-block;
-            width: 10.98px;
-            height: 10.98px;
-            border-radius: 50%;
-            margin-right: 2px;
-          }
-          .span_free_mob {
-            background: linear-gradient(90deg, #8edda7 0%, #63c029 100%),
-              #ffffff;
-          }
-          .span_booked_mob{
-            background: linear-gradient(
-                90deg,
-                rgba(217, 130, 51, 0.7) 0%,
-                rgba(171, 189, 61, 0.7) 100%
-              ),
-              #ffffff;
-          }
-          .span_sold_mob {
-            background: linear-gradient(
-                90deg,
-                rgba(211, 190, 171, 0.7) 0%,
-                rgba(119, 120, 112, 0.7) 100%
-              ),
-              #ffffff;
-          }
+        border: none;
+        border: none;
+        font-weight: bold;
+        font-size: 12.1007px;
+        line-height: 21px;
+        color: #333333;
+        display: flex;
+        align-items: center;
+
+        span {
+          display: inline-block;
+          width: 10.98px;
+          height: 10.98px;
+          border-radius: 50%;
+          margin-right: 2px;
         }
-      
-}
+        .span_free_mob {
+          background: linear-gradient(90deg, #8edda7 0%, #63c029 100%), #ffffff;
+        }
+        .span_booked_mob {
+          background: linear-gradient(
+              90deg,
+              rgba(217, 130, 51, 0.7) 0%,
+              rgba(171, 189, 61, 0.7) 100%
+            ),
+            #ffffff;
+        }
+        .span_sold_mob {
+          background: linear-gradient(
+              90deg,
+              rgba(211, 190, 171, 0.7) 0%,
+              rgba(119, 120, 112, 0.7) 100%
+            ),
+            #ffffff;
+        }
+      }
+    }
 
     // mobile container
-    .active_btns_mob{
-    position: absolute;
-    z-index: 1;
-    top: 1%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+    .active_btns_mob {
+      position: absolute;
+      z-index: 1;
+      top: 1%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
       .btn {
-          padding: 5px 5px;
+        padding: 5px 5px;
 
-          background: none;
-          box-shadow: none;
-          border-radius: none;
+        background: none;
+        box-shadow: none;
+        border-radius: none;
 
-          border: none;
-          color: #333333;
-          cursor: pointer;
-          margin: 0 15px;
-          font-family: Gilroy;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 12.1007px;
-          line-height: 21px;
-        }
-        .btn_active {
-          font-family: Gilroy;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 12.1007px;
-          line-height: 21px;
-          padding: 5px 5px;
-          border: none;
-          border-bottom: 2px solid  #348f50 ;
-          cursor: pointer;
-          margin: 0 5px;
+        border: none;
+        color: #333333;
+        cursor: pointer;
+        margin: 0 15px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12.1007px;
+        line-height: 21px;
+      }
+      .btn_active {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12.1007px;
+        line-height: 21px;
+        padding: 5px 5px;
+        border: none;
+        border-bottom: 2px solid #348f50;
+        cursor: pointer;
+        margin: 0 5px;
 
-         
-          box-shadow: none;
-          color: #348f50;
-          background-color: transparent;
-          border-radius: none;
-          line-height: 26px;
-          
-        }
-      
-      
-    
+        box-shadow: none;
+        color: #348f50;
+        background-color: transparent;
+        border-radius: none;
+        line-height: 26px;
+      }
     }
 
     // desctop
-   
+
     .btn_container_genPlan {
       z-index: 1;
       position: absolute;
