@@ -13,6 +13,10 @@ export default function UniqAries() {
             <h3>
               <span className="linercradient">Уникальность </span> территории
             </h3>
+            <p>
+              Выберите земельный участок под строительство, где появится дом
+              вашей мечты
+            </p>
           </div>
           <div className={style.center}>
             {uniqCards.map((card, index) => {

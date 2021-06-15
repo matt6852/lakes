@@ -9,28 +9,28 @@
   //     #242424b3
   //   )
   background: url("/history_bg.png") center/cover;
-  &:after {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 800px;
-    left: 0px;
-    top: -370px;
-    background: url("/forest_t.png") center/cover;
-    // background-size: contain;
-    // background: transparent;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 800px;
-    left: 0px;
-    bottom: -360px;
-    background: url("/forest_b.png") center/cover;
-    // background-size: contain;
-    // background: transparent;
-  }
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100vw;
+  //   height: 800px;
+  //   left: 0px;
+  //   top: -370px;
+  //   background: url("/forest_t.png") center/cover;
+  //   // background-size: contain;
+  //   // background: transparent;
+  // }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100vw;
+  //   height: 800px;
+  //   left: 0px;
+  //   bottom: -360px;
+  //   background: url("/forest_b.png") center/cover;
+  //   // background-size: contain;
+  //   // background: transparent;
+  // }
 
   .title {
     margin: auto;
@@ -93,28 +93,28 @@
     margin-bottom: 81px;
     height: 1730px;
     background: url("/history_m_bg.png") center/cover;
-    &:after {
-      content: "";
-      position: absolute;
-      width: 100vw;
-      height: 400px;
-      left: 0px;
-      top: -190px;
-      background: url("/forest_t.png") center/cover;
-      // background-size: contain;
-      // background: transparent;
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100vw;
-      height: 300px;
-      left: 0px;
-      bottom: -150px;
-      background: url("/forest_b.png") center/cover;
-      background-size: contain;
-      // background: transparent;
-    }
+    // &:after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100vw;
+    //   height: 400px;
+    //   left: 0px;
+    //   top: -190px;
+    //   background: url("/forest_t.png") center/cover;
+    //   // background-size: contain;
+    //   // background: transparent;
+    // }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100vw;
+    //   height: 300px;
+    //   left: 0px;
+    //   bottom: -150px;
+    //   background: url("/forest_b.png") center/cover;
+    //   background-size: contain;
+    //   // background: transparent;
+    // }
 
     .title {
       margin: auto;

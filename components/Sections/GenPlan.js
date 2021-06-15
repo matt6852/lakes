@@ -194,7 +194,11 @@ export default function GenPlan() {
         <div className={style.filter_container}>
           <div className={style.filter_btns}>
             <div className={style.btn_container}>
-              <label htmlFor="price" className={style.title}>
+              <label
+                className={style.label}
+                htmlFor="price"
+                className={style.title}
+              >
                 Стоимость участка:
               </label>
               <select onChange={(e) => sortByPrice(e.target.value)} id="price">
@@ -202,6 +206,9 @@ export default function GenPlan() {
                 <option value="max">max</option>
                 <option value="min">min</option>
               </select>
+              <div className={style.btn_down}>
+                <img src="/filter_down.svg" alt="" />
+              </div>
             </div>
             <div className={style.btn_container}>
               <label className={style.title} htmlFor="size">
@@ -212,6 +219,9 @@ export default function GenPlan() {
                 <option value="big">big</option>
                 <option value="small">small</option>
               </select>
+              <div className={style.btn_down}>
+                <img src="/filter_down.svg" alt="" />
+              </div>
             </div>
           </div>
 

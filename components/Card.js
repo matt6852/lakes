@@ -1,10 +1,11 @@
 import style from "styles/Card.module.scss";
 
-export default function Card({ title, desc, icon, list, img }) {
+export default function Card({ title, desc, icon, list, img,imgMob }) {
   return (
     <article className={style.singl_card_center}>
       <div className={style.first_box}>
         <img className={style.img_big} src={img} alt="" />
+        <img className={style.img_mob} src={imgMob} alt="" />
       </div>
       <div className={style.second_box}>
         <div className ={style.title_flex}>
