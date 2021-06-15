@@ -9,10 +9,10 @@
     &:after {
       content: "";
       position: absolute;
-      width: 100%;
-      height: 1095px;
+      width: 100vw;
+      height: calc(100vw / 1440 * 1095);
       left: 0px;
-      bottom: -430px;
+      bottom: calc(-100vw * .33);
       background: url("/clouds.png") center/cover;
       // background-size: contain;
       // background: transparent;
@@ -154,7 +154,7 @@
         h1 {
           width: 100%;
           margin: auto;
-          padding-left: 26px;
+          padding-left: 10px;
           height: 162px;
           font-family: Gilroy;
           font-style: normal;
@@ -171,7 +171,7 @@
             order: 2;
             display: block;
             margin: auto;
-            width: 90%;
+            width: calc(100% - 20px);
             a {
               color: #ffff;
               font-weight: 700;
@@ -194,7 +194,7 @@
           p {
             width: 100%;
             margin: auto;
-            padding-left: 26px;
+            padding-left: 10px;
             margin-bottom: 100px;
             color: #333333;
             line-height: 25px;

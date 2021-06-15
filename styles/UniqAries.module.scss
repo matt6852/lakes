@@ -1,7 +1,6 @@
 .uniq {
   position: relative;
   margin-top: 30px;
-  margin-bottom: 80px;
   min-height: 100vh;
   min-width: 100vw;
   &:after {
@@ -14,6 +13,7 @@
     bottom: 100px;
     background: url("/leafs_r.png") center/cover;
     background-size: contain;
+    z-index: 12;
     // background: transparent;
   }
   &::before {
@@ -26,6 +26,7 @@
     bottom: 100px;
     background: url("/leafs_l.png") center/cover;
     background-size: contain;
+    z-index: 12;
     // background: transparent;
   }
 
@@ -38,9 +39,9 @@
     line-height: 67px;
     font-size: 52px;
     h3 {
-      z-index: 1;
       color: #333333;
       margin-bottom: 40px;
+      line-height: 130%;
     }
     p {
       font-family: Gilroy;
@@ -49,7 +50,7 @@
       font-size: 18px;
       line-height: 160%;
       /* or 29px */
-      width: 429px;
+      max-width: 429px;
       margin: auto;
 
       color: #6c6c6c;
@@ -70,7 +71,6 @@
   .uniq {
     position: relative;
     margin-top: 115px;
-    margin-bottom: 81px;
     &:after {
       content: "";
       position: absolute;
@@ -103,9 +103,6 @@
       font-weight: bold;
       text-align: center;
       font-size: 52px;
-      h3 {
-        z-index: 1;
-      }
       p {
         font-family: Gilroy;
         font-style: normal;
@@ -113,7 +110,7 @@
         font-size: 16px;
         line-height: 160%;
         /* or 26px */
-        width:354px ;
+        max-width:354px ;
 
         color: #6c6c6c;
         margin-bottom: 1px;
@@ -143,6 +140,8 @@
       top: -15px;
       background: url("/leafs_r.png") center/cover;
       background-size: contain;
+      opacity: .45;
+      z-index: 2;
       // background: transparent;
     }
 
@@ -155,7 +154,7 @@
       font-size: 35px;
       padding-left: 16px;
       h3 {
-        z-index: 1;
+        margin-bottom: 24px;
       }
        p {
         font-family: Gilroy;
@@ -164,7 +163,7 @@
         font-size: 16px;
         line-height: 160%;
         /* or 26px */
-        width:354px ;
+        max-width: 100%;
 
         color: #6c6c6c;
         margin-bottom: 0px;

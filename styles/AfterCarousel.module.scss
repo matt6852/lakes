@@ -1,5 +1,4 @@
 .main_container_flex {
-  padding: 0 45px;
   margin-top: 80px;
   position: relative;
   z-index: 1;
@@ -11,7 +10,7 @@
     .card_title {
       display: flex;
       align-items: center;
-      margin-bottom: 56px;
+      margin-bottom: 36px;
 
       .img_icon {
         width: 70px;
@@ -50,10 +49,8 @@
   }
 
   .card_1 {
-    height: 815px;
-    width: 540px;
-    margin-bottom: 20px;
-
+    margin-right: 40px;
+    flex: 1;
     background: #f5f5f5;
     border-radius: 15px;
 
@@ -64,10 +61,9 @@
     }
   }
   .card_2 {
-    width: 540px;
-    height: 815px;
     background: #f5f5f5;
     border-radius: 15px;
+    flex: 1;
     .img_container {
       img {
         width: 100%;
@@ -218,7 +214,7 @@
     .card_1 {
       width: 100%;
       margin-bottom: 20px;
-
+      margin-right: 0;
       background: #f5f5f5;
       border-radius: 15px;
 

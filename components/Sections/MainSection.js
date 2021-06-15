@@ -88,6 +88,13 @@ export default function MainSection() {
             transition: opacity 1s ease-in-out;
             transform: translateX(-${slidIndex * 100}%);
           }
+
+          @media (max-width: 767px) {
+            .main_section_${slidIndex} {
+              background: linear-gradient(130.54deg, rgba(251, 251, 251, 0.7) 0%, rgba(251, 251, 251, 0.7) 34.67%, rgba(255, 255, 255, 0.6) 63.76%, rgba(255, 255, 255, 0) 98.08%, rgba(255, 255, 255, 0) 119.93%),
+                url(${imgBg}) center/cover;
+            }
+          }
         `}</style>
       </section>
     );

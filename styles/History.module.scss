@@ -1,36 +1,38 @@
 .history {
   position: relative;
-  padding-top: 115px;
-  margin-bottom: 81px;
-  height: 1652px;
+  padding-top: 255px;
+  padding-bottom: 355px;
   // background: linear-gradient(
   //     0deg,
   //     rgba(36, 36, 36, 0.7),
   //     #242424b3
   //   )
   background: url("/history_bg.png") center/cover;
-  // &:after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100vw;
-  //   height: 800px;
-  //   left: 0px;
-  //   top: -370px;
-  //   background: url("/forest_t.png") center/cover;
-  //   // background-size: contain;
-  //   // background: transparent;
-  // }
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100vw;
-  //   height: 800px;
-  //   left: 0px;
-  //   bottom: -360px;
-  //   background: url("/forest_b.png") center/cover;
-  //   // background-size: contain;
-  //   // background: transparent;
-  // }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: calc(100vw / 1440 * 938);
+    left: 0px;
+    top: calc(-100vw * .26);
+    background: url("/forest_t.png") center/cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    // background-size: contain;
+    // background: transparent;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: calc(100vw * 1440 / 1092);
+    left: 0px;
+    bottom: calc(-100vw * .6);
+    background: url("/forest_b.png") center/cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    // background: transparent;
+  }
 
   .title {
     margin: auto;
@@ -90,7 +92,7 @@
   .history {
     position: relative;
     padding-top: 115px;
-    margin-bottom: 81px;
+    // margin-bottom: 81px;
     height: 1730px;
     background: url("/history_m_bg.png") center/cover;
     // &:after {

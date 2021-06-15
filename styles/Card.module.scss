@@ -75,7 +75,6 @@
 }
 
 // tablet
-
 @media (max-width: 1200px) {
   .singl_card_center {
     z-index: 2;
@@ -86,6 +85,7 @@
     box-sizing: border-box;
     border-radius: 15px;
     flex-direction: column;
+    margin: 10px;
     &:nth-child(1n) {
       div:nth-child(1) {
         order: 1;
@@ -154,6 +154,20 @@
       color: #6c6c6c;
 
       line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .singl_card_center {
+    .second_box {
+      ul {
+        padding-left: 25px;
+        
+        li {
+          line-height: 160%;
+        }
+      }
     }
   }
 }

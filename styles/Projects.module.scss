@@ -1,36 +1,46 @@
 .projects {
   position: relative;
-  margin-bottom: 10px;
-  position: relative;
   z-index: 1;
   background: #f5f5f5;
   .container_mob {
     display: none;
   }
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 270px;
+  padding-bottom: 180px;
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100vw;
+  //   height: 977px;
+  //   left: 0px;
+  //   bottom: 1210px;
+  //   background: url("/clouds_arries.png") center/cover;
+  //   // background-size: contain;
+  //   // background: transparent;
+  // }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: calc(100vw * 1440 / 977);
+    left: 0px;
+    top: calc(-100vw * .85);
+    background: url("/clouds_2.png") center/cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   &:before {
     content: "";
     position: absolute;
     width: 100vw;
-    height: 977px;
+    height: calc(100vw / 1440 * 977);
     left: 0px;
-    bottom: 1210px;
-    background: url("/clouds_arries.png") center/cover;
-    // background-size: contain;
-    // background: transparent;
+    bottom: calc(-100vw * .46);
+    background: url(/clouds_1.png) center/cover;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100vw;
-  //   height: 577px;
-  //   left: 0px;
-  //   bottom: -450px;
-  //   background: url("/clouds_gen.png") center/cover;
-  //   // background-size: contain;
-  //   // background: transparent;
-  // }
 
   .title {
     position: relative;
@@ -55,7 +65,6 @@
     .about_btn_container {
       width: 310px;
       .about_btn {
-        margin-top: 20px;
         width: 303px;
         height: 39px;
         background: #ffffff;
@@ -64,6 +73,7 @@
         border-radius: 15px;
         text-align: center;
         position: relative;
+        margin-top: 20px;
         a {
           font-family: Gilroy;
           font-style: normal;
@@ -176,7 +186,6 @@
       .about_btn_container {
         width: 310px;
         .about_btn {
-          margin-top: 20px;
           width: 303px;
           height: 39px;
           background: #ffffff;
@@ -311,7 +320,7 @@
           border-radius: 15px;
           text-align: center;
           position: relative;
-          margin-bottom: 20px;
+          margin-top: 0;
           a {
             font-family: Gilroy;
             font-style: normal;

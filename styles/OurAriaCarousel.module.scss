@@ -1,18 +1,19 @@
 .container{
-    padding-top: 39px;
-    padding-left: 47px;
-    padding-right: 48px;
+    // padding-top: 39px;
+    // padding-left: 47px;
+    // padding-right: 48px;
     padding-bottom: 121px;
     .flex_container_1{
         margin-left: 5px;
+        flex: 1;
     }
     .flex_container_2{
-         margin-left: 5px;
-
+        margin-left: 5px;
+        flex: 1;
     }
     .flex_container_3{
-         margin-left: 5px;
-
+        margin-left: 5px;
+        flex: 1;
     }
    
     display: flex;

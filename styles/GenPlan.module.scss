@@ -130,10 +130,7 @@
 
 .gen_plan {
   position: relative;
-  padding-top: 115px;
-  margin-bottom: 81px;
 
-  // height: 2600px;
   .title {
     position: relative;
     z-index: 1;
@@ -253,7 +250,7 @@
     }
     .render_lands {
       position: relative;
-      max-height: 400px;
+      max-height: 408px;
       overflow: auto;
       z-index: 1;
     }
@@ -406,8 +403,7 @@
 
   .gen_plan {
     position: relative;
-    padding-top: 115px;
-    margin-bottom: 81px;
+    // padding-top: 115px;
     // height: 2600px;
     .title {
       position: relative;
@@ -762,9 +758,8 @@
   }
 
   .gen_plan {
-    position: relative;
-    padding-top: 115px;
-    margin-bottom: 81px;
+    margin-bottom: 100px;
+    // padding-top: 115px;
     // height: 2600px;
     .title {
       position: relative;
@@ -782,7 +777,7 @@
         margin-bottom: 25px;
       }
       p {
-        width: 331px;
+        max-width: 331px;
         margin: auto;
 
         font-family: Gilroy;
