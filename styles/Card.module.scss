@@ -40,12 +40,19 @@
         color: #6c6c6c;
       }
     }
+    p{
+      .bold{
+        font-weight: bold;
+      }
+    }
   }
   .title_flex {
     display: flex;
     align-items: center;
     margin-bottom: 41px;
+   
   }
+  
 
   .fas {
     width: 70px;
@@ -100,7 +107,7 @@
       }
        .img_mob {
       display: block;
-      min-width: 380px;
+      
     }
     }
     .second_box {

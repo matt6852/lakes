@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .super_btn {
   position: relative;
   display: flex;
@@ -17,11 +21,11 @@
   font-style: bold;
   font-size: 32px;
   color: #333333;
-  background-color: #a4e491;
+  background-color: #999999;
+  opacity: .7;
+  
 }
-.hidden {
-  display: none;
-}
+
 // @keyframes glowing {
 //   0% {
 //     

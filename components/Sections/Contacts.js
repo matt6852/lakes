@@ -34,19 +34,19 @@ export default function Contacts() {
               
               <div>
                 <span className={style.icon}>
-                  <img src="/phone_c.png" alt="icon" />{" "}
+                  <img src="/phoneFoot.svg" alt="icon" />{" "}
                 </span>
                 <p className={style.phone}> +1 (123) 456-78-90</p>
               </div>
               <div>
                 <span className={style.icon}>
-                  <img src="/mail_c.png" alt="icon" />
+                  <img src="/message.svg" alt="icon" />
                 </span>
                 <p> mailexample@gmail.com</p>
               </div>
               <div>
                 <span className={style.icon}>
-                  <img src="/map_c.png" alt="icon" />
+                  <img src="/map.svg" alt="icon" />
                 </span>
                 <p> Каменноостровский пр. 64, корп.2</p>
               </div>

@@ -28,6 +28,7 @@
     background: url("/clouds_2.png") center/cover;
     background-repeat: no-repeat;
     background-size: contain;
+        pointer-events: none;
   }
 
   &:before {
@@ -37,9 +38,10 @@
     height: calc(100vw / 1440 * 977);
     left: 0px;
     bottom: calc(-100vw * .46);
-    background: url(/clouds_1.png) center/cover;
+    background: url("/clouds_1.png") center/cover;
     background-repeat: no-repeat;
     background-size: contain;
+    pointer-events: none;
   }
 
   .title {

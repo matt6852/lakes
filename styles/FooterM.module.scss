@@ -12,6 +12,23 @@
     padding-right: 53px;
     background: #2f2f2f;
     .container {
+      .social_cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .inst {
+          width: 40px;
+          height: 40px;
+          background: linear-gradient(90deg, #348f50 0%, #56b4d3 100%);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 12px;
+          margin-right: 80px;
+          align-self: flex-end;
+        }
+      }
       .container_flex {
         margin-top: 40px;
         display: flex;

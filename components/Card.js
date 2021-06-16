@@ -1,6 +1,6 @@
 import style from "styles/Card.module.scss";
 
-export default function Card({ title, desc, icon, list, img,imgMob }) {
+export default function Card({ title, desc, icon, list, img,imgMob,bold }) {
   return (
     <article className={style.singl_card_center}>
       <div className={style.first_box}>
@@ -14,7 +14,7 @@ export default function Card({ title, desc, icon, list, img,imgMob }) {
           </div>
           <h3 className={style.single_card_title}>{title}</h3>
         </div>
-        <p className={style.single_card_text}>{desc}</p>
+        <p className={style.single_card_text}> <span className ={style.bold}>{bold}</span> {desc}</p>
         <ul>
           {list.map((item, index) => {
             return <li key={index}>{item}</li>;

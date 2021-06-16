@@ -1,4 +1,3 @@
-
 import style from "styles/FooterM.module.scss";
 import Wrapper from "../Wrapper";
 import Link from "next/link";
@@ -11,7 +10,12 @@ export default function FooterMob() {
     <footer className={style.footer}>
       <Wrapper>
         <div className={style.container}>
-          <img src="/footer.png" alt="" />
+          <div className ={style.social_cont}>
+            <img src="/logo_f.svg" alt="" />
+            <div className={style.inst}>
+              <img src="/inst.svg" alt="" />
+            </div>
+          </div>
           <div className={style.container_flex}>
             <div className={style.first_flex}>
               {links

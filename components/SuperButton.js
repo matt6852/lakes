@@ -7,7 +7,7 @@ export default function SuperButton() {
   const { scrollBtn, setScrollBtn } = useAppContext();
   useEffect(() => {
     const event = window.addEventListener("scroll", () => {
-      if (window.scrollY >= 1000) {
+      if (window.scrollY >= 800) {
         setScrollBtn(false);
       } else {
         setScrollBtn(true);
