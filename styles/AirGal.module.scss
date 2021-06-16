@@ -50,7 +50,6 @@
 }
 @media (max-width: 1110px) {
   .airPhoto {
-    
   .video_container {
     // background: #FFF;
     position: relative;
@@ -93,6 +92,7 @@
     
 
     .video {
+      display: flex;
       height: 280px;
       width: 100%;
     }

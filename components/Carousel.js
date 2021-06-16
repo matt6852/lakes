@@ -152,11 +152,13 @@ export default function CarouselSlider() {
     const btn = document.querySelector(
       ".Carousel_airPhoto__rDRo- .Carousel_video_container__1sxIr .Carousel_btns__y0DEm .Carousel_show__cs4_p"
     );
-    const btn1 = document.querySelector(".Carousel_show__cs4_p");
+    const btn1 = document.querySelector(
+      ".Carousel_airPhoto__rDRo- .Carousel_video_container__1sxIr .Carousel_btns__y0DEm .Carousel_btn_img__cTBq8"
+    );
     if (video.paused) {
       video.play();
       btn.style.display = "none";
-       btn1.style.display = "none";
+      btn1.style.display = "none";
       video.controls = "controls";
       video.style.height = "352px";
     } else {
@@ -167,94 +169,98 @@ export default function CarouselSlider() {
     }
   };
   return (
-     <div className=".main_main_wraper">
+    <div className=".main_main_wraper">
+      <section className={style.galery} id="galary">
+        <Wrapper>
+          <div className={style.title}>
+            <h3>
+              <span className="linercradient">Фотогалерея </span>
+            </h3>
+          </div>
 
-    <section className={style.galery} id="galary">
-      <Wrapper>
-        <div className={style.title}>
-          <h3>
-            <span className="linercradient">Фотогалерея </span>
-          </h3>
-        </div>
+          <Carousel
+            className={style.bg}
+            customButtonGroup={
+              <ButtonGroup textC={textC} index={index} setIndex={setIndex} />
+            }
+            arrows={false}
+            responsive={responsive}
+            swipeable={false}
+            ssr={true} // means to render carousel on server-side.
+          >
+            <AirGal />
+            <OurCarousel />
+          </Carousel>
 
-        <Carousel
-          className={style.bg}
-          customButtonGroup={
-            <ButtonGroup textC={textC} index={index} setIndex={setIndex} />
-          }
-          arrows={false}
-          responsive={responsive}
-          swipeable={false}
-          ssr={true} // means to render carousel on server-side.
-        >
-          <AirGal />
-          <OurCarousel />
-        </Carousel>
-
-        {/* mobCar */}
-        <Carousel
-          className={style.mb}
-          customButtonGroup={
-            <ButtonGroupMob
-              carouselimgMob={carouselimgMob}
-              index={index}
-              setIndex={setIndex}
-            />
-          }
-          arrows={false}
-          responsive={responsive}
-          swipeable={false}
-          ssr={true} // means to render carousel on server-side.
-        >
-          <div className={style.airPhoto}>
-            <div className={style.video_container}>
-              <video
-                onClick={handleVideo}
-                className={style.video}
-                src="/video.mp4"
-                poster="/video_bg_m.png"
-              ></video>
-              <div onClick={handleVideo} className={style.btns}>
-                <div>
-                  {" "}
-                  <img
-                    className={`${style.show}`}
-                    src="/playVideo.png"
-                    alt=""
-                  />
+          {/* mobCar */}
+          <Carousel
+            className={style.mb}
+            customButtonGroup={
+              <ButtonGroupMob
+                carouselimgMob={carouselimgMob}
+                index={index}
+                setIndex={setIndex}
+              />
+            }
+            arrows={false}
+            responsive={responsive}
+            swipeable={false}
+            ssr={true} // means to render carousel on server-side.
+          >
+            <div className={style.airPhoto}>
+              <div className={style.video_container}>
+                <video
+                  onClick={handleVideo}
+                  className={style.video}
+                  src="/video.mp4"
+                  // poster="/video_bg_m.png"
+                ></video>
+                <div onClick={handleVideo} className={style.btns}>
+                  <div>
+                    {" "}
+                    <img
+                      className={`${style.show}`}
+                      src="/video_bg.png"
+                      alt=""
+                    />
+                    <img
+                      className={style.btn_img}
+                      src="/playVideo.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={style.mob_gal}>
-            <div>
-              <img src="/mob_g_1.png" alt="" />
+            <div className={style.mob_gal}>
+              <div>
+                <img src="/mob_g_1.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div className={style.mob_gal}>
-            <div>
-              <img src="/mob_g_2.png" alt="" />
+            <div className={style.mob_gal}>
+              <div>
+                <img src="/mob_g_2.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div className={style.mob_gal}>
-            <div>
-              <img src="/mob_g_3.png" alt="" />
+            <div className={style.mob_gal}>
+              <div>
+                <img src="/mob_g_3.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div className={style.mob_gal}>
-            <div>
-              <img src="/mob_g_4.png" alt="" />
+            <div className={style.mob_gal}>
+              <div>
+                <img src="/mob_g_4.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div className={style.mob_gal}>
-            <div>
-              <img src="/mob_g_5.png" alt="" />
+            <div className={style.mob_gal}>
+              <div>
+                <img src="/mob_g_5.png" alt="" />
+              </div>
             </div>
-          </div>
-        </Carousel>
-        <AfterCarousel/>
-      </Wrapper>
-    </section>
-     </div>
+          </Carousel>
+          <AfterCarousel />
+        </Wrapper>
+      </section>
+    </div>
   );
 }
