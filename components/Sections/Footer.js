@@ -28,7 +28,7 @@ export default function Footer() {
               <div className ={style.pnone}>
                 <img src="/phoneFoot.svg" alt="" />
               </div>
-              <p className={style.text_p}>+7 (123) 456-78-90</p>
+              <a className={style.text_p}>+7 (123) 456-78-90</a>
             </div>
           </div>
         </Wrapper>

@@ -82,7 +82,7 @@ export default function HeaderMobile() {
       <div className={showBar ? `${style.hide} hide ` : `${style.show_bar} `}>
         <div className={style.flex_container}>
           <div className={style.logo_container}>
-            <img src="/logo_mobile.png" alt="logo" />
+            <img src="/logo_mobile.svg" alt="logo" />
           </div>
           <div
             onClick={() => setShowBar(!showBar)}
