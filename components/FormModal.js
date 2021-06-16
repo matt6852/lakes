@@ -51,15 +51,15 @@ export default function FormModal() {
         <div className={style.place}>
           <div className={style.place_item}>
             <h5>Участок:</h5>
-            <p>№ {singlLand[0]?.id}</p>
+            <p style={{ paddingLeft: "5px" }}>№ {singlLand[0]?.id}</p>
           </div>
           <div className={style.place_item}>
             <h5>Площадь: </h5>
-            <p>{singlLand[0]?.sizeSot} сот.</p>
+            <p style={{ paddingLeft: "5px" }}>{singlLand[0]?.sizeSot} сот.</p>
           </div>
           <div className={style.place_item}>
             <h5>Стоимость:</h5>
-            <p>{singlLand[0]?.price} руб</p>
+            <p style={{ paddingLeft: "5px" }}>{singlLand[0]?.price} руб</p>
           </div>
           <button
             onClick={() => setShowModal(false)}

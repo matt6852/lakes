@@ -152,14 +152,17 @@ export default function CarouselSlider() {
     const btn = document.querySelector(
       ".Carousel_airPhoto__rDRo- .Carousel_video_container__1sxIr .Carousel_btns__y0DEm .Carousel_show__cs4_p"
     );
+    const btn1 = document.querySelector(".Carousel_show__cs4_p");
     if (video.paused) {
       video.play();
       btn.style.display = "none";
+       btn1.style.display = "none";
       video.controls = "controls";
       video.style.height = "352px";
     } else {
       video.pause();
       btn.style.display = "block";
+      btn1.style.display = "block";
       video.controls = "";
     }
   };
