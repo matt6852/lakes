@@ -1,5 +1,5 @@
 import style from "styles/Form.module.scss";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 
 import { useAppContext } from "context/state";
 export default function Form() {
@@ -23,22 +23,17 @@ export default function Form() {
         : "Я НЕ согласен с политикой конфиденциальности",
     };
 
-    emailjs
-      .send(
-        process.env.SERVICE_ID,
-        process.env.TEMPLETE_ID,
-        upDateForm,
-        process.env.API_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFormData(DEFAULT_DATA);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    const res = await fetch('/api/contacts', {
+      body: JSON.stringify(upDateForm),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'POST'
+    })
+
+    const result = await res.json();
+
+    console.log(result)
   };
 
 
