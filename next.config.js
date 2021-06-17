@@ -8,6 +8,7 @@ module.exports = {
     SOLDOUT: process.env.SOLDOUT,
     PASSWORD: process.env.PASSWORD,
     EMAIL: process.env.EMAIL,
+    EMAIL_TO: process.env.EMAIL_TO,
     HOST: process.env.HOST,
     PORT: process.env.PORT,
 

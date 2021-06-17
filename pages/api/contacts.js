@@ -20,7 +20,7 @@ export default function(req, res) {
 
   const mailData = {
     from: process.env.EMAIL,
-    to: process.env.EMAIL,
+    to: process.env.EMAIL_TO,
     subject: `General Message From ${req.body.name}`,
     text: req.body.message + " " + req.body.email,
     html: `<h2>Имя клиента: ${req.body.name} </h2>
