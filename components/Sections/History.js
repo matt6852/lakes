@@ -91,7 +91,7 @@ export default function History() {
             </div>
             <div className={style.last_cont_mob}>
               <div className={style.last_text_mob}>
-                <h4>107 участков</h4>
+                <h4>109 участков</h4>
                 <p>
                   находится на территории «Ярвино». Поселок сочетает в себе
                   чистоту и спокойствие финской деревни и современную
