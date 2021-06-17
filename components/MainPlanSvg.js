@@ -59,7 +59,7 @@ export default function MainPlanSvg() {
           viewBox="0 0 2562 1545"
           xmlSpace="preserve"
         >
-          <image
+          <image class="general_plan_img"
             // width="2562"
             // height="1545"
             xlinkHref="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
