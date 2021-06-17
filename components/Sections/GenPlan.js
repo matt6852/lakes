@@ -108,7 +108,7 @@ export default function GenPlan() {
                   setActivePlan(1);
                 }}
               >
-                Зона с участками 1
+                Северный участок
               </button>
               <button
                 className={
@@ -118,7 +118,7 @@ export default function GenPlan() {
                   setActivePlan(2);
                 }}
               >
-                Зона с участками 2
+                Южный участок
               </button>
             </div>
             <div className={style.status_btns}>
@@ -158,7 +158,7 @@ export default function GenPlan() {
                 setActivePlan(1);
               }}
             >
-              Зона с участками 1
+              Северный участок
             </button>
             <button
               className={
@@ -168,7 +168,7 @@ export default function GenPlan() {
                 setActivePlan(2);
               }}
             >
-              Зона с участками 2
+              Южный участок
             </button>
           </div>
           <div className={style.status_btns_mob}>
