@@ -132,7 +132,7 @@ export default function GenPlan() {
               </div>
               <div>
                 {" "}
-                <span className={style.span_sold}></span>- Продано
+                <span className={style.span_sold}></span>- Продан
               </div>
             </div>
           </div>
@@ -203,8 +203,8 @@ export default function GenPlan() {
               </label>
               <select onChange={(e) => sortByPrice(e.target.value)} id="price">
                 <option value="all">Все {data.length}</option>
-                <option value="max">max</option>
-                <option value="min">min</option>
+                <option value="max">От большей к меньшей</option>
+                <option value="min">От меньшей к большей</option>
               </select>
               <div className={style.btn_down}>
                 <img src="/filter_down.svg" alt="" />
@@ -216,8 +216,8 @@ export default function GenPlan() {
               </label>
               <select onChange={(e) => sortBySize(e.target.value)} id="size">
                 <option value="origin">Все {data.length}</option>
-                <option value="big">big</option>
-                <option value="small">small</option>
+                <option value="big">От большей к меньшей</option>
+                <option value="small">От меньшей к большей</option>
               </select>
               <div className={style.btn_down}>
                 <img src="/filter_down.svg" alt="" />

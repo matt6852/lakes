@@ -366,7 +366,7 @@ export const lands = [
   {
     id: "28",
     sizeMetr: 1729,
-    sizeSot: 1729,
+    sizeSot: 17.29,
     price: 2939300,
     occupied: false,
     img: "/genPlan/28.svg",
@@ -390,7 +390,7 @@ export const lands = [
   {
     id: "31",
     sizeMetr: 1019,
-    sizeSot: 1019,
+    sizeSot: 10.19,
     price: 1732300,
     occupied: false,
     img: "/genPlan/31.svg",
