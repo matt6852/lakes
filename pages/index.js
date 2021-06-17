@@ -1,4 +1,3 @@
-import Navbar from "components/Navbar";
 import Header from "components/Header";
 import HeaderMob from "components/HeaderMobile";
 import MainSection from "components/Sections/MainSection";
@@ -17,17 +16,17 @@ export default function Home() {
     <>
       <Header />
       <HeaderMob />
-    
-        <MainSection />
-        <UniqAries />
-        <Projects />
-        <GenPlan />
-        <History />
-        <Carousel />
 
-        <HowToBuy />
-        <Contacts />
-     
+      <MainSection />
+      <UniqAries />
+      <Projects />
+      <GenPlan />
+      <History />
+      <Carousel />
+
+      <HowToBuy />
+      <Contacts />
+
       <Footer />
     </>
   );
