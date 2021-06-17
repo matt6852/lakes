@@ -11,6 +11,7 @@ module.exports = {
     EMAIL_TO: process.env.EMAIL_TO,
     HOST: process.env.HOST,
     PORT: process.env.PORT,
+    SECURE: process.env.SECURE,
 
 
     // development: {

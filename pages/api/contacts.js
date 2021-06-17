@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
     user: process.env.EMAIL,
     pass: process.env.PASSWORD,
   },
-  secure: true,
+  secure: process.env.SECURE,
 });
 
 export default function(req, res) {
