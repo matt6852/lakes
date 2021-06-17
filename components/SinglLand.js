@@ -30,7 +30,7 @@ export default function SinglLand({
               : `${style.item} ${style.color_green}`
           }
         >
-          {soldout ? "Проданно" : occupied ? "Забронирован" : "Свободен"}
+          {soldout ? "Продан" : occupied ? "Забронирован" : "Свободен"}
         </p>
         <div>
           <div className={`${style.item} ${style.item_btn}`}>

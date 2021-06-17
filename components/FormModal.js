@@ -2,11 +2,11 @@ import style from "styles/FormModal.module.scss";
 import Wrapper from "./Wrapper";
 import { useAppContext } from "context/state";
 
-
 // import emailjs from "emailjs-com";
 
 export default function FormModal() {
-  const { formData, setFormData, DEFAULT_DATA, setShowModal, singlLand,  } = useAppContext();
+  const { formData, setFormData, DEFAULT_DATA, setShowModal, singlLand } =
+    useAppContext();
   // console.log(singlLand[0]);
 
   const handleChanged = (e) => {
@@ -23,19 +23,20 @@ export default function FormModal() {
       checkbox: formData.checkValue
         ? "Я согласен с политикой конфиденциальности"
         : "Я НЕ согласен с политикой конфиденциальности",
-        ...singlLand[0]
+      ...singlLand[0],
     };
 
-    const res = await fetch('/api/contacts', {
+    const res = await fetch("/api/contacts", {
       body: JSON.stringify(upDateForm),
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
-      method: 'POST'
-    })
+      method: "POST",
+    });
 
     const result = await res.json();
-
+    setFormData(DEFAULT_DATA);
+    setShowModal(false)
     console.log(result);
   };
 

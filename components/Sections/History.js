@@ -9,7 +9,7 @@ export default function History() {
           <div className={style.title}>
             <h3>
               <span className="linercradient">История </span>{" "}
-              <span className="white"> посёлка</span>
+              <span className="white"> поселка</span>
             </h3>
           </div>
 
@@ -47,11 +47,11 @@ export default function History() {
                 <img src="/history_2.png" alt="" />
               </div>
               <div className={style.last_text}>
-                <h4>107 участков</h4>
+                <h4>109 участков</h4>
                 <p>
-                  находится на территории «Ярвино». Поселок сочетает в себе
+                  находится на территории Ярвино. Поселок сочетает в себе
                   чистоту и спокойствие финской деревни и современную
-                  инфраструктуру. Название «Ярвино» происходит от финского Järvi
+                  инфраструктуру. Название Ярвино происходит от финского Järvi
                   — озеро. Расположенное неподалеку от поселка озеро станет
                   любимым местом отдыха жителей поселка.
                 </p>

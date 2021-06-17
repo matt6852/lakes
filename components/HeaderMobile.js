@@ -37,25 +37,7 @@ export default function HeaderMobile() {
       window.removeEventListener("scroll", event);
     };
   }, []);
-  // useEffect(() => {
-  //   // console.log(loading);
-  //   const handleLoading = () => {
-  //     if (loading) {
-  //       document.querySelector(".hide").classList.add("red")
-  //     }
-  //     else{
-  //       document.querySelector(".hide").classList.add("blue");
-  //     }
-  //     setLoading(!loading)
-      
-  //   };
-  //   window.addEventListener("load", handleLoading);
 
-  //   return () => {
-  //     window.removeEventListener("load", handleLoading);
-  //   };
-  // }, []);
-  // console.log(loading);
   return (
     <header
       className={
@@ -102,18 +84,20 @@ export default function HeaderMobile() {
             className={`btn ${style.btn_sign}`}
           >
             {" "}
-            <a href="#contacts">
+            <a href="#contacts" className={style.btn_cont}>
               Записаться на просмотр{" "}
               <span className={style.arrow}>
                 <FaArrowRight className={style.fr} />
               </span>{" "}
             </a>{" "}
           </button>
-          <div></div>
-          <p className={style.phone}>
-            <img src="/mob_icon.png" className={style.icon} /> +7 (123)
-            456-78-90{" "}
-          </p>
+          <div className={style.phone}>
+            <div className ={style.img_cont}>
+              <img src="/iconPhone.svg" alt="phone" />
+            </div>
+            <p>+7 (123) 456-78-90 </p>
+          </div>
+
           <div className={style.policy}>
             <p>Политика конфиденциальности</p>
             <p> &copy; {year} «Ярвино»</p>

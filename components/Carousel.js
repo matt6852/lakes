@@ -220,7 +220,7 @@ export default function CarouselSlider() {
                     {" "}
                     <img
                       className={`${style.show}`}
-                      src="/video_bg.png"
+                      src="/video_bg_m.png"
                       alt=""
                     />
                     <img

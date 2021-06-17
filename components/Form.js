@@ -32,8 +32,10 @@ export default function Form() {
     })
 
     const result = await res.json();
+    setFormData(DEFAULT_DATA)
 
     console.log(result)
+    
   };
 
 
@@ -54,7 +56,7 @@ export default function Form() {
           <span className="linercradient"> Свяжитесь</span> с нами
         </h4>
         <p>
-          Оставьте ваши контакты и наш менеджер свяжется с вами в ближайшее
+          Оставьте ваши контакты, и наш менеджер свяжется с вами в ближайшее
           время
         </p>
       </div>

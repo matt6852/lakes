@@ -182,7 +182,7 @@ export default function GenPlan() {
             </div>
             <div>
               {" "}
-              <span className={style.span_sold_mob}></span>- Продано
+              <span className={style.span_sold_mob}></span>- Продан
             </div>
           </div>
         </div>

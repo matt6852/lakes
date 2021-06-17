@@ -16,9 +16,8 @@
       display: flex;
       justify-content: space-between;
       padding: 15px 10px;
-     
+
       .logo_container {
-        
       }
 
       .btn_mobile {
@@ -71,7 +70,7 @@
           height: 5px;
           margin: 10px;
           background-color: #c4c4c4;
-          transform: rotate(45deg) translateY(15px) translateX(2px);
+          transform: rotate(45deg) translateY(15px) translateX(3px);
           transition: all 0.2s ease-in-out;
         }
         .line_2 {
@@ -90,7 +89,7 @@
           height: 5px;
           margin: 10px;
           background-color: #c4c4c4;
-          transform: rotate(-45deg) translateY(-17px) translateX(6px);
+          transform: rotate(-45deg) translateY(-17px) translateX(5px);
           transition: all 0.2s ease-in-out;
         }
       }
@@ -135,11 +134,15 @@
       width: 100%;
       border-radius: 50px;
       line-height: 29px;
-      .icon {
-        // padding-top: 10px;
-        // margin-right: 10px;
-        padding-right: 22px;
-        color: #348f50;
+      .img_cont {
+        width: 25px;
+        height: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+margin-right: 15px;
+        background: linear-gradient(90deg, #348f50 0%, #56b4d3 100%), #ffffff;
       }
     }
     .link {
@@ -165,14 +168,22 @@
     button {
       width: 100%;
       a {
-        color: #ffff;
         font-weight: 700;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 130%;
+        /* identical to box height, or 21px */
+
+        color: #ffffff;
+
         .arrow {
           margin-top: 2px;
-          margin-left: 15px;
+          margin-left: 10px;
           .fr {
             width: 32px;
             height: 20px;

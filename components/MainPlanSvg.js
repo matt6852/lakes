@@ -31576,7 +31576,7 @@ aJfqin8S9f0A0kVLb5h2FV0F0Q6lHcoaetH+ZD3EoEaafcT/AHV/kKZutgD/2Q=="
           <button onClick={() => setShowHouses(!showHouses)}>
           <div>  <img src="/homIcon.svg" alt="" />
           </div>
-            Отобразить/Спрятать дома на участках
+            Показать/Спрятать дома на участках
           </button>
         </div>
       </>
@@ -31590,11 +31590,13 @@ aJfqin8S9f0A0kVLb5h2FV0F0Q6lHcoaetH+ZD3EoEaafcT/AHV/kKZutgD/2Q=="
           checkStatus={checkStatus}
           className="showPlan"
         />
-         <div className="btn_show_and_hide">
+        <div className="btn_show_and_hide">
           <button onClick={() => setShowHouses(!showHouses)}>
-          <div>  <img src="/homIcon.svg" alt="" />
-          </div>
-            Отобразить/Спрятать дома на участках
+            <div>
+              {" "}
+              <img src="/homIcon.svg" alt="" />
+            </div>
+            Показать/Спрятать дома на участках
           </button>
         </div>
       </>
