@@ -17,7 +17,7 @@
   &:after {
     content: "";
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: calc(100vw / 1440 * 1095);
     left: 0px;
     bottom: calc(-100vw * .23);

@@ -22,7 +22,7 @@
   &::after {
     content: "";
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: calc(100vw * 1440 / 977);
     left: 0px;
     top: calc(-100vw * .85);
@@ -35,7 +35,7 @@
   &:before {
     content: "";
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: calc(100vw / 1440 * 977);
     left: 0px;
     bottom: calc(-100vw * .46);
