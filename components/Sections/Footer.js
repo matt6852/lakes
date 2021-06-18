@@ -21,14 +21,26 @@ export default function Footer() {
                 </Link>
               );
             })}{" "}
-            <div className ={style.sociol_cont}>
-              <div className ={style.inst}>
-                <img src="/inst.svg" alt="" />
+            <div className={style.sociol_cont}>
+              <div className={style.inst}>
+                <a
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                  href={`${process.env.INSTAGRAM}`}
+                  target="_blank"
+                >
+                  <img src="/inst.svg" alt="" />
+                </a>
               </div>
-              <div className ={style.pnone}>
+              <div className={style.pnone}>
                 <img src="/phoneFoot.svg" alt="" />
               </div>
-              <a className={style.text_p}>+7 (123) 456-78-90</a>
+              <a className={style.text_p} href={`tel:${process.env.PHONE}`}>
+                {process.env.PHONE_MASK}
+              </a>
             </div>
           </div>
         </Wrapper>

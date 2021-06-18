@@ -97,7 +97,9 @@ export default function HeaderMobile() {
             <div className={style.img_cont}>
               <img src="/iconPhone.svg" alt="phone" />
             </div>
-            <p>+7 (123) 456-78-90 </p>
+            
+              {" "}
+              <a href={`tel:${process.env.PHONE}`}>{process.env.PHONE_MASK}</a>
           </div>
 
           <div className={style.policy}>

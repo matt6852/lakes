@@ -10,10 +10,20 @@ export default function FooterMob() {
     <footer className={style.footer}>
       <Wrapper>
         <div className={style.container}>
-          <div className ={style.social_cont}>
+          <div className={style.social_cont}>
             <img src="/logo_f.svg" alt="" />
             <div className={style.inst}>
-              <img src="/inst.svg" alt="" />
+              <a
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                href={`${process.env.INSTAGRAM}`}
+                target="_blank"
+              >
+                <img src="/inst.svg" alt="inst" />
+              </a>
             </div>
           </div>
           <div className={style.container_flex}>

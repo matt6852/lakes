@@ -7,7 +7,7 @@ export default function PhoneComp() {
       <div>
         <img src="/iconPhone.svg" className={style.icon} />
       </div>
-      +7 (123) 456-78-90
+      <a href={`tel:${process.env.PHONE}`}>{process.env.PHONE_MASK}</a>
     </div>
   );
 }
