@@ -12,7 +12,7 @@
       width: 100vw;
       height: calc(100vw / 1440 * 1095);
       left: 0px;
-      bottom: calc(-100vw * .33);
+      bottom: calc(-100vw * 0.33);
       background: url("/clouds.png") center/cover;
       // background-size: contain;
       // background: transparent;
@@ -150,16 +150,16 @@
       .title_center {
         position: relative;
         z-index: 1;
-        padding-top: 132px;
+        padding-top: 155px;
         h1 {
           width: 100%;
           margin: auto;
           padding-left: 10px;
-          height: 162px;
+          height: 132px;
           font-family: Gilroy;
           font-style: normal;
           font-weight: bold;
-          font-size: 32px;
+          font-size: 35px;
           line-height: 130%;
         }
         .btn_container {
@@ -172,14 +172,18 @@
             display: block;
             margin: auto;
             width: calc(100% - 20px);
+            height: 65px;
             a {
               color: #ffff;
               font-weight: 700;
               display: flex;
               justify-content: center;
               align-items: center;
+              font-family: Gilroy;
+              font-style: normal;
+              font-weight: bold;
               font-size: 16px;
-              line-height: 19px;
+              line-height: 20px;
               .arrow {
                 margin-top: 5px;
                 margin-left: 20px;
@@ -195,9 +199,13 @@
             width: 100%;
             margin: auto;
             padding-left: 10px;
-            margin-bottom: 100px;
+            margin-bottom: 51px;
             color: #333333;
-            line-height: 25px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 160%;
           }
         }
         .mous {

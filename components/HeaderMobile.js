@@ -56,9 +56,11 @@ export default function HeaderMobile() {
             showBar ? `${style.btn_mobile} ` : ` ${style.btn_mobile_active} `
           }
         >
-          <span className={style.line_1}></span>
-          <span className={style.line_2}></span>
-          <span className={style.line_3}></span>
+          <div>
+            <span className={style.line_1}></span>
+            <span className={style.line_2}></span>
+            <span className={style.line_3}></span>
+          </div>
         </div>
       </div>
       <div className={showBar ? `${style.hide} hide ` : `${style.show_bar} `}>
@@ -92,7 +94,7 @@ export default function HeaderMobile() {
             </a>{" "}
           </button>
           <div className={style.phone}>
-            <div className ={style.img_cont}>
+            <div className={style.img_cont}>
               <img src="/iconPhone.svg" alt="phone" />
             </div>
             <p>+7 (123) 456-78-90 </p>

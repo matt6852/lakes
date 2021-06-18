@@ -11,7 +11,7 @@ import GenPlan from "components/Sections/GenPlan";
 import Contacts from "components/Sections/Contacts";
 import Footer from "components/Sections/Footer";
 import Head from 'next/head'
-// sss.1993@internet.ru
+
 export default function Home() {
   return (
     <>

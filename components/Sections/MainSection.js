@@ -40,8 +40,12 @@ export default function MainSection() {
     }, [indexMain]);
 
     return (
-     
-      <section key={slidIndex} className={`${position} ${style.main_section} ${'main_section_' + slidIndex}`}>
+      <section
+        key={slidIndex}
+        className={`${position} ${style.main_section} ${
+          "main_section_" + slidIndex
+        }`}
+      >
         <Wrapper className="z_index_1">
           <div className={style.title_center}>
             <div>
@@ -91,7 +95,13 @@ export default function MainSection() {
 
           @media (max-width: 767px) {
             .main_section_${slidIndex} {
-              background: linear-gradient(130.54deg, rgba(251, 251, 251, 0.7) 0%, rgba(251, 251, 251, 0.7) 34.67%, rgba(255, 255, 255, 0.6) 63.76%, rgba(255, 255, 255, 0) 98.08%, rgba(255, 255, 255, 0) 119.93%),
+              background: linear-gradient(
+                  130.54deg,
+                  rgba(251, 251, 251, 0.9) 34.67%,
+                  rgba(255, 255, 255, 0.8) 63.76%,
+                  rgba(255, 255, 255, 0) 98.08%,
+                  rgba(255, 255, 255, 0) 119.93%
+                ),
                 url(${imgBg}) center/cover;
             }
           }
