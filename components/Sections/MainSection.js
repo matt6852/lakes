@@ -97,8 +97,9 @@ export default function MainSection() {
             .main_section_${slidIndex} {
               background: linear-gradient(
                   130.54deg,
-                  rgba(251, 251, 251, 0.9) 34.67%,
-                  rgba(255, 255, 255, 0.8) 63.76%,
+                  rgba(251, 251, 251, 0.35) 0%,
+                  rgba(251, 251, 251, 0.25) 34.67%,
+                  rgba(255, 255, 255, 0.2) 63.76%,
                   rgba(255, 255, 255, 0) 98.08%,
                   rgba(255, 255, 255, 0) 119.93%
                 ),

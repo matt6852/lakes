@@ -19,6 +19,20 @@ export default function GenPlan() {
         setShowModal(false);
       }
     };
+
+    data.map(item => {
+      item.occupied = process.env.RESESERVED.split(",").some(
+        (id) => id === item.id
+      );
+      item.price = Math.trunc(
+        item.sizeSot * Number(process.env.PRICE)
+      ).toLocaleString('en-US', {maximumFractionDigits:2}).split(',').join(' ');
+      item.soldout = process.env.SOLDOUT.split(",").some(
+        (id) => id === item.id
+      );
+      return item;
+    });
+
     window.addEventListener("click", chekEl);
     return () => {
       window.removeEventListener("click", chekEl);
@@ -234,20 +248,8 @@ export default function GenPlan() {
             <p className={style.item_6}>Запись на просмотр:</p>
           </div>
           <div className={`${style.render_lands} render_lands`}>
-            {data
-              .map((item) => {
-                item.occupied = process.env.RESESERVED.split(",").some(
-                  (id) => id === item.id
-                );
-                item.price = Math.trunc(
-                  item.sizeSot * Number(process.env.PRICE)
-                );
-                item.soldout = process.env.SOLDOUT.split(",").some(
-                  (id) => id === item.id
-                );
-                return <SinglLand key={item.id} {...item} />;
-              })
-              .slice(0, end)}
+            {data.map(item => <SinglLand key={item.id} {...item} />)
+                 .slice(0, end)}
           </div>
           <div className={style.btn_center}>
             <button
@@ -262,7 +264,7 @@ export default function GenPlan() {
                   });
                 }, 100);
 
-                console.log(element);
+                // console.log(element);
                 setEnd(end + 4);
               }}
             >

@@ -15,7 +15,6 @@ module.exports = {
     PHONE_MASK: process.env.PHONE_MASK,
     PHONE: process.env.PHONE,
     INSTAGRAM: process.env.INSTAGRAM,
-    WHATS_APP: process.env.WHATS_APP,
     OUR_MAIL: process.env.OUR_MAIL
 
     // development: {
