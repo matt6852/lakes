@@ -223,6 +223,11 @@ export default function CarouselSlider() {
                       src="/video_bg_m.png"
                       alt=""
                     />
+                    {/* <img
+                      className={style.big.img}
+                      src="/video_bg.png"
+                      alt=""
+                    /> */}
                     <img
                       className={style.btn_img}
                       src="/playVideo.png"

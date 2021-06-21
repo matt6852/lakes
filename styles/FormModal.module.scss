@@ -499,9 +499,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 40vh;
+      height: 50vh;
       width: 100vw;
-      padding: 0 30px;
+      padding: 0 50px;
       position: relative;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -544,7 +544,7 @@
       background-color: #fff;
       width: 100%;
       position: relative;
-      height: 70vh;
+      height: 111vh;
       // border: 1px solid red;
       z-index: 1;
       // height: 350px;
@@ -564,8 +564,8 @@
       }
 
       .form_title {
-        text-align: center;
-        margin-bottom: 31px;
+        text-align: left;
+        margin-bottom: 10px;
         // margin-left: 12px;
         padding-top: 18px;
         width: 345px;

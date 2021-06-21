@@ -308,12 +308,12 @@ background: linear-gradient(90deg, #4EA86A -38.01%, #5CACC7 135.09%);
 @media (max-width: 1205px) {
   .btn_show_and_hide{
 position: absolute;
-  top: 80%;
+  top: 75%;
   left: 50%;
   // width: 79%;
   z-index: 0;
   height: 5%;
-  transform: translateX(-50%) translateY(-140%);
+  transform: translateX(-60%) translateY(-140%);
 
   button{
     display: flex;

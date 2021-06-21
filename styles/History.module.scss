@@ -52,7 +52,7 @@
       justify-content: space-between;
       .first_text {
         max-width: 465px;
-        span{
+        span {
           font-weight: bold;
         }
         h4 {
@@ -67,7 +67,6 @@
           color: #ffffff;
         }
         p {
-          
           font-family: Gilroy;
           font-style: normal;
           font-weight: normal;
@@ -80,7 +79,7 @@
       }
       .second_text {
         max-width: 660px;
-          span{
+        span {
           font-weight: bold;
         }
 
@@ -98,7 +97,7 @@
         p {
           font-family: Gilroy;
           font-style: normal;
-           font-weight: normal;
+          font-weight: normal;
           font-size: 18px;
           line-height: 160%;
           /* or 29px */
@@ -150,13 +149,18 @@
     .text_flex_top {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      
+      justify-content: center;
+      align-self: center;
+
       .first_text {
-         span{
+        // background-color: red;
+
+        justify-content: center;
+        align-self: center;
+        span {
           font-weight: bold;
         }
-        
+
         h4 {
           text-align: center;
           font-family: Gilroy;
@@ -176,7 +180,7 @@
           font-weight: normal;
           font-size: 18px;
           line-height: 160%;
-          width: 50%;
+          width: 100%;
           margin: auto;
           /* or 29px */
 
@@ -184,10 +188,13 @@
         }
       }
       .second_text {
-         span{
+        justify-content: center;
+        align-self: center;
+        padding-top: 30px;
+        span {
           font-weight: bold;
         }
-        
+
         h4 {
           text-align: center;
           font-family: Gilroy;
@@ -206,8 +213,9 @@
           font-weight: normal;
           font-size: 18px;
           line-height: 160%;
-          width: 50%;
+          width: 100%;
           margin: auto;
+          text-align: center;
           /* or 29px */
 
           color: #dadada;
@@ -240,7 +248,7 @@
       .last_text {
         order: -1;
         max-width: 659px;
-         span{
+        span {
           font-weight: bold;
         }
         h4 {
@@ -276,7 +284,7 @@
 @media (max-width: 776px) {
   .history {
     position: relative;
-    padding-top:110px;
+    padding-top: 110px;
     padding-bottom: 155px;
     // background: linear-gradient(
     //     0deg,
@@ -329,10 +337,10 @@
         align-items: center;
         margin-bottom: 55px;
         .first_text_mob {
-           span{
-          font-weight: bold;
-        }
-        
+          span {
+            font-weight: bold;
+          }
+
           h4 {
             font-family: Gilroy;
             font-style: normal;
@@ -366,7 +374,7 @@
         padding: 5px;
         flex-direction: column;
         align-items: center;
-         span{
+        span {
           font-weight: bold;
         }
         .midl_text {
@@ -407,9 +415,9 @@
         flex-direction: column;
         align-items: center;
         .last_text_mob {
-           span{
-          font-weight: bold;
-        }
+          span {
+            font-weight: bold;
+          }
           h4 {
             font-family: Gilroy;
             font-style: normal;
@@ -447,9 +455,9 @@
         display: flex;
         justify-content: space-between;
         .first_text {
-           span{
-          font-weight: bold;
-        }
+          span {
+            font-weight: bold;
+          }
           h4 {
             font-family: Gilroy;
             font-style: normal;
@@ -473,9 +481,9 @@
           }
         }
         .second_text {
-           span{
-          font-weight: bold;
-        }
+          span {
+            font-weight: bold;
+          }
           h4 {
             font-family: Gilroy;
             font-style: normal;
@@ -511,9 +519,9 @@
 
         .last_text {
           max-width: 659px;
-           span{
-          font-weight: bold;
-        }
+          span {
+            font-weight: bold;
+          }
           h4 {
             font-family: Gilroy;
             font-style: normal;

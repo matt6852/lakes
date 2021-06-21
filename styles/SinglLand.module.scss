@@ -279,3 +279,148 @@
 }
 
 }
+
+
+
+//  iphone x
+@media (max-width: 813px){
+  .singlLand_container {
+  display: flex;
+  //    margin-top: 20px;
+  height: 102px;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #f4f4f4;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  .item {
+    // margin: 10px;
+    // align-self: center;
+    flex: 1;
+    // padding: 0 10px;
+    // // width: 290px;
+    // display: flex;
+    // justify-content: center;
+  }
+  .item_id {
+    // margin: 10px;
+    margin-left: 10px;
+    // justify-self:flex-end;
+  }
+  .item_img_c {
+    margin-left: -70px;
+  }
+  .item_size {
+    margin-left: -5px;
+  }
+  .item_price {
+    margin-left: -5px;
+  }
+  // .item_btn{margin-left: 65px;}
+  .img_container {
+    width: 100px;
+    height: 57px;
+    background: #989898;
+    border: 3px solid #f4f4f4;
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: flex;
+    img {
+      width: 100%;
+    }
+  }
+  .btn {
+    width: 130px;
+    height: 40px;
+    background: #5aabbf;
+    border-radius: 50px;
+    border: none;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    margin-right: 20px;
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    /* identical to box height */
+    cursor: pointer;
+
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+   .btn_sold {
+    width: 130px;
+    height: 40px;
+    background: #989898;
+    border-radius: 50px;
+    border: none;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    margin-right: 20px;
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    /* identical to box height */
+    cursor: pointer;
+
+    text-align: center;
+
+    color: #ffffff;
+  }
+  .color_green {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    margin-right: -40px;
+
+    color: #529547;
+  }
+  .color_sold {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    margin-right: -40px;
+    flex: 1;
+    background: linear-gradient(90deg, #d3beab 70%, #777870 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .color_occupied {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    margin-right: -40px;
+    flex: 1;
+    background: linear-gradient(90deg, #d98233 70%, #abbd3d 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 12px;
+
+    color: #6a6a6a;
+  }
+}
+
+}
