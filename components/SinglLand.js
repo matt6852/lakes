@@ -33,7 +33,7 @@ export default function SinglLand({
           {soldout ? "Продан" : occupied ? "Забронирован" : "Свободен"}
         </p>
         <div>
-          <div className={`${style.item} ${style.item_btn}`}>
+          <div className={`${style.item}`}>
             <button
               disabled={soldout || occupied}
               className={soldout ? `${style.btn_sold}` : `${style.btn}`}
