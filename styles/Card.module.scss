@@ -20,10 +20,10 @@
     .img_big {
       width: 100%;
     }
-    .img_mob {
+    // .img_mob {
       
-      display: none;
-    }
+    //   display: none;
+    // }
   }
   .second_box {
     flex: 1;
@@ -103,12 +103,12 @@
       order: 1;
       flex: 1;
       .img_big {
-        display: none;
+        display: block;
       }
-       .img_mob {
-      display: block;
+    //    .img_mob {
+    //   display: block;
       
-    }
+    // }
     }
     .second_box {
       order: 2;

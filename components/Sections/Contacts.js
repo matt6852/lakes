@@ -54,7 +54,7 @@ export default function Contacts() {
                   <span className={style.icon}>
                     <img src="/map.svg" alt="icon" />
                   </span>
-                  <a> Каменноостровский пр. 64, корп.2</a>
+                  <a>Санкт-Петербург, Каменноостровский пр. 64, корп.2</a>
                 </div>
               </div>
               <div className={style.sub_container_child}>

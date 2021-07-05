@@ -35,9 +35,9 @@ export default function Footer() {
                   <img src="/inst.svg" alt="" />
                 </a>
               </div>
-              <div className={style.pnone}>
+              {/* <div className={style.pnone}>
                 <img src="/phoneFoot.svg" alt="" />
-              </div>
+              </div> */}
               <a className={style.text_p} href={`tel:${process.env.PHONE}`}>
                 {process.env.PHONE_MASK}
               </a>

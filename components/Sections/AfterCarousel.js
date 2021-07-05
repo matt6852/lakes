@@ -5,8 +5,13 @@ import Wrapper from "../Wrapper";
 export default function AfterCarousel() {
   return (
     <div className=".main_main_wraper">
-      <section>
+      <section className ={style.afterCar}>
         <Wrapper>
+          <div className={style.title}>
+            <h3>
+              <span className="linercradient">Преимущества</span>
+            </h3>
+          </div>
           <div className={style.main_container_flex}>
             <div className={style.card_1}>
               <div className={style.img_container}>

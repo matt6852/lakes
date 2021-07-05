@@ -308,12 +308,13 @@ background: linear-gradient(90deg, #4EA86A -38.01%, #5CACC7 135.09%);
 @media (max-width: 1205px) {
   .btn_show_and_hide{
 position: absolute;
-  top: 75%;
+  top: 76%;
   left: 50%;
   // width: 79%;
   z-index: 0;
   height: 5%;
-  transform: translateX(-60%) translateY(-140%);
+  transform: translateX(-50%) translateY(-10%);
+  
 
   button{
     display: flex;
@@ -323,7 +324,7 @@ position: absolute;
 box-shadow: none;
 border-radius:none;
 width: 100%;
-height: 53px;
+height: 13px;
   cursor: pointer;
   font-family: Gilroy;
 font-style: normal;
@@ -331,15 +332,22 @@ font-weight: normal;
 font-size: 8px;
 line-height: 19px;
 text-align: center;
+background: #FFFFFF;
+    -webkit-box-shadow: 0px 3.51678px 3.51678px rgb(0 0 0 / 20%);
+    box-shadow: 0px 3.51678px 3.51678px rgb(0 0 0 / 20%);
+    border-radius: 43.9597px;
+    padding:  0 5px;
+
   border: none;
     div{
       display: flex;
       align-items: center;
       justify-content: center;
-    width: 14px;
-height: 14px;
+    width: 10px;
+height: 10px;
 border-radius: 50%;
 margin-right:5px ;
+
 img{
   width: 50%;
   background-size: contain;

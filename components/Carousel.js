@@ -174,7 +174,7 @@ export default function CarouselSlider() {
         <Wrapper>
           <div className={style.title}>
             <h3>
-              <span className="linercradient">Фотогалерея </span>
+              <span className="linercradient">Галерея</span>
             </h3>
           </div>
 

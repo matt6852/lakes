@@ -4,13 +4,15 @@ import React, { useEffect } from "react";
 import { useAppContext } from "context/state";
 
 const mapData = {
-  center: [55.751574, 37.573856],
-  zoom: 5,
+  center: [60.1922159, 29.0164543],
+  zoom: 7,
 };
 
 const coordinates = [
-  [55.684758, 37.738521],
-  [52.7317, 41.4433],
+
+  [60.1922159, 29.0164543],
+  [59.973707, 30.3005083]
+
 ];
 
 export default function YandexMap() {

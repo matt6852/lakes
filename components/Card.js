@@ -5,7 +5,7 @@ export default function Card({ title, desc, icon, list, img,imgMob,bold }) {
     <article className={style.singl_card_center}>
       <div className={style.first_box}>
         <img className={style.img_big} src={img} alt="" />
-        <img className={style.img_mob} src={imgMob} alt="" />
+        {/* <img className={style.img_mob} src={imgMob} alt="" /> */}
       </div>
       <div className={style.second_box}>
         <div className ={style.title_flex}>

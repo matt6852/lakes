@@ -27,17 +27,6 @@ export default function MainSection() {
     if (slidIndex === indexMain) {
       position = "active";
     }
-    useEffect(() => {
-      const lastIndex = mainSectionContainer.length - 1;
-      if (indexMain > lastIndex) {
-        setIndexMain(0);
-      }
-
-      const interval = setInterval(() => {
-        setIndexMain(indexMain + 1);
-      }, 7000);
-      return () => clearInterval(interval);
-    }, [indexMain]);
 
     return (
       <section
@@ -98,10 +87,10 @@ export default function MainSection() {
               background: linear-gradient(
                   130.54deg,
                   rgba(251, 251, 251, 0.35) 0%,
-                  rgba(251, 251, 251, 0.25) 34.67%,
-                  rgba(255, 255, 255, 0.2) 63.76%,
-                  rgba(255, 255, 255, 0) 98.08%,
-                  rgba(255, 255, 255, 0) 119.93%
+                  rgba(251, 251, 251, 0.25) 14.67%,
+                  rgba(255, 255, 255, 0.2) 23.76%,
+                  rgba(255, 255, 255, 0) 38.08%,
+                  rgba(255, 255, 255, 0) 50.93%
                 ),
                 url(${imgBg}) center/cover;
             }

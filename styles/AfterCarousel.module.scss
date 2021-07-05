@@ -1,5 +1,24 @@
+
+.afterCar{
+  padding-top: 55px;
+ .title {
+      position: relative;
+      z-index: 1;
+      margin: auto;
+      margin-bottom: 84px;
+      // padding-top: 84px;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      font-size: 52px;
+      h3 {
+        z-index: 1;
+      }
+    }
+}
+
 .main_container_flex {
-  margin-top: 80px;
+  margin-top: 40px;
   position: relative;
   z-index: 1;
   display: flex;
@@ -158,6 +177,23 @@
 // mobile
 
 @media (max-width: 776px) {
+.afterCar{
+  padding-top: 55px;
+ .title {
+      position: relative;
+      z-index: 1;
+      margin: auto;
+      margin-bottom: 84px;
+      // padding-top: 84px;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      font-size: 32px;
+      h3 {
+        z-index: 1;
+      }
+    }
+}
   .main_container_flex {
     padding: 0 5px;
     margin-top: 80px;
