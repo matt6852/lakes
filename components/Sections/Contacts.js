@@ -58,7 +58,7 @@ export default function Contacts() {
                 </div>
               </div>
               <div className={style.sub_container_child}>
-                <div className={style.map}>
+                <div className={style.map + " yamap-wrapper"}>
                   <YandexMap />
                 </div>
               </div>

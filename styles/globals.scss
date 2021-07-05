@@ -41,13 +41,18 @@ ul li {
   list-style: none;
 }
 
+.yamap-wrapper > div > ymaps {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
 .linercradient {
   background: linear-gradient(90deg, #4ea86a 0%, #5cacc7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .linercradient_1 {
-  background: linear-gradient(90deg, #91d9a7 0%, #55bddf 100%);
+  background: linear-gradient(90deg, #4ea86a 0%, #5cacc7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
