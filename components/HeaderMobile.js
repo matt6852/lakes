@@ -96,14 +96,12 @@ export default function HeaderMobile() {
           <div className={style.phone}>
             <div className={style.img_cont}>
               <img src="/iconPhone.svg" alt="phone" />
-            </div>
-            
-              {" "}
-              <a href={`tel:${process.env.PHONE}`}>{process.env.PHONE_MASK}</a>
+            </div>{" "}
+            <a href={`tel:${process.env.PHONE}`}>{process.env.PHONE_MASK}</a>
           </div>
 
           <div className={style.policy}>
-            <p>Политика конфиденциальности</p>
+            <a href="/politika_konfid.pdf" target ="_blank">Политика конфиденциальности</a>
             <p> &copy; {year} «Ярвино»</p>
           </div>
         </div>

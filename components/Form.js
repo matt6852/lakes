@@ -106,7 +106,8 @@ export default function Form() {
             id="agree"
           />
           <label htmlFor="agree">
-            Я согласен с политикой конфиденциальности
+            Я согласен с{" "}
+            <a href="/politika_konfid.pdf" target="_blank">политикой конфиденциальности</a>
           </label>
         </div>
         <button className={style.form_btn} type="submit">
