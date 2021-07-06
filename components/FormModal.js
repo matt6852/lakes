@@ -115,7 +115,20 @@ export default function FormModal() {
                 id="agre"
               />
               <label htmlFor="agre">
-                Я согласен с политикой конфиденциальности
+                Я согласен с{" "}
+                <a
+                  href="/politika_konfid.pdf"
+                  target="_blank"
+                  style={{
+                    textDecoration: "underline",
+                    zIndex: "1",
+                    cursor: "pointer",
+                    width:"100%",
+                    position:"relative"
+                  }}
+                >
+                  политикой конфиденциальности{" "}
+                </a>
               </label>
             </div>
             <button className={style.form_btn} type="submit">

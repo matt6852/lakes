@@ -59,6 +59,7 @@ export default function FooterMob() {
                 className={style.link}
                 href="/politika_konfid.pdf"
                 target="_blank"
+                style={{ textDecoration: "underline" }}
               >
                 Политика конфиденциальности
               </a>
