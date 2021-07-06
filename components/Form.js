@@ -107,7 +107,13 @@ export default function Form() {
           />
           <label htmlFor="agree">
             Я согласен с{" "}
-            <a href="/politika_konfid.pdf" target="_blank">политикой конфиденциальности</a>
+            <a
+              href="/politika_konfid.pdf"
+              target="_blank"
+              style={{ textDecoration: "underline" }}
+            >
+              политикой конфиденциальности
+            </a>
           </label>
         </div>
         <button className={style.form_btn} type="submit">

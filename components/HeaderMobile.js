@@ -101,7 +101,13 @@ export default function HeaderMobile() {
           </div>
 
           <div className={style.policy}>
-            <a href="/politika_konfid.pdf" target ="_blank">Политика конфиденциальности</a>
+            <a
+              href="/politika_konfid.pdf"
+              target="_blank"
+              style={{ textDecoration: "underline" }}
+            >
+              Политика конфиденциальности
+            </a>
             <p> &copy; {year} «Ярвино»</p>
           </div>
         </div>
