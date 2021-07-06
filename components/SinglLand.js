@@ -44,7 +44,7 @@ export default function SinglLand({
                 setSinglLand(filtered);
               }}
             >
-              {soldout ? "Забронировано" : "Записаться на просмотр"}
+              {soldout ? "Записаться на просмотр" : "Записаться на просмотр"}
             </button>
           </div>
         </div>

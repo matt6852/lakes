@@ -10,8 +10,7 @@ import HowToBuy from "components/Sections/HowToBuy";
 import GenPlan from "components/Sections/GenPlan";
 import Contacts from "components/Sections/Contacts";
 import Footer from "components/Sections/Footer";
-import Head from 'next/head'
-
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -53,10 +52,8 @@ export default function Home() {
       <GenPlan />
       <History />
       <Carousel />
-
       <HowToBuy />
       <Contacts />
-
       <Footer />
     </>
   );

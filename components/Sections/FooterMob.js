@@ -55,7 +55,13 @@ export default function FooterMob() {
           </div>
           <div className={style.policy}>
             <Link href="/">
-              <a className={style.link}>Политика конфиденциальности</a>
+              <a
+                className={style.link}
+                href="/politika_konfid.pdf"
+                target="_blank"
+              >
+                Политика конфиденциальности
+              </a>
             </Link>
             <p className={style.link_sp}>
               &copy; {new Date().getFullYear()}, «Ярвино»{" "}
