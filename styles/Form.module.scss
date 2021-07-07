@@ -42,6 +42,8 @@
     height: 60px;
     padding: 15px 30px;
     border: 3px solid #ededed;
+    font-family: 'Gilroy';
+    font-size: 14px;
     border-radius: 15px;
     margin-bottom: 10px;
      -webkit-appearance:none ;
@@ -56,6 +58,8 @@
     padding-top: 10px;
     padding-left: 30px;
      -webkit-appearance:none ;
+    font-family: "Gilroy";
+    font-size: 14px;
   }
   .form_btn {
     margin-top: 17px;
@@ -254,6 +258,7 @@ line-height: 130%;
       border-radius: 15px;
       margin-bottom: 10px;
       -webkit-appearance:none ;
+      font-size: 16px;
     }
     .textarea {
       height: 130px;
@@ -262,6 +267,7 @@ line-height: 130%;
       box-sizing: border-box;
       border-radius: 15px;
        -webkit-appearance:none ;
+      font-size: 16px;
     }
     .form_btn {
       margin-top: 16px;
