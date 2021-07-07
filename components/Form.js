@@ -1,5 +1,5 @@
 import style from "styles/Form.module.scss";
-import "react-phone-number-input/style.scss";
+import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import React from "react";
 // import emailjs from "emailjs-com";
