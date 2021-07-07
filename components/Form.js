@@ -1,29 +1,23 @@
 import style from "styles/Form.module.scss";
-import {
-  getCountries,
-  getCountryCallingCode,
-  international,
-} from "react-phone-number-input/input";
-import InputMask from "react-input-mask";
-
 
 import PhoneInput from "react-phone-number-input";
 import React from "react";
 // import emailjs from "emailjs-com";
 
 import { useAppContext } from "context/state";
+import { useEffect } from "react";
 export default function Form() {
-  
-  const handlePhone =(e)=>{
-    if(typeof e === "undefined"){
-      return
+  const handlePhone = (e) => {
+    if (typeof e === "undefined") {
+      return;
     }
-    setPhonenum(e)
+    setPhonenum(e);
     console.log(phonenum);
-  }
+  };
   const { formData, setFormData, DEFAULT_DATA, phonenum, setPhonenum } =
     useAppContext();
   // EmailJSResponseStatus {status: 200, text: "OK"}
+  useEffect(() => {}, [phonenum]);
 
   const handleChanged = (e) => {
     const { name, value } = e.target;
@@ -34,30 +28,30 @@ export default function Form() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData,phonenum);
-    setPhonenum("")
+    console.log(formData, phonenum);
     const upDateForm = {
-      ...formData, phone: phonenum,
+      ...formData,
+      phone: phonenum,
       checkbox: formData.checkValue
         ? "Я согласен с политикой конфиденциальности"
         : "Я НЕ согласен с политикой конфиденциальности",
     };
 
-    const res = await fetch('/api/contacts', {
+    const res = await fetch("/api/contacts", {
       body: JSON.stringify(upDateForm),
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
-      method: 'POST'
-    })
+      method: "POST",
+    });
 
     const result = await res.json();
-    setFormData(DEFAULT_DATA)
+    setFormData(DEFAULT_DATA);
+    setPhonenum("");
 
-    console.log(result)
-    
+
+    console.log(result);
   };
-
 
   return (
     <>
@@ -99,23 +93,18 @@ export default function Form() {
           placeholder="Телефон"
           required
         /> */}
+
         <PhoneInput
           className={style.input}
-          international
-          countryCallingCodeEditable={false}
-          defaultCountry="RU"
-          // international={false}
           name="phone"
-          // defaultCountry="RU"
           value={phonenum}
           onChange={handlePhone}
           placeholder="Телефон"
           require="true"
-
-          // mask ={getCountries}
-
-          // defaultCountry="RU"
+          // defaultCountry ="RU"
+          // defaultValue ="31231313123"
         />
+
         <input
           className={style.input}
           onChange={handleChanged}

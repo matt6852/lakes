@@ -97,7 +97,6 @@ export default function FormModal() {
               className={style.input}
               // international={false}
               name="phone"
-              // defaultCountry="RU"
               value={phonenum}
               onChange={handlePhone}
               placeholder="Телефон"

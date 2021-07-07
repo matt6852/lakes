@@ -21,6 +21,23 @@
   display: flex;
   flex-direction: column;
   //   justify-content: space-between;
+  .facke_placholder{
+    position: relative;
+    
+  }
+  .facke_placholder_none{
+    display: none;
+  }
+ 
+  .facke_placholder_block{
+    display: block;
+    position: absolute;
+      top:41%;
+      left: 18%;
+      transform: translateY(-50%);
+      z-index: 1;
+  }
+ 
   input {
     height: 60px;
     padding: 15px 50px;
