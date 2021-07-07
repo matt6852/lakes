@@ -1,5 +1,12 @@
 import style from "styles/Form.module.scss";
-// import "react-phone-number-input/style.css";
+import {
+  getCountries,
+  getCountryCallingCode,
+  international,
+} from "react-phone-number-input/input";
+import InputMask from "react-input-mask";
+
+
 import PhoneInput from "react-phone-number-input";
 import React from "react";
 // import emailjs from "emailjs-com";
@@ -94,13 +101,18 @@ export default function Form() {
         /> */}
         <PhoneInput
           className={style.input}
+          international
+          countryCallingCodeEditable={false}
+          defaultCountry="RU"
           // international={false}
           name="phone"
           // defaultCountry="RU"
           value={phonenum}
           onChange={handlePhone}
-          placeholder="7 999 111 22 33"
+          placeholder="Телефон"
           require="true"
+
+          // mask ={getCountries}
 
           // defaultCountry="RU"
         />
@@ -111,7 +123,7 @@ export default function Form() {
           name="email"
           type="email"
           placeholder="E-mail"
-         pattern="[^ @]*@[^ @]*"
+          pattern="[^ @]*@[^ @]*"
           required
         />
         <textarea
