@@ -111,7 +111,7 @@ export default function Form() {
           name="email"
           type="email"
           placeholder="E-mail"
-          pattern="[^ @]*@[^ @]*"
+         pattern="[^ @]*@[^ @]*"
           required
         />
         <textarea
