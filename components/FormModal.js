@@ -17,13 +17,13 @@ export default function FormModal() {
     setPhonenum,
   } = useAppContext();
   // console.log(singlLand[0]);
-  const handlePhone = (e) => {
-    if (typeof e === "undefined") {
-      return;
-    }
-    setPhonenum(e);
-    console.log(phonenum);
-  };
+  // const handlePhone = (e) => {
+  //   if (typeof e === "undefined") {
+  //     return;
+  //   }
+  //   setPhonenum(e);
+  //   console.log(phonenum);
+  // };
 
   const handleChanged = (e) => {
     const { name, value } = e.target;
@@ -37,7 +37,7 @@ export default function FormModal() {
     setPhonenum("");
     const upDateForm = {
       ...formData,
-      phone: phonenum,
+      // phone: phonenum,
       checkbox: formData.checkValue
         ? "Я согласен с политикой конфиденциальности"
         : "Я НЕ согласен с политикой конфиденциальности",
