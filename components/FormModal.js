@@ -1,13 +1,22 @@
 import style from "styles/FormModal.module.scss";
 import Wrapper from "./Wrapper";
 import { useAppContext } from "context/state";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 
 // import emailjs from "emailjs-com";
 
 export default function FormModal() {
-  const { formData, setFormData, DEFAULT_DATA, setShowModal, singlLand } =
+  const { formData, setFormData, DEFAULT_DATA, setShowModal, singlLand, phonenum, setPhonenum } =
     useAppContext();
   // console.log(singlLand[0]);
+   const handlePhone = (e) => {
+     if (typeof e === "undefined") {
+       return;
+     }
+     setPhonenum(e);
+     console.log(phonenum);
+   };
 
   const handleChanged = (e) => {
     const { name, value } = e.target;
@@ -18,8 +27,9 @@ export default function FormModal() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setPhonenum("")
     const upDateForm = {
-      ...formData,
+      ...formData, phone:phonenum,
       checkbox: formData.checkValue
         ? "Я согласен с политикой конфиденциальности"
         : "Я НЕ согласен с политикой конфиденциальности",
@@ -83,13 +93,15 @@ export default function FormModal() {
               placeholder="Ваше имя"
               required
             />
-            <input
-              onChange={handleChanged}
-              value={formData.phone}
+            <PhoneInput
+              className={style.input}
+              // international={false}
               name="phone"
-              type="tel"
-              placeholder="Ваш номер"
-              required
+              // defaultCountry="RU"
+              value={phonenum}
+              onChange={handlePhone}
+              placeholder="7 999 111 22 33"
+              require="true"
             />
             <input
               onChange={handleChanged}
@@ -123,8 +135,8 @@ export default function FormModal() {
                     textDecoration: "underline",
                     zIndex: "1",
                     cursor: "pointer",
-                    width:"100%",
-                    position:"relative"
+                    width: "100%",
+                    position: "relative",
                   }}
                 >
                   политикой конфиденциальности{" "}
