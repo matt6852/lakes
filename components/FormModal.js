@@ -1,7 +1,7 @@
 import style from "styles/FormModal.module.scss";
 import Wrapper from "./Wrapper";
 import { useAppContext } from "context/state";
-import "react-phone-number-input/style.css";
+// import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 
 // import emailjs from "emailjs-com";

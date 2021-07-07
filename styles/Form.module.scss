@@ -28,6 +28,7 @@
     border-radius: 15px;
     margin-bottom: 10px;
   }
+  
   .textarea {
     height: 130px;
     background: #ffffff;
@@ -113,6 +114,26 @@ line-height: 130%;
       font-size: 12px;
     }
   }
+
+  // costom input phone
+//   .input{
+//     display: flex;
+// 	align-items: center;
+// 	position: relative;
+//   .PhoneInputInput {
+// 	/* The phone number input stretches to fill all empty space */
+// 	flex: 1;
+// 	/* The phone number input should shrink
+// 	   to make room for the extension input */
+// 	min-width: 0;
+// 	/* padding-left: 170px; */
+	
+// 	/* margin-left: 70px; */
+// }
+// input.PhoneInputInput{
+// 	padding: 0 50px;
+// }
+//   }
 }
 
 // tablet
