@@ -100,7 +100,7 @@ export default function FormModal() {
               // defaultCountry="RU"
               value={phonenum}
               onChange={handlePhone}
-              placeholder="7 999 111 22 33"
+              placeholder="Телефон"
               require="true"
             />
             <input
