@@ -1,6 +1,7 @@
 import style from "styles/Form.module.scss";
 
-import PhoneInput from "react-phone-number-input";
+import PhoneInput from "react-phone-input-2";
+// import "react-phone-input-2/lib/style.css";
 import React from "react";
 // import emailjs from "emailjs-com";
 
@@ -96,7 +97,12 @@ export default function Form() {
 
         <PhoneInput
           className={style.input}
+          // defaultCountry="RU"
+          country="ru"
+          // masks={{ fr: "(...) ..-..-...", at: "(....) ...-...." }}
+          // international
           name="phone"
+          // alwaysDefaultMask ={true}
           value={phonenum}
           onChange={handlePhone}
           placeholder="Телефон"
