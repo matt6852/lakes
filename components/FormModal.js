@@ -2,21 +2,28 @@ import style from "styles/FormModal.module.scss";
 import Wrapper from "./Wrapper";
 import { useAppContext } from "context/state";
 // import "react-phone-number-input/style.css";
-import PhoneInput from "react-phone-number-input";
+// import PhoneInput from "react-phone-number-input";
 
 // import emailjs from "emailjs-com";
 
 export default function FormModal() {
-  const { formData, setFormData, DEFAULT_DATA, setShowModal, singlLand, phonenum, setPhonenum } =
-    useAppContext();
+  const {
+    formData,
+    setFormData,
+    DEFAULT_DATA,
+    setShowModal,
+    singlLand,
+    phonenum,
+    setPhonenum,
+  } = useAppContext();
   // console.log(singlLand[0]);
-   const handlePhone = (e) => {
-     if (typeof e === "undefined") {
-       return;
-     }
-     setPhonenum(e);
-     console.log(phonenum);
-   };
+  const handlePhone = (e) => {
+    if (typeof e === "undefined") {
+      return;
+    }
+    setPhonenum(e);
+    console.log(phonenum);
+  };
 
   const handleChanged = (e) => {
     const { name, value } = e.target;
@@ -27,9 +34,10 @@ export default function FormModal() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setPhonenum("")
+    setPhonenum("");
     const upDateForm = {
-      ...formData, phone:phonenum,
+      ...formData,
+      phone: phonenum,
       checkbox: formData.checkValue
         ? "Я согласен с политикой конфиденциальности"
         : "Я НЕ согласен с политикой конфиденциальности",
@@ -46,7 +54,7 @@ export default function FormModal() {
 
     const result = await res.json();
     setFormData(DEFAULT_DATA);
-    setShowModal(false)
+    setShowModal(false);
     console.log(result);
   };
 
@@ -93,14 +101,13 @@ export default function FormModal() {
               placeholder="Ваше имя"
               required
             />
-            <PhoneInput
-              className={style.input}
-              // international={false}
+            <input
+              onChange={handleChanged}
+              value={formData.phone}
               name="phone"
-              value={phonenum}
-              onChange={handlePhone}
+              type="tel"
               placeholder="Телефон"
-              require="true"
+              required
             />
             <input
               onChange={handleChanged}
