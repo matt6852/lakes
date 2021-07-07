@@ -1,9 +1,20 @@
 import style from "styles/Form.module.scss";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
+import React from "react";
 // import emailjs from "emailjs-com";
 
 import { useAppContext } from "context/state";
 export default function Form() {
-  const { formData, setFormData, DEFAULT_DATA,} =
+  
+  const handlePhone =(e)=>{
+    if(typeof e === "undefined"){
+      return
+    }
+    setPhonenum(e)
+    console.log(phonenum);
+  }
+  const { formData, setFormData, DEFAULT_DATA, phonenum, setPhonenum } =
     useAppContext();
   // EmailJSResponseStatus {status: 200, text: "OK"}
 
@@ -16,8 +27,10 @@ export default function Form() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(formData,phonenum);
+    setPhonenum("")
     const upDateForm = {
-      ...formData,
+      ...formData, phone: phonenum,
       checkbox: formData.checkValue
         ? "Я согласен с политикой конфиденциальности"
         : "Я НЕ согласен с политикой конфиденциальности",
@@ -62,6 +75,7 @@ export default function Form() {
       </div>
       <form onSubmit={handleSubmit} className={style.form}>
         <input
+          className={style.input}
           value={formData.name}
           onChange={handleChanged}
           name="name"
@@ -69,23 +83,39 @@ export default function Form() {
           placeholder="Ваше имя"
           required
         />
-        <input
+
+        {/* <input
           onChange={handleChanged}
           value={formData.phone}
           name="phone"
           type="tel"
           placeholder="Телефон"
           required
+        /> */}
+        <PhoneInput
+          className={style.input}
+          // international={false}
+          name="phone"
+          // defaultCountry="RU"
+          value={phonenum}
+          onChange={handlePhone}
+          placeholder="7 999 111 22 33"
+          require="true"
+
+          // defaultCountry="RU"
         />
         <input
+          className={style.input}
           onChange={handleChanged}
           value={formData.email}
           name="email"
           type="email"
           placeholder="E-mail"
+          pattern="[^ @]*@[^ @]*"
           required
         />
         <textarea
+          className={style.input}
           onChange={handleChanged}
           value={formData.message}
           name="message"
@@ -95,6 +125,7 @@ export default function Form() {
         ></textarea>
         <div className={style.chekBox}>
           <input
+            className={style.input}
             className={style.custom_checkbox}
             onChange={() => {
               handleChanged;

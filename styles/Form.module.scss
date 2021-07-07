@@ -23,7 +23,7 @@
   //   justify-content: space-between;
   input {
     height: 60px;
-    padding: 15px 30px;
+    padding: 15px 50px;
     border: 3px solid #ededed;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -35,7 +35,7 @@
     box-sizing: border-box;
     border-radius: 15px;
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
   }
   .form_btn {
     margin-top: 17px;
@@ -54,14 +54,16 @@ font-size: 18px;
 line-height: 130%;
   }
   textarea::placeholder {
-    padding: 12px 25px;
+    padding: 12px 5px;
     color: #a4a4a4;
     font-size: 16px;
+   
   }
   input::placeholder {
     padding: 5px;
     color: #a4a4a4;
     font-size: 16px;
+    
   }
   .chekBox {
     padding-top: 10px;
@@ -207,7 +209,7 @@ line-height: 130%;
     //   justify-content: space-between;
     input {
       height: 60px;
-      padding: 15px 30px;
+      padding: 15px 50px;
       border: 3px solid #ededed;
       border-radius: 15px;
       margin-bottom: 10px;
@@ -231,7 +233,7 @@ line-height: 130%;
     }
     textarea::placeholder {
       font-family: Gilroy;
-      padding: 10px 25px;
+      padding: 10px 5px;
       color: #a4a4a4;
       font-size: 14px;
     }

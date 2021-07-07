@@ -36,12 +36,17 @@ export function AppWrapper({ children }) {
   const [indexMain, setIndexMain] = useState(0);
   const [sizeWindow, setSizeWinow] = useState(0);
   const [end, setEnd] = useState(4);
+  const [phonenum, setPhonenum] = useState("");
   const [scrollBtn, setScrollBtn] = useState(true);
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const sharedState = {
     formSub,
-    showHouses, setShowHouses,
-    mousOver, setMousOver,
+    phonenum,
+    setPhonenum,
+    showHouses,
+    setShowHouses,
+    mousOver,
+    setMousOver,
     activPlan,
     setActivePlan,
     end,

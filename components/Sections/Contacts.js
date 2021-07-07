@@ -22,12 +22,12 @@ export default function Contacts() {
                   Пообщайтесь с менеджерами, ознакомьтесь с проектом и
                   документацией
                 </p>
-                <p>(нет контактов)</p>
+                <p>Санкт-Петербург, Каменноостровский пр. 64, корп.2</p>
               </div>
               <div className={style.sub_container_child_text_mob}>
                 <h4>Посёлок</h4>
                 <p>Влюбитесь в место, где появится дом вашей мечты</p>
-                <p>(нет контактов)</p>
+                <p> Ленинградская обл, Выборгский район, пос. Озерки</p>
               </div>
               <div className={style.sub_container_child_icons}>
                 <div>
@@ -50,12 +50,12 @@ export default function Contacts() {
                     {process.env.OUR_MAIL}
                   </a>
                 </div>
-                <div>
+                {/* <div>
                   <span className={style.icon}>
                     <img src="/map.svg" alt="icon" />
                   </span>
                   <a>Санкт-Петербург, Каменноостровский пр. 64, корп.2</a>
-                </div>
+                </div> */}
               </div>
               <div className={style.sub_container_child}>
                 <div className={style.map + " yamap-wrapper"}>
@@ -69,7 +69,10 @@ export default function Contacts() {
                 <div className={style.sub_container_child_text_desk}>
                   <h4>Посёлок</h4>
                   <p>Влюбитесь в место, где появится дом вашей мечты</p>
-                  <p className={style.text_pading_top}>(нет контактов)</p>
+                  <p className={style.text_pading_top}>
+                    {" "}
+                    Ленинградская обл, Выборгский район, пос. Озерки
+                  </p>
                 </div>
 
                 <div className={style.sub_container_child}>
