@@ -101,7 +101,7 @@ export default function Form() {
           inputProps={{
             name: "phone",
             required: true,
-            autoFocus: true,
+            // autoFocus: true,
           }}
           // defaultCountry="RU"
           country="ru"
