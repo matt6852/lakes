@@ -76,6 +76,7 @@ export default function Form() {
         </p>
       </div>
       <form onSubmit={handleSubmit} className={style.form}>
+        <span className={style.star_1}>*</span>
         <input
           className={style.input}
           value={formData.name}
@@ -94,9 +95,14 @@ export default function Form() {
           placeholder="Телефон"
           required
         /> */}
-
+        <span className={style.star_2}>*</span>
         <PhoneInput
           className={style.input}
+          inputProps={{
+            name: "phone",
+            required: true,
+            autoFocus: true,
+          }}
           // defaultCountry="RU"
           country="ru"
           // masks={{ fr: "(...) ..-..-...", at: "(....) ...-...." }}
@@ -106,7 +112,8 @@ export default function Form() {
           value={phonenum}
           onChange={handlePhone}
           placeholder="Телефон"
-          require="true"
+          // require="true"
+          // require
           // defaultCountry ="RU"
           // defaultValue ="31231313123"
         />
@@ -119,7 +126,7 @@ export default function Form() {
           type="email"
           placeholder="E-mail"
           pattern="[^ @]*@[^ @]*"
-          required
+          // required
         />
         <textarea
           className={style.input}
@@ -128,7 +135,7 @@ export default function Form() {
           name="message"
           className={style.textarea}
           placeholder="Ваше сообщение"
-          required
+          // required
         ></textarea>
         <div className={style.chekBox}>
           <input
