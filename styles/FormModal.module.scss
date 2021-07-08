@@ -412,6 +412,16 @@
         margin-bottom: 10px;
         // margin-left: 12px;
       }
+      input:focus {
+        outline: none;
+        box-shadow: 0 0.8rem 1.3rem rgba(120, 194, 117, 0.63);
+        border: 2px solid rgb(120, 194, 117);
+        background-color: rgba(247, 247, 247, 0.979);
+      }
+      input:focus:invalid {
+        box-shadow: 0 0.8rem 1.3rem rgba(231, 104, 95, 0.678);
+        border: 2px solid rgb(231, 104, 95);
+      }
       .form_btn {
         height: 60px;
         background: linear-gradient(90deg, #4ea86a -38.01%, #5cacc7 135.09%);
@@ -489,7 +499,7 @@
     align-items: center;
     background: url("/formMod_m_bg.svg") center/cover no-repeat;
     // border: 3px solid blue;
-    
+
     height: 100vh;
     border-radius: 15px;
     border-radius: 0;
@@ -519,11 +529,11 @@
       }
       &_item {
         width: 100%;
-        margin: 7px 0 ;
+        margin: 7px 0;
         height: 35px;
         padding: 0;
         display: flex;
-        padding:  20px 0;
+        padding: 20px 0;
         align-items: center;
         justify-content: center;
         flex-direction: row;
@@ -580,7 +590,7 @@
           font-size: 12px;
           font-weight: normal;
           line-height: 160%;
-          color: #6C6C6C;
+          color: #6c6c6c;
         }
       }
       .form {
@@ -596,9 +606,8 @@
           border-radius: 15px;
           margin-bottom: 10px;
           // margin-left: 12px;
-         
         }
-        
+
         .form_btn {
           height: 50px;
           background: linear-gradient(90deg, #4ea86a -38.01%, #5cacc7 135.09%);

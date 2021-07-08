@@ -115,7 +115,7 @@ export default function FormModal() {
               name="email"
               type="email"
               placeholder="Ваш e-mail"
-              required
+              // required
             />
             <div className={style.chekBox}>
               <input

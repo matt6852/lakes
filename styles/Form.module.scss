@@ -18,26 +18,42 @@
   }
 }
 .form {
+  position: relative;
   display: flex;
   flex-direction: column;
   //   justify-content: space-between;
-  .facke_placholder{
-    position: relative;
-    
+  .star_1 {
+    position: absolute;
+    top: 24px;
+    font-size: 26px;
+    display: inline-block;
+    left: -15px;
+    color: #6c6c6c;
   }
-  .facke_placholder_none{
+  .star_2 {
+    position: absolute;
+    top: 90px;
+    font-size: 26px;
+    display: inline-block;
+    left: -15px;
+    color: #6c6c6c;
+  }
+  .facke_placholder {
+    position: relative;
+  }
+  .facke_placholder_none {
     display: none;
   }
- 
-  .facke_placholder_block{
+
+  .facke_placholder_block {
     display: block;
     position: absolute;
-      top:41%;
-      left: 18%;
-      transform: translateY(-50%);
-      z-index: 1;
+    top: 41%;
+    left: 18%;
+    transform: translateY(-50%);
+    z-index: 1;
   }
- 
+
   input {
     height: 60px;
     padding: 15px 30px;
@@ -46,9 +62,19 @@
     font-size: 14px;
     border-radius: 15px;
     margin-bottom: 10px;
-     -webkit-appearance:none ;
+    -webkit-appearance: none;
   }
-  
+  input:focus {
+    outline: none;
+    box-shadow: 0 0.8rem 1.3rem rgba(120, 194, 117, 0.63);
+    border: 2px solid rgb(120, 194, 117);
+    background-color: rgba(247, 247, 247, 0.979);
+  }
+  input:focus:invalid {
+    box-shadow: 0 0.8rem 1.3rem rgba(231, 104, 95, 0.678);
+    border: 2px solid rgb(231, 104, 95);
+  }
+
   .textarea {
     height: 130px;
     background: #ffffff;
@@ -57,9 +83,11 @@
     border-radius: 15px;
     padding-top: 10px;
     padding-left: 30px;
+
      -webkit-appearance:none ;
     font-family: "Gilroy";
     font-size: 14px;
+
   }
   .form_btn {
     margin-top: 17px;
@@ -72,22 +100,20 @@
     color: #fff;
     font-size: 18px;
     font-family: Gilroy;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 130%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
   }
   textarea::placeholder {
     padding: 12px 5px;
     color: #a4a4a4;
     font-size: 16px;
-   
   }
   input::placeholder {
     padding: 5px;
     color: #a4a4a4;
     font-size: 16px;
-    
   }
   .chekBox {
     padding-top: 10px;
@@ -139,24 +165,24 @@ line-height: 130%;
   }
 
   // costom input phone
-//   .input{
-//     display: flex;
-// 	align-items: center;
-// 	position: relative;
-//   .PhoneInputInput {
-// 	/* The phone number input stretches to fill all empty space */
-// 	flex: 1;
-// 	/* The phone number input should shrink
-// 	   to make room for the extension input */
-// 	min-width: 0;
-// 	/* padding-left: 170px; */
-	
-// 	/* margin-left: 70px; */
-// }
-// input.PhoneInputInput{
-// 	padding: 0 50px;
-// }
-//   }
+  //   .input{
+  //     display: flex;
+  // 	align-items: center;
+  // 	position: relative;
+  //   .PhoneInputInput {
+  // 	/* The phone number input stretches to fill all empty space */
+  // 	flex: 1;
+  // 	/* The phone number input should shrink
+  // 	   to make room for the extension input */
+  // 	min-width: 0;
+  // 	/* padding-left: 170px; */
+
+  // 	/* margin-left: 70px; */
+  // }
+  // input.PhoneInputInput{
+  // 	padding: 0 50px;
+  // }
+  //   }
 }
 
 // tablet
@@ -257,8 +283,10 @@ line-height: 130%;
       border: 3px solid #ededed;
       border-radius: 15px;
       margin-bottom: 10px;
+
       -webkit-appearance:none ;
       font-size: 16px;
+
     }
     .textarea {
       height: 130px;
@@ -266,8 +294,10 @@ line-height: 130%;
       border: 3px solid #ededed;
       box-sizing: border-box;
       border-radius: 15px;
+
        -webkit-appearance:none ;
       font-size: 16px;
+
     }
     .form_btn {
       margin-top: 16px;
@@ -284,14 +314,14 @@ line-height: 130%;
       padding: 10px 5px;
       color: #a4a4a4;
       font-size: 14px;
-      -webkit-appearance:none ;
+      -webkit-appearance: none;
     }
     input::placeholder {
       font-family: Gilroy;
       padding: 5px;
       color: #a4a4a4;
       font-size: 14px;
-      -webkit-appearance:none ;
+      -webkit-appearance: none;
     }
     .chekBox {
       padding-top: 10px;
