@@ -58,6 +58,8 @@
     height: 60px;
     padding: 15px 30px;
     border: 3px solid #ededed;
+    font-family: 'Gilroy';
+    font-size: 14px;
     border-radius: 15px;
     margin-bottom: 10px;
     -webkit-appearance: none;
@@ -81,7 +83,11 @@
     border-radius: 15px;
     padding-top: 10px;
     padding-left: 30px;
-    -webkit-appearance: none;
+
+     -webkit-appearance:none ;
+    font-family: "Gilroy";
+    font-size: 14px;
+
   }
   .form_btn {
     margin-top: 17px;
@@ -277,7 +283,10 @@
       border: 3px solid #ededed;
       border-radius: 15px;
       margin-bottom: 10px;
-      -webkit-appearance: none;
+
+      -webkit-appearance:none ;
+      font-size: 16px;
+
     }
     .textarea {
       height: 130px;
@@ -285,7 +294,10 @@
       border: 3px solid #ededed;
       box-sizing: border-box;
       border-radius: 15px;
-      -webkit-appearance: none;
+
+       -webkit-appearance:none ;
+      font-size: 16px;
+
     }
     .form_btn {
       margin-top: 16px;

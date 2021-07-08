@@ -18,15 +18,15 @@ export default function Contacts() {
             <div className={style.sub_container}>
               <div className={style.sub_container_child_text}>
                 <h4>Центральный офис</h4>
-                <p>
+                {/* <p>
                   Пообщайтесь с менеджерами, ознакомьтесь с проектом и
                   документацией
-                </p>
+                </p> */}
                 <p>Санкт-Петербург, Каменноостровский пр. 64, корп.2</p>
               </div>
               <div className={style.sub_container_child_text_mob}>
                 <h4>Посёлок</h4>
-                <p>Влюбитесь в место, где появится дом вашей мечты</p>
+                {/* <p>Влюбитесь в место, где появится дом вашей мечты</p> */}
                 <p> Ленинградская обл, Выборгский район, пос. Озерки</p>
               </div>
               <div className={style.sub_container_child_icons}>
@@ -58,7 +58,7 @@ export default function Contacts() {
                 </div> */}
               </div>
               <div className={style.sub_container_child}>
-                <div className={style.map}>
+                <div className={style.map + " yamap-wrapper"}>
                   <YandexMap />
                 </div>
               </div>
@@ -68,7 +68,7 @@ export default function Contacts() {
               <div className={style.sub_container}>
                 <div className={style.sub_container_child_text_desk}>
                   <h4>Посёлок</h4>
-                  <p>Влюбитесь в место, где появится дом вашей мечты</p>
+                  {/* <p>Влюбитесь в место, где появится дом вашей мечты</p> */}
                   <p className={style.text_pading_top}>
                     {" "}
                     Ленинградская обл, Выборгский район, пос. Озерки
