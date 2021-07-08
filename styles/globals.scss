@@ -763,11 +763,15 @@
   width: 100%;
   outline: none;
   height: 60px;
-    padding: 15px 70px;
-    border: 3px solid #ededed;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    -webkit-appearance:none ;
+  padding: 15px 70px;
+  border: 3px solid #ededed;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  -webkit-appearance:none ;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
 }
 .react-tel-input .form-control.invalid-number {
   border: 1px solid #d79f9f;
@@ -1107,13 +1111,18 @@ ul li {
   list-style: none;
 }
 
+.yamap-wrapper > div > ymaps {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
 .linercradient {
   background: linear-gradient(90deg, #4ea86a 0%, #5cacc7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .linercradient_1 {
-  background: linear-gradient(90deg, #91d9a7 0%, #55bddf 100%);
+  background: linear-gradient(90deg, #4ea86a 0%, #5cacc7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
