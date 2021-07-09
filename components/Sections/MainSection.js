@@ -35,7 +35,9 @@ export default function MainSection() {
         key={slidIndex}
         className={`${position} ${style.main_section} ${
           "main_section_" + slidIndex
-        }`}
+          
+        }`} 
+        id ="#/"
       >
     
 

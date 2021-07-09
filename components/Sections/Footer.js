@@ -1,6 +1,14 @@
 import style from "styles/Footer.module.scss";
 import { useAppContext } from "context/state";
-import Link from "next/link";
+// import Link from "next/link";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 import Wrapper from "../Wrapper";
 
@@ -16,8 +24,15 @@ export default function Footer() {
             <img src="/logo_f.svg" alt="" />
             {links.map((link, index) => {
               return (
-                <Link key={index} href={link.href}>
-                  <a className={style.link}>{link.title}</a>
+                <Link
+                  key={index}
+                  smooth={true}
+                  offset={-105}
+                  duration={800}
+                  to={link.href}
+                  className={style.link}
+                >
+                  {link.title}
                 </Link>
               );
             })}{" "}

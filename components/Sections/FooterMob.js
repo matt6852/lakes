@@ -1,6 +1,14 @@
 import style from "styles/FooterM.module.scss";
 import Wrapper from "../Wrapper";
-import Link from "next/link";
+// import Link from "next/link";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 import Phone from "../PhoneComp";
 import { useAppContext } from "context/state";
 
@@ -31,8 +39,15 @@ export default function FooterMob() {
               {links
                 .map((link, index) => {
                   return (
-                    <Link key={index} href={link.href}>
-                      <a className={style.link}>{link.title}</a>
+                    <Link
+                      key={index}
+                      className={style.link}
+                      smooth={true}
+                      offset={-105}
+                      duration={800}
+                      to={link.href}
+                    >
+                      {link.title}
                     </Link>
                   );
                 })
