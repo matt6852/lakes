@@ -23,16 +23,17 @@ export default function Footer() {
           <div className={style.container}>
             <img src="/logo_f.svg" alt="" />
             {links.map((link, index) => {
+              const {href,title} =link
               return (
                 <Link
                   key={index}
                   smooth={true}
                   offset={-105}
                   duration={800}
-                  to={link.href}
+                  to={href}
                   className={style.link}
                 >
-                  {link.title}
+                  {title}
                 </Link>
               );
             })}{" "}
