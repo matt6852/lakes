@@ -104,11 +104,12 @@ export default function FormModal() {
               required
             />
             <PhoneInput
+              international
+              defaultCountry="RU"
               value={phonenum}
               onChange={handlePhone}
               name="phone"
               type="tel"
-          
               placeholder="Телефон"
               required
             />
@@ -116,7 +117,7 @@ export default function FormModal() {
               onChange={handleChanged}
               value={formData.phone}
               name="phone"
-              type="tel"
+              type="number"
               placeholder="Телефон"
               required
             /> */}
