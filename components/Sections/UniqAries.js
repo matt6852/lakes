@@ -7,7 +7,7 @@ export default function UniqAries() {
   const { uniqCards } = useAppContext();
   return (
     <div className=".main_main_wraper">
-      <section id="uniq" className={style.uniq}>
+      <section id="#uniq" className={style.uniq}>
         <Wrapper>
           <div className={style.title}>
             <h3>

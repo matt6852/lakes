@@ -4,7 +4,7 @@ import Wrapper from "../Wrapper";
 export default function Projects() {
   return (
     <div className=".main_main_wraper">
-      <section className={style.projects} id="projects">
+      <section className={style.projects} id="#projects">
         <Wrapper>
           <div className={style.title}>
             <h3>

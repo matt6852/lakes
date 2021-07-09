@@ -7,7 +7,7 @@ import Form from "../Form"
 export default function Contacts() {
   return (
     <div className=".main_main_wraper">
-      <section className={style.contacts} id="contacts">
+      <section className={style.contacts} id="#contacts">
         <Wrapper>
           <div className={style.title}>
             <h3>

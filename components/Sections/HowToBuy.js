@@ -8,7 +8,7 @@ export default function HowToBuy() {
   return (
      <div className=".main_main_wraper">
 
-    <section className={style.howtobuy} id ="howtobuy">
+    <section className={style.howtobuy} id ="#howtobuy">
       <Wrapper>
         <div className={style.title}>
           <h3>

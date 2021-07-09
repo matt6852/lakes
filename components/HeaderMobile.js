@@ -1,4 +1,14 @@
-import Link from "next/link";
+// import Link from "next/link";
+import * as Scroll from "react-scroll";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+
 import { useAppContext } from "context/state";
 import style from "styles/HeaderMobile.module.scss";
 import React, { useEffect } from "react";
@@ -18,10 +28,16 @@ export default function HeaderMobile() {
   const renderLinks = links.map((link, index) => {
     const { title, href } = link;
     return (
-      <Link key={index} href={href}>
-        <a onClick={() => setShowBar(true)} className={style.link}>
-          {title}
-        </a>
+      <Link
+        key={index}
+        to={href}
+        onClick={() => setShowBar(true)}
+        className={style.link}
+        smooth={true}
+        offset={-105}
+        duration={800}
+      >
+        {title}
       </Link>
     );
   });

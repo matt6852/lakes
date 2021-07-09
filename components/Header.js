@@ -7,6 +7,7 @@ import { useAppContext } from "context/state";
 import Wrapper from "./Wrapper";
 import React, { useEffect } from "react";
 
+
 function Header() {
   const { scroll, setScroll } = useAppContext();
   useEffect(() => {
