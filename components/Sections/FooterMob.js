@@ -38,6 +38,7 @@ export default function FooterMob() {
             <div className={style.first_flex}>
               {links
                 .map((link, index) => {
+                  const {href} =link
                   return (
                     <Link
                       key={index}
@@ -45,7 +46,7 @@ export default function FooterMob() {
                       smooth={true}
                       offset={-105}
                       duration={800}
-                      to={link.href}
+                      to={link?.href}
                     >
                       {link.title}
                     </Link>
@@ -57,8 +58,8 @@ export default function FooterMob() {
               {links
                 .map((link, index) => {
                   return (
-                    <Link key={index} href={link.href}>
-                      <a className={style.link}>{link.title}</a>
+                    <Link className={style.link} key={index} to={link.href}>
+                      {link.title}
                     </Link>
                   );
                 })
@@ -69,7 +70,7 @@ export default function FooterMob() {
             <Phone />
           </div>
           <div className={style.policy}>
-            <Link href="/">
+            
               <a
                 className={style.link}
                 href="/politika_konfid.pdf"
@@ -78,7 +79,7 @@ export default function FooterMob() {
               >
                 Политика конфиденциальности
               </a>
-            </Link>
+          
             <p className={style.link_sp}>
               &copy; {new Date().getFullYear()}, «Ярвино»{" "}
             </p>

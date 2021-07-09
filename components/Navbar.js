@@ -34,6 +34,7 @@ function Navbar() {
           smooth ={true}
           offset ={-105}
           duration ={ 800}
+          // style ={{cursor:"pointer"}}
         >
           {title}{" "}
         </Link>
