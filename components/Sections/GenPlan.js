@@ -3,7 +3,6 @@ import { useAppContext } from "context/state";
 import FormModal from "../FormModal";
 import Form from "../Form";
 
-
 import Modal from "../Modal";
 import { useEffect } from "react";
 import Wrapper from "../Wrapper";
@@ -30,7 +29,6 @@ export default function GenPlan() {
       );
       if (element) {
         setShowModal(false);
-        
       }
     };
 
@@ -118,15 +116,26 @@ export default function GenPlan() {
       </div>
       <Modal>
         {signIn ? (
-          <Form>
-            <button className="btn_close" onClick ={()=>{
-              setSingIn(false);
-               setShowModal(false);
-              
-            }}> &#10005;</button>
-          </Form>
+          <div className ="formMain">
+            <Form>
+              <button
+                className="btn_close"
+                onClick={() => {
+                  setSingIn(false);
+                  setShowModal(false);
+                }}
+              >
+                {" "}
+                &#10005;
+              </button>
+            </Form>
+          </div>
         ) : (
+          // <h1>Form1</h1>
+          //
+          // </Form>
           <FormModal />
+          // <h1>Form2</h1>
         )}
       </Modal>
       {/* <div className={style.main_main_wraper}> */}

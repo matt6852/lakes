@@ -20,19 +20,31 @@
   font-display: swap;
 }
 /* CSS variables. */
+// formMain
+.formMain {
+  display: flex;
+  padding: 50px 59px 35px;
+}
+@media (max-width: 1205px){
+  .formMain {
+  display: flex;
+  padding: 30px 39px 35px;
+}
+}
 
+// end formMain
 // new input
-  .btn_close {
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      border: none;
-      background: transparent;
-      color: #333333;
-      font-size: 15px;
-      font-weight: bold;
-      cursor: pointer;
-    }
+.btn_close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  color: #333333;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 .react-tel-input {
   font-family: "Gilroy", sans-serif;
@@ -778,7 +790,7 @@
   border: 3px solid #ededed;
   border-radius: 15px;
   margin-bottom: 10px;
-  -webkit-appearance:none ;
+  -webkit-appearance: none;
 
   @media (max-width: 767px) {
     font-size: 16px;

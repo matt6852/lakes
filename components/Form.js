@@ -69,7 +69,7 @@ export default function Form({children}) {
           </p>
         </div>
         <form onSubmit={handleSubmit} className={style.form}>
-          <span className={style.star_1}>*</span>
+          {/* <span className={style.star_1}>*</span> */}
           <input
             className={style.input}
             value={formData.name}
@@ -88,7 +88,7 @@ export default function Form({children}) {
           placeholder="Телефон"
           required
         /> */}
-          <span className={style.star_2}>*</span>
+          {/* <span className={style.star_2}>*</span> */}
           <PhoneInput
             className={style.input}
             inputProps={{
