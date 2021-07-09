@@ -106,6 +106,7 @@ export default function FormModal() {
             <PhoneInput
               international
               defaultCountry="RU"
+              countryCallingCodeEditable={false}
               value={phonenum}
               onChange={handlePhone}
               name="phone"
