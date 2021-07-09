@@ -1,5 +1,6 @@
 import style from "styles/MainSection.module.scss";
 import Image from "next/image";
+
 // import { FaArrowRight } from "react-icons/fa";
 import SuperBtn from "../SuperButton";
 import { useAppContext } from "context/state";
@@ -10,7 +11,8 @@ import React, { useEffect } from "react";
 import Wrapper from "../Wrapper";
 
 export default function MainSection() {
-  const { mainSectionContainer, indexMain, setIndexMain } = useAppContext();
+  const { mainSectionContainer, indexMain, setIndexMain, setShowModal,showModal , signIn, setSingIn, } =
+    useAppContext();
   const renderSection = mainSectionContainer.map((item, slidIndex) => {
     const {
       imgBg,
@@ -35,7 +37,10 @@ export default function MainSection() {
           "main_section_" + slidIndex
         }`}
       >
+    
+
         <Wrapper className="z_index_1">
+          {/* <FormModule/> */}
           <div className={style.title_center}>
             <div>
               <h1>
@@ -46,9 +51,14 @@ export default function MainSection() {
               </h1>
             </div>
             <div className={style.btn_container}>
-              <button className="btn">
+              <button
+                className="btn"
+                onClick = {()=>{
+                  setShowModal(!showModal)
+                  setSingIn(true)}}
+              >
                 {" "}
-                <a href="#contacts">
+                <a>
                   {btnText}{" "}
                   <span className={style.arrow}>
                     <img src="/arrow_m.svg" className={style.fr} />
@@ -67,6 +77,7 @@ export default function MainSection() {
               <p>{maousText}</p>
             </div>
           </div>
+         
         </Wrapper>
         <style jsx>{`
           .main_section_${slidIndex} {

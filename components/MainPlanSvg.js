@@ -13,6 +13,7 @@ export default function MainPlanSvg() {
     setShowModal,
     showHouses,
     setShowHouses,
+    setSingIn,
   } = useAppContext();
 
   const checkStatus = (id) => {
@@ -42,6 +43,7 @@ export default function MainPlanSvg() {
       return;
     }
     setShowModal(!showModal);
+    setSingIn(false)
   };
 
   useEffect(() => {}, [activPlan]);

@@ -8,7 +8,8 @@ export default function SinglLand({
   soldout,
   img,
 }) {
-  const { showModal, setShowModal, setSinglLand, data } = useAppContext();
+  const { showModal, setShowModal, setSinglLand, data, setSingIn } =
+    useAppContext();
 
   return (
     <>
@@ -36,9 +37,10 @@ export default function SinglLand({
           <div className={`${style.item}`}>
             <button
               disabled={soldout || occupied}
-              className={soldout ? `${style.btn_sold}` : `${style.btn}`}
+              className={soldout  || occupied ? `${style.btn_sold}` : `${style.btn}`}
               onClick={() => {
                 setShowModal(!showModal);
+                setSingIn(false)
 
                 const filtered = data.filter((item) => item.id === id);
                 setSinglLand(filtered);

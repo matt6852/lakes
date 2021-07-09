@@ -32,6 +32,8 @@ export function AppWrapper({ children }) {
   const [showBar, setShowBar] = useState(true);
   const [showHouses, setShowHouses] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [signIn, setSingIn] = useState(false);
+  
   const [index, setIndex] = useState(0);
   const [indexMain, setIndexMain] = useState(0);
   const [sizeWindow, setSizeWinow] = useState(0);
@@ -41,6 +43,7 @@ export function AppWrapper({ children }) {
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const sharedState = {
     formSub,
+    signIn, setSingIn,
     phonenum,
     setPhonenum,
     showHouses,

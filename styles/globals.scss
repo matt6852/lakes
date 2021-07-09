@@ -22,6 +22,17 @@
 /* CSS variables. */
 
 // new input
+  .btn_close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      border: none;
+      background: transparent;
+      color: #333333;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
 .react-tel-input {
   font-family: "Gilroy", sans-serif;
