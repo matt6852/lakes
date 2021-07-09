@@ -414,12 +414,12 @@
       }
       input:focus {
         outline: none;
-        box-shadow: 0 0.8rem 1.3rem rgba(120, 194, 117, 0.63);
+        // box-shadow: 0 0.8rem 1.3rem rgba(120, 194, 117, 0.63);
         border: 2px solid rgb(120, 194, 117);
         background-color: rgba(247, 247, 247, 0.979);
       }
       input:focus:invalid {
-        box-shadow: 0 0.8rem 1.3rem rgba(231, 104, 95, 0.678);
+        // box-shadow: 0 0.8rem 1.3rem rgba(231, 104, 95, 0.678);
         border: 2px solid rgb(231, 104, 95);
       }
       .form_btn {

@@ -5,6 +5,7 @@ import { useAppContext } from "context/state";
 // import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 
+
 // import emailjs from "emailjs-com";
 
 export default function FormModal() {
@@ -104,8 +105,9 @@ export default function FormModal() {
               required
             />
             <PhoneInput
-              international
-              defaultCountry="RU"
+              // international
+              // defaultCountry="RU"
+              countryCallingCodeEditable={false}
               value={phonenum}
               onChange={handlePhone}
               name="phone"
