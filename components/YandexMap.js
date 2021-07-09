@@ -9,10 +9,8 @@ const mapData = {
 };
 
 const coordinates = [
-
-  [60.1922159, 29.0164543],
-  [59.973707, 30.3005083]
-
+  [60.188393, 29.065422],
+  [59.973707, 30.3005083],
 ];
 
 export default function YandexMap() {

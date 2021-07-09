@@ -1,8 +1,8 @@
 export const links = [
-  { title: "Расположение", href: "#uniq" },
-  { title: "Характеристики", href: "#projects" },
+  { title: "О посёлке", href: "#uniq" },
+  { title: "Наши проекты", href: "#projects" },
   { title: "Генплан", href: "#genplan" },
-  { title: "Фотогалерея", href: "#galary" },
+  { title: "Галерея", href: "#galary" },
   { title: "Покупка", href: "#howtobuy" },
   { title: "Контакты", href: "#contacts" },
 ];
@@ -117,7 +117,7 @@ export const mainSectionContainer = [
     textBottom: "города",
     btnText: "Записаться на просмотр",
     paragraph:
-      "Участки под индивидуальную застройку в живописном районе Ленобласти",
+      "Участки под индивидуальную застройку у Финского залива",
     imgMous: "/mous.svg",
     maousText: "Листайте ниже",
   },

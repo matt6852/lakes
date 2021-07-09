@@ -1,5 +1,9 @@
 import style from "styles/GenPlan.module.scss";
 import { useAppContext } from "context/state";
+import FormModal from "../FormModal";
+import Form from "../Form";
+
+
 import Modal from "../Modal";
 import { useEffect } from "react";
 import Wrapper from "../Wrapper";
@@ -7,8 +11,17 @@ import MainPlanSvg from "../MainPlanSvg";
 import SinglLand from "../SinglLand";
 
 export default function GenPlan() {
-  const { setShowModal, data, setData, end, setEnd, activPlan, setActivePlan } =
-    useAppContext();
+  const {
+    setShowModal,
+    data,
+    setData,
+    end,
+    setEnd,
+    activPlan,
+    setActivePlan,
+    signIn,
+    setSingIn,
+  } = useAppContext();
   // console.log(lands.slice(0,10));
   useEffect(() => {
     const chekEl = (e) => {
@@ -17,6 +30,7 @@ export default function GenPlan() {
       );
       if (element) {
         setShowModal(false);
+        
       }
     };
 
@@ -53,11 +67,15 @@ export default function GenPlan() {
       min: "min",
     };
     if (types.max === type) {
-      const sorted = [...data].sort((a, b) => b.price - a.price);
+      const sorted = [...data].sort(
+        (a, b) => +b.price.split(" ").join("") - +a.price.split(" ").join("")
+      );
       setData(sorted);
       // console.log(sorted);
     } else if (types.min === type) {
-      const sorted = [...data].sort((a, b) => a.price - b.price);
+      const sorted = [...data].sort(
+        (a, b) => +a.price.split(" ").join("") - +b.price.split(" ").join("")
+      );
       setData(sorted);
       // console.log(sorted);
     } else {
@@ -98,7 +116,19 @@ export default function GenPlan() {
           ваши мечты об идеальном отдыхе на природе
         </p>
       </div>
-      <Modal />
+      <Modal>
+        {signIn ? (
+          <Form>
+            <button className="btn_close" onClick ={()=>{
+              setSingIn(false);
+               setShowModal(false);
+              
+            }}> &#10005;</button>
+          </Form>
+        ) : (
+          <FormModal />
+        )}
+      </Modal>
       {/* <div className={style.main_main_wraper}> */}
       <div className="main_main_wraper">
         <div className={style.genPlan_svg_container}>

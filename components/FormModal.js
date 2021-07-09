@@ -1,8 +1,9 @@
 import style from "styles/FormModal.module.scss";
 import Wrapper from "./Wrapper";
 import { useAppContext } from "context/state";
+// import PhoneInput from "react-phone-input";
 // import "react-phone-number-input/style.css";
-// import PhoneInput from "react-phone-number-input";
+import PhoneInput from "react-phone-number-input";
 
 // import emailjs from "emailjs-com";
 
@@ -16,14 +17,13 @@ export default function FormModal() {
     phonenum,
     setPhonenum,
   } = useAppContext();
-  // console.log(singlLand[0]);
-  // const handlePhone = (e) => {
-  //   if (typeof e === "undefined") {
-  //     return;
-  //   }
-  //   setPhonenum(e);
-  //   console.log(phonenum);
-  // };
+ const handlePhone = (e) => {
+   if (typeof e === "undefined") {
+     return;
+   }
+   setPhonenum(e);
+   console.log(phonenum);
+ };
 
   const handleChanged = (e) => {
     const { name, value } = e.target;
@@ -34,10 +34,10 @@ export default function FormModal() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setPhonenum("");
+  
     const upDateForm = {
       ...formData,
-      // phone: phonenum,
+      phone: phonenum,
       checkbox: formData.checkValue
         ? "Я согласен с политикой конфиденциальности"
         : "Я НЕ согласен с политикой конфиденциальности",
@@ -55,6 +55,7 @@ export default function FormModal() {
     const result = await res.json();
     setFormData(DEFAULT_DATA);
     setShowModal(false);
+      setPhonenum("");
     console.log(result);
   };
 
@@ -94,6 +95,7 @@ export default function FormModal() {
           </div>
           <form onSubmit={handleSubmit} className={style.form}>
             <input
+              className={style.input}
               value={formData.name}
               onChange={handleChanged}
               name="name"
@@ -101,24 +103,35 @@ export default function FormModal() {
               placeholder="Ваше имя"
               required
             />
-            <input
+            <PhoneInput
+              value={phonenum}
+              onChange={handlePhone}
+              name="phone"
+              type="tel"
+          
+              placeholder="Телефон"
+              required
+            />
+            {/* <input
               onChange={handleChanged}
               value={formData.phone}
               name="phone"
               type="tel"
               placeholder="Телефон"
               required
-            />
+            /> */}
             <input
+              className={style.input}
               onChange={handleChanged}
               value={formData.email}
               name="email"
               type="email"
-              placeholder="Ваш e-mail"
+              placeholder="E-mail"
               // required
             />
             <div className={style.chekBox}>
               <input
+                // className={style.input}
                 className={style.custom_checkbox}
                 onChange={() => {
                   handleChanged;

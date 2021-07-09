@@ -7,7 +7,7 @@ import React from "react";
 
 import { useAppContext } from "context/state";
 import { useEffect } from "react";
-export default function Form() {
+export default function Form({children}) {
   const handlePhone = (e) => {
     if (typeof e === "undefined") {
       return;
@@ -56,6 +56,105 @@ export default function Form() {
 
   return (
     <>
+      <div>
+        <div className={style.form_title}>
+          {children}
+          <h4>
+            {" "}
+            <span className="linercradient"> Свяжитесь</span> с нами
+          </h4>
+          <p>
+            Оставьте ваши контакты, и наш менеджер свяжется с вами в ближайшее
+            время
+          </p>
+        </div>
+        <form onSubmit={handleSubmit} className={style.form}>
+          <span className={style.star_1}>*</span>
+          <input
+            className={style.input}
+            value={formData.name}
+            onChange={handleChanged}
+            name="name"
+            type="text"
+            placeholder="Ваше имя"
+            required
+          />
+
+          {/* <input
+          onChange={handleChanged}
+          value={formData.phone}
+          name="phone"
+          type="tel"
+          placeholder="Телефон"
+          required
+        /> */}
+          <span className={style.star_2}>*</span>
+          <PhoneInput
+            className={style.input}
+            inputProps={{
+              name: "phone",
+              required: true,
+           
+            }}
+       
+            country="ru"
+       
+            name="phone"
+          
+            value={phonenum}
+            onChange={handlePhone}
+            placeholder="Телефон"
+           
+          />
+
+          <input
+            className={style.input}
+            onChange={handleChanged}
+            value={formData.email}
+            name="email"
+            type="email"
+            placeholder="E-mail"
+            pattern="[^ @]*@[^ @]*"
+            // required
+          />
+          <textarea
+            className={style.input}
+            onChange={handleChanged}
+            value={formData.message}
+            name="message"
+            className={style.textarea}
+            placeholder="Ваше сообщение"
+            // required
+          ></textarea>
+          <div className={style.chekBox}>
+            <input
+              className={style.input}
+              className={style.custom_checkbox}
+              onChange={() => {
+                handleChanged;
+                setFormData({ ...formData, checkValue: !formData.checkValue });
+              }}
+              checked={formData.checkValue}
+              value={formData.checkbox}
+              type="checkbox"
+              id="agree"
+            />
+            <label htmlFor="agree">
+              Я согласен с{" "}
+              <a
+                href="/politika_konfid.pdf"
+                target="_blank"
+                style={{ textDecoration: "underline" }}
+              >
+                политикой конфиденциальности
+              </a>
+            </label>
+          </div>
+          <button className={style.form_btn} type="submit">
+            Отправить сообщение
+          </button>
+        </form>
+      </div>
       {/* <div
         className={
           formSub
@@ -65,106 +164,6 @@ export default function Form() {
       >
         <h3>Спасибо {formData.name} мы в ближайшее время свяжемся с вами</h3>
       </div> */}
-      <div className={style.form_title}>
-        <h4>
-          {" "}
-          <span className="linercradient"> Свяжитесь</span> с нами
-        </h4>
-        <p>
-          Оставьте ваши контакты, и наш менеджер свяжется с вами в ближайшее
-          время
-        </p>
-      </div>
-      <form onSubmit={handleSubmit} className={style.form}>
-        <span className={style.star_1}>*</span>
-        <input
-          className={style.input}
-          value={formData.name}
-          onChange={handleChanged}
-          name="name"
-          type="text"
-          placeholder="Ваше имя"
-          required
-        />
-
-        {/* <input
-          onChange={handleChanged}
-          value={formData.phone}
-          name="phone"
-          type="tel"
-          placeholder="Телефон"
-          required
-        /> */}
-        <span className={style.star_2}>*</span>
-        <PhoneInput
-          className={style.input}
-          inputProps={{
-            name: "phone",
-            required: true,
-            // autoFocus: true,
-          }}
-          // defaultCountry="RU"
-          country="ru"
-          // masks={{ fr: "(...) ..-..-...", at: "(....) ...-...." }}
-          // international
-          name="phone"
-          // alwaysDefaultMask ={true}
-          value={phonenum}
-          onChange={handlePhone}
-          placeholder="Телефон"
-          // require="true"
-          // require
-          // defaultCountry ="RU"
-          // defaultValue ="31231313123"
-        />
-
-        <input
-          className={style.input}
-          onChange={handleChanged}
-          value={formData.email}
-          name="email"
-          type="email"
-          placeholder="E-mail"
-          pattern="[^ @]*@[^ @]*"
-          // required
-        />
-        <textarea
-          className={style.input}
-          onChange={handleChanged}
-          value={formData.message}
-          name="message"
-          className={style.textarea}
-          placeholder="Ваше сообщение"
-          // required
-        ></textarea>
-        <div className={style.chekBox}>
-          <input
-            className={style.input}
-            className={style.custom_checkbox}
-            onChange={() => {
-              handleChanged;
-              setFormData({ ...formData, checkValue: !formData.checkValue });
-            }}
-            checked={formData.checkValue}
-            value={formData.checkbox}
-            type="checkbox"
-            id="agree"
-          />
-          <label htmlFor="agree">
-            Я согласен с{" "}
-            <a
-              href="/politika_konfid.pdf"
-              target="_blank"
-              style={{ textDecoration: "underline" }}
-            >
-              политикой конфиденциальности
-            </a>
-          </label>
-        </div>
-        <button className={style.form_btn} type="submit">
-          Отправить сообщение
-        </button>
-      </form>
     </>
   );
 }
