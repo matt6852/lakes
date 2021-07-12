@@ -1,7 +1,8 @@
 import style from "styles/Form.module.scss";
-import {useRouter} from "next/router"
+import { useRouter } from "next/router";
 
 import PhoneInput from "react-phone-input-2";
+
 // import "react-phone-input-2/lib/style.css";
 import React from "react";
 // import emailjs from "emailjs-com";
@@ -11,13 +12,20 @@ import { SendEmail, SendDataToCrm } from './contacts';
 import { useAppContext } from "context/state";
 import { useEffect } from "react";
 export default function Form({ children }) {
-  const router = useRouter()
+  const router = useRouter();
   const handlePhone = (e) => {
+    const inputTell = document.querySelectorAll(".form-control");
+    const [first, secondInput] = inputTell;
     if (typeof e === "undefined") {
       return;
     }
     setPhonenum(e);
     console.log(phonenum);
+    if (phonenum.length < 1){
+      setErrorName(false);
+        secondInput.style.border = "2px solid #ededed";
+        first.style.border = "2px solid #EDEDED";
+    } 
   };
   const {
     formData,
@@ -39,8 +47,7 @@ export default function Form({ children }) {
       ...formData,
       [name]: value,
     });
-    console.log(formData.name);
-   
+    setErrorName(false)
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -48,12 +55,14 @@ export default function Form({ children }) {
     const [first, secondInput] = inputTell;
 
     if (!formData.name || phonenum.length < 1) {
-      
       setErrorName(true);
       secondInput.style.border = "2px solid rgb(231, 104, 95)";
       first.style.border = "2px solid rgb(231, 104, 95)";
 
       return;
+    }
+    if (formData.name) {
+      setErrorName(false);
     }
 
     console.log(formData, phonenum);
@@ -101,7 +110,7 @@ export default function Form({ children }) {
         <form onSubmit={handleSubmit} className={style.form}>
           {/* <span className={style.star_1}>*</span> */}
           <input
-            className={erroName ? "inputNameErr" : "inputNameErrnon"}
+            className={erroName ? "inputNameErr" : " inputNameErrnon"}
             value={formData.name}
             onChange={handleChanged}
             name="name"

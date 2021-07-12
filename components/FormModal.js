@@ -31,12 +31,19 @@ export default function FormModal() {
     setErrorName,
   } = useAppContext();
  const handlePhone = (e) => {
+    const inputTell = document.querySelectorAll(".form-control");
+    const [first, secondInput] = inputTell;
 
    if (typeof e === "undefined") {
     
      return;
    }
    setPhonenum(e);
+    if (phonenum.length < 1) {
+      setErrorName(false);
+      secondInput.style.border = "2px solid #ededed";
+      first.style.border = "2px solid #EDEDED";
+    } 
  
  
  };
@@ -49,15 +56,16 @@ export default function FormModal() {
       [name]: value,
     });
     
-
+setErrorName(false);
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
      const inputTell = document.querySelectorAll(".form-control");
-     const [first, _] = inputTell;
+     const [first, secondInput] = inputTell;
 
      if (!formData.name || phonenum.length < 1) {
        setErrorName(true);
+       secondInput.style.border = "2px solid rgb(231, 104, 95)";
        first.style.border = "2px solid rgb(231, 104, 95)";
 
        return;
@@ -82,7 +90,9 @@ export default function FormModal() {
     setPhonenum("");
     setErrorName(false);
 
+    secondInput.style.border = "3px solid #ededed";
     first.style.border = "3px solid #ededed";
+
     console.log(result);
     router.push("/thank_you");
 
