@@ -80,6 +80,7 @@ export const howToBuyCards = [
 export const textC = [
   "Аэросъемка нашего участка",
   "Фотографии нашей территории",
+  "Фотографии нашей территории",
 ];
 
 export const carouselimgMob = [
