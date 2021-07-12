@@ -1,14 +1,24 @@
 import style from "styles/FormModal.module.scss";
 import Wrapper from "./Wrapper";
 import { useAppContext } from "context/state";
+import { useRouter } from "next/router";
+
 // import PhoneInput from "react-phone-input";
 // import "react-phone-number-input/style.css";
-import PhoneInput from "react-phone-number-input";
+// import PhoneInput from "react-phone-number-input";
+import PhoneInput from "react-phone-input-2";
+// import "react-phone-input-2/lib/style.css";
+
+
 
 
 // import emailjs from "emailjs-com";
 
 export default function FormModal() {
+  const router = useRouter();
+
+
+ 
   const {
     formData,
     setFormData,
@@ -17,14 +27,20 @@ export default function FormModal() {
     singlLand,
     phonenum,
     setPhonenum,
+    erroName,
+    setErrorName,
   } = useAppContext();
  const handlePhone = (e) => {
+
    if (typeof e === "undefined") {
+    
      return;
    }
    setPhonenum(e);
-   console.log(phonenum);
+ 
+ 
  };
+ 
 
   const handleChanged = (e) => {
     const { name, value } = e.target;
@@ -32,9 +48,20 @@ export default function FormModal() {
       ...formData,
       [name]: value,
     });
+    
+
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+     const inputTell = document.querySelectorAll(".form-control");
+     const [first, _] = inputTell;
+
+     if (!formData.name || phonenum.length < 1) {
+       setErrorName(true);
+       first.style.border = "2px solid rgb(231, 104, 95)";
+
+       return;
+     }
   
     const upDateForm = {
       ...formData,
@@ -57,7 +84,12 @@ export default function FormModal() {
     setFormData(DEFAULT_DATA);
     setShowModal(false);
       setPhonenum("");
+      setErrorName(false);
+
+      first.style.border = "3px solid #ededed";
     console.log(result);
+    router.push("/thank_you");
+
   };
 
   return (
@@ -96,24 +128,25 @@ export default function FormModal() {
           </div>
           <form onSubmit={handleSubmit} className={style.form}>
             <input
-              className={style.input}
+              className={erroName ? "inputNameErr" : "inputNameErrnon"}
               value={formData.name}
               onChange={handleChanged}
               name="name"
               type="text"
               placeholder="Ваше имя"
-              required
+              // required
             />
             <PhoneInput
-              // international
-              // defaultCountry="RU"
-              countryCallingCodeEditable={false}
+              // className={style.input}
+              inputProps={{
+                name: "phone",
+                // required: true,
+              }}
+              country="ru"
+              name="phone"
               value={phonenum}
               onChange={handlePhone}
-              name="phone"
-              type="tel"
               placeholder="Телефон"
-              required
             />
             {/* <input
               onChange={handleChanged}
@@ -130,6 +163,7 @@ export default function FormModal() {
               name="email"
               type="email"
               placeholder="E-mail"
+
               // required
             />
             <div className={style.chekBox}>

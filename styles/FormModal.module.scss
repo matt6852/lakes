@@ -404,23 +404,37 @@
       flex-wrap: wrap;
       justify-content: space-between;
       input {
-        z-index: 1;
+        // z-index: 1;
         height: 60px;
-        padding: 15px 10px;
+        padding: 15px 5px;
         border: 3px solid #ededed;
         border-radius: 15px;
         margin-bottom: 10px;
+        // border: 2px solid rgb(231, 104, 95);
         // margin-left: 12px;
       }
+      input:nth-child(2) {
+        padding-left: 50px;
+      }
+
       input:focus {
         outline: none;
         // box-shadow: 0 0.8rem 1.3rem rgba(120, 194, 117, 0.63);
-        border: 2px solid rgb(120, 194, 117);
-        background-color: rgba(247, 247, 247, 0.979);
+        // border: 2px solid rgb(120, 194, 117);
+        // background-color: rgba(247, 247, 247, 0.979);
       }
-      input:focus:invalid {
-        // box-shadow: 0 0.8rem 1.3rem rgba(231, 104, 95, 0.678);
-        border: 2px solid rgb(231, 104, 95);
+      // input:focus:invalid {
+      // box-shadow: 0 0.8rem 1.3rem rgba(231, 104, 95, 0.678);
+      // border: 2px solid rgb(231, 104, 95);
+      // }
+      .input {
+        z-index: 1;
+        height: 60px;
+        padding: 15px 5px;
+        border: 3px solid #ededed;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        border: 3px solid #ededed;
       }
       .form_btn {
         height: 60px;
@@ -599,13 +613,27 @@
         flex-direction: column;
         justify-content: space-between;
         input {
-          z-index: 1;
+          // z-index: 1;
           height: 50px;
-          padding: 15px 10px;
+          padding: 15px 0px;
           border: 3px solid #ededed;
           border-radius: 15px;
           margin-bottom: 10px;
+          padding-left: 25px;
           // margin-left: 12px;
+        }
+        input:nth-child(2) {
+          padding-left: 60px;
+        }
+        .input {
+          z-index: 1;
+          height: 60px;
+          padding: 15px 0px;
+          border: 3px solid #ededed;
+          border-radius: 15px;
+          margin-bottom: 10px;
+          border: 3px solid #ededed;
+          padding-left: 25px;
         }
 
         .form_btn {

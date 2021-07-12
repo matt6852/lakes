@@ -27,11 +27,8 @@ export default function Contacts() {
               <div className={style.sub_container_child_text_mob}>
                 <h4>Посёлок</h4>
                 {/* <p>Влюбитесь в место, где появится дом вашей мечты</p> */}
-                <p>
-                  {" "}
-                  Ленинградская обл, Выборгский район, пос. Озерки, улица
-                  Разинская
-                </p>
+                <p> Ленинградская обл, Выборгский район,</p>
+                <p>пос. Озерки, улица Разинская</p>
               </div>
               <div className={style.sub_container_child_icons}>
                 <div>
@@ -75,8 +72,8 @@ export default function Contacts() {
                   {/* <p>Влюбитесь в место, где появится дом вашей мечты</p> */}
                   <p className={style.text_pading_top}>
                     {" "}
-                    Ленинградская обл, Выборгский район, пос. Озерки, улица
-                    Разинская
+                    Ленинградская обл, Выборгский район,{" "}
+                    <span style ={{display:"block"}}>пос. Озерки, улица Разинская</span>
                   </p>
                 </div>
 

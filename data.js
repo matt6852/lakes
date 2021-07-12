@@ -1,10 +1,10 @@
 export const links = [
-  { title: "О посёлке", href: "#uniq" },
-  { title: "Наши проекты", href: "#projects" },
-  { title: "Генплан", href: "#genplan" },
-  { title: "Галерея", href: "#galary" },
-  { title: "Покупка", href: "#howtobuy" },
-  { title: "Контакты", href: "#contacts" },
+  { title: "О посёлке", href: "#uniq", offset: -105,offsetmob :-105 },
+  { title: "Наши проекты", href: "#projects", offset: 140,offsetmob: -40 },
+  { title: "Генплан", href: "#genplan", offset: -115, offsetmob: -115 },
+  { title: "Галерея", href: "#galary", offset: -105, offsetmob: -105 },
+  { title: "Покупка", href: "#howtobuy", offset: 140, offsetmob: 20 },
+  { title: "Контакты", href: "#contacts", offset: -125,offsetmob: -50 },
 ];
 
 export const uniqCards = [
@@ -105,6 +105,30 @@ export const carouselimgMob = [
   },
   {
     img: "/mob_g_5.png",
+    title: "Фотографии нашей территории ",
+  },
+  {
+    img: "/mob_g_6.png",
+    title: "Фотографии нашей территории ",
+  },
+  {
+    img: "/mob_g_7.png",
+    title: "Фотографии нашей территории ",
+  },
+  {
+    img: "/mob_g_8.png",
+    title: "Фотографии нашей территории ",
+  },
+  {
+    img: "/mob_g_9.png",
+    title: "Фотографии нашей территории ",
+  },
+  {
+    img: "/mob_g_10.png",
+    title: "Фотографии нашей территории ",
+  },
+  {
+    img: "/mob_g_11.png",
     title: "Фотографии нашей территории ",
   },
 ];

@@ -68,13 +68,13 @@
   input:focus {
     outline: none;
     // box-shadow: 0 0.8rem 1.3rem rgba(120, 194, 117, 0.63);
-    border: 2px solid rgb(120, 194, 117);
-    background-color: rgba(247, 247, 247, 0.979);
+    border: 2px solid rgb(120, 194, 117) !important ;
+    // background-color: rgba(247, 247, 247, 0.979);
   }
-  input:focus:invalid {
-    // box-shadow: 0 0.8rem 1.3rem rgba(231, 104, 95, 0.678);
-    border: 2px solid rgb(231, 104, 95);
-  }
+  // input:focus:invalid {
+  //   // box-shadow: 0 0.8rem 1.3rem rgba(231, 104, 95, 0.678);
+  //   border: 2px solid rgb(231, 104, 95);
+  // }
 
   .textarea {
     height: 130px;
@@ -83,7 +83,7 @@
     box-sizing: border-box;
     border-radius: 15px;
     padding-top: 10px;
-    padding-left: 30px;
+    padding-left: 20px;
 
      -webkit-appearance:none ;
     font-family: "Gilroy";
@@ -106,15 +106,19 @@
     font-size: 18px;
     line-height: 130%;
   }
+  
   textarea::placeholder {
     padding: 12px 5px;
     color: #a4a4a4;
     font-size: 16px;
+   
   }
   input::placeholder {
     padding: 5px;
     color: #a4a4a4;
     font-size: 16px;
+    padding-top: 70px;
+        // resize: none;
   }
   .chekBox {
     padding-top: 10px;
