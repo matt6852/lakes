@@ -12,6 +12,7 @@ module.exports = {
     PHONE_MASK: process.env.PHONE_MASK,
     PHONE: process.env.PHONE,
     INSTAGRAM: process.env.INSTAGRAM,
-    OUR_MAIL: process.env.OUR_MAIL
+    OUR_MAIL: process.env.OUR_MAIL,
+    HASH_ROCKET_CRM: process.env.HASH_ROCKET_CRM
   },
 };

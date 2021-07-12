@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 import PhoneInput from "react-phone-input-2";
 // import "react-phone-input-2/lib/style.css";
 
-
+import { SendEmail, SendDataToCrm } from './contacts';
 
 
 // import emailjs from "emailjs-com";
@@ -72,21 +72,17 @@ export default function FormModal() {
       ...singlLand[0],
     };
 
-    const res = await fetch("/api/contacts", {
-      body: JSON.stringify(upDateForm),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-    });
-
+    const res = await SendEmail(upDateForm);
+    const resCrm = await SendDataToCrm(upDateForm);
+    
     const result = await res.json();
+
     setFormData(DEFAULT_DATA);
     setShowModal(false);
-      setPhonenum("");
-      setErrorName(false);
+    setPhonenum("");
+    setErrorName(false);
 
-      first.style.border = "3px solid #ededed";
+    first.style.border = "3px solid #ededed";
     console.log(result);
     router.push("/thank_you");
 

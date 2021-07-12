@@ -6,6 +6,8 @@ import PhoneInput from "react-phone-input-2";
 import React from "react";
 // import emailjs from "emailjs-com";
 
+import { SendEmail, SendDataToCrm } from './contacts';
+
 import { useAppContext } from "context/state";
 import { useEffect } from "react";
 export default function Form({ children }) {
@@ -63,14 +65,8 @@ export default function Form({ children }) {
         : "Я НЕ согласен с политикой конфиденциальности",
     };
 
-    const res = await fetch("/api/contacts", {
-      body: JSON.stringify(upDateForm),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-      
-    });
+    const res = await SendEmail(upDateForm);
+    const resCRM = await SendDataToCrm(upDateForm);
 
     const result = await res.json();
     setFormData(DEFAULT_DATA);
@@ -81,10 +77,11 @@ export default function Form({ children }) {
     first.style.border = "3px solid #ededed";
 
     console.log(result);
-    
+    console.log(resCRM);
+
     router.push("/thank_you")
     setSingIn(false)
-      setShowModal(false)
+    setShowModal(false)
   };
 
   return (
