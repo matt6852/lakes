@@ -4,10 +4,12 @@ import style from "styles/Carousel.module.scss";
 import { useAppContext } from "context/state";
 import AirGal from "../components/AirphotoCarousel";
 import OurCarousel from "../components/OurAriaCarousel";
+import OurCar from "../components/OurCarusel2";
 import AfterCarousel from "components/Sections/AfterCarousel";
 
 
 import Wrapper from "./Wrapper";
+// import OurCarusel2 from "./OurCarusel2";
 
 const ButtonGroup = ({
   next,
@@ -190,6 +192,7 @@ export default function CarouselSlider() {
           >
             <AirGal />
             <OurCarousel />
+            <OurCar/>
           </Carousel>
 
           {/* mobCar */}
@@ -260,6 +263,36 @@ export default function CarouselSlider() {
             <div className={style.mob_gal}>
               <div>
                 <img src="/mob_g_5.png" alt="" />
+              </div>
+            </div>
+            <div className={style.mob_gal}>
+              <div>
+                <img src="/mob_g_6.png" alt="" />
+              </div>
+            </div>
+            <div className={style.mob_gal}>
+              <div>
+                <img src="/mob_g_7.png" alt="" />
+              </div>
+            </div>
+            <div className={style.mob_gal}>
+              <div>
+                <img src="/mob_g_8.png" alt="" />
+              </div>
+            </div>
+            <div className={style.mob_gal}>
+              <div>
+                <img src="/mob_g_9.png" alt="" />
+              </div>
+            </div>
+            <div className={style.mob_gal}>
+              <div>
+                <img src="/mob_g_10.png" alt="" />
+              </div>
+            </div>
+            <div className={style.mob_gal}>
+              <div>
+                <img src="/mob_g_11.png" alt="" />
               </div>
             </div>
           </Carousel>

@@ -23,7 +23,7 @@ function Navbar() {
     // console.log(e.target);
   }
   const renderLinks = links.map((link, index) => {
-    const { title, href } = link;
+    const { title, href,offset } = link;
     return (
      
         <Link
@@ -32,9 +32,9 @@ function Navbar() {
           className={style.link}
           to={href}
           smooth ={true}
-          offset ={-105}
+          offset ={offset}
           duration ={ 800}
-          // style ={{cursor:"pointer"}}
+          style ={{cursor:"pointer"}}
         >
           {title}{" "}
         </Link>

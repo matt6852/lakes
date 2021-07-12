@@ -1,4 +1,5 @@
 import style from "styles/Form.module.scss";
+import {useRouter} from "next/router"
 
 import PhoneInput from "react-phone-input-2";
 // import "react-phone-input-2/lib/style.css";
@@ -7,7 +8,8 @@ import React from "react";
 
 import { useAppContext } from "context/state";
 import { useEffect } from "react";
-export default function Form({children}) {
+export default function Form({ children }) {
+  const router = useRouter()
   const handlePhone = (e) => {
     if (typeof e === "undefined") {
       return;
@@ -15,10 +17,19 @@ export default function Form({children}) {
     setPhonenum(e);
     console.log(phonenum);
   };
-  const { formData, setFormData, DEFAULT_DATA, phonenum, setPhonenum } =
-    useAppContext();
-  // EmailJSResponseStatus {status: 200, text: "OK"}
-  useEffect(() => {}, [phonenum]);
+  const {
+    formData,
+    setFormData,
+    DEFAULT_DATA,
+    phonenum,
+    setPhonenum,
+    erroName,
+    setErrorName,
+    setSingIn,
+    setShowModal,
+  } = useAppContext();
+
+  useEffect(() => {}, [phonenum, erroName]);
 
   const handleChanged = (e) => {
     const { name, value } = e.target;
@@ -26,9 +37,23 @@ export default function Form({children}) {
       ...formData,
       [name]: value,
     });
+    console.log(formData.name);
+   
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const inputTell = document.querySelectorAll(".form-control");
+    const [first, secondInput] = inputTell;
+
+    if (!formData.name || phonenum.length < 1) {
+      
+      setErrorName(true);
+      secondInput.style.border = "2px solid rgb(231, 104, 95)";
+      first.style.border = "2px solid rgb(231, 104, 95)";
+
+      return;
+    }
+
     console.log(formData, phonenum);
     const upDateForm = {
       ...formData,
@@ -44,14 +69,22 @@ export default function Form({children}) {
         "Content-Type": "application/json",
       },
       method: "POST",
+      
     });
 
     const result = await res.json();
     setFormData(DEFAULT_DATA);
     setPhonenum("");
+    setErrorName(false);
 
+    secondInput.style.border = "3px solid #ededed";
+    first.style.border = "3px solid #ededed";
 
     console.log(result);
+    
+    router.push("/thank_you")
+    setSingIn(false)
+      setShowModal(false)
   };
 
   return (
@@ -71,13 +104,13 @@ export default function Form({children}) {
         <form onSubmit={handleSubmit} className={style.form}>
           {/* <span className={style.star_1}>*</span> */}
           <input
-            className={style.input}
+            className={erroName ? "inputNameErr" : "inputNameErrnon"}
             value={formData.name}
             onChange={handleChanged}
             name="name"
             type="text"
             placeholder="Ваше имя"
-            required
+            // required
           />
 
           {/* <input
@@ -90,21 +123,15 @@ export default function Form({children}) {
         /> */}
           {/* <span className={style.star_2}>*</span> */}
           <PhoneInput
-            className={style.input}
             inputProps={{
               name: "phone",
-              required: true,
-           
+              // required: true,
             }}
-       
             country="ru"
-       
             name="phone"
-          
             value={phonenum}
             onChange={handlePhone}
             placeholder="Телефон"
-           
           />
 
           <input

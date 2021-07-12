@@ -32,6 +32,7 @@ export default function Footer() {
                   duration={800}
                   to={href}
                   className={style.link}
+                  style ={{cursor:"pointer"}}
                 >
                   {title}
                 </Link>

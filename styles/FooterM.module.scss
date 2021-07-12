@@ -5,6 +5,8 @@
 // mobile
 @media (max-width: 766px) {
   .footer {
+       z-index: 1;
+    position: relative;
     display: block;
     padding-bottom: 30px;
     padding-left: 35px;
@@ -25,7 +27,7 @@
           align-items: center;
           justify-content: center;
           margin-bottom: 40px;
-          margin-right: 80px;
+          margin-right: 50px;
           align-self: flex-end;
         }
       }

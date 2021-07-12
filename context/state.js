@@ -20,6 +20,7 @@ export function AppWrapper({ children }) {
     checkbox: "",
     checkbox: "",
     checkValue: false,
+    err:false
   };
 
   const [scroll, setScroll] = useState(false);
@@ -32,6 +33,7 @@ export function AppWrapper({ children }) {
   const [showBar, setShowBar] = useState(true);
   const [showHouses, setShowHouses] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [erroName, setErrorName] = useState(false);
   const [signIn, setSingIn] = useState(false);
   
   const [index, setIndex] = useState(0);
@@ -43,6 +45,7 @@ export function AppWrapper({ children }) {
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const sharedState = {
     formSub,
+    erroName, setErrorName,
     signIn, setSingIn,
     phonenum,
     setPhonenum,

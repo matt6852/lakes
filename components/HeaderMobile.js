@@ -26,7 +26,7 @@ export default function HeaderMobile() {
     // setLoading,
   } = useAppContext();
   const renderLinks = links.map((link, index) => {
-    const { title, href } = link;
+    const { title, href, offsetmob } = link;
     return (
       <Link
         key={index}
@@ -34,7 +34,7 @@ export default function HeaderMobile() {
         onClick={() => setShowBar(true)}
         className={style.link}
         smooth={true}
-        offset={-105}
+        offset={offsetmob}
         duration={800}
       >
         {title}

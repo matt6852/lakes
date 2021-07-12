@@ -38,7 +38,7 @@ export default function FooterMob() {
             <div className={style.first_flex}>
               {links
                 .map((link, index) => {
-                  const {href} =link
+                  // const {href} =link
                   return (
                     <Link
                       key={index}
@@ -46,7 +46,7 @@ export default function FooterMob() {
                       smooth={true}
                       offset={-105}
                       duration={800}
-                      to={link?.href}
+                      to={link.href}
                     >
                       {link.title}
                     </Link>
