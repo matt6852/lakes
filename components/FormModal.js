@@ -60,17 +60,47 @@ setErrorName(false);
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const checkbox = document.querySelector(".Form_custom_checkbox__bL15H");
+    const checkbox2 = document.querySelector(
+      ".FormModal_custom_checkbox__26ZZW"
+    );
      const inputTell = document.querySelectorAll(".form-control");
      const [first, secondInput] = inputTell;
 
-     if (!formData.name || phonenum.length < 1 || !formData.checkValue) {
-       setErrorName(true);
-       secondInput.style.border = "2px solid rgb(231, 104, 95)";
-       first.style.border = "2px solid rgb(231, 104, 95)";
+     
+    if (!formData.name && phonenum.length < 1 && !formData.checkValue) {
+      setErrorName(true);
+      secondInput.style.border = "2px solid rgb(231, 104, 95)";
+      first.style.border = "2px solid rgb(231, 104, 95)";
+      checkbox.style.border = "2px solid rgb(231, 104, 95)";
+      checkbox2.style.border = "2px solid rgb(231, 104, 95)";
+      return;
+    }
+    if (formData.name) {
+      setErrorName(false);
+    }
+    if (phonenum.length < 1) {
+      // setErrorName(false);
+      secondInput.style.border = "2px solid rgb(231, 104, 95)";
+      first.style.border = "2px solid rgb(231, 104, 95)";
+      return;
+    }
+    if (phonenum.length > 1) {
+      // setErrorName(false);
+      secondInput.style.border = "3px solid #ededed";
+      first.style.border = "3px solid #ededed";
+    }
+    if (!formData.name) {
+      setErrorName(true);
+      return;
+    }
+    if (!formData.checkValue) {
+      checkbox.style.border = "2px solid rgb(231, 104, 95)";
+      checkbox2.style.border = "2px solid rgb(231, 104, 95)";
 
-       return;
-     }
-  
+      return;
+    }
+
     const upDateForm = {
       ...formData,
       phone: phonenum,
