@@ -19,11 +19,11 @@ export default function Form({ children }) {
     }
     setPhonenum(e);
     console.log(phonenum);
-    if (phonenum.length < 1){
-      setErrorName(false);
-        secondInput.style.border = "2px solid #ededed";
-        first.style.border = "2px solid #EDEDED";
-    } 
+    if (phonenum.length > 1) {
+      // setErrorName(false);
+      secondInput.style.border = "2px solid #ededed";
+      first.style.border = "2px solid #EDEDED";
+    }
   };
   const {
     formData,
@@ -40,13 +40,12 @@ export default function Form({ children }) {
   useEffect(() => {}, [phonenum, erroName]);
 
   const handleChanged = (e) => {
- 
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
     });
-    setErrorName(false)
+    setErrorName(false);
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -54,17 +53,43 @@ export default function Form({ children }) {
     //   return
     // }
     const inputTell = document.querySelectorAll(".form-control");
+    const checkbox = document.querySelector(".Form_custom_checkbox__bL15H");
     const [first, secondInput] = inputTell;
 
-    if (!formData.name || phonenum.length < 1 || !formData.checkValue) {
+    // if(!formData.name){
+    //     setErrorName(true);
+    //       return;
+    // }
+
+    if (!formData.name && phonenum.length < 1 && !formData.checkValue) {
       setErrorName(true);
       secondInput.style.border = "2px solid rgb(231, 104, 95)";
       first.style.border = "2px solid rgb(231, 104, 95)";
-
+      checkbox.style.border = "2px solid rgb(231, 104, 95)";
       return;
     }
     if (formData.name) {
       setErrorName(false);
+    }
+    if (phonenum.length < 1) {
+      // setErrorName(false);
+      secondInput.style.border = "2px solid rgb(231, 104, 95)";
+      first.style.border = "2px solid rgb(231, 104, 95)";
+      return;
+    }
+    if (phonenum.length > 1) {
+      // setErrorName(false);
+      secondInput.style.border = "3px solid #ededed";
+      first.style.border = "3px solid #ededed";
+    }
+    if (!formData.name) {
+      setErrorName(true);
+      return;
+    }
+    if (!formData.checkValue) {
+      checkbox.style.border = "2px solid rgb(231, 104, 95)";
+
+      return;
     }
 
     console.log(formData, phonenum);
@@ -157,16 +182,16 @@ export default function Form({ children }) {
             // required
           />
           {/* <div className={style.container_textarea}> */}
-            {/* <div className={style.placeholder_custome}>Ваше сообщение</div> */}
-            <textarea
-              className={style.input}
-              onChange={handleChanged}
-              value={formData.message}
-              name="message"
-              className={style.textarea}
-              placeholder="Ваше сообщение"
-              // required
-            ></textarea>
+          {/* <div className={style.placeholder_custome}>Ваше сообщение</div> */}
+          <textarea
+            className={style.input}
+            onChange={handleChanged}
+            value={formData.message}
+            name="message"
+            className={style.textarea}
+            placeholder="Ваше сообщение"
+            // required
+          ></textarea>
           {/* </div> */}
 
           <div className={style.chekBox}>
