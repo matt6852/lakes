@@ -42,6 +42,7 @@ export default function Form({ children }) {
   useEffect(() => {}, [phonenum, erroName]);
 
   const handleChanged = (e) => {
+ 
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -51,10 +52,13 @@ export default function Form({ children }) {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // if(!formData.checkValue){
+    //   return
+    // }
     const inputTell = document.querySelectorAll(".form-control");
     const [first, secondInput] = inputTell;
 
-    if (!formData.name || phonenum.length < 1) {
+    if (!formData.name || phonenum.length < 1 || !formData.checkValue) {
       setErrorName(true);
       secondInput.style.border = "2px solid rgb(231, 104, 95)";
       first.style.border = "2px solid rgb(231, 104, 95)";
@@ -150,15 +154,19 @@ export default function Form({ children }) {
             pattern="[^ @]*@[^ @]*"
             // required
           />
-          <textarea
-            className={style.input}
-            onChange={handleChanged}
-            value={formData.message}
-            name="message"
-            className={style.textarea}
-            placeholder="Ваше сообщение"
-            // required
-          ></textarea>
+          {/* <div className={style.container_textarea}> */}
+            {/* <div className={style.placeholder_custome}>Ваше сообщение</div> */}
+            <textarea
+              className={style.input}
+              onChange={handleChanged}
+              value={formData.message}
+              name="message"
+              className={style.textarea}
+              placeholder="Ваше сообщение"
+              // required
+            ></textarea>
+          {/* </div> */}
+
           <div className={style.chekBox}>
             <input
               className={style.input}
