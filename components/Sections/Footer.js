@@ -22,22 +22,25 @@ export default function Footer() {
         <Wrapper>
           <div className={style.container}>
             <img src="/logo_f.svg" alt="" />
-            {links.map((link, index) => {
-              const {href,title} =link
-              return (
-                <Link
-                  key={index}
-                  smooth={true}
-                  offset={-105}
-                  duration={800}
-                  to={href}
-                  className={style.link}
-                  style ={{cursor:"pointer"}}
-                >
-                  {title}
-                </Link>
-              );
-            })}{" "}
+            <div className="footer_wrap">
+              {links.map((link, index) => {
+                const { href, title } = link;
+                return (
+                  <Link
+                    key={index}
+                    smooth={true}
+                    offset={-105}
+                    duration={800}
+                    to={href}
+                    className={style.link}
+                    style={{ cursor: "pointer" }}
+                  >
+                    {title}
+                  </Link>
+                );
+              })}{" "}
+            </div>
+
             <div className={style.sociol_cont}>
               <div className={style.inst}>
                 <a
@@ -52,9 +55,7 @@ export default function Footer() {
                   <img src="/inst.svg" alt="" />
                 </a>
               </div>
-              {/* <div className={style.pnone}>
-                <img src="/phoneFoot.svg" alt="" />
-              </div> */}
+
               <a className={style.text_p} href={`tel:${process.env.PHONE}`}>
                 {process.env.PHONE_MASK}
               </a>
