@@ -71,6 +71,9 @@
     // border: 2px solid rgb(120, 194, 117) !important ;
     // background-color: rgba(247, 247, 247, 0.979);
   }
+  .input::-webkit-input-placeholder{
+    padding-left: 10px;
+  }
   // input:focus:invalid {
   //   // box-shadow: 0 0.8rem 1.3rem rgba(231, 104, 95, 0.678);
   //   border: 2px solid rgb(231, 104, 95);
@@ -92,7 +95,7 @@
     box-sizing: border-box;
     border-radius: 15px;
     padding-top: 21px;
-    padding-left: 35px;
+    padding-left: 30px;
     outline: none;
 
     -webkit-appearance: none;
@@ -101,17 +104,17 @@
   }
   .textarea::-webkit-input-placeholder {
     padding-top: 1px;
-    padding-left: 1px;
+    padding-left: 5px;
     
   }
   .textarea::-moz-input-placeholder {
     padding-top: 1px;
-    padding-left: 1px;
+    padding-left: 5px;
     
   }
   .textarea::-ms-input-placeholder {
     padding-top: 1px;
-    padding-left: 1px;
+    padding-left: 5px;
     
   }
 

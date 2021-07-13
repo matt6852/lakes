@@ -1543,7 +1543,13 @@ ul li {
 
 .inputNameErr {
   border: 2px solid rgb(231, 104, 95) !important;
+  
 }
+
 .inputNameErrnon {
   border: 3px solid #ededed;
+}
+
+.inputNameErrnon::-webkit-input-placeholder{
+  padding-left: 27px;
 }
