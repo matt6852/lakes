@@ -94,7 +94,6 @@ export default function Form({ children }) {
       return;
     }
 
-    console.log(formData, phonenum);
     const upDateForm = {
       ...formData,
       phone: phonenum,
@@ -113,9 +112,6 @@ export default function Form({ children }) {
 
     secondInput.style.border = "3px solid #ededed";
     first.style.border = "3px solid #ededed";
-
-    console.log(result);
-    console.log(resCRM);
 
     router.push("/thank_you")
     setSingIn(false)
