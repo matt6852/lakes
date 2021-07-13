@@ -63,7 +63,7 @@ setErrorName(false);
      const inputTell = document.querySelectorAll(".form-control");
      const [first, secondInput] = inputTell;
 
-     if (!formData.name || phonenum.length < 1) {
+     if (!formData.name || phonenum.length < 1 || !formData.checkValue) {
        setErrorName(true);
        secondInput.style.border = "2px solid rgb(231, 104, 95)";
        first.style.border = "2px solid rgb(231, 104, 95)";
